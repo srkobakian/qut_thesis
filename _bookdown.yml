@@ -1,0 +1,27 @@
+book_filename: "thesis"
+language:
+  ui:
+    chapter_name: "Chapter "
+rmd_files: ["index.Rmd",
+  "00-copyright.Rmd",
+  "00-abstract.Rmd",
+  "00-declaration.Rmd", #a statement of original authorship;
+  "00-acknowledge.Rmd", #an acknowledgment list
+  "00-preface.Rmd",
+  "01-intro.Rmd",
+  "02-literature.Rmd",
+  "03-algorithm.Rmd",
+  "04-experiment.Rmd",
+  "05-discussion.Rmd",
+  "06-conclusion.Rmd",
+  "A-study.Rmd",
+  "B-ethics.Rmd"] # appendices
+delete_merged_file: TRUE
+
+  # table of contents
+  # a statement of the chapter titles
+  # appendices with their titles,
+  # and full details of material such as charts or diagrams
+  # supplementary material not forming part of the text.
+  # titles of all illustrations and diagrams
+  # a list of supplementary material; a list of abbreviations

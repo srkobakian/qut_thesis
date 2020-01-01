@@ -1,0 +1,10 @@
+---
+chapter: 5
+knit: "bookdown::render_book"
+---
+
+# Discussion
+
+Visualisation methods have improved in iterations over many years. Cartograms showed great promise and several algorithms were presented to create cartograms in the 1960s and 1970s.
+The introduction of computer assisted cartogram techniques were developed in the 1970s and 1980s. Dorling [@TVSSS], [@ACTUC] introduced several alternative visualisation methods and their use has had a profound impact in the communication of data with population related distributions.
+Nusrat and Kobourov provide examples for techniques to evaulate the statistical, geographical, and topological accuracy of alternative visualisation displays. 

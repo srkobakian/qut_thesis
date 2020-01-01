@@ -1,0 +1,8 @@
+---
+chapter: 3
+knit: "bookdown::render_book"
+---
+
+# Algorithm {#ch:algorithm}
+
+\includepdf[pages = {1-11}, scale=1]{algorithm.pdf}

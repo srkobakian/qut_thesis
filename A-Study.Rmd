@@ -1,0 +1,7 @@
+---
+knit: "bookdown::render_book"
+---
+
+\appendix
+
+\includepdf[pages = {1-}, scale=1]{Study_1.pdf}

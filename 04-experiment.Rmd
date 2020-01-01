@@ -1,0 +1,8 @@
+---
+chapter: 4
+knit: "bookdown::render_book"
+---
+
+# Visual Inference Study {#ch:experiment}
+
+\includepdf[pages = {1-}, scale=1]{experiment.pdf}

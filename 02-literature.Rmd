@@ -1,0 +1,8 @@
+---
+chapter: 2
+knit: "bookdown::render_book"
+---
+
+# Literature Review {#ch:literature}
+
+\includepdf[pages = {1-33}, scale=1]{literature.pdf}

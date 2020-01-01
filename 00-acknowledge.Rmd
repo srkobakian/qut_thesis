@@ -1,0 +1,22 @@
+---
+knit: "bookdown::render_book"
+---
+
+# Acknowledgements {-}
+
+We would like to acknowledge Dr Earl Duncan (Research Associate at ARC Centre of Excellence for Mathematical & Statistical Frontiers, QUT). His time and effort given to edit and comment on this paper was invaluable.
+
+
+We thank Dr Susanna Cramb (Spatial Modeller, Cancer Council Queensland) and Dr Peter Baade (Senior Research Fellow, Cancer Council Queensland) for providing the opportunity to cover this exploration of disease mapping methods in writing.
+This literature review would not be possible without the opportunity provided by Queensland University of Technology, and Cancer Council Queensland, and the roles of Professor Kerrie Mengersen (Professor of Statistics, Science and Engineering Faculty, QUT) and Dr Earl Duncan in contributing to the Australian Cancer Atlas and supervision of Stephanie's Research Masters.
+
+It was in the development of this online cancer atlas that methods for disease map displays, and visual communication strategies were explored. We are thankful for the opportunity to write about these visualizations and the situations in which they are appropriate.
+
+Several R [@R] packages were used to produce this paper.
+For data analysis the tidyverse package [@tidyverse] provided many useful functions.
+ggplot2 package [@ggplot2] was used to create maps, with RColorBrewer package [@RColorBrewer] providing additional color palettes and ggthemes [@ggthemes] package providing themes.
+The png package [@png] was used to access png images taken from online web atlases, cowplot package [@cowplot] was used to arrange these plots into grouped images.
+
+The following packages were used to create transformations from the sf [@sf] geographical shapes of the states of America [@spData] and the Australian Statistical Areas (Level 3):
+The cartogram [@cartogram] package creates contiguous, non-contiguous and Dorling cartograms.
+Hexagon tile map displays were created using the sugarbag package [@sugarbag].

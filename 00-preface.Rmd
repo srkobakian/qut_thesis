@@ -1,0 +1,27 @@
+---
+knit: "bookdown::render_book"
+---
+
+# Preface {-}
+
+1. The literature review exploring current practice for visualisaing spatial data in Chapter two has been submitted to the journal *Annals of Cancer Epidemiology* for possible publication.
+
+<!-- cite this -->
+
+2.  The details of the algoirthm documented in Chapter three have been submitted to the *Journal of Statistical Software*.
+<!-- cite this -->
+
+3.  The details of the visual inference testing is documented in Chapter four has been submitted to the *IEEE Transactions of Visualisation and Computer Graphics* under the title "Which is Better: a Choropleth Map or Hexagon Tile Map? A comparison using visual inference."
+
+<!-- cite this -->
+
+4.  The code for the algorithm documented in Chapter three has been submitted to *CRAN* as the package sugarbag.
+
+  Stephanie Kobakian and Dianne Cook (2019). sugarbag: Create Tessellated
+  Hexagon Maps. https://srkobakian.github.io/sugarbag/,
+  https://github.com/srkobakian/sugarbag.
+  
+<!-- 
+The following line is required to re-set page numbering after preliminary material. Do not remove
+-->
+\clearpage\pagenumbering{arabic}\setcounter{page}{0}
