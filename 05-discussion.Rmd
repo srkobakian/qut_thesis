@@ -3,8 +3,51 @@ chapter: 5
 knit: "bookdown::render_book"
 ---
 
-# Discussion
+<!-- summarising the structure of the chapter  -->
+
+# Structure
+
+
+# Presenting spatial data
+
+Choropleth map displays are the traditional, and current practice method for presenting geospatial data. The use of familiar geographic polygons allows users to readily find areas of interest on the map display.
+
+However, when used as a tool communicate spatial distributions the use of the choropleth map may lead to misinterpretation of the overall distribution. This is because of the overemphasis on the large geographic areas.
+
 
 Visualisation methods have improved in iterations over many years. Cartograms showed great promise and several algorithms were presented to create cartograms in the 1960s and 1970s.
 The introduction of computer assisted cartogram techniques were developed in the 1970s and 1980s. Dorling [@TVSSS], [@ACTUC] introduced several alternative visualisation methods and their use has had a profound impact in the communication of data with population related distributions.
-Nusrat and Kobourov provide examples for techniques to evaulate the statistical, geographical, and topological accuracy of alternative visualisation displays. 
+
+# The hexagon tile map algorithm
+
+<!--
+1. *Algorithm for creating hexagon tile maps of Australia:* The algorithm will take geospatial areas and create an alternative visualisation of the spatially distribution.
+-->
+
+
+A key aim of this thesis was to present an algorithm for displaying geospatial data. The  algorithm presented in chapter algorithm is the result of many iterations in the process necessary to transform geographic areas into a tessellated hexagon tile map. 
+
+The implementation of the \pkg{sugarbag} [@sugarbag] package for R [@RCore] provides map creators the opportunity to apply the algorithm to any set of geospatial polygons.
+
+# Visual inference study
+
+<!--
+2. *Test the effectiveness of the hexagon tile map relative to the choropleth map:* The hexagon tile map produced by the algorithm will be contrasted with the traditional choropleth map, applying the same colour methods to represent the data. The maps will be used in an experiment to test the effectiveness by asking for users to spot spatial distributions.
+--> 
+
+
+
+
+
+<!--
+3. *Communicating the relationship between the hexmap and choropleth map through animation:* Maximise the benefits of both displays when communicating to the public. The use of animations may control how people follow a recognisable map of Australia into an alternative visualisation for inference. 
+-->
+
+<!-- Chapter 5 contains a full discussion, interpretation and evaluation of the results with reference to the literature. 
+
+-->
+
+This chapter can also include theory building.
+For each objective, discuss the results with reference to the literature, for example, the similarities/differences to the findings in the literature review. Develop theory or models from this comparison and evaluation.
+It can be useful to check your literature and try to find a place for as much of the literature as you can. If you find that a section of your literature can not be used in this chapter, it may be useful to consider the pertinence of this literature and reduce the space in the literature chapter given to it.
+Thus your research outcomes are tied together in relation to the theory, review of the literature, and rationale.

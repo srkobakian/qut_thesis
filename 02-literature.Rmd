@@ -5,4 +5,6 @@ knit: "bookdown::render_book"
 
 # Literature Review {#ch:literature}
 
+\includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_literature.pdf}
+
 \includepdf[pages = {1-33}, scale=1]{literature.pdf}

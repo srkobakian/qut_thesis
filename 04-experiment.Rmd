@@ -5,4 +5,6 @@ knit: "bookdown::render_book"
 
 # Visual Inference Study {#ch:experiment}
 
+\includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_experiment.pdf}
+
 \includepdf[pages = {1-}, scale=1]{experiment.pdf}
