@@ -1,0 +1,24 @@
+[0] Config.pm:304> INFO - This is Biber 2.13
+[1] Config.pm:307> INFO - Logfile is 'thesis.blg'
+[135] biber-MSWIN64:315> INFO - === 
+[247] Biber.pm:375> INFO - Reading 'thesis.bcf'
+[1188] Biber.pm:905> INFO - Found 26 citekeys in bib section 0
+[1287] Biber.pm:4196> INFO - Processing section 0
+[1294] Utils.pm:75> INFO - Globbing data source 'thesisrefs.bib'
+[1335] Utils.pm:91> INFO - Globbed data source 'thesisrefs.bib' to thesisrefs.bib
+[1383] Biber.pm:4373> INFO - Looking for bibtex format file 'thesisrefs.bib' for section 0
+[1422] bibtex.pm:1462> INFO - LaTeX decoding ...
+[2213] bibtex.pm:1281> INFO - Found BibTeX data source 'thesisrefs.bib'
+[2223] Utils.pm:300> WARN - Duplicate entry key: 'DACQ' in file 'thesisrefs.bib', skipping ...
+[2228] Utils.pm:300> WARN - Duplicate entry key: 'CPISACA' in file 'thesisrefs.bib', skipping ...
+[2251] Utils.pm:300> WARN - Duplicate entry key: 'R' in file 'thesisrefs.bib', skipping ...
+[2453] Utils.pm:300> WARN - month field 'Nov' in entry 'GIIV' is not an integer - this will probably not sort properly.
+[2618] Utils.pm:300> WARN - month field 'September' in entry 'ACA' is not an integer - this will probably not sort properly.
+[2696] Utils.pm:300> WARN - month field 'Dec' in entry 'GTPCCD' is not an integer - this will probably not sort properly.
+[2847] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2847] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2848] Biber.pm:4024> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[2848] Biber.pm:4030> INFO - No sort tailoring available for locale 'en-US'
+[2974] bbl.pm:648> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[3014] bbl.pm:751> INFO - Output to thesis.bbl
+[3029] Biber.pm:110> INFO - WARNINGS: 6

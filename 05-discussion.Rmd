@@ -3,51 +3,72 @@ chapter: 5
 knit: "bookdown::render_book"
 ---
 
-<!-- summarising the structure of the chapter  -->
 
-# Structure
+# Dicussion  {#ch:discussion}
+
+This chapter discusses the use of the choropleth map in presenting spatial data.
+It discusses the hexagon tile map algorithm contributed by this thesis and discusses its similarities and differences from other alternative visualisation methods.
+It discusses the use of the visual inference study for evaluating the displays produced by the hexagon tile map algorithm for Australia. Finally, it discusses how animating between a choropleth and hexagon display can allow map creators to direct the attention of users to the overlooked, small but densely populated geographic areas.
+
+## Presenting spatial data
+
+Choropleth map displays are the traditional, and current practice method for presenting geospatial data. The use of familiar geographic polygons allows users to readily find areas of interest on the map display [@EI]. The spatial patterns among the areas are revealed via the colour used to fill each geographic area. 
+
+Cancer Atlases are used to develop hypotheses about spatial distributions of cancer statistics [@CPISACA]. Hot spots with high values can be detected by dramatic changes in colour between neighbours [@MACM].
 
 
-# Presenting spatial data
-
-Choropleth map displays are the traditional, and current practice method for presenting geospatial data. The use of familiar geographic polygons allows users to readily find areas of interest on the map display.
-
-However, when used as a tool communicate spatial distributions the use of the choropleth map may lead to misinterpretation of the overall distribution. This is because of the overemphasis on the large geographic areas.
+However, when used as a tool communicate spatial distributions the use of the choropleth map may lead to misinterpretation of the overall distribution. This is because of the overemphasis on the large geographic areas, and the lack of visibility for the small inner-city communities [@ACTUC].
 
 
-Visualisation methods have improved in iterations over many years. Cartograms showed great promise and several algorithms were presented to create cartograms in the 1960s and 1970s.
-The introduction of computer assisted cartogram techniques were developed in the 1970s and 1980s. Dorling [@TVSSS], [@ACTUC] introduced several alternative visualisation methods and their use has had a profound impact in the communication of data with population related distributions.
+Visualisation methods have improved in iterations over many years. Cartograms [@ACCAC] showed great promise and several algorithms were presented to create cartograms in the 1960s and 1970s. Cartogram techniques highlighted the population by expanding the map area of densely populated communities.
+The introduction of computer assisted cartogram techniques were developed in the 1970s and 1980s. Dorling [@TVSSS], [@ACTUC] introduced several alternative visualisation methods and their use has had a profound impact in the communication of data with population related distributions. These displays enabled viewers to physically see the densely populated areas and avoid spending attention on less populated, but geographically large map areas [@CTTMB].
 
-# The hexagon tile map algorithm
+## The hexagon tile map algorithm
 
 <!--
 1. *Algorithm for creating hexagon tile maps of Australia:* The algorithm will take geospatial areas and create an alternative visualisation of the spatially distribution.
+
+discuss the results with reference to the literature, for example, the similarities/differences to the findings in the literature review.
 -->
 
+A key aim of this thesis was to present an algorithm for displaying geospatial data. The  algorithm presented in chapter algorithm is the result of many iterations in the process necessary to transform geographic areas into a tessellated hexagon tile map.
 
-A key aim of this thesis was to present an algorithm for displaying geospatial data. The  algorithm presented in chapter algorithm is the result of many iterations in the process necessary to transform geographic areas into a tessellated hexagon tile map. 
 
-The implementation of the \pkg{sugarbag} [@sugarbag] package for R [@RCore] provides map creators the opportunity to apply the algorithm to any set of geospatial polygons.
+The tesselation employed in the hexagon tile map algorithm maintains connectedness between neighbouring areas, this draws inspiration from contiguous cartograms [@ACA], rectangular cartograms [@RSCW] and Dorling's circular cartograms [@ACTUC]. However, the hexagon tile map algorithm does not employ the gravitation pull mathematics that is used to create contiguous cartograms. It also does not iterate on the placement of hexagons.  
+The choice of the haxgon, a consistent shape used for all areas, also draws from rectangular and Dorling cartograms. This encourages map readers to focus on the  similarities or difference in the colour between geographic neighbours, and does not distract them with unfamiliar boundaries after a contiguous cartogram transformation. 
 
-# Visual inference study
+The hexagon tile map display is least like the non-contiguous cartogram [@NAC] which maintains the familiar geographic shapes. Some similarity in the final results may occur as densely populated regions maintain connectivity with neighbours, and sparsely populated areas will use the underlying white map space to separate neighbours.
+
+The implementation of the `sugarbag` [@sugarbag] package for R [@R] provides map creators the opportunity to apply the algorithm to any set of geospatial polygons. This does not require manual creation of grids, but the displays are reuable for any populated related data set that uses the same set of geographic units.
+
+
+## Visual inference study
 
 <!--
 2. *Test the effectiveness of the hexagon tile map relative to the choropleth map:* The hexagon tile map produced by the algorithm will be contrasted with the traditional choropleth map, applying the same colour methods to represent the data. The maps will be used in an experiment to test the effectiveness by asking for users to spot spatial distributions.
+
+discuss the results with reference to the literature, for example, the similarities/differences to the findings in the literature review.
+ Develop theory or models from this comparison and evaluation.
 --> 
 
 
+Conducting a visual inference study allowed a contrast of the traditional choropleth display to the alternative hexagon tile map. 
 
+From the visual inference study results, this is a valid alternative as participants acheived higher detection rates for the hexagon tile map when presenting the geographic spatial distribution and the population related distributions. 
 
-
+## Animating between displays
 <!--
 3. *Communicating the relationship between the hexmap and choropleth map through animation:* Maximise the benefits of both displays when communicating to the public. The use of animations may control how people follow a recognisable map of Australia into an alternative visualisation for inference. 
+
+discuss the results with reference to the literature, for example, the similarities/differences to the findings in the literature review.
 -->
 
-<!-- Chapter 5 contains a full discussion, interpretation and evaluation of the results with reference to the literature. 
+Interactivity can allow greater detail to be drawn about small neighbourhoods in a choropleth map. By zooming in, the same shapes shown on the initial map become much larger and comparisons between immediate neighbours becomes simpler. 
+Interacting can also allow the map user to drive their exploration. In the case of the Australian Cancer Atlas, the interactive tools allow quick comparisons between areas far from each other on the map. It also allows quick comparisons of the estimated cancer statistics by showing the colours for each cancer type in a table-like display. These additiions allow user driven exploration, but do not guarantee that the spatial distibution across the country is digested accurately.
 
--->
 
-This chapter can also include theory building.
-For each objective, discuss the results with reference to the literature, for example, the similarities/differences to the findings in the literature review. Develop theory or models from this comparison and evaluation.
-It can be useful to check your literature and try to find a place for as much of the literature as you can. If you find that a section of your literature can not be used in this chapter, it may be useful to consider the pertinence of this literature and reduce the space in the literature chapter given to it.
-Thus your research outcomes are tied together in relation to the theory, review of the literature, and rationale.
+Animating between a choropleth and a hexagon tile map will allows map users to understand how the small communities of a whole country are affected simultaneously. It also teaches map users how to find areas of interest as their attention is drawn to the capital cities, that may not have caught their attention in the display of the choropleth map. When communicating cancer statistics, there should be a balance between providing people a familiar landscape and ensuring the interpret the spatial distribution correctly. A directed exploration of a collection of inner city neighbourhoods will take the distiribution out of context, the Australian Cancer Atlas provides some visual tools to combat this by highlighting that the areas displayed are only subsets However, allowing the values of an inner-city neighbourhood to be visible in the context of all other areas will enhance the understanding of the spatial distribution. Animations will communicate a specific message trhough the capture and direction of users' attention. 
+
+The animations created of the Australian Statistical Areas at Level 2, used in the Australian Cancer Atlas, highlight just how many SA2 areas are hidden due to their size in the choropleth display. The rapid shrinking of the rural areas allows users to recognise the emphasis that had been placed on the large geographic regions.
+Their attention is then drawn to the expanding capital cities, and the coastal towns that were not previously visible.
+

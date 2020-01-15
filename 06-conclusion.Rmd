@@ -4,7 +4,7 @@ knit: "bookdown::render_book"
 ---
 
 
-# Conclusion
+# Conclusion {#ch:conclusion}
 
   <!--  Clearly state the answer to the main research question -->
 
@@ -23,6 +23,12 @@ This has expanded the applications of visual inference studies in a spatial data
   <!--  Make recommendations for future work on the topic -->
 Future work will include expanding on criteria to evaulate the hexagon tile maps produced by the algorithm. The methods to evaluate the alternative displays have not been thoroughly explored in this thesis.
 This framework will be used to create relevant tests that contrast the use of the map area, and changes in the visual statistics when the parameter of the hexagon tile map algorithm are altered.
+
+The current hexagon tile map creates a template map that can be used to visualise any data set that coutains the areas used to create the map.
+There is the possibility of allowing a bivariate display to incorpporate uncertainty by using a colour scheme that operates in two directions as suggested by Lucchesi and Wikle [@VUADBC].
+The animation methods that allow colours filling the hexagons to flicker communicate uncertainty could also be employed.
+
+With large hexagons, there is a potential to incorporate geofacets [@IGF] to create a tesselated display of small visualisations for each geographic unit. These displays become increasingly complex if the visualisation becomes more detailed, or the hexagons become smaller.
 
   <!--  Show what new knowledge you have contributed -->
   

@@ -12,6 +12,3 @@ This thesis includes three original papers submitted to peer reviewed journals. 
 
 
 I have not renumbered sections of submitted or published papers in order to generate a consistent presentation within the thesis.
-
-
-\includepdf[pages = {1-}, scale=1]{statement-of-contribution.pdf}

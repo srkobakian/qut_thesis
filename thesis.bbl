@@ -1,0 +1,984 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{ggthemes}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1f96b08fd674364dea894114af25585f}{%
+           family={Arnold},
+           familyi={A\bibinitperiod},
+           given={Jeffrey\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f96b08fd674364dea894114af25585f}
+      \strng{fullhash}{1f96b08fd674364dea894114af25585f}
+      \strng{bibnamehash}{1f96b08fd674364dea894114af25585f}
+      \strng{authorbibnamehash}{1f96b08fd674364dea894114af25585f}
+      \strng{authornamehash}{1f96b08fd674364dea894114af25585f}
+      \strng{authorfullhash}{1f96b08fd674364dea894114af25585f}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{R package version 4.2.0}
+      \field{title}{{ggthemes: Extra Themes, Scales and Geoms for 'ggplot2'}}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://CRAN.R-project.org/package=ggthemes
+      \endverb
+      \verb{url}
+      \verb https://CRAN.R-project.org/package=ggthemes
+      \endverb
+    \endentry
+    \entry{CPISACA}{article}{}
+      \name{author}{4}{}{%
+        {{hash=102277f22cc24427f5323789a81ce32d}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={B\bibnamedelima Sue},
+           giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=eea6c9da9e00fa1a0ffc7825c1872404}{%
+           family={Hoskins},
+           familyi={H\bibinitperiod},
+           given={Richard\bibnamedelima E},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=3c4dcb4c2abdea4ca8f58b06541e7747}{%
+           family={Pickle},
+           familyi={P\bibinitperiod},
+           given={Linda\bibnamedelima Williams},
+           giveni={L\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=bdc6848af773129d28537a813ad3b951}{%
+           family={Wartenberg},
+           familyi={W\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{49060b5e20e4d5ec21336e02a65ef3e3}
+      \strng{fullhash}{6bef68b82cbd593d9cd92e95467879c0}
+      \strng{bibnamehash}{6bef68b82cbd593d9cd92e95467879c0}
+      \strng{authorbibnamehash}{6bef68b82cbd593d9cd92e95467879c0}
+      \strng{authornamehash}{49060b5e20e4d5ec21336e02a65ef3e3}
+      \strng{authorfullhash}{6bef68b82cbd593d9cd92e95467879c0}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Health Geographics}
+      \field{title}{{Current Practices in Spatial Analysis of Cancer Data: Mapping Health Statistics to Inform Policymakers and the Public}}
+      \field{volume}{5}
+      \field{year}{2006}
+      \field{pages}{49}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/1476-072X-5-49
+      \endverb
+    \endentry
+    \entry{spData}{online}{}
+      \name{author}{3}{}{%
+        {{hash=a48f5d015a48190e796b22a334e99aa1}{%
+           family={Bivand},
+           familyi={B\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a5b93245ea9995d89e95a8f9ec2e25dd}{%
+           family={Nowosad},
+           familyi={N\bibinitperiod},
+           given={Jakub},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c54b1567b34d5e4a29a0751f42d1e429}{%
+           family={Lovelace},
+           familyi={L\bibinitperiod},
+           given={Robin},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b504dfe0ac8818d4c336f81a72c57747}
+      \strng{fullhash}{b504dfe0ac8818d4c336f81a72c57747}
+      \strng{bibnamehash}{b504dfe0ac8818d4c336f81a72c57747}
+      \strng{authorbibnamehash}{b504dfe0ac8818d4c336f81a72c57747}
+      \strng{authornamehash}{b504dfe0ac8818d4c336f81a72c57747}
+      \strng{authorfullhash}{b504dfe0ac8818d4c336f81a72c57747}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{R package version 0.3.0}
+      \field{title}{{spData: Datasets for Spatial Analysis}}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://CRAN.R-project.org/package=spData
+      \endverb
+      \verb{url}
+      \verb https://CRAN.R-project.org/package=spData
+      \endverb
+    \endentry
+    \entry{MACM}{article}{}
+      \name{author}{6}{}{%
+        {{hash=3fbe0e2fe5c1691cff7d68a96529802f}{%
+           family={d'Onofrio},
+           familyi={d\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7bc00337760f6a72686a3a1a542c8a5f}{%
+           family={Mazzetta},
+           familyi={M\bibinitperiod},
+           given={Chiara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=16bd2db884a897dcd0466913d15bc755}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e68fb8785cf2d3ec1e07b9f318c3f3d0}{%
+           family={Smans},
+           familyi={S\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=29a3e1f6660e35b4deaebe9318889556}{%
+           family={Boyle},
+           familyi={B\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e5caf7bae99ec7a0af86f8aa2dc06fe8}{%
+           family={Boniol},
+           familyi={B\bibinitperiod},
+           given={Mathieu},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d26408a99700c5b62524e1506622c04}
+      \strng{fullhash}{0ecc22fbef2c313d8e0828dc963717d1}
+      \strng{bibnamehash}{0ecc22fbef2c313d8e0828dc963717d1}
+      \strng{authorbibnamehash}{0ecc22fbef2c313d8e0828dc963717d1}
+      \strng{authornamehash}{3d26408a99700c5b62524e1506622c04}
+      \strng{authorfullhash}{0ecc22fbef2c313d8e0828dc963717d1}
+      \field{sortinit}{d}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1754-6605}
+      \field{journaltitle}{Ecancermedicalscience}
+      \field{title}{{Maps and Atlases of Cancer Mortality: A Review of a Useful Tool to Trigger New Questions}}
+      \field{type}{Journal Article}
+      \field{volume}{10}
+      \field{year}{2016}
+      \field{pages}{670\bibrangedash 670}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3332/ecancer.2016.670
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ncbi.nlm.nih.gov/pubmed/27610196
+      \endverb
+      \verb{url}
+      \verb https://www.ncbi.nlm.nih.gov/pubmed/27610196
+      \endverb
+    \endentry
+    \entry{ACTUC}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=0c52e954d7bdb0fa0d93af1351f3785d}{%
+           family={Dorling},
+           familyi={D\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \strng{fullhash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \strng{bibnamehash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \strng{authorbibnamehash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \strng{authornamehash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \strng{authorfullhash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \field{extraname}{1}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Concepts and Techniques in Modern Geography (CATMOG)}
+      \field{isbn}{9780470979587}
+      \field{month}{04}
+      \field{title}{{Area Cartograms: Their Use and Creation}}
+      \field{volume}{59}
+      \field{year}{2011}
+      \field{pages}{252\bibrangedash 260}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1002/9780470979587.ch33
+      \endverb
+    \endentry
+    \entry{TVSSS}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0c52e954d7bdb0fa0d93af1351f3785d}{%
+           family={Dorling},
+           familyi={D\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {John Wiley}%
+        {Sons Ltd}%
+      }
+      \strng{namehash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \strng{fullhash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \strng{bibnamehash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \strng{authorbibnamehash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \strng{authornamehash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \strng{authorfullhash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \field{extraname}{2}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The Visualisation of Spatial Social Structure}}
+      \field{year}{2012}
+    \endentry
+    \entry{ACCAC}{article}{}
+      \name{author}{3}{}{%
+        {{hash=99e8ffa55e6675a5c434941dac5d4a97}{%
+           family={Dougenik},
+           familyi={D\bibinitperiod},
+           given={James\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6297c2264486dea876e58a22667ceb59}{%
+           family={Chrisman},
+           familyi={C\bibinitperiod},
+           given={Nicholas\bibnamedelima R.},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=5c1999957e69d46012fcf5b88e3a7b4f}{%
+           family={Niemeyer},
+           familyi={N\bibinitperiod},
+           given={Duane\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{7f9511bf82f94446a7aa98b2da276db7}
+      \strng{fullhash}{7f9511bf82f94446a7aa98b2da276db7}
+      \strng{bibnamehash}{7f9511bf82f94446a7aa98b2da276db7}
+      \strng{authorbibnamehash}{7f9511bf82f94446a7aa98b2da276db7}
+      \strng{authornamehash}{7f9511bf82f94446a7aa98b2da276db7}
+      \strng{authorfullhash}{7f9511bf82f94446a7aa98b2da276db7}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Professional Geographer}
+      \field{number}{1}
+      \field{title}{{An Algorithm to Construct Continuous Area Cartograms}}
+      \field{volume}{37}
+      \field{year}{1985}
+      \field{pages}{75\bibrangedash 81}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1111/j.0033-0124.1985.00075.x
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1111/j.0033-0124.1985.00075.x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1111/j.0033-0124.1985.00075.x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1111/j.0033-0124.1985.00075.x
+      \endverb
+    \endentry
+    \entry{CTTMB}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b499951e22d710dc8c2a1084931e89fc}{%
+           family={Griffin},
+           familyi={G\bibinitperiod},
+           given={T.L.C.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Taylor}%
+        {Francis}%
+      }
+      \strng{namehash}{b499951e22d710dc8c2a1084931e89fc}
+      \strng{fullhash}{b499951e22d710dc8c2a1084931e89fc}
+      \strng{bibnamehash}{b499951e22d710dc8c2a1084931e89fc}
+      \strng{authorbibnamehash}{b499951e22d710dc8c2a1084931e89fc}
+      \strng{authornamehash}{b499951e22d710dc8c2a1084931e89fc}
+      \strng{authorfullhash}{b499951e22d710dc8c2a1084931e89fc}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cartography}
+      \field{number}{3}
+      \field{title}{{Cartographic Transformation of the Thematic Map Base}}
+      \field{volume}{11}
+      \field{year}{1980}
+      \field{pages}{163\bibrangedash 174}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1080/00690805.1980.10438102
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/00690805.1980.10438102
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/00690805.1980.10438102
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/00690805.1980.10438102
+      \endverb
+    \endentry
+    \entry{IGF}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=d22e0d585125aee316c3e63c4362366d}{%
+           family={Hafen},
+           familyi={H\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d22e0d585125aee316c3e63c4362366d}
+      \strng{fullhash}{d22e0d585125aee316c3e63c4362366d}
+      \strng{bibnamehash}{d22e0d585125aee316c3e63c4362366d}
+      \strng{authorbibnamehash}{d22e0d585125aee316c3e63c4362366d}
+      \strng{authornamehash}{d22e0d585125aee316c3e63c4362366d}
+      \strng{authorfullhash}{d22e0d585125aee316c3e63c4362366d}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{R package version 0.1.10}
+      \field{title}{geofacet: 'ggplot2' Faceting Utilities for Geographical Data}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://CRAN.R-project.org/package=geofacet
+      \endverb
+      \verb{url}
+      \verb https://CRAN.R-project.org/package=geofacet
+      \endverb
+    \endentry
+    \entry{GTPCCD}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ffb27ae43142a83768e5183c258872c3}{%
+           family={{Hofmann}},
+           familyi={H\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2467bbfdc64fd112d9a58ec04f1bce2b}{%
+           family={{Follett}},
+           familyi={F\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0cd1c617348030e7c4495e6e4be9ebfb}{%
+           family={{Majumder}},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2d2cb450b209b02903ed2780e53200c9}{%
+           family={{Cook}},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3a6686a04f70256b4b51aeecb6cbd71d}
+      \strng{fullhash}{3091a1c95a979aa11ff00e882a9219ae}
+      \strng{bibnamehash}{3091a1c95a979aa11ff00e882a9219ae}
+      \strng{authorbibnamehash}{3091a1c95a979aa11ff00e882a9219ae}
+      \strng{authornamehash}{3a6686a04f70256b4b51aeecb6cbd71d}
+      \strng{authorfullhash}{3091a1c95a979aa11ff00e882a9219ae}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2160-9306}
+      \field{journaltitle}{IEEE Transactions on Visualization and Computer Graphics}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Graphical Tests for Power Comparison of Competing Designs}
+      \field{volume}{18}
+      \field{year}{2012}
+      \field{pages}{2441\bibrangedash 2448}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/TVCG.2012.230
+      \endverb
+      \keyw{computer graphics;graphical tests;power comparison;visual testing;standard statistical inference tests;graphical findings;distributional assumptions;lineups;graphical designs;coordinate system;polar coordinates;cartesian coordinates;spotting patterns;plot designs;Amazon Mechanical Turk;MTurk;Observers;Accuracy;Data models;Visual analytics;Statistical analysis;Inference mechanisms;Lineups;Visual inference;Power comparison;Efficiency of displays}
+    \endentry
+    \entry{cartogram}{online}{}
+      \name{author}{1}{}{%
+        {{hash=4b88bb77f5004e3e259d7d7af477c151}{%
+           family={Jeworutzki},
+           familyi={J\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{4b88bb77f5004e3e259d7d7af477c151}
+      \strng{fullhash}{4b88bb77f5004e3e259d7d7af477c151}
+      \strng{bibnamehash}{4b88bb77f5004e3e259d7d7af477c151}
+      \strng{authorbibnamehash}{4b88bb77f5004e3e259d7d7af477c151}
+      \strng{authornamehash}{4b88bb77f5004e3e259d7d7af477c151}
+      \strng{authorfullhash}{4b88bb77f5004e3e259d7d7af477c151}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{R package version 0.1.1}
+      \field{title}{{cartogram: Create Cartograms with R}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://CRAN.R-project.org/package=cartogram
+      \endverb
+      \verb{url}
+      \verb https://CRAN.R-project.org/package=cartogram
+      \endverb
+    \endentry
+    \entry{sugarbag}{online}{}
+      \name{author}{2}{}{%
+        {{hash=786f2a2625552da09bc8c222395d51ab}{%
+           family={Kobakian},
+           familyi={K\bibinitperiod},
+           given={Stephanie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=703a76ee965b0aabaf5b41a58ab3995c}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Dianne},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{32481f6329af338e8927dc67438c0c1e}
+      \strng{fullhash}{32481f6329af338e8927dc67438c0c1e}
+      \strng{bibnamehash}{32481f6329af338e8927dc67438c0c1e}
+      \strng{authorbibnamehash}{32481f6329af338e8927dc67438c0c1e}
+      \strng{authornamehash}{32481f6329af338e8927dc67438c0c1e}
+      \strng{authorfullhash}{32481f6329af338e8927dc67438c0c1e}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{R package version 0.1.0}
+      \field{title}{{sugarbag: Create Tessellated Hexagon Maps}}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://CRAN.R-project.org/package=sugarbag
+      \endverb
+      \verb{url}
+      \verb https://CRAN.R-project.org/package=sugarbag
+      \endverb
+    \endentry
+    \entry{VUADBC}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3b098b1988c85b17411f187903311ee2}{%
+           family={Lucchesi},
+           familyi={L\bibinitperiod},
+           given={L.R.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=25ba988b7306564fbb0a371b84511b1c}{%
+           family={C.K.},
+           familyi={C\bibinitperiod},
+           given={Wikle},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{30ee14fd4a6376a81c280282d378e58c}
+      \strng{fullhash}{30ee14fd4a6376a81c280282d378e58c}
+      \strng{bibnamehash}{30ee14fd4a6376a81c280282d378e58c}
+      \strng{authorbibnamehash}{30ee14fd4a6376a81c280282d378e58c}
+      \strng{authornamehash}{30ee14fd4a6376a81c280282d378e58c}
+      \strng{authorfullhash}{30ee14fd4a6376a81c280282d378e58c}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Stat}
+      \field{title}{{Visualizing Uncertainty in Areal Data with Bivariate Choropleth Maps, Map Pixelation and Glyph Rotation}}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1002/sta4.150
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1002/sta4.150
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1002/sta4.150
+      \endverb
+    \endentry
+    \entry{ACA}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=3c903452f4639a8fe8b3e3fdf4bfff8e}{%
+           family={{Min Ouyang}},
+           familyi={M\bibinitperiod}}}%
+        {{hash=9688f7f1cb529b391fc33801a9657cfc}{%
+           family={{Revesz}},
+           familyi={R\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{437cefb4980e13d5f7b6572c29d7d60b}
+      \strng{fullhash}{437cefb4980e13d5f7b6572c29d7d60b}
+      \strng{bibnamehash}{437cefb4980e13d5f7b6572c29d7d60b}
+      \strng{authorbibnamehash}{437cefb4980e13d5f7b6572c29d7d60b}
+      \strng{authornamehash}{437cefb4980e13d5f7b6572c29d7d60b}
+      \strng{authorfullhash}{437cefb4980e13d5f7b6572c29d7d60b}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Proceedings 2000 International Database Engineering and Applications Symposium (Cat. No.PR00789)}}
+      \field{month}{9}
+      \field{title}{{Algorithms for Cartogram Animation}}
+      \field{year}{2000}
+      \field{pages}{231\bibrangedash 235}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/IDEAS.2000.880581
+      \endverb
+    \endentry
+    \entry{RColorBrewer}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0a96f8830584fc792d4a4460866d7397}{%
+           family={Neuwirth},
+           familyi={N\bibinitperiod},
+           given={Erich},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a96f8830584fc792d4a4460866d7397}
+      \strng{fullhash}{0a96f8830584fc792d4a4460866d7397}
+      \strng{bibnamehash}{0a96f8830584fc792d4a4460866d7397}
+      \strng{authorbibnamehash}{0a96f8830584fc792d4a4460866d7397}
+      \strng{authornamehash}{0a96f8830584fc792d4a4460866d7397}
+      \strng{authorfullhash}{0a96f8830584fc792d4a4460866d7397}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{R package version 1.1-2}
+      \field{title}{RColorBrewer: ColorBrewer Palettes}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://CRAN.R-project.org/package=RColorBrewer
+      \endverb
+      \verb{url}
+      \verb https://CRAN.R-project.org/package=RColorBrewer
+      \endverb
+    \endentry
+    \entry{NAC}{article}{}
+      \name{author}{1}{}{%
+        {{hash=44ec51ff819b01126a5a150e6e21e699}{%
+           family={Olson},
+           familyi={O\bibinitperiod},
+           given={Judy\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{44ec51ff819b01126a5a150e6e21e699}
+      \strng{fullhash}{44ec51ff819b01126a5a150e6e21e699}
+      \strng{bibnamehash}{44ec51ff819b01126a5a150e6e21e699}
+      \strng{authorbibnamehash}{44ec51ff819b01126a5a150e6e21e699}
+      \strng{authornamehash}{44ec51ff819b01126a5a150e6e21e699}
+      \strng{authorfullhash}{44ec51ff819b01126a5a150e6e21e699}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Professional Geographer}
+      \field{number}{4}
+      \field{title}{{Noncontiguous Area Cartograms}}
+      \field{volume}{28}
+      \field{year}{1976}
+      \field{pages}{371\bibrangedash 380}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1111/j.0033-0124.1976.00371.x
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1111/j.0033-0124.1976.00371.x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1111/j.0033-0124.1976.00371.x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1111/j.0033-0124.1976.00371.x
+      \endverb
+    \endentry
+    \entry{sf}{article}{}
+      \name{author}{1}{}{%
+        {{hash=422fc79d05d5bcdcc598a0a7c6f95159}{%
+           family={Pebesma},
+           familyi={P\bibinitperiod},
+           given={Edzer},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{422fc79d05d5bcdcc598a0a7c6f95159}
+      \strng{fullhash}{422fc79d05d5bcdcc598a0a7c6f95159}
+      \strng{bibnamehash}{422fc79d05d5bcdcc598a0a7c6f95159}
+      \strng{authorbibnamehash}{422fc79d05d5bcdcc598a0a7c6f95159}
+      \strng{authornamehash}{422fc79d05d5bcdcc598a0a7c6f95159}
+      \strng{authorfullhash}{422fc79d05d5bcdcc598a0a7c6f95159}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{The R Journal}}
+      \field{number}{1}
+      \field{title}{{Simple Features for R: Standardized Support for Spatial Vector Data}}
+      \field{volume}{10}
+      \field{year}{2018}
+      \field{pages}{439\bibrangedash 446}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.32614/RJ-2018-009
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.32614/RJ-2018-009
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.32614/RJ-2018-009
+      \endverb
+    \endentry
+    \entry{R}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=dcdebb6b35bff7c0568bf8c50ef8626d}{%
+           family={{R Core Team}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vienna, Austria}%
+      }
+      \list{organization}{1}{%
+        {R Foundation for Statistical Computing}%
+      }
+      \strng{namehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{fullhash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{bibnamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authorbibnamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authornamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authorfullhash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{R: A Language and Environment for Statistical Computing}}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.R-project.org/
+      \endverb
+      \verb{url}
+      \verb https://www.R-project.org/
+      \endverb
+    \endentry
+    \entry{RSCW}{article}{}
+      \name{author}{1}{}{%
+        {{hash=47d1f0befcb810c387f9c3201aa8c35e}{%
+           family={Raisz},
+           familyi={R\bibinitperiod},
+           given={Erwin},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{47d1f0befcb810c387f9c3201aa8c35e}
+      \strng{fullhash}{47d1f0befcb810c387f9c3201aa8c35e}
+      \strng{bibnamehash}{47d1f0befcb810c387f9c3201aa8c35e}
+      \strng{authorbibnamehash}{47d1f0befcb810c387f9c3201aa8c35e}
+      \strng{authornamehash}{47d1f0befcb810c387f9c3201aa8c35e}
+      \strng{authorfullhash}{47d1f0befcb810c387f9c3201aa8c35e}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{1}
+      \field{journaltitle}{Journal of Geography}
+      \field{title}{{Rectangular Statistical Cartograms of the World}}
+      \field{type}{Journal Article}
+      \field{volume}{35}
+      \field{year}{1963}
+      \field{pages}{8\bibrangedash 10}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1080/00221343608987880
+      \endverb
+    \endentry
+    \entry{chowd}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=7a70f5a2177271eed9d7cd19d3a77524}{%
+           family={{Roy Chowdhury}},
+           familyi={R\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Graduate Theses}%
+        {Dissertations. 13988.}%
+      }
+      \strng{namehash}{7a70f5a2177271eed9d7cd19d3a77524}
+      \strng{fullhash}{7a70f5a2177271eed9d7cd19d3a77524}
+      \strng{bibnamehash}{7a70f5a2177271eed9d7cd19d3a77524}
+      \strng{authorbibnamehash}{7a70f5a2177271eed9d7cd19d3a77524}
+      \strng{authornamehash}{7a70f5a2177271eed9d7cd19d3a77524}
+      \strng{authorfullhash}{7a70f5a2177271eed9d7cd19d3a77524}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{"Explorations of the lineup protocol for visual inference: application to high dimension, low sample size problems and metrics to assess the quality"}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://lib.dr.iastate.edu/etd/13988
+      \endverb
+      \verb{url}
+      \verb https://lib.dr.iastate.edu/etd/13988
+      \endverb
+    \endentry
+    \entry{EI}{book}{}
+      \name{author}{1}{}{%
+        {{hash=41187f886abb9d98f33e5b3f52276d12}{%
+           family={Tufte},
+           familyi={T\bibinitperiod},
+           given={Edward\bibnamedelima R.},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Graphics Press}%
+      }
+      \strng{namehash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{fullhash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{bibnamehash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{authorbibnamehash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{authornamehash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{authorfullhash}{41187f886abb9d98f33e5b3f52276d12}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Envisioning Information}}
+      \field{year}{1990}
+    \endentry
+    \entry{png}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0580413dcd6a84cb1a5b41a43c1a2d5a}{%
+           family={Urbanek},
+           familyi={U\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0580413dcd6a84cb1a5b41a43c1a2d5a}
+      \strng{fullhash}{0580413dcd6a84cb1a5b41a43c1a2d5a}
+      \strng{bibnamehash}{0580413dcd6a84cb1a5b41a43c1a2d5a}
+      \strng{authorbibnamehash}{0580413dcd6a84cb1a5b41a43c1a2d5a}
+      \strng{authornamehash}{0580413dcd6a84cb1a5b41a43c1a2d5a}
+      \strng{authorfullhash}{0580413dcd6a84cb1a5b41a43c1a2d5a}
+      \field{sortinit}{U}
+      \field{sortinithash}{77a6935510e008adcf5b555e7b4f0711}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{R package version 0.1-7}
+      \field{title}{{png: Read and write PNG images}}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://CRAN.R-project.org/package=png
+      \endverb
+      \verb{url}
+      \verb https://CRAN.R-project.org/package=png
+      \endverb
+    \endentry
+    \entry{GIIV}{article}{}
+      \name{author}{4}{}{%
+        {{hash=edd6a8678deb16723e739aef64ea5e18}{%
+           family={{Wickham}},
+           familyi={W\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2d2cb450b209b02903ed2780e53200c9}{%
+           family={{Cook}},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ffb27ae43142a83768e5183c258872c3}{%
+           family={{Hofmann}},
+           familyi={H\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8ba08e07192521fb311c151b039176a8}{%
+           family={{Buja}},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{65f7e97d375b85dfc10508865da6470a}
+      \strng{fullhash}{5bc6aec7cd1925367627e02eb4030917}
+      \strng{bibnamehash}{5bc6aec7cd1925367627e02eb4030917}
+      \strng{authorbibnamehash}{5bc6aec7cd1925367627e02eb4030917}
+      \strng{authornamehash}{65f7e97d375b85dfc10508865da6470a}
+      \strng{authorfullhash}{5bc6aec7cd1925367627e02eb4030917}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2160-9306}
+      \field{journaltitle}{IEEE Transactions on Visualization and Computer Graphics}
+      \field{month}{11}
+      \field{number}{6}
+      \field{title}{Graphical inference for infovis}
+      \field{volume}{16}
+      \field{year}{2010}
+      \field{pages}{973\bibrangedash 979}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/TVCG.2010.161
+      \endverb
+      \keyw{data visualisation;statistics;graphical inference;infovis;data visualization;statistical inference;Protocols;Tag clouds;Visualization;Testing;Accuracy;Histograms;Statistics;visual testing;permutation tests;null hypotheses;data plot;Computer Graphics;Data Interpretation,Statistical;Databases,Factual;Humans;Models,Statistical;Neoplasms}
+    \endentry
+    \entry{ggplot2}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1d0f6977ce2d043e298a59a1cd75b7ef}{%
+           family={Wickham},
+           familyi={W\bibinitperiod},
+           given={Hadley},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag New York}%
+      }
+      \strng{namehash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \strng{fullhash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \strng{bibnamehash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \strng{authorbibnamehash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \strng{authornamehash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \strng{authorfullhash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-319-24277-4}
+      \field{title}{{ggplot2: Elegant Graphics for Data Analysis}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://ggplot2.tidyverse.org
+      \endverb
+      \verb{url}
+      \verb https://ggplot2.tidyverse.org
+      \endverb
+    \endentry
+    \entry{tidyverse}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1d0f6977ce2d043e298a59a1cd75b7ef}{%
+           family={Wickham},
+           familyi={W\bibinitperiod},
+           given={Hadley},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \strng{fullhash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \strng{bibnamehash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \strng{authorbibnamehash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \strng{authornamehash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \strng{authorfullhash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{R package version 1.2.1}
+      \field{title}{{tidyverse: R packages for data science}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://CRAN.R-project.org/package=tidyverse
+      \endverb
+      \verb{url}
+      \verb https://CRAN.R-project.org/package=tidyverse
+      \endverb
+    \endentry
+    \entry{cowplot}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8e86aa1915156f8016600d977acef303}{%
+           family={Wilke},
+           familyi={W\bibinitperiod},
+           given={Claus\bibnamedelima O.},
+           giveni={C\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e86aa1915156f8016600d977acef303}
+      \strng{fullhash}{8e86aa1915156f8016600d977acef303}
+      \strng{bibnamehash}{8e86aa1915156f8016600d977acef303}
+      \strng{authorbibnamehash}{8e86aa1915156f8016600d977acef303}
+      \strng{authornamehash}{8e86aa1915156f8016600d977acef303}
+      \strng{authorfullhash}{8e86aa1915156f8016600d977acef303}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{R package version 1.0.0}
+      \field{title}{{cowplot: Streamlined Plot Theme and Plot Annotations for 'ggplot2'}}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://CRAN.R-project.org/package=cowplot
+      \endverb
+      \verb{url}
+      \verb https://CRAN.R-project.org/package=cowplot
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

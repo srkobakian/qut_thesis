@@ -69,8 +69,6 @@ This thesis includes three original papers submitted to peer reviewed journals. 
 
 I have not renumbered sections of submitted or published papers in order to generate a consistent presentation within the thesis.
 
-\includepdf[pages = {1-}, scale=1]{statement-of-contribution.pdf}
-
 \hypertarget{acknowledgements}{%
 \chapter*{Acknowledgements}\label{acknowledgements}}
 \addcontentsline{toc}{chapter}{Acknowledgements}
@@ -194,27 +192,75 @@ Chapter five provides a conclusion of the results of the visual inference study 
 \hypertarget{ch:literature}{%
 \chapter{Literature Review}\label{ch:literature}}
 
+\includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_literature.pdf}
+
 \includepdf[pages = {1-33}, scale=1]{literature.pdf}
 
 \hypertarget{ch:algorithm}{%
 \chapter{Algorithm}\label{ch:algorithm}}
+
+\includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_algorithm.pdf}
 
 \includepdf[pages = {1-11}, scale=1]{algorithm.pdf}
 
 \hypertarget{ch:experiment}{%
 \chapter{Visual Inference Study}\label{ch:experiment}}
 
+\includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_experiment.pdf}
+
 \includepdf[pages = {1-}, scale=1]{experiment.pdf}
 
-\hypertarget{discussion}{%
-\chapter{Discussion}\label{discussion}}
+\hypertarget{ch:discussion}{%
+\chapter{Dicussion}\label{ch:discussion}}
 
-Visualisation methods have improved in iterations over many years. Cartograms showed great promise and several algorithms were presented to create cartograms in the 1960s and 1970s.
-The introduction of computer assisted cartogram techniques were developed in the 1970s and 1980s. Dorling \autocite{TVSSS}, \autocite{ACTUC} introduced several alternative visualisation methods and their use has had a profound impact in the communication of data with population related distributions.
-Nusrat and Kobourov provide examples for techniques to evaulate the statistical, geographical, and topological accuracy of alternative visualisation displays.
+This chapter discusses the use of the choropleth map in presenting spatial data.
+It discusses the hexagon tile map algorithm contributed by this thesis and discusses its similarities and differences from other alternative visualisation methods.
+It discusses the use of the visual inference study for evaluating the displays produced by the hexagon tile map algorithm for Australia. Finally, it discusses how animating between a choropleth and hexagon display can allow map creators to direct the attention of users to the overlooked, small but densely populated geographic areas.
 
-\hypertarget{conclusion}{%
-\chapter{Conclusion}\label{conclusion}}
+\hypertarget{presenting-spatial-data}{%
+\section{Presenting spatial data}\label{presenting-spatial-data}}
+
+Choropleth map displays are the traditional, and current practice method for presenting geospatial data. The use of familiar geographic polygons allows users to readily find areas of interest on the map display \autocite{EI}. The spatial patterns among the areas are revealed via the colour used to fill each geographic area.
+
+Cancer Atlases are used to develop hypotheses about spatial distributions of cancer statistics \autocite{CPISACA}. Hot spots with high values can be detected by dramatic changes in colour between neighbours \autocite{MACM}.
+
+However, when used as a tool communicate spatial distributions the use of the choropleth map may lead to misinterpretation of the overall distribution. This is because of the overemphasis on the large geographic areas, and the lack of visibility for the small inner-city communities \autocite{ACTUC}.
+
+Visualisation methods have improved in iterations over many years. Cartograms \autocite{ACCAC} showed great promise and several algorithms were presented to create cartograms in the 1960s and 1970s. Cartogram techniques highlighted the population by expanding the map area of densely populated communities.
+The introduction of computer assisted cartogram techniques were developed in the 1970s and 1980s. Dorling \autocite{TVSSS}, \autocite{ACTUC} introduced several alternative visualisation methods and their use has had a profound impact in the communication of data with population related distributions. These displays enabled viewers to physically see the densely populated areas and avoid spending attention on less populated, but geographically large map areas \autocite{CTTMB}.
+
+\hypertarget{the-hexagon-tile-map-algorithm}{%
+\section{The hexagon tile map algorithm}\label{the-hexagon-tile-map-algorithm}}
+
+A key aim of this thesis was to present an algorithm for displaying geospatial data. The algorithm presented in chapter algorithm is the result of many iterations in the process necessary to transform geographic areas into a tessellated hexagon tile map.
+
+The tesselation employed in the hexagon tile map algorithm maintains connectedness between neighbouring areas, this draws inspiration from contiguous cartograms \autocite{ACA}, rectangular cartograms \autocite{RSCW} and Dorling's circular cartograms \autocite{ACTUC}. However, the hexagon tile map algorithm does not employ the gravitation pull mathematics that is used to create contiguous cartograms. It also does not iterate on the placement of hexagons.\\
+The choice of the haxgon, a consistent shape used for all areas, also draws from rectangular and Dorling cartograms. This encourages map readers to focus on the similarities or difference in the colour between geographic neighbours, and does not distract them with unfamiliar boundaries after a contiguous cartogram transformation.
+
+The hexagon tile map display is least like the non-contiguous cartogram \autocite{NAC} which maintains the familiar geographic shapes. Some similarity in the final results may occur as densely populated regions maintain connectivity with neighbours, and sparsely populated areas will use the underlying white map space to separate neighbours.
+
+The implementation of the \texttt{sugarbag} \autocite{sugarbag} package for R \autocite{R} provides map creators the opportunity to apply the algorithm to any set of geospatial polygons. This does not require manual creation of grids, but the displays are reuable for any populated related data set that uses the same set of geographic units.
+
+\hypertarget{visual-inference-study}{%
+\section{Visual inference study}\label{visual-inference-study}}
+
+Conducting a visual inference study allowed a contrast of the traditional choropleth display to the alternative hexagon tile map.
+
+From the visual inference study results, this is a valid alternative as participants acheived higher detection rates for the hexagon tile map when presenting the geographic spatial distribution and the population related distributions.
+
+\hypertarget{animating-between-displays}{%
+\section{Animating between displays}\label{animating-between-displays}}
+
+Interactivity can allow greater detail to be drawn about small neighbourhoods in a choropleth map. By zooming in, the same shapes shown on the initial map become much larger and comparisons between immediate neighbours becomes simpler.
+Interacting can also allow the map user to drive their exploration. In the case of the Australian Cancer Atlas, the interactive tools allow quick comparisons between areas far from each other on the map. It also allows quick comparisons of the estimated cancer statistics by showing the colours for each cancer type in a table-like display. These additiions allow user driven exploration, but do not guarantee that the spatial distibution across the country is digested accurately.
+
+Animating between a choropleth and a hexagon tile map will allows map users to understand how the small communities of a whole country are affected simultaneously. It also teaches map users how to find areas of interest as their attention is drawn to the capital cities, that may not have caught their attention in the display of the choropleth map. When communicating cancer statistics, there should be a balance between providing people a familiar landscape and ensuring the interpret the spatial distribution correctly. A directed exploration of a collection of inner city neighbourhoods will take the distiribution out of context, the Australian Cancer Atlas provides some visual tools to combat this by highlighting that the areas displayed are only subsets However, allowing the values of an inner-city neighbourhood to be visible in the context of all other areas will enhance the understanding of the spatial distribution. Animations will communicate a specific message trhough the capture and direction of users' attention.
+
+The animations created of the Australian Statistical Areas at Level 2, used in the Australian Cancer Atlas, highlight just how many SA2 areas are hidden due to their size in the choropleth display. The rapid shrinking of the rural areas allows users to recognise the emphasis that had been placed on the large geographic regions.
+Their attention is then drawn to the expanding capital cities, and the coastal towns that were not previously visible.
+
+\hypertarget{ch:conclusion}{%
+\chapter{Conclusion}\label{ch:conclusion}}
 
 The goal of this thesis was to present an alternative visualisation method for spatial data. This thesis has provided a new algorithm to present spatial distributions of disease data, and includes an R code \autocite{R} implementation. The spatial data sets that will be effectively communicated by this display will likely have population related distributions. The hexagon tile map display will represent each area equally on the map space to effectively convey the spatial distribution of the set.
 
@@ -227,6 +273,12 @@ This has expanded the applications of visual inference studies in a spatial data
 
 Future work will include expanding on criteria to evaulate the hexagon tile maps produced by the algorithm. The methods to evaluate the alternative displays have not been thoroughly explored in this thesis.
 This framework will be used to create relevant tests that contrast the use of the map area, and changes in the visual statistics when the parameter of the hexagon tile map algorithm are altered.
+
+The current hexagon tile map creates a template map that can be used to visualise any data set that coutains the areas used to create the map.
+There is the possibility of allowing a bivariate display to incorpporate uncertainty by using a colour scheme that operates in two directions as suggested by Lucchesi and Wikle \autocite{VUADBC}.
+The animation methods that allow colours filling the hexagons to flicker communicate uncertainty could also be employed.
+
+With large hexagons, there is a potential to incorporate geofacets \autocite{IGF} to create a tesselated display of small visualisations for each geographic unit. These displays become increasingly complex if the visualisation becomes more detailed, or the hexagons become smaller.
 
 This work has contributed a new visualisation for spatial data sets. The spatial distributions of cancer burden for different types of cancers largely relates to the population rather than the geography. The alternative visualisation method highlights the communities, and the hexagon tile map may be implemented in future iterations of the Australian Cancer Atlas to improve the communication of spatial patterns of cancer burden on Australian communities. For wide use by map creators and those interested in alternative visual diaplays, the code implementation has been provided to any R user with examples and documentation.
 This work has also contributed to the literature of visual inference studies, by using the ``lineup'' protocol developed by Buja et al.~and used by Wickham, Cook and Hofmann \autocite{GIIV}, \autocite{GTPCCD}. This example showed there was a difference in the rate of pattern recognition when participants saw competing spatial map displays.
