@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.31)  16 JAN 2020 11:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.31)  16 JAN 2020 13:07
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1232,7 +1232,7 @@ LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
 (Font)              scaled to size 18.66588pt on input line 32.
 LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
 (Font)              scaled to size 10.79993pt on input line 32.
-<figures/crest.png, id=75, 104.3097pt x 104.3097pt>
+<figures/crest.png, id=155, 104.3097pt x 104.3097pt>
 File: figures/crest.png Graphic file (type png)
 <use figures/crest.png>
 Package pdftex.def Info: figures/crest.png  used on input line 32.
@@ -1245,22 +1245,56 @@ LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
 (Font)              scaled to size 21.59985pt on input line 34.
 LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
 (Font)              scaled to size 21.59985pt on input line 34.
-(thesis.toc)
+(thesis.toc
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 9.85492pt on input line 3.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 3
+.
+(C:\Users\steff\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
+3.
+(C:\Users\steff\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
+3.
+(C:\Users\steff\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
+3.
+(C:\Users\steff\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
+3.
+(C:\Users\steff\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `zplm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+[3])
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
-[3] [4
-
-]
+LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 37.
 LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
-(Font)              scaled to size 9.85492pt on input line 37.
+(Font)              scaled to size 12.9599pt on input line 37.
+[4]
 LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
 (Font)              scaled to size 18.66588pt on input line 37.
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 4
 0.
 (C:\Users\steff\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [5] [6
+) [5
+
+] [6
 
 ] [7] [8
 
@@ -1278,128 +1312,1648 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 [9] [10
 
-] [11] [12
-
 ]
-LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
-(Font)              scaled to size 13.49991pt on input line 91.
-[13]
-LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 145.
-LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 145.
-[14] [15] [16
-
-]
-
-LaTeX Warning: Reference `ch:algorithm' on page xvii undefined on input line 17
-0.
-
-
-LaTeX Warning: Reference `ch:experiment' on page xvii undefined on input line 1
-80.
-
-
-LaTeX Warning: Reference `ch:algorithm' on page xvii undefined on input line 19
-1.
-
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
-94.
-(C:\Users\steff\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\ot1ppl.fd
-File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-)
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-194.
-(C:\Users\steff\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\omlzplm.fd
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-194.
-(C:\Users\steff\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\omszplm.fd
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-194.
-(C:\Users\steff\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\omxzplm.fd
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-194.
-(C:\Users\steff\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\ot1zplm.fd
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `zplm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-[17] [0
-
-
-]
+LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10.95> not available
+(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 71.
+LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
+(Font)              scaled to size 9.85492pt on input line 71.
 LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
-(Font)              scaled to size 9.85492pt on input line 204.
-[1] [2] [3
+(Font)              scaled to size 9.85492pt on input line 72.
+[11] [12] [13
 
-] [4
+] [14
+
+] [15] [16
+
+]
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 13.49991pt on input line 162.
+[17] [18] [19] [20
+
+] [21] [0
+
 
 ]
 Chapter 1.
-[5] [6] [7] [8]
+[1] [2] [3] [4]
 Chapter 2.
-<statement-of-contribution_literature.pdf, id=274, 598.27513pt x 845.19763pt>
+<statement-of-contribution_literature.pdf, id=395, 598.27513pt x 845.19763pt>
 File: statement-of-contribution_literature.pdf Graphic file (type pdf)
 <use statement-of-contribution_literature.pdf>
 Package pdftex.def Info: statement-of-contribution_literature.pdf  used on inpu
-t line 332.
+t line 338.
 (pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
 File: statement-of-contribution_literature.pdf Graphic file (type pdf)
 <use statement-of-contribution_literature.pdf>
 Package pdftex.def Info: statement-of-contribution_literature.pdf  used on inpu
-t line 332.
+t line 338.
 (pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
-<statement-of-contribution_literature.pdf, id=277, page=1, 598.27513pt x 845.19
+<statement-of-contribution_literature.pdf, id=398, page=1, 598.27513pt x 845.19
 763pt>
 File: statement-of-contribution_literature.pdf Graphic file (type pdf)
 <use statement-of-contribution_literature.pdf, page 1>
 Package pdftex.def Info: statement-of-contribution_literature.pdf , page1 used 
-on input line 332.
+on input line 338.
 (pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
 File: statement-of-contribution_literature.pdf Graphic file (type pdf)
 <use statement-of-contribution_literature.pdf, page 1>
 Package pdftex.def Info: statement-of-contribution_literature.pdf , page1 used 
-on input line 332.
+on input line 338.
 (pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
-[9
+[5
 
 ]
 File: statement-of-contribution_literature.pdf Graphic file (type pdf)
 <use statement-of-contribution_literature.pdf, page 1>
 Package pdftex.def Info: statement-of-contribution_literature.pdf , page1 used 
-on input line 332.
+on input line 338.
 (pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
 File: statement-of-contribution_literature.pdf Graphic file (type pdf)
 <use statement-of-contribution_literature.pdf, page 1>
 Package pdftex.def Info: statement-of-contribution_literature.pdf , page1 used 
-on input line 332.
+on input line 338.
 (pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
 File: statement-of-contribution_literature.pdf Graphic file (type pdf)
 <use statement-of-contribution_literature.pdf, page 1>
 Package pdftex.def Info: statement-of-contribution_literature.pdf , page1 used 
-on input line 332.
+on input line 338.
 (pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
-[10 <./statement-of-contribution_literature.pdf>]
-! Missing endcsname inserted.
-<to be read again> 
-                   protect 
-l.334 ...-}, scale=1]{~/review/review_article.pdf}
-                                                   
-Here is how much of TeX's memory you used:
- 30183 strings out of 492484
- 538570 string characters out of 3130514
- 1039196 words of memory out of 3000000
- 33908 multiletter control sequences out of 15000+200000
- 612918 words of font info for 179 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 55i,19n,71p,1007b,18026s stack positions out of 5000i,500n,10000p,200000b,50000s
+[6 <./statement-of-contribution_literature.pdf>]
+<02-literature.pdf, id=444, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf>
+Package pdftex.def Info: 02-literature.pdf  used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf>
+Package pdftex.def Info: 02-literature.pdf  used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<02-literature.pdf, id=447, page=1, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 1>
+Package pdftex.def Info: 02-literature.pdf , page1 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 1>
+Package pdftex.def Info: 02-literature.pdf , page1 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 1>
+Package pdftex.def Info: 02-literature.pdf , page1 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 1>
+Package pdftex.def Info: 02-literature.pdf , page1 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 1>
+Package pdftex.def Info: 02-literature.pdf , page1 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[7 <./02-literature.pdf>]
+<02-literature.pdf, id=488, page=2, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 2>
+Package pdftex.def Info: 02-literature.pdf , page2 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 2>
+Package pdftex.def Info: 02-literature.pdf , page2 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 2>
+Package pdftex.def Info: 02-literature.pdf , page2 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[8 <./02-literature.pdf>]
+<02-literature.pdf, id=493, page=3, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 3>
+Package pdftex.def Info: 02-literature.pdf , page3 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 3>
+Package pdftex.def Info: 02-literature.pdf , page3 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 3>
+Package pdftex.def Info: 02-literature.pdf , page3 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[9 <./02-literature.pdf>]
+<02-literature.pdf, id=499, page=4, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 4>
+Package pdftex.def Info: 02-literature.pdf , page4 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 4>
+Package pdftex.def Info: 02-literature.pdf , page4 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 4>
+Package pdftex.def Info: 02-literature.pdf , page4 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[10 <./02-literature.pdf>]
+<02-literature.pdf, id=504, page=5, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 5>
+Package pdftex.def Info: 02-literature.pdf , page5 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 5>
+Package pdftex.def Info: 02-literature.pdf , page5 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 5>
+Package pdftex.def Info: 02-literature.pdf , page5 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[11 <./02-literature.pdf>]
+<02-literature.pdf, id=514, page=6, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 6>
+Package pdftex.def Info: 02-literature.pdf , page6 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 6>
+Package pdftex.def Info: 02-literature.pdf , page6 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 6>
+Package pdftex.def Info: 02-literature.pdf , page6 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[12 <./02-literature.pdf>]
+<02-literature.pdf, id=520, page=7, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 7>
+Package pdftex.def Info: 02-literature.pdf , page7 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 7>
+Package pdftex.def Info: 02-literature.pdf , page7 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 7>
+Package pdftex.def Info: 02-literature.pdf , page7 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[13 <./02-literature.pdf>]
+<02-literature.pdf, id=546, page=8, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 8>
+Package pdftex.def Info: 02-literature.pdf , page8 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 8>
+Package pdftex.def Info: 02-literature.pdf , page8 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 8>
+Package pdftex.def Info: 02-literature.pdf , page8 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[14 <./02-literature.pdf>]
+<02-literature.pdf, id=551, page=9, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 9>
+Package pdftex.def Info: 02-literature.pdf , page9 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 9>
+Package pdftex.def Info: 02-literature.pdf , page9 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 9>
+Package pdftex.def Info: 02-literature.pdf , page9 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[15 <./02-literature.pdf>]
+<02-literature.pdf, id=557, page=10, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 10>
+Package pdftex.def Info: 02-literature.pdf , page10 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 10>
+Package pdftex.def Info: 02-literature.pdf , page10 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 10>
+Package pdftex.def Info: 02-literature.pdf , page10 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[16 <./02-literature.pdf>]
+<02-literature.pdf, id=562, page=11, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 11>
+Package pdftex.def Info: 02-literature.pdf , page11 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 11>
+Package pdftex.def Info: 02-literature.pdf , page11 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 11>
+Package pdftex.def Info: 02-literature.pdf , page11 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[17 <./02-literature.pdf>]
+<02-literature.pdf, id=567, page=12, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 12>
+Package pdftex.def Info: 02-literature.pdf , page12 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 12>
+Package pdftex.def Info: 02-literature.pdf , page12 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 12>
+Package pdftex.def Info: 02-literature.pdf , page12 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[18 <./02-literature.pdf>]
+<02-literature.pdf, id=572, page=13, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 13>
+Package pdftex.def Info: 02-literature.pdf , page13 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 13>
+Package pdftex.def Info: 02-literature.pdf , page13 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 13>
+Package pdftex.def Info: 02-literature.pdf , page13 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[19 <./02-literature.pdf>]
+<02-literature.pdf, id=582, page=14, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 14>
+Package pdftex.def Info: 02-literature.pdf , page14 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 14>
+Package pdftex.def Info: 02-literature.pdf , page14 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 14>
+Package pdftex.def Info: 02-literature.pdf , page14 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[20 <./02-literature.pdf>]
+<02-literature.pdf, id=588, page=15, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 15>
+Package pdftex.def Info: 02-literature.pdf , page15 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 15>
+Package pdftex.def Info: 02-literature.pdf , page15 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 15>
+Package pdftex.def Info: 02-literature.pdf , page15 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[21 <./02-literature.pdf>]
+<02-literature.pdf, id=594, page=16, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 16>
+Package pdftex.def Info: 02-literature.pdf , page16 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 16>
+Package pdftex.def Info: 02-literature.pdf , page16 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 16>
+Package pdftex.def Info: 02-literature.pdf , page16 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[22 <./02-literature.pdf>]
+<02-literature.pdf, id=599, page=17, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 17>
+Package pdftex.def Info: 02-literature.pdf , page17 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 17>
+Package pdftex.def Info: 02-literature.pdf , page17 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 17>
+Package pdftex.def Info: 02-literature.pdf , page17 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[23 <./02-literature.pdf>]
+<02-literature.pdf, id=605, page=18, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 18>
+Package pdftex.def Info: 02-literature.pdf , page18 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 18>
+Package pdftex.def Info: 02-literature.pdf , page18 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 18>
+Package pdftex.def Info: 02-literature.pdf , page18 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[24 <./02-literature.pdf>]
+<02-literature.pdf, id=610, page=19, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 19>
+Package pdftex.def Info: 02-literature.pdf , page19 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 19>
+Package pdftex.def Info: 02-literature.pdf , page19 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 19>
+Package pdftex.def Info: 02-literature.pdf , page19 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[25 <./02-literature.pdf>]
+<02-literature.pdf, id=616, page=20, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 20>
+Package pdftex.def Info: 02-literature.pdf , page20 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 20>
+Package pdftex.def Info: 02-literature.pdf , page20 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 20>
+Package pdftex.def Info: 02-literature.pdf , page20 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[26 <./02-literature.pdf>]
+<02-literature.pdf, id=621, page=21, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 21>
+Package pdftex.def Info: 02-literature.pdf , page21 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 21>
+Package pdftex.def Info: 02-literature.pdf , page21 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 21>
+Package pdftex.def Info: 02-literature.pdf , page21 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[27 <./02-literature.pdf>]
+<02-literature.pdf, id=632, page=22, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 22>
+Package pdftex.def Info: 02-literature.pdf , page22 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 22>
+Package pdftex.def Info: 02-literature.pdf , page22 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 22>
+Package pdftex.def Info: 02-literature.pdf , page22 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[28 <./02-literature.pdf>]
+<02-literature.pdf, id=638, page=23, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 23>
+Package pdftex.def Info: 02-literature.pdf , page23 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 23>
+Package pdftex.def Info: 02-literature.pdf , page23 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 23>
+Package pdftex.def Info: 02-literature.pdf , page23 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[29 <./02-literature.pdf>]
+<02-literature.pdf, id=644, page=24, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 24>
+Package pdftex.def Info: 02-literature.pdf , page24 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 24>
+Package pdftex.def Info: 02-literature.pdf , page24 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 24>
+Package pdftex.def Info: 02-literature.pdf , page24 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[30 <./02-literature.pdf>]
+<02-literature.pdf, id=649, page=25, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 25>
+Package pdftex.def Info: 02-literature.pdf , page25 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 25>
+Package pdftex.def Info: 02-literature.pdf , page25 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 25>
+Package pdftex.def Info: 02-literature.pdf , page25 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[31 <./02-literature.pdf>]
+<02-literature.pdf, id=654, page=26, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 26>
+Package pdftex.def Info: 02-literature.pdf , page26 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 26>
+Package pdftex.def Info: 02-literature.pdf , page26 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 26>
+Package pdftex.def Info: 02-literature.pdf , page26 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[32 <./02-literature.pdf>]
+<02-literature.pdf, id=659, page=27, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 27>
+Package pdftex.def Info: 02-literature.pdf , page27 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 27>
+Package pdftex.def Info: 02-literature.pdf , page27 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 27>
+Package pdftex.def Info: 02-literature.pdf , page27 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[33 <./02-literature.pdf>]
+<02-literature.pdf, id=665, page=28, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 28>
+Package pdftex.def Info: 02-literature.pdf , page28 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 28>
+Package pdftex.def Info: 02-literature.pdf , page28 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 28>
+Package pdftex.def Info: 02-literature.pdf , page28 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[34 <./02-literature.pdf>]
+<02-literature.pdf, id=670, page=29, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 29>
+Package pdftex.def Info: 02-literature.pdf , page29 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 29>
+Package pdftex.def Info: 02-literature.pdf , page29 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 29>
+Package pdftex.def Info: 02-literature.pdf , page29 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[35 <./02-literature.pdf>]
+<02-literature.pdf, id=675, page=30, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 30>
+Package pdftex.def Info: 02-literature.pdf , page30 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 30>
+Package pdftex.def Info: 02-literature.pdf , page30 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 30>
+Package pdftex.def Info: 02-literature.pdf , page30 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[36 <./02-literature.pdf>]
+<02-literature.pdf, id=680, page=31, 614.295pt x 794.97pt>
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 31>
+Package pdftex.def Info: 02-literature.pdf , page31 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 31>
+Package pdftex.def Info: 02-literature.pdf , page31 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 02-literature.pdf Graphic file (type pdf)
+<use 02-literature.pdf, page 31>
+Package pdftex.def Info: 02-literature.pdf , page31 used on input line 340.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[37 <./02-literature.pdf>] [38
 
-!  ==> Fatal error occurred, no output PDF file produced!
+]
+Chapter 3.
+<statement-of-contribution_algorithm.pdf, id=690, 598.27513pt x 845.19763pt>
+File: statement-of-contribution_algorithm.pdf Graphic file (type pdf)
+<use statement-of-contribution_algorithm.pdf>
+Package pdftex.def Info: statement-of-contribution_algorithm.pdf  used on input
+ line 345.
+(pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
+File: statement-of-contribution_algorithm.pdf Graphic file (type pdf)
+<use statement-of-contribution_algorithm.pdf>
+Package pdftex.def Info: statement-of-contribution_algorithm.pdf  used on input
+ line 345.
+(pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
+<statement-of-contribution_algorithm.pdf, id=693, page=1, 598.27513pt x 845.197
+63pt>
+File: statement-of-contribution_algorithm.pdf Graphic file (type pdf)
+<use statement-of-contribution_algorithm.pdf, page 1>
+Package pdftex.def Info: statement-of-contribution_algorithm.pdf , page1 used o
+n input line 345.
+(pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
+File: statement-of-contribution_algorithm.pdf Graphic file (type pdf)
+<use statement-of-contribution_algorithm.pdf, page 1>
+Package pdftex.def Info: statement-of-contribution_algorithm.pdf , page1 used o
+n input line 345.
+(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
+[39]
+File: statement-of-contribution_algorithm.pdf Graphic file (type pdf)
+<use statement-of-contribution_algorithm.pdf, page 1>
+Package pdftex.def Info: statement-of-contribution_algorithm.pdf , page1 used o
+n input line 345.
+(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
+File: statement-of-contribution_algorithm.pdf Graphic file (type pdf)
+<use statement-of-contribution_algorithm.pdf, page 1>
+Package pdftex.def Info: statement-of-contribution_algorithm.pdf , page1 used o
+n input line 345.
+(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
+File: statement-of-contribution_algorithm.pdf Graphic file (type pdf)
+<use statement-of-contribution_algorithm.pdf, page 1>
+Package pdftex.def Info: statement-of-contribution_algorithm.pdf , page1 used o
+n input line 345.
+(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
+[40 <./statement-of-contribution_algorithm.pdf>]
+<03-algorithm.pdf, id=740, 597.50829pt x 845.0471pt>
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf>
+Package pdftex.def Info: 03-algorithm.pdf  used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf>
+Package pdftex.def Info: 03-algorithm.pdf  used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<03-algorithm.pdf, id=743, page=1, 597.50829pt x 845.0471pt>
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 1>
+Package pdftex.def Info: 03-algorithm.pdf , page1 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 1>
+Package pdftex.def Info: 03-algorithm.pdf , page1 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 1>
+Package pdftex.def Info: 03-algorithm.pdf , page1 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 1>
+Package pdftex.def Info: 03-algorithm.pdf , page1 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 1>
+Package pdftex.def Info: 03-algorithm.pdf , page1 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+[41 <./03-algorithm.pdf>]
+<03-algorithm.pdf, id=775, page=2, 597.50829pt x 845.0471pt>
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 2>
+Package pdftex.def Info: 03-algorithm.pdf , page2 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 2>
+Package pdftex.def Info: 03-algorithm.pdf , page2 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 2>
+Package pdftex.def Info: 03-algorithm.pdf , page2 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+[42 <./03-algorithm.pdf>]
+<03-algorithm.pdf, id=795, page=3, 597.50829pt x 845.0471pt>
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 3>
+Package pdftex.def Info: 03-algorithm.pdf , page3 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 3>
+Package pdftex.def Info: 03-algorithm.pdf , page3 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 3>
+Package pdftex.def Info: 03-algorithm.pdf , page3 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+[43 <./03-algorithm.pdf>]
+<03-algorithm.pdf, id=810, page=4, 597.50829pt x 845.0471pt>
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 4>
+Package pdftex.def Info: 03-algorithm.pdf , page4 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 4>
+Package pdftex.def Info: 03-algorithm.pdf , page4 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 4>
+Package pdftex.def Info: 03-algorithm.pdf , page4 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+[44 <./03-algorithm.pdf>]
+<03-algorithm.pdf, id=822, page=5, 597.50829pt x 845.0471pt>
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 5>
+Package pdftex.def Info: 03-algorithm.pdf , page5 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 5>
+Package pdftex.def Info: 03-algorithm.pdf , page5 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 5>
+Package pdftex.def Info: 03-algorithm.pdf , page5 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+[45 <./03-algorithm.pdf>]
+<03-algorithm.pdf, id=829, page=6, 597.50829pt x 845.0471pt>
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 6>
+Package pdftex.def Info: 03-algorithm.pdf , page6 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 6>
+Package pdftex.def Info: 03-algorithm.pdf , page6 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 6>
+Package pdftex.def Info: 03-algorithm.pdf , page6 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+[46 <./03-algorithm.pdf>]
+<03-algorithm.pdf, id=834, page=7, 597.50829pt x 845.0471pt>
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 7>
+Package pdftex.def Info: 03-algorithm.pdf , page7 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 7>
+Package pdftex.def Info: 03-algorithm.pdf , page7 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 7>
+Package pdftex.def Info: 03-algorithm.pdf , page7 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+[47 <./03-algorithm.pdf>]
+<03-algorithm.pdf, id=841, page=8, 597.50829pt x 845.0471pt>
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 8>
+Package pdftex.def Info: 03-algorithm.pdf , page8 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 8>
+Package pdftex.def Info: 03-algorithm.pdf , page8 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 8>
+Package pdftex.def Info: 03-algorithm.pdf , page8 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+[48 <./03-algorithm.pdf>]
+<03-algorithm.pdf, id=850, page=9, 597.50829pt x 845.0471pt>
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 9>
+Package pdftex.def Info: 03-algorithm.pdf , page9 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 9>
+Package pdftex.def Info: 03-algorithm.pdf , page9 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 9>
+Package pdftex.def Info: 03-algorithm.pdf , page9 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+[49 <./03-algorithm.pdf>]
+<03-algorithm.pdf, id=855, page=10, 597.50829pt x 845.0471pt>
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 10>
+Package pdftex.def Info: 03-algorithm.pdf , page10 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 10>
+Package pdftex.def Info: 03-algorithm.pdf , page10 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 10>
+Package pdftex.def Info: 03-algorithm.pdf , page10 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+[50 <./03-algorithm.pdf>]
+<03-algorithm.pdf, id=860, page=11, 597.50829pt x 845.0471pt>
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 11>
+Package pdftex.def Info: 03-algorithm.pdf , page11 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 11>
+Package pdftex.def Info: 03-algorithm.pdf , page11 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 11>
+Package pdftex.def Info: 03-algorithm.pdf , page11 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+[51 <./03-algorithm.pdf>]
+<03-algorithm.pdf, id=868, page=12, 597.50829pt x 845.0471pt>
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 12>
+Package pdftex.def Info: 03-algorithm.pdf , page12 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 12>
+Package pdftex.def Info: 03-algorithm.pdf , page12 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 12>
+Package pdftex.def Info: 03-algorithm.pdf , page12 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+[52 <./03-algorithm.pdf>]
+<03-algorithm.pdf, id=875, page=13, 597.50829pt x 845.0471pt>
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 13>
+Package pdftex.def Info: 03-algorithm.pdf , page13 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 13>
+Package pdftex.def Info: 03-algorithm.pdf , page13 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 13>
+Package pdftex.def Info: 03-algorithm.pdf , page13 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+[53 <./03-algorithm.pdf>]
+<03-algorithm.pdf, id=900, page=14, 597.50829pt x 845.0471pt>
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 14>
+Package pdftex.def Info: 03-algorithm.pdf , page14 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 14>
+Package pdftex.def Info: 03-algorithm.pdf , page14 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 14>
+Package pdftex.def Info: 03-algorithm.pdf , page14 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+[54 <./03-algorithm.pdf>]
+<03-algorithm.pdf, id=905, page=15, 597.50829pt x 845.0471pt>
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 15>
+Package pdftex.def Info: 03-algorithm.pdf , page15 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 15>
+Package pdftex.def Info: 03-algorithm.pdf , page15 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: 03-algorithm.pdf Graphic file (type pdf)
+<use 03-algorithm.pdf, page 15>
+Package pdftex.def Info: 03-algorithm.pdf , page15 used on input line 347.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+[55 <./03-algorithm.pdf>] [56
+
+]
+Chapter 4.
+<statement-of-contribution_experiment.pdf, id=915, 598.27513pt x 845.19763pt>
+File: statement-of-contribution_experiment.pdf Graphic file (type pdf)
+<use statement-of-contribution_experiment.pdf>
+Package pdftex.def Info: statement-of-contribution_experiment.pdf  used on inpu
+t line 352.
+(pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
+File: statement-of-contribution_experiment.pdf Graphic file (type pdf)
+<use statement-of-contribution_experiment.pdf>
+Package pdftex.def Info: statement-of-contribution_experiment.pdf  used on inpu
+t line 352.
+(pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
+<statement-of-contribution_experiment.pdf, id=918, page=1, 598.27513pt x 845.19
+763pt>
+File: statement-of-contribution_experiment.pdf Graphic file (type pdf)
+<use statement-of-contribution_experiment.pdf, page 1>
+Package pdftex.def Info: statement-of-contribution_experiment.pdf , page1 used 
+on input line 352.
+(pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
+File: statement-of-contribution_experiment.pdf Graphic file (type pdf)
+<use statement-of-contribution_experiment.pdf, page 1>
+Package pdftex.def Info: statement-of-contribution_experiment.pdf , page1 used 
+on input line 352.
+(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
+[57]
+File: statement-of-contribution_experiment.pdf Graphic file (type pdf)
+<use statement-of-contribution_experiment.pdf, page 1>
+Package pdftex.def Info: statement-of-contribution_experiment.pdf , page1 used 
+on input line 352.
+(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
+File: statement-of-contribution_experiment.pdf Graphic file (type pdf)
+<use statement-of-contribution_experiment.pdf, page 1>
+Package pdftex.def Info: statement-of-contribution_experiment.pdf , page1 used 
+on input line 352.
+(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
+File: statement-of-contribution_experiment.pdf Graphic file (type pdf)
+<use statement-of-contribution_experiment.pdf, page 1>
+Package pdftex.def Info: statement-of-contribution_experiment.pdf , page1 used 
+on input line 352.
+(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
+[58 <./statement-of-contribution_experiment.pdf>]
+<04-experiment.pdf, id=965, 614.295pt x 794.97pt>
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf>
+Package pdftex.def Info: 04-experiment.pdf  used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf>
+Package pdftex.def Info: 04-experiment.pdf  used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<04-experiment.pdf, id=968, page=1, 614.295pt x 794.97pt>
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 1>
+Package pdftex.def Info: 04-experiment.pdf , page1 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 1>
+Package pdftex.def Info: 04-experiment.pdf , page1 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 1>
+Package pdftex.def Info: 04-experiment.pdf , page1 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 1>
+Package pdftex.def Info: 04-experiment.pdf , page1 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 1>
+Package pdftex.def Info: 04-experiment.pdf , page1 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[59 <./04-experiment.pdf>]
+<04-experiment.pdf, id=994, page=2, 614.295pt x 794.97pt>
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 2>
+Package pdftex.def Info: 04-experiment.pdf , page2 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 2>
+Package pdftex.def Info: 04-experiment.pdf , page2 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 2>
+Package pdftex.def Info: 04-experiment.pdf , page2 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[60 <./04-experiment.pdf>]
+<04-experiment.pdf, id=1013, page=3, 614.295pt x 794.97pt>
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 3>
+Package pdftex.def Info: 04-experiment.pdf , page3 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 3>
+Package pdftex.def Info: 04-experiment.pdf , page3 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 3>
+Package pdftex.def Info: 04-experiment.pdf , page3 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[61 <./04-experiment.pdf>]
+<04-experiment.pdf, id=1036, page=4, 614.295pt x 794.97pt>
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 4>
+Package pdftex.def Info: 04-experiment.pdf , page4 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 4>
+Package pdftex.def Info: 04-experiment.pdf , page4 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 4>
+Package pdftex.def Info: 04-experiment.pdf , page4 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[62 <./04-experiment.pdf>]
+<04-experiment.pdf, id=1051, page=5, 614.295pt x 794.97pt>
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 5>
+Package pdftex.def Info: 04-experiment.pdf , page5 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 5>
+Package pdftex.def Info: 04-experiment.pdf , page5 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 5>
+Package pdftex.def Info: 04-experiment.pdf , page5 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[63 <./04-experiment.pdf>]
+<04-experiment.pdf, id=1067, page=6, 614.295pt x 794.97pt>
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 6>
+Package pdftex.def Info: 04-experiment.pdf , page6 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 6>
+Package pdftex.def Info: 04-experiment.pdf , page6 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 6>
+Package pdftex.def Info: 04-experiment.pdf , page6 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[64 <./04-experiment.pdf>]
+<04-experiment.pdf, id=1078, page=7, 614.295pt x 794.97pt>
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 7>
+Package pdftex.def Info: 04-experiment.pdf , page7 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 7>
+Package pdftex.def Info: 04-experiment.pdf , page7 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 7>
+Package pdftex.def Info: 04-experiment.pdf , page7 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[65 <./04-experiment.pdf>]
+<04-experiment.pdf, id=1100, page=8, 614.295pt x 794.97pt>
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 8>
+Package pdftex.def Info: 04-experiment.pdf , page8 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 8>
+Package pdftex.def Info: 04-experiment.pdf , page8 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 8>
+Package pdftex.def Info: 04-experiment.pdf , page8 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[66 <./04-experiment.pdf>]
+<04-experiment.pdf, id=1111, page=9, 614.295pt x 794.97pt>
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 9>
+Package pdftex.def Info: 04-experiment.pdf , page9 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 9>
+Package pdftex.def Info: 04-experiment.pdf , page9 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 9>
+Package pdftex.def Info: 04-experiment.pdf , page9 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[67 <./04-experiment.pdf>]
+<04-experiment.pdf, id=1116, page=10, 614.295pt x 794.97pt>
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 10>
+Package pdftex.def Info: 04-experiment.pdf , page10 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 10>
+Package pdftex.def Info: 04-experiment.pdf , page10 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: 04-experiment.pdf Graphic file (type pdf)
+<use 04-experiment.pdf, page 10>
+Package pdftex.def Info: 04-experiment.pdf , page10 used on input line 354.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[68 <./04-experiment.pdf>]
+Chapter 5.
+[69
+
+] [70] [71] [72]
+Chapter 6.
+[73
+
+] [74] [75] [76
+
+]
+Appendix A.
+
+LaTeX Warning: Reference `fig:pdetection-group' on page 77 undefined on input l
+ine 439.
+
+<thesis_files/figure-latex/pdetection-group-1.pdf, id=1195, 454.69875pt x 274.0
+2374pt>
+File: thesis_files/figure-latex/pdetection-group-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/pdetection-group-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/pdetection-group-1.pdf  used
+ on input line 445.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 445--446
+[][] 
+ []
+
+[77]
+
+LaTeX Warning: Reference `fig:pdetect-trend' on page 78 undefined on input line
+ 447.
+
+
+LaTeX Warning: Reference `fig:pdetection-group' on page 78 undefined on input l
+ine 448.
+
+<thesis_files/figure-latex/pdetect-trend-1.pdf, id=1202, 454.69875pt x 274.0237
+4pt>
+File: thesis_files/figure-latex/pdetect-trend-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/pdetect-trend-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/pdetect-trend-1.pdf  used on
+ input line 454.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 454--455
+[][] 
+ []
+
+[78 <./thesis_files/figure-latex/pdetection-group-1.pdf>]
+
+LaTeX Warning: Reference `fig:pdetection-type' on page 79 undefined on input li
+ne 456.
+
+<thesis_files/figure-latex/pdetection-type-1.pdf, id=1212, 454.69875pt x 274.02
+374pt>
+File: thesis_files/figure-latex/pdetection-type-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/pdetection-type-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/pdetection-type-1.pdf  used 
+on input line 460.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 460--461
+[][] 
+ []
+
+[79 <./thesis_files/figure-latex/pdetect-trend-1.pdf>]
+<thesis_files/figure-latex/choices-1.pdf, id=1227, 433.62pt x 578.16pt>
+File: thesis_files/figure-latex/choices-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/choices-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/choices-1.pdf  used on input
+ line 476.
+(pdftex.def)             Requested size: 433.61894pt x 578.15858pt.
+
+Overfull \hbox (6.82759pt too wide) in paragraph at lines 476--477
+ [][] 
+ []
+
+
+Overfull \hbox (60.02032pt too wide) in paragraph at lines 484--505
+ [][] 
+ []
+
+
+Overfull \hbox (60.02032pt too wide) in paragraph at lines 511--532
+ [][] 
+ []
+
+
+Overfull \hbox (60.02032pt too wide) in paragraph at lines 538--559
+ [][] 
+ []
+
+[80 <./thesis_files/figure-latex/pdetection-type-1.pdf>] [81 <./thesis_files/fi
+gure-latex/choices-1.pdf>] [82]
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 572.
+<thesis_files/figure-latex/cities-geo12-1.pdf, id=1257, 454.69875pt x 274.02374
+pt>
+File: thesis_files/figure-latex/cities-geo12-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/cities-geo12-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/cities-geo12-1.pdf  used on 
+input line 576.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 576--577
+ [][] 
+ []
+
+<thesis_files/figure-latex/cities-hex12-1.pdf, id=1258, 454.69875pt x 274.02374
+pt>
+File: thesis_files/figure-latex/cities-hex12-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/cities-hex12-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/cities-hex12-1.pdf  used on 
+input line 582.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 582--583
+ [][] 
+ []
+
+<thesis_files/figure-latex/cities-geo3-1.pdf, id=1259, 454.69875pt x 274.02374p
+t>
+File: thesis_files/figure-latex/cities-geo3-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/cities-geo3-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/cities-geo3-1.pdf  used on i
+nput line 591.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 591--592
+ [][] 
+ []
+
+<thesis_files/figure-latex/cities-hex3-1.pdf, id=1260, 454.69875pt x 274.02374p
+t>
+File: thesis_files/figure-latex/cities-hex3-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/cities-hex3-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/cities-hex3-1.pdf  used on i
+nput line 597.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 597--598
+ [][] 
+ []
+
+<thesis_files/figure-latex/cities-geo4-1.pdf, id=1261, 454.69875pt x 274.02374p
+t>
+File: thesis_files/figure-latex/cities-geo4-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/cities-geo4-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/cities-geo4-1.pdf  used on i
+nput line 606.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 606--607
+ [][] 
+ []
+
+<thesis_files/figure-latex/cities-hex4-1.pdf, id=1262, 454.69875pt x 274.02374p
+t>
+File: thesis_files/figure-latex/cities-hex4-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/cities-hex4-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/cities-hex4-1.pdf  used on i
+nput line 612.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 612--613
+ [][] 
+ []
+
+<thesis_files/figure-latex/cities-geo9-1.pdf, id=1263, 454.69875pt x 274.02374p
+t>
+File: thesis_files/figure-latex/cities-geo9-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/cities-geo9-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/cities-geo9-1.pdf  used on i
+nput line 621.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 621--622
+ [][] 
+ []
+
+<thesis_files/figure-latex/cities-hex9-1.pdf, id=1264, 454.69875pt x 274.02374p
+t>
+File: thesis_files/figure-latex/cities-hex9-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/cities-hex9-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/cities-hex9-1.pdf  used on i
+nput line 627.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 627--628
+ [][] 
+ []
+
+[83 <./thesis_files/figure-latex/cities-geo12-1.pdf>] [84 <./thesis_files/figur
+e-latex/cities-hex12-1.pdf> <./thesis_files/figure-latex/cities-geo3-1.pdf>] [8
+5 <./thesis_files/figure-latex/cities-hex3-1.pdf> <./thesis_files/figure-latex/
+cities-geo4-1.pdf>] [86 <./thesis_files/figure-latex/cities-hex4-1.pdf> <./thes
+is_files/figure-latex/cities-geo9-1.pdf>]
+<thesis_files/figure-latex/three-geo12-1.pdf, id=1326, 454.69875pt x 274.02374p
+t>
+File: thesis_files/figure-latex/three-geo12-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/three-geo12-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/three-geo12-1.pdf  used on i
+nput line 639.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 639--640
+ [][] 
+ []
+
+<thesis_files/figure-latex/three-hex12-1.pdf, id=1327, 454.69875pt x 274.02374p
+t>
+File: thesis_files/figure-latex/three-hex12-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/three-hex12-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/three-hex12-1.pdf  used on i
+nput line 645.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 645--646
+ [][] 
+ []
+
+<thesis_files/figure-latex/three-geo5-1.pdf, id=1328, 454.69875pt x 274.02374pt
+>
+File: thesis_files/figure-latex/three-geo5-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/three-geo5-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/three-geo5-1.pdf  used on in
+put line 654.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 654--655
+ [][] 
+ []
+
+<thesis_files/figure-latex/three-hex5-1.pdf, id=1329, 454.69875pt x 274.02374pt
+>
+File: thesis_files/figure-latex/three-hex5-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/three-hex5-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/three-hex5-1.pdf  used on in
+put line 660.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 660--661
+ [][] 
+ []
+
+<thesis_files/figure-latex/three-geo8-1.pdf, id=1330, 454.69875pt x 274.02374pt
+>
+File: thesis_files/figure-latex/three-geo8-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/three-geo8-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/three-geo8-1.pdf  used on in
+put line 669.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 669--670
+ [][] 
+ []
+
+<thesis_files/figure-latex/three-hex8-1.pdf, id=1331, 454.69875pt x 274.02374pt
+>
+File: thesis_files/figure-latex/three-hex8-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/three-hex8-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/three-hex8-1.pdf  used on in
+put line 675.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 675--676
+ [][] 
+ []
+
+<thesis_files/figure-latex/three-geo9-1.pdf, id=1332, 454.69875pt x 274.02374pt
+>
+File: thesis_files/figure-latex/three-geo9-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/three-geo9-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/three-geo9-1.pdf  used on in
+put line 684.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 684--685
+ [][] 
+ []
+
+<thesis_files/figure-latex/three-hex9-1.pdf, id=1333, 454.69875pt x 274.02374pt
+>
+File: thesis_files/figure-latex/three-hex9-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/three-hex9-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/three-hex9-1.pdf  used on in
+put line 690.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 690--691
+ [][] 
+ []
+
+[87 <./thesis_files/figure-latex/cities-hex9-1.pdf>] [88 <./thesis_files/figure
+-latex/three-geo12-1.pdf> <./thesis_files/figure-latex/three-hex12-1.pdf>] [89 
+<./thesis_files/figure-latex/three-geo5-1.pdf> <./thesis_files/figure-latex/thr
+ee-hex5-1.pdf>] [90 <./thesis_files/figure-latex/three-geo8-1.pdf> <./thesis_fi
+les/figure-latex/three-hex8-1.pdf>] [91 <./thesis_files/figure-latex/three-geo9
+-1.pdf> <./thesis_files/figure-latex/three-hex9-1.pdf>]
+<thesis_files/figure-latex/nwse-geo2-1.pdf, id=1409, 454.69875pt x 274.02374pt>
+
+File: thesis_files/figure-latex/nwse-geo2-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/nwse-geo2-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/nwse-geo2-1.pdf  used on inp
+ut line 702.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 702--703
+ [][] 
+ []
+
+<thesis_files/figure-latex/nwse-hex2-1.pdf, id=1410, 454.69875pt x 274.02374pt>
+
+File: thesis_files/figure-latex/nwse-hex2-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/nwse-hex2-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/nwse-hex2-1.pdf  used on inp
+ut line 708.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 708--709
+ [][] 
+ []
+
+<thesis_files/figure-latex/nwse-geo3-1.pdf, id=1411, 454.69875pt x 274.02374pt>
+
+File: thesis_files/figure-latex/nwse-geo3-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/nwse-geo3-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/nwse-geo3-1.pdf  used on inp
+ut line 717.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 717--718
+ [][] 
+ []
+
+<thesis_files/figure-latex/nwse-hex3-1.pdf, id=1412, 454.69875pt x 274.02374pt>
+
+File: thesis_files/figure-latex/nwse-hex3-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/nwse-hex3-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/nwse-hex3-1.pdf  used on inp
+ut line 723.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 723--724
+ [][] 
+ []
+
+<thesis_files/figure-latex/nwse-geo5-1.pdf, id=1413, 454.69875pt x 274.02374pt>
+
+File: thesis_files/figure-latex/nwse-geo5-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/nwse-geo5-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/nwse-geo5-1.pdf  used on inp
+ut line 732.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 732--733
+ [][] 
+ []
+
+<thesis_files/figure-latex/nwse-hex5-1.pdf, id=1414, 454.69875pt x 274.02374pt>
+
+File: thesis_files/figure-latex/nwse-hex5-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/nwse-hex5-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/nwse-hex5-1.pdf  used on inp
+ut line 738.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 738--739
+ [][] 
+ []
+
+<thesis_files/figure-latex/nwse-geo6-1.pdf, id=1415, 454.69875pt x 274.02374pt>
+
+File: thesis_files/figure-latex/nwse-geo6-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/nwse-geo6-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/nwse-geo6-1.pdf  used on inp
+ut line 747.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 747--748
+ [][] 
+ []
+
+<thesis_files/figure-latex/nwse-hex6-1.pdf, id=1416, 454.69875pt x 274.02374pt>
+
+File: thesis_files/figure-latex/nwse-hex6-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/nwse-hex6-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/nwse-hex6-1.pdf  used on inp
+ut line 753.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 753--754
+ [][] 
+ []
+
+[92 <./thesis_files/figure-latex/nwse-geo2-1.pdf>] [93 <./thesis_files/figure-l
+atex/nwse-hex2-1.pdf> <./thesis_files/figure-latex/nwse-geo3-1.pdf>] [94 <./the
+sis_files/figure-latex/nwse-hex3-1.pdf> <./thesis_files/figure-latex/nwse-geo5-
+1.pdf>] [95 <./thesis_files/figure-latex/nwse-hex5-1.pdf> <./thesis_files/figur
+e-latex/nwse-geo6-1.pdf>] [96 <./thesis_files/figure-latex/nwse-hex6-1.pdf>]
+Appendix B.
+<thesis_files/figure-latex/instruct-1.pdf, id=1488, 454.69875pt x 274.02374pt>
+File: thesis_files/figure-latex/instruct-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/instruct-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/instruct-1.pdf  used on inpu
+t line 766.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 766--767
+ [][] 
+ []
+
+[97
+
+ <./thesis_files/figure-latex/instruct-1.pdf>]
+<thesis_files/figure-latex/training1-1.pdf, id=1501, 454.69875pt x 274.02374pt>
+
+File: thesis_files/figure-latex/training1-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/training1-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/training1-1.pdf  used on inp
+ut line 777.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 777--778
+ [][] 
+ []
+
+<thesis_files/figure-latex/training2-1.pdf, id=1502, 454.69875pt x 274.02374pt>
+
+File: thesis_files/figure-latex/training2-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/training2-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/training2-1.pdf  used on inp
+ut line 783.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 783--784
+ [][] 
+ []
+
+[98 <./thesis_files/figure-latex/training1-1.pdf>]
+<thesis_files/figure-latex/survey-demogs-1.pdf, id=1517, 454.69875pt x 274.0237
+4pt>
+File: thesis_files/figure-latex/survey-demogs-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/survey-demogs-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/survey-demogs-1.pdf  used on
+ input line 797.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 797--798
+ [][] 
+ []
+
+<thesis_files/figure-latex/survey-choro-1.pdf, id=1518, 454.69875pt x 274.02374
+pt>
+File: thesis_files/figure-latex/survey-choro-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/survey-choro-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/survey-choro-1.pdf  used on 
+input line 803.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 803--804
+ [][] 
+ []
+
+<thesis_files/figure-latex/survey-hex-1.pdf, id=1519, 454.69875pt x 274.02374pt
+>
+File: thesis_files/figure-latex/survey-hex-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/survey-hex-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/survey-hex-1.pdf  used on in
+put line 809.
+(pdftex.def)             Requested size: 454.69763pt x 274.02307pt.
+
+Overfull \hbox (27.90628pt too wide) in paragraph at lines 809--810
+ [][] 
+ []
+
+[99 <./thesis_files/figure-latex/training2-1.pdf>] [100 <./thesis_files/figure-
+latex/survey-demogs-1.pdf> <./thesis_files/figure-latex/survey-choro-1.pdf>] [1
+01 <./thesis_files/figure-latex/survey-hex-1.pdf>] [102
+
+]
+Appendix C.
+
+
+pdfTeX warning: pdflatex.exe (file ./Ethics_1.pdf): PDF inclusion: found PDF ve
+rsion <1.7>, but at most version <1.5> allowed
+<Ethics_1.pdf, id=1557, 597.55246pt x 845.19763pt>
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf>
+Package pdftex.def Info: Ethics_1.pdf  used on input line 816.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Ethics_1.pdf): PDF inclusion: found PDF ve
+rsion <1.7>, but at most version <1.5> allowed
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf>
+Package pdftex.def Info: Ethics_1.pdf  used on input line 816.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Ethics_1.pdf): PDF inclusion: found PDF ve
+rsion <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./Ethics_1.pdf): PDF inclusion: found PDF ve
+rsion <1.7>, but at most version <1.5> allowed
+<Ethics_1.pdf, id=1560, page=1, 597.55246pt x 845.19763pt>
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf, page 1>
+Package pdftex.def Info: Ethics_1.pdf , page1 used on input line 816.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf, page 1>
+Package pdftex.def Info: Ethics_1.pdf , page1 used on input line 816.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+[103]
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf, page 1>
+Package pdftex.def Info: Ethics_1.pdf , page1 used on input line 816.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf, page 1>
+Package pdftex.def Info: Ethics_1.pdf , page1 used on input line 816.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf, page 1>
+Package pdftex.def Info: Ethics_1.pdf , page1 used on input line 816.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+[104 <./Ethics_1.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Ethics_1.pdf): PDF inclusion: found PDF ve
+rsion <1.7>, but at most version <1.5> allowed
+<Ethics_1.pdf, id=1596, page=2, 597.55246pt x 845.19763pt>
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf, page 2>
+Package pdftex.def Info: Ethics_1.pdf , page2 used on input line 816.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf, page 2>
+Package pdftex.def Info: Ethics_1.pdf , page2 used on input line 816.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf, page 2>
+Package pdftex.def Info: Ethics_1.pdf , page2 used on input line 816.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+[105 <./Ethics_1.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Ethics_1.pdf): PDF inclusion: found PDF ve
+rsion <1.7>, but at most version <1.5> allowed
+<Ethics_1.pdf, id=1604, page=3, 597.55246pt x 845.19763pt>
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf, page 3>
+Package pdftex.def Info: Ethics_1.pdf , page3 used on input line 816.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf, page 3>
+Package pdftex.def Info: Ethics_1.pdf , page3 used on input line 816.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf, page 3>
+Package pdftex.def Info: Ethics_1.pdf , page3 used on input line 816.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+[106 <./Ethics_1.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Ethics_1.pdf): PDF inclusion: found PDF ve
+rsion <1.7>, but at most version <1.5> allowed
+<Ethics_1.pdf, id=1624, page=4, 597.55246pt x 845.19763pt>
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf, page 4>
+Package pdftex.def Info: Ethics_1.pdf , page4 used on input line 816.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf, page 4>
+Package pdftex.def Info: Ethics_1.pdf , page4 used on input line 816.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf, page 4>
+Package pdftex.def Info: Ethics_1.pdf , page4 used on input line 816.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+[107 <./Ethics_1.pdf>] [108
+
+] [109] [110] [111]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 822.
+[112]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 822.
+(thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 822.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 822.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 29859B9BD2B6A4E47A03D565FCAB8431;2323.
+
+LaTeX Warning: There were undefined references.
+
+Package logreq Info: Writing requests to 'thesis.run.xml'.
+\openout1 = `thesis.run.xml'.
+
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 102 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 31111 strings out of 492484
+ 562502 string characters out of 3130514
+ 1071160 words of memory out of 3000000
+ 34498 multiletter control sequences out of 15000+200000
+ 622906 words of font info for 230 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,19n,71p,1047b,18028s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsltt10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C
+:/Users/steff/AppData/Roaming/MiKTeX/2.9/fonts/type1/bera/fvmb8a.pfb><C:/Users/
+steff/AppData/Roaming/MiKTeX/2.9/fonts/type1/bera/fvmr8a.pfb><C:/Users/steff/Ap
+pData/Roaming/MiKTeX/2.9/fonts/type1/bera/fvmro8a.pfb><C:/Users/steff/AppData/R
+oaming/MiKTeX/2.9/fonts/type1/bera/fvsb8a.pfb><C:/Users/steff/AppData/Roaming/M
+iKTeX/2.9/fonts/type1/bera/fvsr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
+m/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/urw/courier/ucrr8a.pfb><C:/Users/steff/AppData/Roaming/MiKTeX/2.9/fonts/ty
+pe1/urw/palatino/uplb8a.pfb><C:/Users/steff/AppData/Roaming/MiKTeX/2.9/fonts/ty
+pe1/urw/palatino/uplr8a.pfb><C:/Users/steff/AppData/Roaming/MiKTeX/2.9/fonts/ty
+pe1/urw/palatino/uplri8a.pfb><C:/Users/steff/AppData/Roaming/MiKTeX/2.9/fonts/t
+ype1/urw/times/utmb8a.pfb><C:/Users/steff/AppData/Roaming/MiKTeX/2.9/fonts/type
+1/urw/times/utmbi8a.pfb><C:/Users/steff/AppData/Roaming/MiKTeX/2.9/fonts/type1/
+urw/times/utmr8a.pfb><C:/Users/steff/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw
+/times/utmri8a.pfb><C:/Users/steff/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/z
+apfchan/uzcmi8a.pfb>
+Output written on thesis.pdf (134 pages, 25753072 bytes).
+PDF statistics:
+ 1819 PDF objects out of 2073 (max. 8388607)
+ 312 named destinations out of 1000 (max. 500000)
+ 34692 words of extra memory for PDF output out of 35830 (max. 10000000)
+

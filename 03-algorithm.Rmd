@@ -8,4 +8,4 @@ knit: "bookdown::render_book"
 
 \includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_algorithm.pdf}
 
-\includepdf[pages = {1-11}, scale=1]{algorithm.pdf}
+\includepdf[pages = {1-}, scale=1]{03-algorithm.pdf}

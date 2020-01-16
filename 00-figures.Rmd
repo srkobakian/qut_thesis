@@ -5,7 +5,7 @@ knit: "bookdown::render_book"
 # List of Figures {-}
 
 ```{r}
-
+# figures in the lit review paper
 figs2 <- tibble::tibble(
   Chapter = c(rep("2", 6)),
   Figure = c(seq(1:6)),
@@ -15,9 +15,11 @@ figs2 <- tibble::tibble(
     "Two alternative displays, tile map (left) and geofaceted map (right), showing state age-adjusted rate of incidence for lung and bronchus in the USA.",
     "Cartograms showing melanoma incidence in Australia.",
     "Interactive controls of displays in publicly available choropleth cancer maps",
-    "Two examples of advanced interactivity (and animation) in publicly available choropleth cancer maps.")
+    "Two examples of advanced interactivity (and animation) in publicly available choropleth cancer maps."),
+  Page = c(12, 20, 23, 25, 28, 29)
 )
 
+# figures in the algorithm chapter
 figs3 <- tibble::tibble(
   Chapter = c(rep("3", 6)),
   Figure = c(seq(1:6)),
@@ -27,7 +29,9 @@ figs3 <- tibble::tibble(
     "Filter for grid points within a square, then circular, distance for those closest to the centroid.",
     " A complete hexagon tile map of Tasmania",
     "The Australian Cancer Atlas data has determined the colour of each Statistical Area of Australian at Level 2",
-    "A choropleth map of the Statistical Areas of Australia at Level 2."))
+    "A choropleth map of the Statistical Areas of Australia at Level 2."), 
+  Page = c(12, 20, 23, 25, 28, 29)
+)
 
 
 figs4 <- tibble::tibble(
@@ -40,7 +44,8 @@ figs4 <- tibble::tibble(
     "The experimental design used in the visual inference study.",
     "The detection rates achieved by participants are contrasted when viewing the four replicates of the three trend models",
     "The distribution of the time taken (seconds) to submit a response for each combination of trend, whether the data plot was detected, and type of display, shown using horizontally jittered dotplots.",
-    "The amount of times each level of certainty was chosen by participants when viewing hexagon tile map or choropleth displays.")
+    "The amount of times each level of certainty was chosen by participants when viewing hexagon tile map or choropleth displays."), 
+  Page = c(12, 20, 23, 25, 28, 29, 30)
 )
 ```
 

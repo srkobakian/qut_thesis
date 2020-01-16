@@ -5,6 +5,10 @@ knit: "bookdown::render_book"
 
 # Literature Review {#ch:literature}
 
+The following chapters in this thesis each contain an introductory section to introduce the relevant literature. This literature review chapter provides an overview of the key areas of interest in the literature that are relevant to this research. This chapter is organised as follows. Section 1 outlines the traditional spatial mapping technique, the choropleth map, and provides design inspiration using examples of online cancer atlases. Section 2 outlines contemporary mapping approaches, suggested as alternatives to the choropleth. Section 3 compares and critiques these alternative displays in light of the strengths and weaknesses of the choropleth method. section 4 considers how users interact with mapping displays in online cancer atlases, and how map creators can direct the attention of uses through animation.
+
+
+
 \includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_literature.pdf}
 
-\includepdf[pages = {1-33}, scale=1]{literature.pdf}
+\includepdf[pages = {1-}, scale=1]{02-literature.pdf}
