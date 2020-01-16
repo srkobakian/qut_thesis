@@ -42,7 +42,7 @@ In this protocol, the null hypothesis can be rejected in favour of the alternati
 
 
 
-## Aims and Objectives
+## Aims and Objectives {#sec:aims}
 
 This work aims to provide a solution to presenting geospatial data regarding populations. 
 It considers the visualisation methods developed over the past two centuries that shift the focus from the geographic map base.

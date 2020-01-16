@@ -120,7 +120,7 @@ plots <- d %>% group_by(group, trend, type, location) %>%
 
 The detection rate is considered for each lineup. The detection rates for group A were less varied than the detection rates for the lineups seen by group B. Fig. \ref{fig:pdetection-group} shows the distribution using a boxplot. This shows the median value for detection rate was extremely similar.
 
-```{r pdetection-group}
+```{r pdetection-group, fig.cap = ""}
 plots %>% ggplot(aes(x = group, y = pdetect)) + 
   geom_boxplot() + 
   geom_jitter(width = 0.1) +
@@ -131,7 +131,7 @@ plots %>% ggplot(aes(x = group, y = pdetect)) +
 The overall detection rate is considered for each trend model in Fig. \ref{fig:pdetect-trend}.
 The detection rates for the NW-SE trend model was less varied than the detection rates for the Three Cities and All Cities trends. Fig. \ref{fig:pdetection-group} shows the distribution using a boxplot. This shows the distributions of the rates do not overlap for NW-SE and Three Cities trends, the Three cities range was larger, but the median was much higher for the NW-SE trend. The All Cities trend model distribution overlaps with the NW-SE and All Cities trends.
 
-```{r pdetect-trend}
+```{r pdetect-trend, fig.cap = ""}
 plots %>% ggplot(aes(x = trend, y = pdetect, fill = trend)) + 
   geom_boxplot() + 
   scale_fill_manual(values = trend_colours) +
@@ -145,7 +145,7 @@ The boxplots in Fig. \ref{fig:pdetection-type} contrast the distribution of the 
 The detection rates across the lineups was less varied for the hexagon display. There was a large difference in the medians for the types of displays.
 Without considering the relationship for each lineup, the hexagon lineup display allowed the participants to achieve higher detection rates.
 
-```{r pdetection-type}
+```{r pdetection-type, fig.cap = ""}
 plots %>% ggplot(aes(x = type, y = pdetect, fill = type)) + 
   geom_boxplot() + 
   geom_jitter(width = 0.1) +
@@ -169,7 +169,7 @@ In the lineups of All Cities displays, participants were misled by the choroplet
 All of Three Cities displays, except (4), were detected in the hexagon display. All except one lineup had at least one participant select the correct map in the lineup as shown in Fig. \ref{fig:choices}.
 
 
-```{r choices, fig.cap = "Each facet is associated with one lineup, the height of the points show the proportion of the participants that made each choice when considering each lineup. The points coloured orange show the map which contained a trend model, these are the correct choices. The numbers differentiate the replicates of each trend model and type of map display. Participants were able to select 0 to indicate they did not want to choose a map.", fig.height = 8, fig.width =6, results = "asis"}
+```{r choices, fig.cap = "Each facet is associated with one lineup, the height of the points show the proportion of the participants that made each choice when considering each lineup. The points coloured orange show the map which contained a trend model, these are the correct choices. The numbers differentiate the replicates of each trend model and type of map display. Participants were able to select 0 to indicate they did not want to choose a map.", fig.height = 8, fig.width = 6, results = "asis"}
 d %>% 
   count(type, trend, choice, replicate, choice, detect_f) %>% 
   group_by(type, trend, replicate) %>% 

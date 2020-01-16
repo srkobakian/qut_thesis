@@ -16,21 +16,22 @@ figs2 <- tibble::tibble(
     "Cartograms showing melanoma incidence in Australia.",
     "Interactive controls of displays in publicly available choropleth cancer maps",
     "Two examples of advanced interactivity (and animation) in publicly available choropleth cancer maps."),
-  Page = c(12, 20, 23, 25, 28, 29)
+  Page = c(12, 20, 24, 26, 30, 32)
 )
 
 # figures in the algorithm chapter
 figs3 <- tibble::tibble(
-  Chapter = c(rep("3", 6)),
-  Figure = c(seq(1:6)),
+  Chapter = c(rep("3", 7)),
+  Figure = c(seq(1:7)),
   Caption = c(
     "Grid points to create a tilegram.",
     "All possible hexagon locations from the initial grid are shown with blue outlines.",
     "Filter for grid points within a square, then circular, distance for those closest to the centroid.",
-    " A complete hexagon tile map of Tasmania",
+    "A complete hexagon tile map of Tasmania",
     "The Australian Cancer Atlas data has determined the colour of each Statistical Area of Australian at Level 2",
-    "A choropleth map of the Statistical Areas of Australia at Level 2."), 
-  Page = c(12, 20, 23, 25, 28, 29)
+    "A choropleth map of the Statistical Areas of Australia at Level 2.",
+    "A hexagon tile map of the Statistical Areas of Australia at Level 2."), 
+  Page = c(1, 2, 2, 2, 2, 9, 0)
 )
 
 

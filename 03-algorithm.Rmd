@@ -4,7 +4,16 @@ knit: "bookdown::render_book"
 ---
 
 
-# Algorithm {#ch:algorithm}
+# An algorithm for creating a\ntessellated hexagon display {#ch:algorithm}
+
+This chapter relates to the first research aim as stated in \ref{sec:aims}.
+The chapter introduces the step devised for the algorithm.
+The chapter frames the steps in light of the `sugarbag` [@sugarbag] package functions that allow users to enact the algorithm in `R` [@R]. It uses the Statisical Areas of Australia at Level 2, taking a subset and considering only those located within the island of Tasmania.
+It also provides an example of how to animate between the choropleth map display and the hexagon tile map.
+
+
+This chapter was submitted for publication to the *Journal of Statistical Software* for publication. 
+The steps in this algorithm are implemented in the `sugarbag` [@sugarbag] package for `R` [@R].
 
 \includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_algorithm.pdf}
 

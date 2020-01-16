@@ -5,6 +5,14 @@ knit: "bookdown::render_book"
 
 # Visual Inference Study {#ch:experiment}
 
+This chapter tests the performance of the hexagon tile map display created using the algorithm discussed in \ref{ch:algorithm}.
+It outlines the lineup protocol method of visual inference used to test information visualisations.
+Using a two factor experimental design, the experiment contrasts the performance of participants when they viewed a choropleth map, and a hexagon tile map.
+The contrast also involved three types of spatial trends, one geographic trend, and two population related distributions. 
+The results showed that participants did in fact more accurately find the population related distributions. 
+
+This chapter has been submitted to the journal *IEEE Transactions of Visualisation and Computer Graphics*.
+
 \includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_experiment.pdf}
 
 \includepdf[pages = {1-}, scale=1]{04-experiment.pdf}

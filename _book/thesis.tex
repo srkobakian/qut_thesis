@@ -79,21 +79,22 @@ Using animations will allow us to control how people transform a recognisable ma
     \StringTok{"Cartograms showing melanoma incidence in Australia."}\NormalTok{,}
     \StringTok{"Interactive controls of displays in publicly available choropleth cancer maps"}\NormalTok{,}
     \StringTok{"Two examples of advanced interactivity (and animation) in publicly available choropleth cancer maps."}\NormalTok{),}
-  \DataTypeTok{Page =} \KeywordTok{c}\NormalTok{(}\DecValTok{12}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{23}\NormalTok{, }\DecValTok{25}\NormalTok{, }\DecValTok{28}\NormalTok{, }\DecValTok{29}\NormalTok{)}
+  \DataTypeTok{Page =} \KeywordTok{c}\NormalTok{(}\DecValTok{12}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{24}\NormalTok{, }\DecValTok{26}\NormalTok{, }\DecValTok{28}\NormalTok{, }\DecValTok{29}\NormalTok{)}
 \NormalTok{)}
 
 \CommentTok{# figures in the algorithm chapter}
 \NormalTok{figs3 <-}\StringTok{ }\NormalTok{tibble}\OperatorTok{::}\KeywordTok{tibble}\NormalTok{(}
-  \DataTypeTok{Chapter =} \KeywordTok{c}\NormalTok{(}\KeywordTok{rep}\NormalTok{(}\StringTok{"3"}\NormalTok{, }\DecValTok{6}\NormalTok{)),}
-  \DataTypeTok{Figure =} \KeywordTok{c}\NormalTok{(}\KeywordTok{seq}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{6}\NormalTok{)),}
+  \DataTypeTok{Chapter =} \KeywordTok{c}\NormalTok{(}\KeywordTok{rep}\NormalTok{(}\StringTok{"3"}\NormalTok{, }\DecValTok{7}\NormalTok{)),}
+  \DataTypeTok{Figure =} \KeywordTok{c}\NormalTok{(}\KeywordTok{seq}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{7}\NormalTok{)),}
   \DataTypeTok{Caption =} \KeywordTok{c}\NormalTok{(}
     \StringTok{"Grid points to create a tilegram."}\NormalTok{,}
     \StringTok{"All possible hexagon locations from the initial grid are shown with blue outlines."}\NormalTok{,}
     \StringTok{"Filter for grid points within a square, then circular, distance for those closest to the centroid."}\NormalTok{,}
-    \StringTok{" A complete hexagon tile map of Tasmania"}\NormalTok{,}
+    \StringTok{"A complete hexagon tile map of Tasmania"}\NormalTok{,}
     \StringTok{"The Australian Cancer Atlas data has determined the colour of each Statistical Area of Australian at Level 2"}\NormalTok{,}
-    \StringTok{"A choropleth map of the Statistical Areas of Australia at Level 2."}\NormalTok{), }
-  \DataTypeTok{Page =} \KeywordTok{c}\NormalTok{(}\DecValTok{12}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{23}\NormalTok{, }\DecValTok{25}\NormalTok{, }\DecValTok{28}\NormalTok{, }\DecValTok{29}\NormalTok{)}
+    \StringTok{"A choropleth map of the Statistical Areas of Australia at Level 2."}\NormalTok{,}
+    \StringTok{"A hexagon tile map of the Statistical Areas of Australia at Level 2."}\NormalTok{), }
+  \DataTypeTok{Page =} \KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{9}\NormalTok{, }\DecValTok{0}\NormalTok{)}
 \NormalTok{)}
 
 
@@ -298,8 +299,8 @@ It is put in a lineup of innocent displays that do not show a real population ba
 If the `witness' chooses the `accused' as different from the innocent plots, it can be considered that there is a specific pattern displayed that is not present in the others.
 In this protocol, the null hypothesis can be rejected in favour of the alternative when it is chosen in the lineup. The null hypothesis fails to be rejected when it is not selected in the lineup.
 
-\hypertarget{aims-and-objectives}{%
-\section{Aims and Objectives}\label{aims-and-objectives}}
+\hypertarget{sec:aims}{%
+\section{Aims and Objectives}\label{sec:aims}}
 
 This work aims to provide a solution to presenting geospatial data regarding populations.
 It considers the visualisation methods developed over the past two centuries that shift the focus from the geographic map base.
@@ -335,6 +336,10 @@ Chapter five provides a conclusion of the results of the visual inference study 
 \hypertarget{ch:literature}{%
 \chapter{Literature Review}\label{ch:literature}}
 
+The following chapters in this thesis each contain an introductory section to introduce the relevant literature. This literature review chapter provides an overview of the key areas of interest in the literature that are relevant to this research. This chapter is organised as follows. Section 1 outlines the traditional spatial mapping technique, the choropleth map, and provides design inspiration using examples of online cancer atlases. Section 2 outlines contemporary mapping approaches, suggested as alternatives to the choropleth. Section 3 compares and critiques these alternative displays in light of the strengths and weaknesses of the choropleth method. section 4 considers how users interact with mapping displays in online cancer atlases, and how map creators can direct the attention of uses through animation.
+
+This chapter was submitted for publication to the journal \emph{Annals of Cancer Epidemiology} for publication. This was intended for an audience of cancer atlas creators to be inspired by current atlases, and to encourage the pursuit of alternative displays.
+
 \includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_literature.pdf}
 
 \includepdf[pages = {1-}, scale=1]{02-literature.pdf}
@@ -342,12 +347,28 @@ Chapter five provides a conclusion of the results of the visual inference study 
 \hypertarget{ch:algorithm}{%
 \chapter{Algorithm}\label{ch:algorithm}}
 
+This chapter relates to the first research aim as stated in \ref{sec:aims}.
+The chapter introduces the step devised for the algorithm.
+The chapter frames the steps in light of the \texttt{sugarbag} \autocite{sugarbag} package functions that allow users to enact the algorithm in \texttt{R} \autocite{R}. It uses the Statisical Areas of Australia at Level 2, taking a subset and considering only those located within the island of Tasmania.
+It also provides an example of how to animate between the choropleth map display and the hexagon tile map.
+
+This chapter was submitted for publication to the \emph{Journal of Statistical Software} for publication.
+The steps in this algorithm are implemented in the \texttt{sugarbag} \autocite{sugarbag} package for \texttt{R} \autocite{R}.
+
 \includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_algorithm.pdf}
 
 \includepdf[pages = {1-}, scale=1]{03-algorithm.pdf}
 
 \hypertarget{ch:experiment}{%
 \chapter{Visual Inference Study}\label{ch:experiment}}
+
+This chapter tests the performance of the hexagon tile map display created using the algorithm discussed in \ref{ch:algorithm}.
+It outlines the lineup protocol method of visual inference used to test information visualisations.
+Using a two factor experimental design, the experiment contrasts the performance of participants when they viewed a choropleth map, and a hexagon tile map.
+The contrast also involved three types of spatial trends, one geographic trend, and two population related distributions.
+The results showed that participants did in fact more accurately find the population related distributions.
+
+This chapter has been submitted to the journal \emph{IEEE Transactions of Visualisation and Computer Graphics}.
 
 \includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_experiment.pdf}
 
