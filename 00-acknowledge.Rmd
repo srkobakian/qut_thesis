@@ -4,19 +4,49 @@ knit: "bookdown::render_book"
 
 # Acknowledgements {-}
 
-We would like to acknowledge Dr Earl Duncan (Research Associate at ARC Centre of Excellence for Mathematical & Statistical Frontiers, QUT). His time and effort given to edit and comment on this paper was invaluable.
+This thesis would not be possible without the opportunity provided by Queensland University of Technology, Cancer Council Queensland and the ARC Centre of Excellence for Mathematical & Statistical Frontiers.
 
+I would like to acknowledge my supervisors for their tireless work in directing, encouraging and supporting this work.
 
-We thank Dr Susanna Cramb (Spatial Modeller, Cancer Council Queensland) and Dr Peter Baade (Senior Research Fellow, Cancer Council Queensland) for providing the opportunity to cover this exploration of disease mapping methods in writing.
-This literature review would not be possible without the opportunity provided by Queensland University of Technology, and Cancer Council Queensland, and the roles of Professor Kerrie Mengersen (Professor of Statistics, Science and Engineering Faculty, QUT) and Dr Earl Duncan in contributing to the Australian Cancer Atlas and supervision of Stephanie's Research Masters.
+Professor Kerrie Mengersen (Professor of Statistics, Science and Engineering Faculty, QUT) provided the opportunity to study at Queensland University of Technology, organising and supervising this project.
 
-It was in the development of this online cancer atlas that methods for disease map displays, and visual communication strategies were explored. We are thankful for the opportunity to write about these visualizations and the situations in which they are appropriate.
+Dr Earl Duncan (Research Associate at ARC Centre of Excellence for Mathematical & Statistical Frontiers, QUT) provided time and effort for to discussion, editing and commenting throughout this degree.
 
-Several R [@R] packages were used to produce this paper.
-For data analysis the tidyverse package [@tidyverse] provided many useful functions.
-ggplot2 package [@ggplot2] was used to create maps, with RColorBrewer package [@RColorBrewer] providing additional color palettes and ggthemes [@ggthemes] package providing themes.
-The png package [@png] was used to access png images taken from online web atlases, cowplot package [@cowplot] was used to arrange these plots into grouped images.
+Professor Dianne Cook (Professor, Department of Econometrics and Business Statistics, Monash University) provided constant support, encouragement and recommendations throughout this degree.
+Working closely with Prof.. Di Cook enabled the rapid development of my research and writing skills. 
 
-The following packages were used to create transformations from the sf [@sf] geographical shapes of the states of America [@spData] and the Australian Statistical Areas (Level 3):
-The cartogram [@cartogram] package creates contiguous, non-contiguous and Dorling cartograms.
-Hexagon tile map displays were created using the sugarbag package [@sugarbag].
+## Literature review
+
+We would like to acknowledge Dr Susanna Cramb (Spatial Modeller, Cancer Council Queensland) and Dr Peter Baade (Senior Research Fellow, Cancer Council Queensland) for providing the opportunity and time to discuss alternative map solutions for presentation in the Australian Cancer Atlas.
+It was in the development of this online cancer atlas that methods for disease map displays, and visual communication strategies were explored. 
+
+## Visual inference study
+
+Stephanie would like to thank Mitchell O'Hara-Wild was a co-developer of the taipan [@taipan] R package for the web app constructed to collect participant evaluations of lineups. 
+
+We are thankful for the NUMBATs (Non-Uniform Monash Business Analytics Team) for participating in the pilot study that helped to assess the experimental design and determine an appropriate sample size for the study. 
+
+## R packages 
+
+Several `R` [@R] packages were used to produce this thesis:
+
+ - `absmapsdata` [@ABSmaps]
+ - `cartogram` [@cartogram]
+ - `cowplot` [@cowplot]
+ - `eechidna` [@eechidna]
+ - `ggplot2` [@ggplot2] 
+ - `ggthemes` [@ggthemes]
+ - `grid` [@grid]
+ - `gstat` [@gstat]
+ - `kableExtra` [@kableExtra].
+ - `knitr` [@knitr]
+ - `lme4` [@lme4]
+ - `nullabor` [@nullabor]
+ - `png` [@png]
+ - `RColorBrewer` [@RColorBrewer] 
+ - `rmarkdown` [@rmarkdown] 
+ - `rticles` [@rticles]
+ - `sf` [@sf] 
+ - `spData` [@spData] 
+ - `sugarbag` [@sugarbag]
+ - `tidyverse` [@tidyverse]

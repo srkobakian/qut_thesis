@@ -4,18 +4,22 @@ language:
     chapter_name: "Chapter "
 rmd_files: ["index.Rmd",
   "00-copyright.Rmd",
+  "00-keywords.Rmd",
   "00-abstract.Rmd",
   "00-declaration.Rmd", #a statement of original authorship;
   "00-acknowledge.Rmd", #an acknowledgment list
   "00-preface.Rmd",
+  "00-figures.Rmd",
+  "00-tables.Rmd",
   "01-intro.Rmd",
   "02-literature.Rmd",
   "03-algorithm.Rmd",
   "04-experiment.Rmd",
   "05-discussion.Rmd",
   "06-conclusion.Rmd",
-  "A-study.Rmd",
-  "B-ethics.Rmd"] # appendices
+  "A-Study_lineups.Rmd",
+  "B-Study_procedures.Rmd",
+  "C-ethics.Rmd"] # appendices
 delete_merged_file: TRUE
 
   # table of contents

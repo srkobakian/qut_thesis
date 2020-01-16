@@ -4,7 +4,7 @@ knit: "bookdown::render_book"
 ---
 
 
-# Dicussion  {#ch:discussion}
+# Discussion  {#ch:discussion}
 
 This chapter discusses the use of the choropleth map in presenting spatial data.
 It discusses the hexagon tile map algorithm contributed by this thesis and discusses its similarities and differences from other alternative visualisation methods.
@@ -34,12 +34,12 @@ discuss the results with reference to the literature, for example, the similarit
 A key aim of this thesis was to present an algorithm for displaying geospatial data. The  algorithm presented in chapter algorithm is the result of many iterations in the process necessary to transform geographic areas into a tessellated hexagon tile map.
 
 
-The tesselation employed in the hexagon tile map algorithm maintains connectedness between neighbouring areas, this draws inspiration from contiguous cartograms [@ACA], rectangular cartograms [@RSCW] and Dorling's circular cartograms [@ACTUC]. However, the hexagon tile map algorithm does not employ the gravitation pull mathematics that is used to create contiguous cartograms. It also does not iterate on the placement of hexagons.  
-The choice of the haxgon, a consistent shape used for all areas, also draws from rectangular and Dorling cartograms. This encourages map readers to focus on the  similarities or difference in the colour between geographic neighbours, and does not distract them with unfamiliar boundaries after a contiguous cartogram transformation. 
+The tessellation employed in the hexagon tile map algorithm maintains connectedness between neighbouring areas, this draws inspiration from contiguous cartograms [@ACA], rectangular cartograms [@RSCW] and Dorling's circular cartograms [@ACTUC]. However, the hexagon tile map algorithm does not employ the gravitation pull mathematics that is used to create contiguous cartograms. It also does not iterate on the placement of hexagons.  
+The choice of the hexagon, a consistent shape used for all areas, also draws from rectangular and Dorling cartograms. This encourages map readers to focus on the  similarities or difference in the colour between geographic neighbours, and does not distract them with unfamiliar boundaries after a contiguous cartogram transformation. 
 
 The hexagon tile map display is least like the non-contiguous cartogram [@NAC] which maintains the familiar geographic shapes. Some similarity in the final results may occur as densely populated regions maintain connectivity with neighbours, and sparsely populated areas will use the underlying white map space to separate neighbours.
 
-The implementation of the `sugarbag` [@sugarbag] package for R [@R] provides map creators the opportunity to apply the algorithm to any set of geospatial polygons. This does not require manual creation of grids, but the displays are reuable for any populated related data set that uses the same set of geographic units.
+The implementation of the `sugarbag` [@sugarbag] package for R [@R] provides map creators the opportunity to apply the algorithm to any set of geospatial polygons. This does not require manual creation of grids, but the displays are reusable for any populated related data set that uses the same set of geographic units.
 
 
 ## Visual inference study
@@ -54,7 +54,10 @@ discuss the results with reference to the literature, for example, the similarit
 
 Conducting a visual inference study allowed a contrast of the traditional choropleth display to the alternative hexagon tile map. 
 
-From the visual inference study results, this is a valid alternative as participants acheived higher detection rates for the hexagon tile map when presenting the geographic spatial distribution and the population related distributions. 
+
+The visual inference study showed that the hexagon tile map display is a valid alternative as participants achieved higher detection rates for the hexagon tile map when presenting the geographic spatial distribution and the population related distributions.
+
+
 
 ## Animating between displays
 <!--
@@ -64,10 +67,10 @@ discuss the results with reference to the literature, for example, the similarit
 -->
 
 Interactivity can allow greater detail to be drawn about small neighbourhoods in a choropleth map. By zooming in, the same shapes shown on the initial map become much larger and comparisons between immediate neighbours becomes simpler. 
-Interacting can also allow the map user to drive their exploration. In the case of the Australian Cancer Atlas, the interactive tools allow quick comparisons between areas far from each other on the map. It also allows quick comparisons of the estimated cancer statistics by showing the colours for each cancer type in a table-like display. These additiions allow user driven exploration, but do not guarantee that the spatial distibution across the country is digested accurately.
+Interacting can also allow the map user to drive their exploration. In the case of the Australian Cancer Atlas, the interactive tools allow quick comparisons between areas far from each other on the map. It also allows quick comparisons of the estimated cancer statistics by showing the colours for each cancer type in a table-like display. These additions allow user driven exploration, but do not guarantee that the spatial distribution across the country is digested accurately.
 
 
-Animating between a choropleth and a hexagon tile map will allows map users to understand how the small communities of a whole country are affected simultaneously. It also teaches map users how to find areas of interest as their attention is drawn to the capital cities, that may not have caught their attention in the display of the choropleth map. When communicating cancer statistics, there should be a balance between providing people a familiar landscape and ensuring the interpret the spatial distribution correctly. A directed exploration of a collection of inner city neighbourhoods will take the distiribution out of context, the Australian Cancer Atlas provides some visual tools to combat this by highlighting that the areas displayed are only subsets However, allowing the values of an inner-city neighbourhood to be visible in the context of all other areas will enhance the understanding of the spatial distribution. Animations will communicate a specific message trhough the capture and direction of users' attention. 
+Animating between a choropleth and a hexagon tile map will allows map users to understand how the small communities of a whole country are affected simultaneously. It also teaches map users how to find areas of interest as their attention is drawn to the capital cities, that may not have caught their attention in the display of the choropleth map. When communicating cancer statistics, there should be a balance between providing people a familiar landscape and ensuring the interpret the spatial distribution correctly. A directed exploration of a collection of inner city neighbourhoods will take the distribution out of context, the Australian Cancer Atlas provides some visual tools to combat this by highlighting that the areas displayed are only subsets However, allowing the values of an inner-city neighbourhood to be visible in the context of all other areas will enhance the understanding of the spatial distribution. Animations will communicate a specific message through the capture and direction of users' attention. 
 
 The animations created of the Australian Statistical Areas at Level 2, used in the Australian Cancer Atlas, highlight just how many SA2 areas are hidden due to their size in the choropleth display. The rapid shrinking of the rural areas allows users to recognise the emphasis that had been placed on the large geographic regions.
 Their attention is then drawn to the expanding capital cities, and the coastal towns that were not previously visible.

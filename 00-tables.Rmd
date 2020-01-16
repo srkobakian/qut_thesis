@@ -1,0 +1,22 @@
+---
+knit: "bookdown::render_book"
+---
+
+# List of Tables {-}
+
+```{r}
+
+tabs2 <- tibble::tibble(
+  Chapter = c(rep("2", 6)),
+  Table = c(seq(1:6)),
+  Caption = c(
+    "A selection of choropleth cancer maps from online atlases that are publicly available.",
+    "Common alternatives to maps, showing the same information for the United States of America.",
+    "Two alternative displays, tile map (left) and geofaceted map (right), showing state age-adjusted rate of incidence for lung and bronchus in the USA.",
+    "Cartograms showing melanoma incidence in Australia.",
+    "Interactive controls of displays in publicly available choropleth cancer maps",
+    "Two examples of advanced interactivity (and animation) in publicly available choropleth cancer maps.")
+)
+
+```
+

@@ -213,7 +213,7 @@
 \setcounter{tocdepth}{1}
 
 \def\prefacesection#1{%
-    \chapter*{#1}
+    \section*{#1}
     \addcontentsline{toc}{chapter}{#1}
     \markboth{#1}{#1}}
 
@@ -290,7 +290,7 @@
 \newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{{#1}}}}
 \newcommand{\NormalTok}[1]{{#1}}
 
-\usepackage{longtable,booktabs,pdfpages}
+\usepackage{longtable,booktabs,pdfpages,multirow,array}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \raggedbottom
