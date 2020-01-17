@@ -28,6 +28,8 @@ tabs4 <- tibble::tibble(
   Page = c(64, 65, 66)
 )
 
-kableExtra::column_spec(knitr::kable(dplyr::bind_rows(tabs2, tabs4), format = "latex", booktabs = TRUE, escape = FALSE),4, width = "20em")
+bind_rows(tabs2, tabs4) %>% 
+  kable(format = "latex", booktabs = TRUE, escape = FALSE) %>% 
+  kableExtra::column_spec(4, width = "20em")
 ```
 
