@@ -290,7 +290,7 @@
 \newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{{#1}}}}
 \newcommand{\NormalTok}[1]{{#1}}
 
-\usepackage{longtable,booktabs,pdfpages,multirow,array}
+\usepackage{longtable,booktabs,pdfpages,multirow,array,float}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \raggedbottom
