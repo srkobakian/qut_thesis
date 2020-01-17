@@ -1,0 +1,44 @@
+---
+chapter: 6
+knit: "bookdown::render_book"
+---
+
+
+# Conclusion {#ch:conclusion}
+
+  <!--  Clearly state the answer to the main research question -->
+Cancer Atlases are used to develop hypotheses about spatial distributions of cancer statistics [@CPISACA]. However, the use of the choropleth map may lead to misinterpretation of the overall distribution. This is because of the overemphasis on the large geographic areas, and the lack of visibility for the small inner-city communities [@ACTUC].
+
+The first aim of this thesis was to present an alternative visualisation method for spatial data. This thesis has provided a new algorithm to present spatial distributions of disease data, and includes an R code [@R] implementation. The spatial data sets with population related distributions will be effectively communicated by this display. The hexagon tile map display will represent each area equally on the map space to effectively convey the spatial distribution. This does not require manual creation of layouts, and the displays are reusable for any data set that uses the same set of geographic units.
+
+The second aim was to test effectiveness of the hexagon tile map relative to the choropleth map. It was expected that the familiar map base would have advantages in communicating geospatial distributions. However, when tested using the lineup protocol the results for the choropleth map and hexagon tile map were extrememly close. The hexagon tile map was much more effective for communicating the population related distributions. 
+
+To achieve the third aim of this thesis, the hexagon tile map output allows for animation between the choropleth display and the hexagon tile map display. This was acheived through the implementation of the `sugarbag` [@sugarbag] package for R [@R]. 
+
+
+<!--  Summarize and reflect on the research -->
+  
+The hexagon tile map visualisation method solves the misrepresentation problem of choropleth display. Especially for geographic data sets that contain a substantial amounts of areas. This algorithm is accessible to all `R` users, it can be applied to any set of areas in an `sf` [@sf] object through the set of simple functions. 
+The tessellation employed in the hexagon tile map algorithm maintains connectedness between neighbouring areas, this draws inspiration from contiguous cartograms [@ACA], rectangular cartograms [@RSCW] and Dorling's circular cartograms [@ACTUC]. However, the hexagon tile map algorithm does not employ the gravitation pull mathematics that is used to create contiguous cartograms. It also does not iterate on the placement of hexagons. The choice of a consistent shape to be used for all areas draws from rectangular and Dorling cartograms. This encourages map readers to focus on the similarities or difference in the colour between geographic neighbours, and does not distract them with unfamiliar boundaries produced during a contiguous cartogram transformation. 
+
+The effectiveness of the hexagon tile map has been proved by the visual inference study. It showed that participants could recognise the data display in the set of null distributions more frequently when viewing a hexagon tile map display. The choropleth map display is still effective for distributions that are directly related to the geography, such as the North-West to South-East distribution used in the study. This has expanded the applications of visual inference studies in a spatial data context by contributing a specific example of testing new graphical displays for geospatial data.
+
+
+The tile map allocation provided by the algorithm can easily be used to create animations between a choropleth and hexagon tile map display. Linking the familiar geography to the effective display for understanding the distribution across many heterogeneous geographic regions. Many interactive tools are included in current cancer atlases, these additions allow user driven exploration, but do not guarantee that the spatial distribution across the geographic space is digested accurately.
+Animating between a choropleth and a hexagon tile map will allows map users to understand how the small communities of a whole country are affected simultaneously. It also teaches map users how to find areas of interest as their attention is drawn to the capital cities, that may not have caught their attention in the display of the choropleth map. When communicating cancer statistics, there should be a balance between providing people a familiar landscape and ensuring the interpret the spatial distribution correctly. Animations will communicate a specific message through the capture and direction of users' attention. 
+  
+  <!--  Make recommendations for future work on the topic -->
+Future work will include expanding on the criteria used to evaluate the hexagon tile maps produced by the algorithm. The methods to evaluate the alternative displays have not been thoroughly explored in this thesis, but could be included as functions with the `R` implementation. This framework will be used to create relevant tests that contrast the use of the map area, and changes in the visual when the parameter of the hexagon tile map algorithm are altered.
+
+The current hexagon tile map creates a template map that can be used to visualise any data set that contains the areas used to create the map. There is the possibility of allowing a bivariate display to incorporate uncertainty by using a colour scheme that operates in two directions, as suggested by Lucchesi and Wikle [@VUADBC].
+The animation methods that allow the colours filling the hexagons to flicker to communicate the uncertainty around an estimate could also be employed.  
+With large hexagons, there is a potential to incorporate geofacets [@IGF] to create a tessellated display of small visualisations for each geographic unit. These displays become increasingly complex if the visualisation becomes more detailed, or the hexagons become smaller.
+
+The animations created of the Australian Statistical Areas at Level 2 highlight just how many SA2 areas are hidden due to their size in the choropleth display. This animation could be included future iterations of the Australian Cancer Atlas to improve the communication of the spatial distributions of the burden of cancer on Australian communities.
+
+
+<!--  Show what new knowledge you have contributed -->
+  
+This work has contributed a new alternative visualisation method to highlight the communities in spatial data sets. This is valuable as the spatial distributions of cancer burden for different types of cancers largely relates to the population rather than the geography. It also contributes an algorithm to produce these displays for any set of spatial polygons. Through this thesis an open-source `R` package implementation has been inlcuded on the CRAN package respositiory, with associated examples and documentation for use by any `R` user.
+This work has also contributed to the literature of visual inference studies, by using the "lineup" protocol developed by Buja et al. and used by @GIIV, and @GTPCCD.
+To communicate human related spatial patterns of disease, map creators should consider the use of alternative displays. The hexagon tile map display has proven effective in this thesis for communicating spatial distributions in sets of heterogeneous geographic units. This thesis provides a practical guide for map creators to communicate spatial displays of cancer data in Australia.

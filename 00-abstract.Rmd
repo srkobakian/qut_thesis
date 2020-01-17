@@ -6,13 +6,14 @@ knit: "bookdown::render_book"
 
 
 <!--less than 500 words-->
-Relationships between geographic areas can be communicated using maps full stop the speed of visual processes allow quick comparisons to be made between neighbouring areas. However, when presenting population-related statistics on the geographic map base, large areas that draw readers' attention can allow too much emphasis to be placed on rural areas.
-This problem can dramatically impact the interpretation of statistics across Australia, due to the large difference in the land area when the population is divided at various granularities.
-
-As part of this thesis, an algorithm is presented which will take geospatial areas in the form of polygons and create an alternative graphical display of a spatial distribution. This algorithm takes a set of polygons and creates a map of tessellated hexagons, representing a single geographical area with a single hexagon. It arranges them to replicate spatial relationships of geographic areas in each city. The hexagon tile map visualisation produced by the algorithm is contrasted with the traditional choropleth map.
-The package `sugarbag` [@sugarbag] implements the algorithm for the statistical software `R` [@R].
+Relationships between geographic areas can be communicated using maps. The speed of visual processes allow quick comparisons to be made between neighbouring areas. However, when presenting population-related statistics on the geographic map base, large areas that draw readers' attention can allow too much emphasis to be placed on sparsely populated rural areas.
+This problem can dramatically impact the interpretation of statistics across Australia, due to the large difference in the land area when the population is concentrated in a few small areas.
 
 
-Using animations will allow us to control how people transform a recognisable map of Australia, or the cities within, into a more reliable map for inference. Animation is gaining popularity as access to computing power is increasing the amount of applications.
+In this thesis a new algorithm for laying out spatial areas into a tessellated hexgon tile is developed. This layout is used to create a new visualisation method for displaying disease data for Australia.
+An experiment was conducted that indicates that this visualisation outperforms the traditional choropleth map for communicating disease data.
+A software implementation was generated and made publicly available for others to use these techniques. In addition, animation can be used to translate from the choropleth map to the new tessellated hexagon display to help viewers interpret the new display.
+
+
 
 \newpage
