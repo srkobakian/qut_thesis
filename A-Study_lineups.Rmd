@@ -246,170 +246,273 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 
 ### Replicate 1
 
-```{r cities-geo12, results = "asis", fig.cap = "The lineup of choropleth map displays, location 12 contains a distribution that affects all capital cities."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_cities_12_geo.png")))
-```
+<!-- ```{r cities-geo12, results = "asis", fig.cap = "The lineup of choropleth map displays, location 12 contains a distribution that affects all capital cities."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_cities_12_geo.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/cities-geo12-1.pdf}
+\caption{\label{fig:cities-geo12}The lineup of choropleth map displays, location 12 contains a distribution that affects all capital cities.}
+\end{figure}
 
-
-```{r cities-hex12, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 12 contains a distribution that affects all capital cities."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_cities_12_hex.png")))
-```
+<!-- ```{r cities-hex12, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 12 contains a distribution that affects all capital cities."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_cities_12_hex.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/cities-hex12-1.pdf}
+\caption{\label{fig:cities-hex12}The lineup of hexagon tile map displays, location 12 contains a distribution that affects all capital cities.}
+\end{figure}
 
 
 ### Replicate 2
 
-```{r cities-geo3, results = "asis", fig.cap = "The lineup of choropleth map displays, location 3 contains a distribution that affects all capital cities."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_cities_3_geo.png")))
-```
+<!-- ```{r cities-geo3, results = "asis", fig.cap = "The lineup of choropleth map displays, location 3 contains a distribution that affects all capital cities."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_cities_3_geo.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/cities-geo3-1.pdf}
+\caption{\label{fig:cities-geo3}The lineup of choropleth map displays, location 3 contains a distribution that affects all capital cities.}
+\end{figure}
 
-
-```{r cities-hex3, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 3 contains a distribution that affects all capital cities."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_cities_3_hex.png")))
-```
+<!-- ```{r cities-hex3, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 3 contains a distribution that affects all capital cities."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_cities_3_hex.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/cities-hex3-1.pdf}
+\caption{\label{fig:cities-hex3}The lineup of hexagon tile map displays, location 3 contains a distribution that affects all capital cities.}
+\end{figure}
 
 ### Replicate 3
 
-```{r cities-geo4, results = "asis", fig.cap = "The lineup of choropleth map displays, location 4 contains a distribution that affects all capital cities."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_cities_4_geo.png")))
-```
+<!-- ```{r cities-geo4, results = "asis", fig.cap = "The lineup of choropleth map displays, location 4 contains a distribution that affects all capital cities."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_cities_4_geo.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/cities-geo4-1.pdf}
+\caption{\label{fig:cities-geo4}The lineup of choropleth map displays, location 4 contains a distribution that affects all capital cities.}
+\end{figure}
 
-
-```{r cities-hex4, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 4 contains a distribution that affects all capital cities."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_cities_4_hex.png")))
-```
-
+<!-- ```{r cities-hex4, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 4 contains a distribution that affects all capital cities."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_cities_4_hex.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/cities-hex4-1.pdf}
+\caption{\label{fig:cities-hex4}The lineup of hexagon tile map displays, location 4 contains a distribution that affects all capital cities.}
+\end{figure}
 
 ### Replicate 4
 
-```{r cities-geo9, results = "asis", fig.cap = "The lineup of choropleth map displays, location 9 contains a distribution that affects all capital cities."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_cities_9_geo.png")))
-```
+<!-- ```{r cities-geo9, results = "asis", fig.cap = "The lineup of choropleth map displays, location 9 contains a distribution that affects all capital cities."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_cities_9_geo.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/cities-geo9-1.pdf}
+\caption{\label{fig:cities-geo9}The lineup of choropleth map displays, location 9 contains a distribution that affects all capital cities.}
+\end{figure}
 
+<!-- ```{r cities-hex9, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 9 contains a distribution that affects all capital cities."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_cities_9_hex.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/cities-hex9-1.pdf}
+\caption{\label{fig:cities-hex9}The lineup of hexagon tile map displays, location 9 contains a distribution that affects all capital cities.}
+\end{figure}
 
-```{r cities-hex9, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 9 contains a distribution that affects all capital cities."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_cities_9_hex.png")))
-```
-
+\newpage
 
 ## Three Cities
 
 ### Replicate 1
 
-```{r three-geo12, results = "asis", fig.cap = "The lineup of choropleth map displays, location 12 contains a distribution that affects three of the Australian capital cities."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_three_12_geo.png")))
-```
+<!-- ```{r three-geo12, results = "asis", fig.cap = "The lineup of choropleth map displays, location 12 contains a distribution that affects three of the Australian capital cities."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_three_12_geo.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics[height=8cm]{thesis_files/figure-latex/three-geo12-1.pdf}
+\caption{\label{fig:three-geo12}The lineup of choropleth map displays, location 12 contains a distribution that affects three of the Australian capital cities.}
+\end{figure}
 
-
-```{r three-hex12, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 12 contains a distribution that affects three of the Australian capital cities."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_three_12_hex.png")))
-```
-
+<!-- ```{r three-hex12, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 12 contains a distribution that affects three of the Australian capital cities."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_three_12_hex.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics[height=8cm]{thesis_files/figure-latex/three-hex12-1.pdf}
+\caption{\label{fig:three-hex12}The lineup of hexagon tile map displays, location 12 contains a distribution that affects three of the Australian capital cities.}
+\end{figure}
 
 ### Replicate 2
 
-```{r three-geo5, results = "asis", fig.cap = "The lineup of choropleth map displays, location 3 contains a distribution that affects three of the Australian capital cities."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_three_5_geo.png")))
-```
+<!-- ```{r three-geo5, results = "asis", fig.cap = "The lineup of choropleth map displays, location 3 contains a distribution that affects three of the Australian capital cities."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_three_5_geo.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics[height=7cm]{thesis_files/figure-latex/three-geo5-1.pdf}
+\caption{\label{fig:three-geo5}The lineup of choropleth map displays, location 3 contains a distribution that affects three of the Australian capital cities.}
+\end{figure}
 
-
-```{r three-hex5, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 3 contains a distribution that affects three of the Australian capital cities."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_three_5_hex.png")))
-```
+<!-- ```{r three-hex5, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 3 contains a distribution that affects three of the Australian capital cities."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_three_5_hex.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics[height=7cm]{thesis_files/figure-latex/three-hex5-1.pdf}
+\caption{\label{fig:three-hex5}The lineup of hexagon tile map displays, location 3 contains a distribution that affects three of the Australian capital cities.}
+\end{figure}
 
 ### Replicate 3
 
-```{r three-geo8, results = "asis", fig.cap = "The lineup of choropleth map displays, location 4 contains a distribution that affects three of the Australian capital cities."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_three_8_geo.png")))
-```
+<!-- ```{r three-geo8, results = "asis", fig.cap = "The lineup of choropleth map displays, location 4 contains a distribution that affects three of the Australian capital cities."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_three_8_geo.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/three-geo8-1.pdf}
+\caption{\label{fig:three-geo8}The lineup of choropleth map displays, location 4 contains a distribution that affects three of the Australian capital cities.}
+\end{figure}
 
-
-```{r three-hex8, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 4 contains a distribution that affects three of the Australian capital cities."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_three_8_hex.png")))
-```
-
+<!-- ```{r three-hex8, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 4 contains a distribution that affects three of the Australian capital cities."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_three_8_hex.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/three-hex8-1.pdf}
+\caption{\label{fig:three-hex8}The lineup of hexagon tile map displays, location 4 contains a distribution that affects three of the Australian capital cities.}
+\end{figure}
 
 ### Replicate 4
 
-```{r three-geo9, results = "asis", fig.cap = "The lineup of choropleth map displays, location 9 contains a distribution that affects three of the Australian capital cities."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_three_9_geo.png")))
-```
+<!-- ```{r three-geo9, results = "asis", fig.cap = "The lineup of choropleth map displays, location 9 contains a distribution that affects three of the Australian capital cities."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_three_9_geo.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/three-geo9-1.pdf}
+\caption{\label{fig:three-geo9}The lineup of choropleth map displays, location 9 contains a distribution that affects three of the Australian capital cities.}
+\end{figure}
 
-
-```{r three-hex9, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 9 contains a distribution that affects three of the Australian capital cities."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_three_9_hex.png")))
-```
-
+<!-- ```{r three-hex9, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 9 contains a distribution that affects three of the Australian capital cities."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_three_9_hex.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/three-hex9-1.pdf}
+\caption{\label{fig:three-hex9}The lineup of hexagon tile map displays, location 9 contains a distribution that affects three of the Australian capital cities.}
+\end{figure}
 
 
 ## North West to South East Geographic Trend
 
 ### Replicate 1
 
-```{r nwse-geo2, results = "asis", fig.cap = "The lineup of choropleth map displays, location 12 contains a distribution that affects all capital nwse."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_nwse_2_geo.png")))
-```
+<!-- ```{r nwse-geo2, results = "asis", fig.cap = "The lineup of choropleth map displays, location 12 contains a distribution that affects all capital nwse."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_nwse_2_geo.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/nwse-geo2-1.pdf}
+\caption{\label{fig:nwse-geo2}The lineup of choropleth map displays, location 12 contains a distribution that affects all capital nwse.}
+\end{figure}
 
-
-```{r nwse-hex2, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 12 contains a distribution that affects all capital nwse."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_nwse_2_geo.png")))
-```
+<!-- ```{r nwse-hex2, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 12 contains a distribution that affects all capital nwse."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_nwse_2_geo.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/nwse-hex2-1.pdf}
+\caption{\label{fig:nwse-hex2}The lineup of hexagon tile map displays, location 12 contains a distribution that affects all capital nwse.}
+\end{figure}
 
 
 ### Replicate 2
 
-```{r nwse-geo3, results = "asis", fig.cap = "The lineup of choropleth map displays, location 3 contains a distribution that affects all capital nwse."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_nwse_3_geo.png")))
-```
+<!-- ```{r nwse-geo3, results = "asis", fig.cap = "The lineup of choropleth map displays, location 3 contains a distribution that affects all capital nwse."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_nwse_3_geo.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/nwse-geo3-1.pdf}
+\caption{\label{fig:nwse-geo3}The lineup of choropleth map displays, location 3 contains a distribution that affects all capital nwse.}
+\end{figure}
 
-
-```{r nwse-hex3, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 3 contains a distribution that affects all capital nwse."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_nwse_3_geo.png")))
-```
+<!-- ```{r nwse-hex3, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 3 contains a distribution that affects all capital nwse."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_nwse_3_geo.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/nwse-hex3-1.pdf}
+\caption{\label{fig:nwse-hex3}The lineup of hexagon tile map displays, location 3 contains a distribution that affects all capital nwse.}
+\end{figure}
 
 ### Replicate 3
 
-```{r nwse-geo5, results = "asis", fig.cap = "The lineup of choropleth map displays, location 4 contains a distribution that affects all capital nwse."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_nwse_5_geo.png")))
-```
+<!-- ```{r nwse-geo5, results = "asis", fig.cap = "The lineup of choropleth map displays, location 4 contains a distribution that affects all capital nwse."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_nwse_5_geo.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/nwse-geo5-1.pdf}
+\caption{\label{fig:nwse-geo5}The lineup of choropleth map displays, location 4 contains a distribution that affects all capital nwse.}
+\end{figure}
 
-
-```{r nwse-hex5, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 4 contains a distribution that affects all capital nwse."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_nwse_5_geo.png")))
-```
-
+<!-- ```{r nwse-hex5, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 4 contains a distribution that affects all capital nwse."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_nwse_5_geo.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/nwse-hex5-1.pdf}
+\caption{\label{fig:nwse-hex5}The lineup of hexagon tile map displays, location 4 contains a distribution that affects all capital nwse.}
+\end{figure}
 
 ### Replicate 4
 
-```{r nwse-geo6, results = "asis", fig.cap = "The lineup of choropleth map displays, location 9 contains a distribution that affects all capital nwse."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_nwse_6_geo.png")))
-```
+<!-- ```{r nwse-geo6, results = "asis", fig.cap = "The lineup of choropleth map displays, location 9 contains a distribution that affects all capital nwse."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_nwse_6_geo.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/nwse-geo6-1.pdf}
+\caption{\label{fig:nwse-geo6}The lineup of choropleth map displays, location 9 contains a distribution that affects all capital nwse.}
+\end{figure}
 
-
-```{r nwse-hex6, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 9 contains a distribution that affects all capital nwse."}
-ggdraw() +
-  draw_plot(rasterGrob(readPNG("lineups/aus_nwse_6_geo.png")))
-```
-
+<!-- ```{r nwse-hex6, results = "asis", fig.cap = "The lineup of hexagon tile map displays, location 9 contains a distribution that affects all capital nwse."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(rasterGrob(readPNG("lineups/aus_nwse_6_geo.png"))) -->
+<!-- ``` -->
+\begin{figure}[H]
+\centering
+\includegraphics{thesis_files/figure-latex/nwse-hex6-1.pdf}
+\caption{\label{fig:nwse-hex6}The lineup of hexagon tile map displays, location 9 contains a distribution that affects all capital nwse.}
+\end{figure}
