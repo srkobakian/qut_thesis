@@ -29,7 +29,7 @@ tabs4 <- tibble::tibble(
 )
 
 bind_rows(tabs2, tabs4) %>% 
-  kable(format = "latex", booktabs = TRUE, escape = FALSE) %>% 
-  kableExtra::column_spec(4, width = "20em")
+  kable(format = "latex", booktabs = TRUE, escape = FALSE, align = "rrlr") %>% 
+  kableExtra::column_spec(3, width = "20em")
 ```
 
