@@ -21,6 +21,7 @@ rmd_files: ["index.Rmd",
   "B-Study_procedures.Rmd",
   "C-ethics.Rmd"] # appendices
 delete_merged_file: TRUE
+before_chapter_script: ["preload.R"]
 
   # table of contents
   # a statement of the chapter titles
