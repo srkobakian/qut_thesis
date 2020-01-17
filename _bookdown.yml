@@ -8,9 +8,9 @@ rmd_files: ["index.Rmd",
   "00-abstract.Rmd",
   "00-figures.Rmd",
   "00-tables.Rmd",
+  "00-publications.Rmd",
   "00-declaration.Rmd", #a statement of original authorship;
   "00-acknowledge.Rmd", #an acknowledgment list
-  "00-preface.Rmd",
   "01-intro.Rmd",
   "02-literature.Rmd",
   "03-algorithm.Rmd",

@@ -4,7 +4,7 @@ knit: "bookdown::render_book"
 
 # List of Figures {-}
 
-```{r}
+```{r figs, echo = FALSE, warning = FALSE, results = "asis"}
 # figures in the lit review paper
 figs2 <- tibble::tibble(
   Chapter = c(rep("2", 6)),
@@ -31,7 +31,7 @@ figs3 <- tibble::tibble(
     "The Australian Cancer Atlas data has determined the colour of each Statistical Area of Australian at Level 2",
     "A choropleth map of the Statistical Areas of Australia at Level 2.",
     "A hexagon tile map of the Statistical Areas of Australia at Level 2."), 
-  Page = c(1, 2, 2, 2, 2, 9, 0)
+  Page = c(44, 45, 47, 48, 48, 51, 52)
 )
 
 
@@ -46,7 +46,10 @@ figs4 <- tibble::tibble(
     "The detection rates achieved by participants are contrasted when viewing the four replicates of the three trend models",
     "The distribution of the time taken (seconds) to submit a response for each combination of trend, whether the data plot was detected, and type of display, shown using horizontally jittered dotplots.",
     "The amount of times each level of certainty was chosen by participants when viewing hexagon tile map or choropleth displays."), 
-  Page = c(12, 20, 23, 25, 28, 29, 30)
+  Page = c(60, 60, 61, 62, 64, 65, 66)
 )
+
+
+kableExtra::column_spec(knitr::kable(dplyr::bind_rows(figs2, figs3, figs4), format = "latex", booktabs = TRUE, escape = FALSE),4, width = "20em")
 ```
 

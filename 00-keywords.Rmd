@@ -4,4 +4,5 @@ knit: "bookdown::render_book"
 
 # Keywords {-}
 
-Keywords: maps; statistics; geospatial statistics; visual inference; cartogram; tile maps; choropleth
+Keywords: 
+cartogram; choropleth; geospatial statistics; maps; statistics; tile maps; visual inference

@@ -187,7 +187,7 @@
         \vspace{30mm}
         {\Huge{\textbf{\expandafter{\@title}}}}\\
         \vspace{15mm}
-        {\huge{A thesis submitted for the degree of\\
+        {\huge{A thesis submitted in fulfilment of the requirement for the degree of’\\
         Master of Philosophy (Statistics)}}\\
         \vspace{30mm}
         \large{by}\\
@@ -202,7 +202,7 @@
         Science and Engineering Faculty\\
         Queensland University of Technology\\
         Australia\\
-        2019}
+        2020}
     \end{center}
     %\hrulefill
     \newpage\mbox{}\thispagestyle{empty}\newpage}}

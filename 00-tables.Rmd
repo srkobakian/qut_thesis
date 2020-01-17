@@ -4,19 +4,30 @@ knit: "bookdown::render_book"
 
 # List of Tables {-}
 
-```{r}
-
+```{r tabs, echo = FALSE, warning = FALSE, results = "asis"}
+# figures in the lit review paper
 tabs2 <- tibble::tibble(
-  Chapter = c(rep("2", 6)),
-  Table = c(seq(1:6)),
+  Chapter = c(rep("2", 4)),
+  Table = c("1","2","3","4"),
   Caption = c(
-    "A selection of choropleth cancer maps from online atlases that are publicly available.",
-    "Common alternatives to maps, showing the same information for the United States of America.",
-    "Two alternative displays, tile map (left) and geofaceted map (right), showing state age-adjusted rate of incidence for lung and bronchus in the USA.",
-    "Cartograms showing melanoma incidence in Australia.",
-    "Interactive controls of displays in publicly available choropleth cancer maps",
-    "Two examples of advanced interactivity (and animation) in publicly available choropleth cancer maps.")
+    "A selection of choropleth cancer maps from online atlases.",
+    "Common measures for reporting cancer information.",
+    "Maps used to present statistics for the United States of America.",
+    "Summary of features and constraints of common mapping methods used to display
+cancer statistics."),
+  Page = c(10, 13, 18, 26)
 )
 
+tabs4 <- tibble::tibble(
+  Chapter = c(rep("4", 3)),
+  Table = c("I (1)", "II (2)", "III (3)"),
+  Caption = c(
+    "The mean and standard deviation of the rate of detection for each trend model, calculated for the choropleth and hexagon tile map displays.",
+    "The model output for the generalised linear mixed effect model for detection rate.",
+    "The amount of participants that selected each reason for their choice of plot when looking at each trend model shown in Choropleth and Hexagon Tile maps."),
+  Page = c(64, 65, 66)
+)
+
+kableExtra::column_spec(knitr::kable(dplyr::bind_rows(tabs2, tabs4), format = "latex", booktabs = TRUE, escape = FALSE),4, width = "20em")
 ```
 

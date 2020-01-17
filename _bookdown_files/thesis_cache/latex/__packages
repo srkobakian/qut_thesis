@@ -1,12 +1,16 @@
 base
 forecast
 ggplot2
+knitcitations
+RefManageR
+sf
+dplyr
+sugarbag
 tidyverse
 tibble
 tidyr
 readr
 purrr
-dplyr
 stringr
 forcats
 readxl

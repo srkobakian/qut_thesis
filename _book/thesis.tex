@@ -47,13 +47,14 @@ I certify that I have made all reasonable efforts to secure copyright permission
 \chapter*{Keywords}\label{keywords}}
 \addcontentsline{toc}{chapter}{Keywords}
 
-Keywords: maps; statistics; geospatial statistics; visual inference; cartogram; tile maps; choropleth
+Keywords:
+cartogram; choropleth; geospatial statistics; maps; statistics; tile maps; visual inference
 
 \hypertarget{abstract}{%
 \chapter*{Abstract}\label{abstract}}
 \addcontentsline{toc}{chapter}{Abstract}
 
-The Australian population has congregated in the capital cities and significant cities in each state. This pattern has resulted in very dense population centres and sparsely populated rural areas. The relationship between the Australian population and the geographic area they live in results in a heterogeneous distribution of the map space. The goal of many spatial visualisations is to gain a broad perspective of the values of statistics over the Australian population. However, the use of most mapping techniques can mislead, as the use of geographical areas unequally presents the spatial distribution of a dataset.
+The goal of many spatial visualisations is to gain a broad perspective of the values of statistics over the Australian population. However, the use of most mapping techniques can mislead, as the use of geographical areas unequally presents the spatial distribution of a dataset. The Australian population has congregated in the capital cities and significant cities in each state. This pattern has resulted in very dense population centres and sparsely populated rural areas. The relationship between the Australian population and the geographic area they live in results in a heterogeneous distribution of the map space.
 
 As part of this thesis, an algorithm is presented which will take geospatial areas in the form of polygons and create an alternative graphical display of a spatial distribution. This algorithm takes a set of polygons and creates a map of tessellated hexagons, representing a single geographical area with a single hexagon. It arranges them to replicate spatial relationships of geographic areas in each city. The hexagon tile map visualisation produced by the algorithm is contrasted with the traditional choropleth map.
 The package \texttt{sugarbag} \autocite{sugarbag} implements the algorithm for the statistical software \texttt{R} \autocite{R}.
@@ -66,73 +67,101 @@ Using animations will allow us to control how people transform a recognisable ma
 \chapter*{List of Figures}\label{list-of-figures}}
 \addcontentsline{toc}{chapter}{List of Figures}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{# figures in the lit review paper}
-\NormalTok{figs2 <-}\StringTok{ }\NormalTok{tibble}\OperatorTok{::}\KeywordTok{tibble}\NormalTok{(}
-  \DataTypeTok{Chapter =} \KeywordTok{c}\NormalTok{(}\KeywordTok{rep}\NormalTok{(}\StringTok{"2"}\NormalTok{, }\DecValTok{6}\NormalTok{)),}
-  \DataTypeTok{Figure =} \KeywordTok{c}\NormalTok{(}\KeywordTok{seq}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{6}\NormalTok{)),}
-  \DataTypeTok{Caption =} \KeywordTok{c}\NormalTok{(}
-    \StringTok{"A selection of choropleth cancer maps from online atlases that are publicly available."}\NormalTok{,}
-    \StringTok{"Common alternatives to maps, showing the same information for the United States of America."}\NormalTok{,}
-    \StringTok{"Two alternative displays, tile map (left) and geofaceted map (right), showing state age-adjusted rate of incidence for lung and bronchus in the USA."}\NormalTok{,}
-    \StringTok{"Cartograms showing melanoma incidence in Australia."}\NormalTok{,}
-    \StringTok{"Interactive controls of displays in publicly available choropleth cancer maps"}\NormalTok{,}
-    \StringTok{"Two examples of advanced interactivity (and animation) in publicly available choropleth cancer maps."}\NormalTok{),}
-  \DataTypeTok{Page =} \KeywordTok{c}\NormalTok{(}\DecValTok{12}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{24}\NormalTok{, }\DecValTok{26}\NormalTok{, }\DecValTok{28}\NormalTok{, }\DecValTok{29}\NormalTok{)}
-\NormalTok{)}
-
-\CommentTok{# figures in the algorithm chapter}
-\NormalTok{figs3 <-}\StringTok{ }\NormalTok{tibble}\OperatorTok{::}\KeywordTok{tibble}\NormalTok{(}
-  \DataTypeTok{Chapter =} \KeywordTok{c}\NormalTok{(}\KeywordTok{rep}\NormalTok{(}\StringTok{"3"}\NormalTok{, }\DecValTok{7}\NormalTok{)),}
-  \DataTypeTok{Figure =} \KeywordTok{c}\NormalTok{(}\KeywordTok{seq}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{7}\NormalTok{)),}
-  \DataTypeTok{Caption =} \KeywordTok{c}\NormalTok{(}
-    \StringTok{"Grid points to create a tilegram."}\NormalTok{,}
-    \StringTok{"All possible hexagon locations from the initial grid are shown with blue outlines."}\NormalTok{,}
-    \StringTok{"Filter for grid points within a square, then circular, distance for those closest to the centroid."}\NormalTok{,}
-    \StringTok{"A complete hexagon tile map of Tasmania"}\NormalTok{,}
-    \StringTok{"The Australian Cancer Atlas data has determined the colour of each Statistical Area of Australian at Level 2"}\NormalTok{,}
-    \StringTok{"A choropleth map of the Statistical Areas of Australia at Level 2."}\NormalTok{,}
-    \StringTok{"A hexagon tile map of the Statistical Areas of Australia at Level 2."}\NormalTok{), }
-  \DataTypeTok{Page =} \KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{9}\NormalTok{, }\DecValTok{0}\NormalTok{)}
-\NormalTok{)}
-
-
-\NormalTok{figs4 <-}\StringTok{ }\NormalTok{tibble}\OperatorTok{::}\KeywordTok{tibble}\NormalTok{(}
-  \DataTypeTok{Chapter =} \KeywordTok{c}\NormalTok{(}\KeywordTok{rep}\NormalTok{(}\StringTok{"4"}\NormalTok{, }\DecValTok{7}\NormalTok{)),}
-  \DataTypeTok{Figure =} \KeywordTok{c}\NormalTok{(}\KeywordTok{seq}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{7}\NormalTok{)),}
-  \DataTypeTok{Caption =} \KeywordTok{c}\NormalTok{(}
-    \StringTok{"A choropleth map of the smoothed average of liver cancer diagnoses for Australian males."}\NormalTok{,}
-    \StringTok{"A hexagon tile map of the smoothed average of liver cancer diagnoses for Australian males."}\NormalTok{,}
-    \StringTok{"This lineup of twelve hexagon tile map displays contains one map with a real population related structure."}\NormalTok{,}
-    \StringTok{"The experimental design used in the visual inference study."}\NormalTok{,}
-    \StringTok{"The detection rates achieved by participants are contrasted when viewing the four replicates of the three trend models"}\NormalTok{,}
-    \StringTok{"The distribution of the time taken (seconds) to submit a response for each combination of trend, whether the data plot was detected, and type of display, shown using horizontally jittered dotplots."}\NormalTok{,}
-    \StringTok{"The amount of times each level of certainty was chosen by participants when viewing hexagon tile map or choropleth displays."}\NormalTok{), }
-  \DataTypeTok{Page =} \KeywordTok{c}\NormalTok{(}\DecValTok{12}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{23}\NormalTok{, }\DecValTok{25}\NormalTok{, }\DecValTok{28}\NormalTok{, }\DecValTok{29}\NormalTok{, }\DecValTok{30}\NormalTok{)}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\begin{tabular}{lrl>{\raggedleft\arraybackslash}p{20em}}
+\toprule
+Chapter & Figure & Caption & Page\\
+\midrule
+2 & 1 & A selection of choropleth cancer maps from online atlases that are publicly available. & 12\\
+2 & 2 & Common alternatives to maps, showing the same information for the United States of America. & 20\\
+2 & 3 & Two alternative displays, tile map (left) and geofaceted map (right), showing state age-adjusted rate of incidence for lung and bronchus in the USA. & 24\\
+2 & 4 & Cartograms showing melanoma incidence in Australia. & 26\\
+2 & 5 & Interactive controls of displays in publicly available choropleth cancer maps & 30\\
+\addlinespace
+2 & 6 & Two examples of advanced interactivity (and animation) in publicly available choropleth cancer maps. & 32\\
+3 & 1 & Grid points to create a tilegram. & 44\\
+3 & 2 & All possible hexagon locations from the initial grid are shown with blue outlines. & 45\\
+3 & 3 & Filter for grid points within a square, then circular, distance for those closest to the centroid. & 47\\
+3 & 4 & A complete hexagon tile map of Tasmania & 48\\
+\addlinespace
+3 & 5 & The Australian Cancer Atlas data has determined the colour of each Statistical Area of Australian at Level 2 & 48\\
+3 & 6 & A choropleth map of the Statistical Areas of Australia at Level 2. & 51\\
+3 & 7 & A hexagon tile map of the Statistical Areas of Australia at Level 2. & 52\\
+4 & 1 & A choropleth map of the smoothed average of liver cancer diagnoses for Australian males. & 60\\
+4 & 2 & A hexagon tile map of the smoothed average of liver cancer diagnoses for Australian males. & 60\\
+\addlinespace
+4 & 3 & This lineup of twelve hexagon tile map displays contains one map with a real population related structure. & 61\\
+4 & 4 & The experimental design used in the visual inference study. & 62\\
+4 & 5 & The detection rates achieved by participants are contrasted when viewing the four replicates of the three trend models & 64\\
+4 & 6 & The distribution of the time taken (seconds) to submit a response for each combination of trend, whether the data plot was detected, and type of display, shown using horizontally jittered dotplots. & 65\\
+4 & 7 & The amount of times each level of certainty was chosen by participants when viewing hexagon tile map or choropleth displays. & 66\\
+\bottomrule
+\end{tabular}
 
 \hypertarget{list-of-tables}{%
 \chapter*{List of Tables}\label{list-of-tables}}
 \addcontentsline{toc}{chapter}{List of Tables}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{tabs2 <-}\StringTok{ }\NormalTok{tibble}\OperatorTok{::}\KeywordTok{tibble}\NormalTok{(}
-  \DataTypeTok{Chapter =} \KeywordTok{c}\NormalTok{(}\KeywordTok{rep}\NormalTok{(}\StringTok{"2"}\NormalTok{, }\DecValTok{6}\NormalTok{)),}
-  \DataTypeTok{Table =} \KeywordTok{c}\NormalTok{(}\KeywordTok{seq}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{6}\NormalTok{)),}
-  \DataTypeTok{Caption =} \KeywordTok{c}\NormalTok{(}
-    \StringTok{"A selection of choropleth cancer maps from online atlases that are publicly available."}\NormalTok{,}
-    \StringTok{"Common alternatives to maps, showing the same information for the United States of America."}\NormalTok{,}
-    \StringTok{"Two alternative displays, tile map (left) and geofaceted map (right), showing state age-adjusted rate of incidence for lung and bronchus in the USA."}\NormalTok{,}
-    \StringTok{"Cartograms showing melanoma incidence in Australia."}\NormalTok{,}
-    \StringTok{"Interactive controls of displays in publicly available choropleth cancer maps"}\NormalTok{,}
-    \StringTok{"Two examples of advanced interactivity (and animation) in publicly available choropleth cancer maps."}\NormalTok{)}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\begin{tabular}{lll>{\raggedleft\arraybackslash}p{20em}}
+\toprule
+Chapter & Table & Caption & Page\\
+\midrule
+2 & 1 & A selection of choropleth cancer maps from online atlases. & 10\\
+2 & 2 & Common measures for reporting cancer information. & 13\\
+2 & 3 & Maps used to present statistics for the United States of America. & 18\\
+2 & 4 & Summary of features and constraints of common mapping methods used to display
+cancer statistics. & 26\\
+4 & I (1) & The mean and standard deviation of the rate of detection for each trend model, calculated for the choropleth and hexagon tile map displays. & 64\\
+\addlinespace
+4 & II (2) & The model output for the generalised linear mixed effect model for detection rate. & 65\\
+4 & III (3) & The amount of participants that selected each reason for their choice of plot when looking at each trend model shown in Choropleth and Hexagon Tile maps. & 66\\
+\bottomrule
+\end{tabular}
+
+\hypertarget{list-of-publications}{%
+\chapter*{List of Publications}\label{list-of-publications}}
+\addcontentsline{toc}{chapter}{List of Publications}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The literature review exploring current practice for visualising spatial data in Chapter \ref{ch:literature} has been submitted to the journal \emph{Annals of Cancer Epidemiology} for publication.
+\end{enumerate}
+
+Kobakian S. and Cook, D. and Roberts, J. (2019). Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays. Manuscript submitted for publication.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  The details of the algorithm documented in Chapter \ref{ch:algorithm} have been submitted to the \emph{Journal of Statistical Software}.
+\end{enumerate}
+
+Kobakian S. and Cook, D. (2020). An Algorithm For Spatial Mapping Using a Hexagon Tile Map, With Application to Australian Maps. Manuscript submitted for publication.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  The details of the visual inference testing is documented in Chapter \ref{ch:experiment} has been submitted to the \emph{IEEE Transactions of Visualisation and Computer Graphics} under the title ``Comparing the Effectiveness of the Choropleth Map with a Hexagon Tile Map for Communicating Cancer''
+\end{enumerate}
+
+Kobakian S. and Cook, D. (2020). Comparing the Effectiveness of the Choropleth Map
+with a Hexagon Tile Map for Communicating Cancer Manuscript submitted for publication.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  The code for the algorithm documented in Chapter \ref{ch:algorithm} is currently hosted on \emph{CRAN} as the package sugarbag.
+\end{enumerate}
+
+Kobakian, S. and Cook, D. (2019). sugarbag: Create Tessellated Hexagon Maps. \url{https://srkobakian.github.io/sugarbag/}, \url{https://github.com/srkobakian/sugarbag}.
+
+\clearpage\pagenumbering{arabic}\setcounter{page}{0}
 
 \hypertarget{declaration}{%
 \chapter*{Declaration}\label{declaration}}
@@ -142,7 +171,7 @@ I hereby declare that this thesis contains no material which has been accepted f
 
 This thesis includes three original papers submitted to peer reviewed journals. The core theme of the thesis is spatial visualisations. The ideas, development and writing up of all the papers in the thesis were the principal responsibility of myself, the student, working within the Faculty of Science and Engineering under the supervision of Distinguished Professor Kerrie Mengersen and Dr.~Earl Duncan. It was also created under the supervision of the external supervisor Professor Dianne Cook.
 
-I have not renumbered sections of submitted or published papers, instead they are individually formatted for journal submission.
+The papers in Chapters 2, 3, and 4 have been individually formatted for journal submission however, I have renumbered the pages of the submitted papers for cohesion across this thesis.
 
 \hypertarget{acknowledgements}{%
 \chapter*{Acknowledgements}\label{acknowledgements}}
@@ -220,52 +249,6 @@ Several \texttt{R} \autocite{R} packages were used to produce this thesis:
 \item
   \texttt{tidyverse} \autocite{tidyverse}
 \end{itemize}
-
-\hypertarget{preface}{%
-\chapter*{Preface}\label{preface}}
-\addcontentsline{toc}{chapter}{Preface}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  The literature review exploring current practice for visualising spatial data in Chapter \ref{ch:literature} has been submitted to the journal \emph{Annals of Cancer Epidemiology} for publication.
-\end{enumerate}
-
-Kobakian S. and Cook, D. and Roberts, J. (2019). Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays. Manuscript submitted for publication.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  The details of the algorithm documented in Chapter \ref{ch:algorithm} have been submitted to the \emph{Journal of Statistical Software}.
-\end{enumerate}
-
-Kobakian S. and Cook, D. (2020). An Algorithm For Spatial Mapping Using a Hexagon Tile Map, With Application to Australian Maps. Manuscript submitted for publication.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  The details of the visual inference testing is documented in Chapter \ref{ch:experiment} has been submitted to the \emph{IEEE Transactions of Visualisation and Computer Graphics} under the title ``Comparing the Effectiveness of the Choropleth Map with a Hexagon Tile Map for Communicating Cancer''
-\end{enumerate}
-
-Kobakian S. and Cook, D. (2020). Comparing the Effectiveness of the Choropleth Map
-with a Hexagon Tile Map for Communicating Cancer Manuscript submitted for publication.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\tightlist
-\item
-  The code for the algorithm documented in Chapter \ref{ch:algorithm} is currently hosted on \emph{CRAN} as the package sugarbag.
-\end{enumerate}
-
-Kobakian, S. and Cook, D. (2019). sugarbag: Create Tessellated Hexagon Maps. \url{https://srkobakian.github.io/sugarbag/}, \url{https://github.com/srkobakian/sugarbag}.
-
-\clearpage\pagenumbering{arabic}\setcounter{page}{0}
 
 \hypertarget{ch:intro}{%
 \chapter{Introduction}\label{ch:intro}}
@@ -345,7 +328,7 @@ This chapter was submitted for publication to the journal \emph{Annals of Cancer
 \includepdf[pages = {1-}, scale=1]{02-literature.pdf}
 
 \hypertarget{ch:algorithm}{%
-\chapter{Algorithm}\label{ch:algorithm}}
+\chapter{An algorithm for creating a tessellated hexagon display}\label{ch:algorithm}}
 
 This chapter relates to the first research aim as stated in \ref{sec:aims}.
 The chapter introduces the step devised for the algorithm.
@@ -459,26 +442,30 @@ To communicate human related spatial patterns of disease, map creators should co
 
 The detection rate is considered for each lineup. The detection rates for group A were less varied than the detection rates for the lineups seen by group B. Fig. \ref{fig:pdetection-group} shows the distribution using a boxplot. This shows the median value for detection rate was extremely similar.
 
-\begin{verbatim}
-## Warning: Removed 1 rows containing missing values (geom_point).
-\end{verbatim}
-
+\begin{figure}
+\centering
 \includegraphics{thesis_files/figure-latex/pdetection-group-1.pdf}
+\caption{\label{fig:pdetection-group}Boxplots of the distribution of detection rates for each line up, separated by group.}
+\end{figure}
 
 The overall detection rate is considered for each trend model in Fig. \ref{fig:pdetect-trend}.
 The detection rates for the NW-SE trend model was less varied than the detection rates for the Three Cities and All Cities trends. Fig. \ref{fig:pdetection-group} shows the distribution using a boxplot. This shows the distributions of the rates do not overlap for NW-SE and Three Cities trends, the Three cities range was larger, but the median was much higher for the NW-SE trend. The All Cities trend model distribution overlaps with the NW-SE and All Cities trends.
 
-\begin{verbatim}
-## Warning: Removed 1 rows containing missing values (geom_point).
-\end{verbatim}
-
+\begin{figure}
+\centering
 \includegraphics{thesis_files/figure-latex/pdetect-trend-1.pdf}
+\caption{\label{fig:pdetect-trend}Boxplots of the distribution of detection rates for each line up, separated by trend model.}
+\end{figure}
 
 The boxplots in Fig. \ref{fig:pdetection-type} contrast the distribution of the detection rates for eah type of display.
 The detection rates across the lineups was less varied for the hexagon display. There was a large difference in the medians for the types of displays.
 Without considering the relationship for each lineup, the hexagon lineup display allowed the participants to achieve higher detection rates.
 
+\begin{figure}
+\centering
 \includegraphics{thesis_files/figure-latex/pdetection-type-1.pdf}
+\caption{\label{fig:pdetection-type}Boxplots of the distribution of detection rates for each line up, separated by type of display.}
+\end{figure}
 
 \hypertarget{lineups}{%
 \section{Lineups}\label{lineups}}
@@ -495,7 +482,7 @@ All of Three Cities displays, except (4), were detected in the hexagon display. 
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/choices-1.pdf}
-\caption{\label{fig:choices}Each facet is associated with one lineup, the height of the points show the proportion of the participants that made each choice when considering each lineup. The points coloured orange show the map which contained a trend model, these are the correct choices. The numbers differentiate the replicates of each trend model and type of map display. Participants were able to select 0 to indicate they did not want to choose a map.}
+\caption{\label{fig:choices}Pin plots of the propotion of choices made for each lineup location. Each facet is associated with one lineup, the height of the points show the proportion of the participants that made each choice when considering each lineup. The points coloured orange show the map which contained a trend model, these are the correct choices. The numbers differentiate the replicates of each trend model and type of map display. Participants were able to select 0 to indicate they did not want to choose a map.}
 \end{figure}
 
 \begin{table}

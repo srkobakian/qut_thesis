@@ -4,7 +4,7 @@ knit: "bookdown::render_book"
 ---
 
 
-# An algorithm for creating a\ntessellated hexagon display {#ch:algorithm}
+# An algorithm for creating a tessellated hexagon display {#ch:algorithm}
 
 This chapter relates to the first research aim as stated in \ref{sec:aims}.
 The chapter introduces the step devised for the algorithm.
