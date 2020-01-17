@@ -6,7 +6,8 @@ knit: "bookdown::render_book"
 
 
 <!--less than 500 words-->
-The goal of many spatial visualisations is to gain a broad perspective of the values of statistics over the Australian population. However, the use of most mapping techniques can mislead, as the use of geographical areas unequally presents the spatial distribution of a dataset. The Australian population has congregated in the capital cities and significant cities in each state. This pattern has resulted in very dense population centres and sparsely populated rural areas. The relationship between the Australian population and the geographic area they live in results in a heterogeneous distribution of the map space. 
+Relationships between geographic areas can be communicated using maps full stop the speed of visual processes allow quick comparisons to be made between neighbouring areas. However, when presenting population-related statistics on the geographic map base, large areas that draw readers' attention can allow too much emphasis to be placed on rural areas.
+This problem can dramatically impact the interpretation of statistics across Australia, due to the large difference in the land area when the population is divided at various granularities.
 
 As part of this thesis, an algorithm is presented which will take geospatial areas in the form of polygons and create an alternative graphical display of a spatial distribution. This algorithm takes a set of polygons and creates a map of tessellated hexagons, representing a single geographical area with a single hexagon. It arranges them to replicate spatial relationships of geographic areas in each city. The hexagon tile map visualisation produced by the algorithm is contrasted with the traditional choropleth map.
 The package `sugarbag` [@sugarbag] implements the algorithm for the statistical software `R` [@R].
