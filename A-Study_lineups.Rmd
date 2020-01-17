@@ -9,7 +9,6 @@ knit: "bookdown::render_book"
 ```{r setup-lineups, echo=FALSE, message=FALSE, warning=FALSE, comment = FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE, cache = TRUE)
 options("citation_format" = "pandoc")
-BibOptions(check.entries = FALSE, style = "markdown", bib.style = "alphabetic", cite.style = 'alphabetic')
 ```
 
 
@@ -202,31 +201,36 @@ d %>%
 choice_tabs <- d %>% 
   count(trend, type, choice, replicate, choice, detect) %>% 
   group_by(trend, type, replicate) %>% 
-  mutate(prop = round(n/sum(n), 2)) %>% 
+  mutate(prop = as.character(round(n/sum(n), 2))) %>% 
+  rowwise() %>% 
+  mutate(prop = ifelse(nchar(prop)==3, paste0(prop,0), prop)) %>% 
   mutate(repl = paste("Rep:", replicate, ":\n", type,  sep = "")) %>%
   mutate(bottom = 0) %>% 
   select(Trend = trend, Rep = replicate, Type = type, prop, choice) %>% 
-  spread(choice, prop, fill = "0") %>% 
+  spread(choice, prop, fill = "0.00") %>% 
   nest(data = c(Rep, Type, `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, 
     `10`, `11`, `12`))
 ```
 
 ```{r choice-nwse, results = "asis"}
-knitr::kable(choice_tabs$data[[1]], format = "latex", align = "rrrrrrrrrrrrrr", escape = FALSE,
+knitr::kable(choice_tabs$data[[1]], format = "latex", 
+  align = "rrrrrrrrrrrrrr", escape = FALSE, booktabs = TRUE,
   caption = "The proportion of participants who selected each of the twelve map choices in each lineup for NW-SE displays.") %>%
   collapse_rows(., columns = c(1,2))
 ```
 
 
 ```{r choice-three, results = "asis"}
-knitr::kable(choice_tabs$data[[2]], format = "latex", align = "rrrrrrrrrrrrrr", escape = FALSE,
+knitr::kable(choice_tabs$data[[2]], format = "latex", 
+  align = "rrrrrrrrrrrrrr", escape = FALSE, booktabs = TRUE,
   caption = "The proportion of participants who selected each of the twelve map choices in each lineup for Three Cities displays.") %>%
   collapse_rows(., columns = c(1,2))
 ```
 
 
 ```{r choice-all, results = "asis"}
-knitr::kable(choice_tabs$data[[3]], format = "latex", align = "rrrrrrrrrrrrrr", escape = FALSE,
+knitr::kable(choice_tabs$data[[3]], format = "latex", 
+  align = "rrrrrrrrrrrrrr", escape = FALSE, booktabs = TRUE,
   caption = "The proportion of participants who selected each of the twelve map choices in each lineup for All Cities displays.") %>%
   collapse_rows(., columns = c(1,2))
 ```
