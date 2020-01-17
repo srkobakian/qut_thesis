@@ -67,7 +67,7 @@ Using animations will allow us to control how people transform a recognisable ma
 \chapter*{List of Figures}\label{list-of-figures}}
 \addcontentsline{toc}{chapter}{List of Figures}
 
-\begin{tabular}{lrl>{\raggedleft\arraybackslash}p{20em}}
+\begin{tabular}{rr>{\raggedright\arraybackslash}p{20em}r}
 \toprule
 Chapter & Figure & Caption & Page\\
 \midrule
@@ -101,7 +101,7 @@ Chapter & Figure & Caption & Page\\
 \chapter*{List of Tables}\label{list-of-tables}}
 \addcontentsline{toc}{chapter}{List of Tables}
 
-\begin{tabular}{lll>{\raggedleft\arraybackslash}p{20em}}
+\begin{tabular}{rr>{\raggedright\arraybackslash}p{20em}r}
 \toprule
 Chapter & Table & Caption & Page\\
 \midrule
@@ -340,7 +340,7 @@ The steps in this algorithm are implemented in the \texttt{sugarbag} \autocite{s
 
 \includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_algorithm.pdf}
 
-\includepdf[pages = {1-}, scale=1]{03-algorithm.pdf}
+\includepdf[pages = {1-}, scale=1, pagecommand={}]{03-algorithm.pdf}
 
 \hypertarget{ch:experiment}{%
 \chapter{Visual Inference Study}\label{ch:experiment}}
@@ -437,10 +437,133 @@ To communicate human related spatial patterns of disease, map creators should co
 \hypertarget{visual-inference-study-lineups}{%
 \chapter{Visual inference study lineups}\label{visual-inference-study-lineups}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(readxl)}
+\KeywordTok{library}\NormalTok{(cowplot)}
+\KeywordTok{library}\NormalTok{(png)}
+\KeywordTok{library}\NormalTok{(grid)}
+\KeywordTok{library}\NormalTok{(lme4)}
+\KeywordTok{library}\NormalTok{(ggthemes)}
+\KeywordTok{library}\NormalTok{(RColorBrewer)}
+\KeywordTok{library}\NormalTok{(knitr)}
+\KeywordTok{library}\NormalTok{(kableExtra)}
+
+\NormalTok{trend_colours <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}
+  \StringTok{"NW-SE"}\NormalTok{ =}\StringTok{ "#B2DF8A"}\NormalTok{,}
+  \StringTok{"Three Cities"}\NormalTok{ =}\StringTok{ "#A6CEE3"}\NormalTok{,}
+  \StringTok{"All Cities"}\NormalTok{ =}\StringTok{ "#1F78B4"}\NormalTok{)}
+  
+\NormalTok{type_colours <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}
+  \StringTok{"Choro."}\NormalTok{ =}\StringTok{ "#fcae91"}\NormalTok{,}
+  \StringTok{"Hex."}\NormalTok{ =}\StringTok{ "#a50f15"}\NormalTok{)}
+
+\NormalTok{detect_f_colours <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}
+  \StringTok{"No"}\NormalTok{ =}\StringTok{ "#66C2A5"}\NormalTok{,}
+  \StringTok{"Yes"}\NormalTok{ =}\StringTok{ "#FC8D62"}\NormalTok{)}
+
+\NormalTok{detect_colours <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}
+  \StringTok{"Detected? No"}\NormalTok{ =}\StringTok{ "#66C2A5"}\NormalTok{,}
+  \StringTok{"Detected? Yes"}\NormalTok{ =}\StringTok{ "#FC8D62"}\NormalTok{)}
+
+  \CommentTok{# Downloaded data}
+\NormalTok{d <-}\StringTok{ }\KeywordTok{read_xlsx}\NormalTok{(}\StringTok{"data/experiment-export.xlsx"}\NormalTok{, }\DataTypeTok{sheet=}\DecValTok{2}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(}\OperatorTok{!}\KeywordTok{is.na}\NormalTok{(contributor)) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{contributor =} \KeywordTok{factor}\NormalTok{(contributor))}
+
+\CommentTok{# Check data set }
+\CommentTok{# Need to clean multiple entries, 48, 24}
+\CommentTok{# remove duplicated entries due to submit button}
+\NormalTok{d <-}\StringTok{ }\NormalTok{d }\OperatorTok{%>%}\StringTok{ }\KeywordTok{group_by}\NormalTok{(group, contributor, image_name) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{slice}\NormalTok{(}\DecValTok{1}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{arrange}\NormalTok{(group, contributor, plot_order)}
+
+\CommentTok{# Remove contributors who did not provide answers to most questions}
+\NormalTok{keep <-}\StringTok{ }\NormalTok{d }\OperatorTok{%>%}\StringTok{ }\KeywordTok{count}\NormalTok{(contributor, }\DataTypeTok{sort =} \OtherTok{TRUE}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{filter}\NormalTok{(n }\OperatorTok{>}\StringTok{ }\DecValTok{10}\NormalTok{)}
+\NormalTok{d <-}\StringTok{ }\NormalTok{d }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{filter}\NormalTok{(contributor }\OperatorTok{%in%}\StringTok{ }\NormalTok{keep}\OperatorTok{$}\NormalTok{contributor) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(contributor }\OperatorTok{!=}\StringTok{ "1234567890"}\NormalTok{)}
+
+\CommentTok{# Remove contributors who did not provide any choices}
+\NormalTok{bad_contribs <-}\StringTok{ }\NormalTok{d }\OperatorTok{%>%}\StringTok{ }\KeywordTok{group_by}\NormalTok{(contributor) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{summarise}\NormalTok{(}\DataTypeTok{sum0 =} \KeywordTok{sum}\NormalTok{(choice)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{filter}\NormalTok{(sum0 }\OperatorTok{==}\StringTok{ }\DecValTok{0}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{pull}\NormalTok{(contributor)}
+
+\NormalTok{d <-}\StringTok{ }\NormalTok{d }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{filter}\NormalTok{(}\OperatorTok{!}\NormalTok{(contributor }\OperatorTok{%in%}\StringTok{ }\NormalTok{bad_contribs))}
+
+
+\NormalTok{n_contributors <-}\StringTok{ }\NormalTok{d }\OperatorTok{%>%}\StringTok{ }\KeywordTok{count}\NormalTok{(contributor, }\DataTypeTok{sort=}\OtherTok{TRUE}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{summarise}\NormalTok{(}\DataTypeTok{n_contributors =} \KeywordTok{length}\NormalTok{(contributor))}
+
+\NormalTok{d <-}\StringTok{ }\NormalTok{d }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{certainty =} \KeywordTok{factor}\NormalTok{(}\KeywordTok{as.character}\NormalTok{(certainty),}
+  \DataTypeTok{levels =} \KeywordTok{c}\NormalTok{(}\StringTok{"1"}\NormalTok{, }\StringTok{"2"}\NormalTok{, }\StringTok{"3"}\NormalTok{, }\StringTok{"4"}\NormalTok{,}\StringTok{"5"}\NormalTok{), }\DataTypeTok{ordered=}\OtherTok{TRUE}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{replicate <-}\StringTok{ }\KeywordTok{tibble}\NormalTok{(}\DataTypeTok{image_name =} \KeywordTok{c}\NormalTok{(}\StringTok{"aus_cities_12_geo.png"}\NormalTok{, }\StringTok{"aus_cities_12_hex.png"}\NormalTok{, }
+                                   \StringTok{"aus_cities_3_geo.png"}\NormalTok{, }\StringTok{"aus_cities_3_hex.png"}\NormalTok{,}
+                                   \StringTok{"aus_cities_4_geo.png"}\NormalTok{, }\StringTok{"aus_cities_4_hex.png"}\NormalTok{,}
+                                   \StringTok{"aus_cities_9_geo.png"}\NormalTok{, }\StringTok{"aus_cities_9_hex.png"}\NormalTok{,}
+                                   \StringTok{"aus_nwse_2_geo.png"}\NormalTok{, }\StringTok{"aus_nwse_2_hex.png"}\NormalTok{,}
+                                   \StringTok{"aus_nwse_3_geo.png"}\NormalTok{, }\StringTok{"aus_nwse_3_hex.png"}\NormalTok{,}
+                                   \StringTok{"aus_nwse_5_geo.png"}\NormalTok{, }\StringTok{"aus_nwse_5_hex.png"}\NormalTok{,}
+                                   \StringTok{"aus_nwse_6_geo.png"}\NormalTok{, }\StringTok{"aus_nwse_6_hex.png"}\NormalTok{,}
+                                   \StringTok{"aus_three_12_geo.png"}\NormalTok{, }\StringTok{"aus_three_12_hex.png"}\NormalTok{,}
+                                   \StringTok{"aus_three_5_geo.png"}\NormalTok{, }\StringTok{"aus_three_5_hex.png"}\NormalTok{,}
+                                   \StringTok{"aus_three_8_geo.png"}\NormalTok{, }\StringTok{"aus_three_8_hex.png"}\NormalTok{,}
+                                   \StringTok{"aus_three_9_geo.png"}\NormalTok{, }\StringTok{"aus_three_9_hex.png"}\NormalTok{),}
+                    \DataTypeTok{replicate =} \KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{, }\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, }
+                                  \DecValTok{1}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{, }\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{,}
+                                  \DecValTok{1}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{, }\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{))}
+\CommentTok{# Add rep info to data}
+\NormalTok{d <-}\StringTok{ }\NormalTok{d }\OperatorTok{%>%}\StringTok{ }\KeywordTok{left_join}\NormalTok{(., replicate, }\DataTypeTok{by =} \StringTok{"image_name"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# Tidy for analysis}
+\NormalTok{d <-}\StringTok{ }\NormalTok{d }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{separate}\NormalTok{(image_name, }\KeywordTok{c}\NormalTok{(}\StringTok{"nothing"}\NormalTok{, }\StringTok{"trend"}\NormalTok{, }\StringTok{"location"}\NormalTok{, }\StringTok{"type"}\NormalTok{, }\StringTok{"extra"}\NormalTok{), }\DataTypeTok{remove =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{nothing, }\OperatorTok{-}\NormalTok{extra) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{location =} \KeywordTok{as.numeric}\NormalTok{(location), }
+    \CommentTok{# detect measures the accuracy of the choice}
+         \DataTypeTok{detect =} \KeywordTok{ifelse}\NormalTok{(location }\OperatorTok{==}\StringTok{ }\NormalTok{choice, }\DecValTok{1}\NormalTok{, }\DecValTok{0}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{trend =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{    trend }\OperatorTok{==}\StringTok{ "nwse"} \OperatorTok{~}\StringTok{ "NW-SE"}\NormalTok{,}
+\NormalTok{    trend }\OperatorTok{==}\StringTok{ "cities"} \OperatorTok{~}\StringTok{ "All Cities"}\NormalTok{,}
+\NormalTok{    trend }\OperatorTok{==}\StringTok{ "three"} \OperatorTok{~}\StringTok{ "Three Cities"}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{trend =} \KeywordTok{fct_relevel}\NormalTok{(trend, }\StringTok{"NW-SE"}\NormalTok{,}\StringTok{"Three Cities"}\NormalTok{,}\StringTok{"All Cities"}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{type =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{    type }\OperatorTok{==}\StringTok{ "hex"} \OperatorTok{~}\StringTok{"Hex."}\NormalTok{,}
+    \OtherTok{TRUE}\OperatorTok{~}\StringTok{"Choro."}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{detect_f =} \KeywordTok{factor}\NormalTok{(detect, }\DataTypeTok{levels =} \KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{), }\DataTypeTok{labels =} \KeywordTok{c}\NormalTok{(}\StringTok{"Detected? No"}\NormalTok{, }\StringTok{"Detected? Yes"}\NormalTok{)))}
+
+\NormalTok{plots <-}\StringTok{ }\NormalTok{d }\OperatorTok{%>%}\StringTok{ }\KeywordTok{group_by}\NormalTok{(group, trend, type, location) }\OperatorTok{%>%}
+\StringTok{  }\CommentTok{# pdetect measures the aggregated accuracy of the choices}
+\StringTok{  }\KeywordTok{summarise}\NormalTok{(}\DataTypeTok{pdetect =} \KeywordTok{length}\NormalTok{(detect[detect }\OperatorTok{==}\StringTok{ }\DecValTok{1}\NormalTok{])}\OperatorTok{/}\KeywordTok{length}\NormalTok{(detect)) }
+\end{Highlighting}
+\end{Shaded}
+
 \hypertarget{overall-performance}{%
 \section{Overall Performance}\label{overall-performance}}
 
 The detection rate is considered for each lineup. The detection rates for group A were less varied than the detection rates for the lineups seen by group B. Fig. \ref{fig:pdetection-group} shows the distribution using a boxplot. This shows the median value for detection rate was extremely similar.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plots }\OperatorTok{%>%}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ group, }\DataTypeTok{y =}\NormalTok{ pdetect)) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{geom_boxplot}\NormalTok{() }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{geom_jitter}\NormalTok{(}\DataTypeTok{width =} \FloatTok{0.1}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Detection rate"}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{ylim}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
 \centering
@@ -451,6 +574,17 @@ The detection rate is considered for each lineup. The detection rates for group 
 The overall detection rate is considered for each trend model in Fig. \ref{fig:pdetect-trend}.
 The detection rates for the NW-SE trend model was less varied than the detection rates for the Three Cities and All Cities trends. Fig. \ref{fig:pdetection-group} shows the distribution using a boxplot. This shows the distributions of the rates do not overlap for NW-SE and Three Cities trends, the Three cities range was larger, but the median was much higher for the NW-SE trend. The All Cities trend model distribution overlaps with the NW-SE and All Cities trends.
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plots }\OperatorTok{%>%}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ trend, }\DataTypeTok{y =}\NormalTok{ pdetect, }\DataTypeTok{fill =}\NormalTok{ trend)) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{geom_boxplot}\NormalTok{() }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{scale_fill_manual}\NormalTok{(}\DataTypeTok{values =}\NormalTok{ trend_colours) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_jitter}\NormalTok{(}\DataTypeTok{width =} \FloatTok{0.1}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Detection rate"}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{ylim}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{)) }
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/pdetect-trend-1.pdf}
@@ -460,6 +594,17 @@ The detection rates for the NW-SE trend model was less varied than the detection
 The boxplots in Fig. \ref{fig:pdetection-type} contrast the distribution of the detection rates for eah type of display.
 The detection rates across the lineups was less varied for the hexagon display. There was a large difference in the medians for the types of displays.
 Without considering the relationship for each lineup, the hexagon lineup display allowed the participants to achieve higher detection rates.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plots }\OperatorTok{%>%}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ type, }\DataTypeTok{y =}\NormalTok{ pdetect, }\DataTypeTok{fill =}\NormalTok{ type)) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{geom_boxplot}\NormalTok{() }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{geom_jitter}\NormalTok{(}\DataTypeTok{width =} \FloatTok{0.1}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_fill_manual}\NormalTok{(}\DataTypeTok{values =}\NormalTok{ type_colours) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Detection rate"}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{ylim}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
 \centering
@@ -479,11 +624,57 @@ The correct map display in lineups with a North West to South East trend was cho
 In the lineups of All Cities displays, participants were misled by the choropleth display, but not the hexagon display for all except (2).
 All of Three Cities displays, except (4), were detected in the hexagon display. All except one lineup had at least one participant select the correct map in the lineup as shown in Fig. \ref{fig:choices}.
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{d }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{count}\NormalTok{(type, trend, choice, replicate, choice, detect_f) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(type, trend, replicate) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{prop =}\NormalTok{ n}\OperatorTok{/}\KeywordTok{sum}\NormalTok{(n)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{repl =} \KeywordTok{paste}\NormalTok{(}\StringTok{"Rep:"}\NormalTok{, replicate, }\StringTok{":}\CharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, type,  }\DataTypeTok{sep =} \StringTok{""}\NormalTok{)) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{bottom =} \DecValTok{0}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{ggplot}\NormalTok{() }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{geom_point}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ choice, }\DataTypeTok{y =}\NormalTok{ prop, }\DataTypeTok{color =}\NormalTok{ detect_f), }\DataTypeTok{size =} \DecValTok{3}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{geom_segment}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ choice, }\DataTypeTok{xend =}\NormalTok{ choice,}\DataTypeTok{y =}\NormalTok{ bottom, }\DataTypeTok{yend =}\NormalTok{ prop, }\DataTypeTok{colour =}\NormalTok{ detect_f), }\DataTypeTok{size =} \DecValTok{1}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{facet_grid}\NormalTok{(repl }\OperatorTok{~}\StringTok{ }\NormalTok{trend, }
+    \DataTypeTok{drop =} \OtherTok{TRUE}\NormalTok{, }\DataTypeTok{as.table =} \OtherTok{TRUE}\NormalTok{, }\DataTypeTok{scales =} \StringTok{"free_y"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Choice of plot in lineup"}\NormalTok{, }\DataTypeTok{y =} \StringTok{"Amount of choices"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_colour_manual}\NormalTok{(}\DataTypeTok{values =}\NormalTok{ detect_colours) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_x_continuous}\NormalTok{(}\DataTypeTok{breaks =} \KeywordTok{seq}\NormalTok{(}\DataTypeTok{from =} \DecValTok{0}\NormalTok{, }\DataTypeTok{to =} \DecValTok{12}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_y_continuous}\NormalTok{(}\DataTypeTok{breaks =} \KeywordTok{seq}\NormalTok{(}\DataTypeTok{from =} \FloatTok{0.0}\NormalTok{, }\DataTypeTok{to =} \FloatTok{1.0}\NormalTok{, }\DataTypeTok{by =} \FloatTok{0.1}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{legend.position =} \StringTok{"bottom"}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{guides}\NormalTok{(}\DataTypeTok{colour =} \OtherTok{FALSE}\NormalTok{, }\DataTypeTok{fill =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{strip.text.y =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{angle =} \DecValTok{0}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/choices-1.pdf}
 \caption{\label{fig:choices}Pin plots of the propotion of choices made for each lineup location. Each facet is associated with one lineup, the height of the points show the proportion of the participants that made each choice when considering each lineup. The points coloured orange show the map which contained a trend model, these are the correct choices. The numbers differentiate the replicates of each trend model and type of map display. Participants were able to select 0 to indicate they did not want to choose a map.}
 \end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{choice_tabs <-}\StringTok{ }\NormalTok{d }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{count}\NormalTok{(trend, type, choice, replicate, choice, detect) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(trend, type, replicate) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{prop =} \KeywordTok{round}\NormalTok{(n}\OperatorTok{/}\KeywordTok{sum}\NormalTok{(n), }\DecValTok{2}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{repl =} \KeywordTok{paste}\NormalTok{(}\StringTok{"Rep:"}\NormalTok{, replicate, }\StringTok{":}\CharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, type,  }\DataTypeTok{sep =} \StringTok{""}\NormalTok{)) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{bottom =} \DecValTok{0}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{select}\NormalTok{(}\DataTypeTok{Trend =}\NormalTok{ trend, }\DataTypeTok{Rep =}\NormalTok{ replicate, }\DataTypeTok{Type =}\NormalTok{ type, prop, choice) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{spread}\NormalTok{(choice, prop, }\DataTypeTok{fill =} \StringTok{"0"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{nest}\NormalTok{(}\DataTypeTok{data =} \KeywordTok{c}\NormalTok{(Rep, Type, }\StringTok{`}\DataTypeTok{0}\StringTok{`}\NormalTok{, }\StringTok{`}\DataTypeTok{1}\StringTok{`}\NormalTok{, }\StringTok{`}\DataTypeTok{2}\StringTok{`}\NormalTok{, }\StringTok{`}\DataTypeTok{3}\StringTok{`}\NormalTok{, }\StringTok{`}\DataTypeTok{4}\StringTok{`}\NormalTok{, }\StringTok{`}\DataTypeTok{5}\StringTok{`}\NormalTok{, }\StringTok{`}\DataTypeTok{6}\StringTok{`}\NormalTok{, }\StringTok{`}\DataTypeTok{7}\StringTok{`}\NormalTok{, }\StringTok{`}\DataTypeTok{8}\StringTok{`}\NormalTok{, }\StringTok{`}\DataTypeTok{9}\StringTok{`}\NormalTok{, }
+    \StringTok{`}\DataTypeTok{10}\StringTok{`}\NormalTok{, }\StringTok{`}\DataTypeTok{11}\StringTok{`}\NormalTok{, }\StringTok{`}\DataTypeTok{12}\StringTok{`}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(choice_tabs}\OperatorTok{$}\NormalTok{data[[}\DecValTok{1}\NormalTok{]], }\DataTypeTok{format =} \StringTok{"latex"}\NormalTok{, }\DataTypeTok{align =} \StringTok{"rrrrrrrrrrrrrr"}\NormalTok{, }\DataTypeTok{escape =} \OtherTok{FALSE}\NormalTok{,}
+  \DataTypeTok{caption =} \StringTok{"The proportion of participants who selected each of the twelve map choices in each lineup for NW-SE displays."}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{collapse_rows}\NormalTok{(., }\DataTypeTok{columns =} \KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{table}
 
@@ -512,6 +703,14 @@ Rep & Type & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12\\
 \end{tabular}
 \end{table}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(choice_tabs}\OperatorTok{$}\NormalTok{data[[}\DecValTok{2}\NormalTok{]], }\DataTypeTok{format =} \StringTok{"latex"}\NormalTok{, }\DataTypeTok{align =} \StringTok{"rrrrrrrrrrrrrr"}\NormalTok{, }\DataTypeTok{escape =} \OtherTok{FALSE}\NormalTok{,}
+  \DataTypeTok{caption =} \StringTok{"The proportion of participants who selected each of the twelve map choices in each lineup for Three Cities displays."}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{collapse_rows}\NormalTok{(., }\DataTypeTok{columns =} \KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{table}
 
 \caption{\label{tab:choice-three}The proportion of participants who selected each of the twelve map choices in each lineup for Three Cities displays.}
@@ -538,6 +737,14 @@ Rep & Type & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12\\
 \hline
 \end{tabular}
 \end{table}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(choice_tabs}\OperatorTok{$}\NormalTok{data[[}\DecValTok{3}\NormalTok{]], }\DataTypeTok{format =} \StringTok{"latex"}\NormalTok{, }\DataTypeTok{align =} \StringTok{"rrrrrrrrrrrrrr"}\NormalTok{, }\DataTypeTok{escape =} \OtherTok{FALSE}\NormalTok{,}
+  \DataTypeTok{caption =} \StringTok{"The proportion of participants who selected each of the twelve map choices in each lineup for All Cities displays."}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{collapse_rows}\NormalTok{(., }\DataTypeTok{columns =} \KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{table}
 
@@ -579,11 +786,25 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 \hypertarget{replicate-1}{%
 \subsection{Replicate 1}\label{replicate-1}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_cities_12_geo.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/cities-geo12-1.pdf}
 \caption{\label{fig:cities-geo12}The lineup of choropleth map displays, location 12 contains a distribution that affects all capital cities.}
 \end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_cities_12_hex.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
 \centering
@@ -594,11 +815,25 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 \hypertarget{replicate-2}{%
 \subsection{Replicate 2}\label{replicate-2}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_cities_3_geo.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/cities-geo3-1.pdf}
 \caption{\label{fig:cities-geo3}The lineup of choropleth map displays, location 3 contains a distribution that affects all capital cities.}
 \end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_cities_3_hex.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
 \centering
@@ -609,11 +844,25 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 \hypertarget{replicate-3}{%
 \subsection{Replicate 3}\label{replicate-3}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_cities_4_geo.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/cities-geo4-1.pdf}
 \caption{\label{fig:cities-geo4}The lineup of choropleth map displays, location 4 contains a distribution that affects all capital cities.}
 \end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_cities_4_hex.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
 \centering
@@ -624,11 +873,25 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 \hypertarget{replicate-4}{%
 \subsection{Replicate 4}\label{replicate-4}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_cities_9_geo.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/cities-geo9-1.pdf}
 \caption{\label{fig:cities-geo9}The lineup of choropleth map displays, location 9 contains a distribution that affects all capital cities.}
 \end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_cities_9_hex.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
 \centering
@@ -642,11 +905,25 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 \hypertarget{replicate-1-1}{%
 \subsection{Replicate 1}\label{replicate-1-1}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_three_12_geo.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/three-geo12-1.pdf}
 \caption{\label{fig:three-geo12}The lineup of choropleth map displays, location 12 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_three_12_hex.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
 \centering
@@ -657,11 +934,25 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 \hypertarget{replicate-2-1}{%
 \subsection{Replicate 2}\label{replicate-2-1}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_three_5_geo.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/three-geo5-1.pdf}
 \caption{\label{fig:three-geo5}The lineup of choropleth map displays, location 3 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_three_5_hex.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
 \centering
@@ -672,11 +963,25 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 \hypertarget{replicate-3-1}{%
 \subsection{Replicate 3}\label{replicate-3-1}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_three_8_geo.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/three-geo8-1.pdf}
 \caption{\label{fig:three-geo8}The lineup of choropleth map displays, location 4 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_three_8_hex.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
 \centering
@@ -687,11 +992,25 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 \hypertarget{replicate-4-1}{%
 \subsection{Replicate 4}\label{replicate-4-1}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_three_9_geo.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/three-geo9-1.pdf}
 \caption{\label{fig:three-geo9}The lineup of choropleth map displays, location 9 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_three_9_hex.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
 \centering
@@ -705,11 +1024,25 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 \hypertarget{replicate-1-2}{%
 \subsection{Replicate 1}\label{replicate-1-2}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_nwse_2_geo.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/nwse-geo2-1.pdf}
 \caption{\label{fig:nwse-geo2}The lineup of choropleth map displays, location 12 contains a distribution that affects all capital nwse.}
 \end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_nwse_2_geo.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
 \centering
@@ -720,11 +1053,25 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 \hypertarget{replicate-2-2}{%
 \subsection{Replicate 2}\label{replicate-2-2}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_nwse_3_geo.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/nwse-geo3-1.pdf}
 \caption{\label{fig:nwse-geo3}The lineup of choropleth map displays, location 3 contains a distribution that affects all capital nwse.}
 \end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_nwse_3_geo.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
 \centering
@@ -735,11 +1082,25 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 \hypertarget{replicate-3-2}{%
 \subsection{Replicate 3}\label{replicate-3-2}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_nwse_5_geo.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/nwse-geo5-1.pdf}
 \caption{\label{fig:nwse-geo5}The lineup of choropleth map displays, location 4 contains a distribution that affects all capital nwse.}
 \end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_nwse_5_geo.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
 \centering
@@ -750,11 +1111,25 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 \hypertarget{replicate-4-2}{%
 \subsection{Replicate 4}\label{replicate-4-2}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_nwse_6_geo.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/nwse-geo6-1.pdf}
 \caption{\label{fig:nwse-geo6}The lineup of choropleth map displays, location 9 contains a distribution that affects all capital nwse.}
 \end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"lineups/aus_nwse_6_geo.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
 \centering
@@ -769,6 +1144,13 @@ Participants were recruited via advertising on the Figure-Eight crowdsource plat
 Choosing the task from the list directed all potential participants to the page of instructions.
 This page contained written instructions and is shown in Fig. \ref{fig:instruct}.
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(grid}\OperatorTok{::}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"figures/fig8_instruct.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/instruct-1.pdf}
@@ -780,11 +1162,25 @@ This page contained written instructions and is shown in Fig. \ref{fig:instruct}
 
 The participants were trained using three displays. There were relatively simple lineups, they are displayed in Fig. \ref{fig:training1} and Fig. \ref{fig:training2}.
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(grid}\OperatorTok{::}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"figures/fig8_training1.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/training1-1.pdf}
 \caption{\label{fig:training1}The training lineups of choropleth maps.}
 \end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(grid}\OperatorTok{::}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"figures/fig8_training2.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
 \centering
@@ -800,17 +1196,38 @@ This page also contained a question that asked participants for a validation cod
 
 The demographic and consent page of the \texttt{shinydashboard} web application are displayed in Fig. \ref{fig:survey-demogs}. Two example lineups are shown, one choropleth map lineup in Fig. \ref{fig:survey-choro} and one heaxgon tile map lineup in Fig. \ref{fig:survey-hex}.
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(grid}\OperatorTok{::}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"figures/survey_demogs.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/survey-demogs-1.pdf}
 \caption{\label{fig:survey-demogs}The demographics questions tab of the shinydashboard survey application.}
 \end{figure}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(grid}\OperatorTok{::}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"figures/survey_choro.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
 \begin{figure}
 \centering
 \includegraphics{thesis_files/figure-latex/survey-choro-1.pdf}
 \caption{\label{fig:survey-choro}An example of the choropleth map lineup shown in the survey tab of the shinydashboard app.}
 \end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggdraw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{draw_plot}\NormalTok{(grid}\OperatorTok{::}\KeywordTok{rasterGrob}\NormalTok{(}\KeywordTok{readPNG}\NormalTok{(}\StringTok{"figures/survey_hex.png"}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
 \centering

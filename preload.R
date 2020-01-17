@@ -1,2 +1,15 @@
 library(tidyverse)
 library(knitr)
+library(cowplot)
+library(grid)
+library(gridExtra)
+library(png)
+library(knitcitations)
+library(RefManageR)
+library(sf)
+library(sugarbag)
+
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, cache = TRUE)
+options("citation_format" = "pandoc")
+BibOptions(check.entries = FALSE, style = "markdown", 
+  bib.style = "alphabetic", cite.style = 'alphabetic')

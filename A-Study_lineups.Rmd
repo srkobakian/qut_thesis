@@ -7,12 +7,7 @@ knit: "bookdown::render_book"
 # Visual inference study lineups
 
 ```{r setup-lineups, echo=FALSE, message=FALSE, warning=FALSE, comment = FALSE}
-library(knitcitations)
-library(RefManageR)
-library(sf)
-library(sugarbag)
- 
-knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, cache = TRUE)
 options("citation_format" = "pandoc")
 BibOptions(check.entries = FALSE, style = "markdown", bib.style = "alphabetic", cite.style = 'alphabetic')
 ```
