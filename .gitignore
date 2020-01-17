@@ -2,3 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
+thesis_cache
+thesis_files
+/*_files/
