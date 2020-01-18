@@ -3,9 +3,9 @@ chapter: 2
 knit: "bookdown::render_book"
 ---
 
-# Literature Review {#ch:literature}
+# Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays {#ch:literature}
 
-The following chapters in this thesis each contain an introductory section to introduce the relevant literature. This literature review chapter provides an overview of the key areas of interest in the literature that are relevant to this research. This chapter is organised as follows. Section 1 outlines the traditional spatial mapping technique, the choropleth map, and provides design inspiration using examples of online cancer atlases. Section 2 outlines contemporary mapping approaches, suggested as alternatives to the choropleth. Section 3 compares and critiques these alternative displays in light of the strengths and weaknesses of the choropleth method. section 4 considers how users interact with mapping displays in online cancer atlases, and how map creators can direct the attention of uses through animation.
+This literature review chapter provides an overview of the key areas of interest in the literature that are relevant to this thesis. This chapter is organised as follows. Section 1 outlines the traditional spatial mapping technique, the choropleth map, and provides design inspiration using examples of online cancer atlases. Section 2 outlines contemporary mapping approaches, suggested as alternatives to the choropleth. Section 3 compares and critiques these alternative displays in light of the strengths and weaknesses of the choropleth method. section 4 considers how users interact with mapping displays in online cancer atlases, and how map creators can direct the attention of uses through animation. Additionally, the following chapters in this thesis each begin with a section to introduce the specific relevant literature.
 
 This chapter was submitted for publication to the journal *Annals of Cancer Epidemiology* for publication. This was intended for an audience of cancer atlas creators to be inspired by current atlases, and to encourage the pursuit of alternative displays.
 

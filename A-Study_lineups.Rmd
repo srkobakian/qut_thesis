@@ -4,7 +4,7 @@ knit: "bookdown::render_book"
 
 \appendix
 
-# Visual inference study lineups
+# Experiment lineups
 
 ```{r setup-lineups, echo=FALSE, message=FALSE, warning=FALSE, comment = FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE)

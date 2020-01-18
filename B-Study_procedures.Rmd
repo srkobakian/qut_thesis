@@ -8,17 +8,23 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE)
 options("citation_format" = "pandoc")
 ```
 
-# Visual inference study survey procedure
+# Experiment survey procedure
 
-Participants were recruited via advertising on the Figure-Eight crowdsource platform.
+Participants were recruited via advertising on the Figure Eight crowdsource platform.
 Choosing the task from the list directed all potential participants to the page of instructions.
 This page contained written instructions and is shown in Fig. \ref{fig:instruct}. 
 
 
-```{r instruct, results = "asis", fig.cap = "The training lineups of choropleth maps."}
-ggdraw() +
-  draw_plot(grid::rasterGrob(readPNG("figures/fig8_instruct.png")))
-```
+<!-- ```{r instruct, results = "asis", fig.cap = "The training lineups of choropleth maps."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(grid::rasterGrob(readPNG("figures/fig8_instruct.png"))) -->
+<!-- ``` -->
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=16cm]{figures/fig8_instruct.png}
+\caption{\label{fig:instruct}The training lineups of choropleth maps.}
+\end{figure}
 
 
 ## Training
@@ -26,16 +32,28 @@ ggdraw() +
 The participants were trained using three displays. There were relatively simple lineups, they are displayed in Fig. \ref{fig:training1} and Fig. \ref{fig:training2}.
 
 
-```{r training1, results = "asis", fig.cap = "The training lineups of choropleth maps."}
-ggdraw() +
-  draw_plot(grid::rasterGrob(readPNG("figures/fig8_training1.png")))
-```
+<!-- ```{r training1, results = "asis", fig.cap = "The training lineups of choropleth maps."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(grid::rasterGrob(readPNG("figures/fig8_training1.png"))) -->
+<!-- ``` -->
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=16cm]{figures/fig8_training2.png}
+\caption{\label{fig:training1}The training lineups of choropleth maps.}
+\end{figure}
 
 
-```{r training2, results = "asis", fig.cap = "The training lineups of hexagon tile maps."}
-ggdraw() +
-  draw_plot(grid::rasterGrob(readPNG("figures/fig8_training2.png")))
-```
+<!-- ```{r training2, results = "asis", fig.cap = "The training lineups of hexagon tile maps."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(grid::rasterGrob(readPNG("figures/fig8_training2.png"))) -->
+<!-- ``` -->
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=16cm]{figures/fig8_training2.png}
+\caption{\label{fig:training2}The training lineups of hexagon tile maps.}
+\end{figure}
 
 
 ## Survey application

@@ -4,9 +4,9 @@ knit: "bookdown::render_book"
 ---
 
 
-# An algorithm for creating a tessellated hexagon display {#ch:algorithm}
+# An Algorithm For Spatial Mapping Using a Hexagon Tile Map, With Application to Australian Maps {#ch:algorithm}
 
-This chapter relates to the first research aim as stated in \ref{sec:aims}.
+This chapter relates to the first research aim as stated in Section \ref{sec:aims}.
 The chapter introduces the step devised for the algorithm.
 The chapter frames the steps in light of the `sugarbag` [@sugarbag] package functions that allow users to enact the algorithm in `R` [@R]. It uses the Statisical Areas of Australia at Level 2, taking a subset and considering only those located within the island of Tasmania.
 It also provides an example of how to animate between the choropleth map display and the hexagon tile map.
