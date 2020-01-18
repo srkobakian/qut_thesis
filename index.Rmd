@@ -1,5 +1,5 @@
 ---
-title: 'New algorithms for effectively visualising Australian spatio-temporal disease data.'
+title: 'New Algorithms For Effectively Visualising Australian Spatio-Temporal Disease Data'
 degreetype: 'Master of Philosophy (Statistics)'
 author: 'Stephanie Rose Kobakian'
 degrees: 'B.Comm. and B.Eco., Monash University'

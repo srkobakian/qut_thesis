@@ -247,7 +247,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/cities-geo12-1.pdf}
+\includegraphics[height=8cm]{lineups/cities-geo12-1.pdf}
 \caption{\label{fig:cities-geo12}A choropleth map lineup, location 12 contains a distribution that affects all capital cities.}
 \end{figure}
 
@@ -257,7 +257,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/cities-hex12-1.pdf}
+\includegraphics[height=8cm]{lineups/cities-hex12-1.pdf}
 \caption{\label{fig:cities-hex12}A hxagon tile map lineup, location 12 contains a distribution that affects all capital cities.}
 \end{figure}
 
@@ -270,7 +270,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/cities-geo3-1.pdf}
+\includegraphics[height=8cm]{lineups/cities-geo3-1.pdf}
 \caption{\label{fig:cities-geo3}A choropleth map lineup, location 3 contains a distribution that affects all capital cities.}
 \end{figure}
 
@@ -280,7 +280,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/cities-hex3-1.pdf}
+\includegraphics[height=8cm]{lineups/cities-hex3-1.pdf}
 \caption{\label{fig:cities-hex3}A hxagon tile map lineup, location 3 contains a distribution that affects all capital cities.}
 \end{figure}
 
@@ -292,7 +292,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/cities-geo4-1.pdf}
+\includegraphics[height=8cm]{lineups/cities-geo4-1.pdf}
 \caption{\label{fig:cities-geo4}A choropleth map lineup, location 4 contains a distribution that affects all capital cities.}
 \end{figure}
 
@@ -302,7 +302,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/cities-hex4-1.pdf}
+\includegraphics[height=8cm]{lineups/cities-hex4-1.pdf}
 \caption{\label{fig:cities-hex4}A hxagon tile map lineup, location 4 contains a distribution that affects all capital cities.}
 \end{figure}
 
@@ -314,7 +314,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/cities-geo9-1.pdf}
+\includegraphics[height=8cm]{lineups/cities-geo9-1.pdf}
 \caption{\label{fig:cities-geo9}A choropleth map lineup, location 9 contains a distribution that affects all capital cities.}
 \end{figure}
 
@@ -324,7 +324,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/cities-hex9-1.pdf}
+\includegraphics[height=8cm]{lineups/cities-hex9-1.pdf}
 \caption{\label{fig:cities-hex9}A hxagon tile map lineup, location 9 contains a distribution that affects all capital cities.}
 \end{figure}
 
@@ -340,7 +340,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/three-geo12-1.pdf}
+\includegraphics[height=8cm]{lineups/three-geo12-1.pdf}
 \caption{\label{fig:three-geo12}A choropleth map lineup, location 12 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
 
@@ -350,7 +350,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/three-hex12-1.pdf}
+\includegraphics[height=8cm]{lineups/three-hex12-1.pdf}
 \caption{\label{fig:three-hex12}A hxagon tile map lineup, location 12 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
 
@@ -362,7 +362,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/three-geo5-1.pdf}
+\includegraphics[height=8cm]{lineups/three-geo5-1.pdf}
 \caption{\label{fig:three-geo5}A choropleth map lineup, location 3 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
 
@@ -372,7 +372,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/three-hex5-1.pdf}
+\includegraphics[height=8cm]{lineups/three-hex5-1.pdf}
 \caption{\label{fig:three-hex5}A hxagon tile map lineup, location 3 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
 
@@ -384,7 +384,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/three-geo8-1.pdf}
+\includegraphics[height=8cm]{lineups/three-geo8-1.pdf}
 \caption{\label{fig:three-geo8}A choropleth map lineup, location 4 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
 
@@ -394,7 +394,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/three-hex8-1.pdf}
+\includegraphics[height=8cm]{lineups/three-hex8-1.pdf}
 \caption{\label{fig:three-hex8}A hxagon tile map lineup, location 4 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
 
@@ -406,7 +406,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/three-geo9-1.pdf}
+\includegraphics[height=8cm]{lineups/three-geo9-1.pdf}
 \caption{\label{fig:three-geo9}A choropleth map lineup, location 9 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
 
@@ -416,7 +416,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/three-hex9-1.pdf}
+\includegraphics[height=8cm]{lineups/three-hex9-1.pdf}
 \caption{\label{fig:three-hex9}A hxagon tile map lineup, location 9 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
 
@@ -431,7 +431,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/nwse-geo2-1.pdf}
+\includegraphics[height=8cm]{lineups/nwse-geo2-1.pdf}
 \caption{\label{fig:nwse-geo2}A choropleth map lineup, location 12 contains a distribution that affects all capital nwse.}
 \end{figure}
 
@@ -441,7 +441,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/nwse-hex2-1.pdf}
+\includegraphics[height=8cm]{lineups/nwse-hex2-1.pdf}
 \caption{\label{fig:nwse-hex2}A hxagon tile map lineup, location 12 contains a distribution that affects all capital nwse.}
 \end{figure}
 
@@ -454,7 +454,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/nwse-geo3-1.pdf}
+\includegraphics[height=8cm]{lineups/nwse-geo3-1.pdf}
 \caption{\label{fig:nwse-geo3}A choropleth map lineup, location 3 contains a distribution that affects all capital nwse.}
 \end{figure}
 
@@ -464,7 +464,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/nwse-hex3-1.pdf}
+\includegraphics[height=8cm]{lineups/nwse-hex3-1.pdf}
 \caption{\label{fig:nwse-hex3}A hxagon tile map lineup, location 3 contains a distribution that affects all capital nwse.}
 \end{figure}
 
@@ -476,7 +476,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/nwse-geo5-1.pdf}
+\includegraphics[height=8cm]{lineups/nwse-geo5-1.pdf}
 \caption{\label{fig:nwse-geo5}A choropleth map lineup, location 4 contains a distribution that affects all capital nwse.}
 \end{figure}
 
@@ -486,7 +486,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/nwse-hex5-1.pdf}
+\includegraphics[height=8cm]{lineups/nwse-hex5-1.pdf}
 \caption{\label{fig:nwse-hex5}A hxagon tile map lineup, location 4 contains a distribution that affects all capital nwse.}
 \end{figure}
 
@@ -498,7 +498,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/nwse-geo6-1.pdf}
+\includegraphics[height=8cm]{lineups/nwse-geo6-1.pdf}
 \caption{\label{fig:nwse-geo6}A choropleth map lineup, location 9 contains a distribution that affects all capital nwse.}
 \end{figure}
 
@@ -508,6 +508,6 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=7cm]{lineups/nwse-hex6-1.pdf}
+\includegraphics[height=8cm]{lineups/nwse-hex6-1.pdf}
 \caption{\label{fig:nwse-hex6}A hxagon tile map lineup, location 9 contains a distribution that affects all capital nwse.}
 \end{figure}

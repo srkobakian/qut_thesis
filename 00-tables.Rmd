@@ -27,8 +27,16 @@ tabs4 <- tibble::tibble(
     "The amount of participants that selected each reason for their choice of plot when looking at each trend model shown in Choropleth and Hexagon Tile maps."),
   Page = c(64, 65, 66)
 )
-
-bind_rows(tabs2, tabs4) %>% 
-  kable(format = "latex", booktabs = TRUE, escape = FALSE, align = "rrlr") %>% 
-  kableExtra::column_spec(3, width = "20em")
 ```
+
+
+```{r tabs2, echo = FALSE, warning = FALSE, results = "asis"}
+ kable(tabs2, format = "latex", booktabs = TRUE, escape = FALSE, align = "rrlr") %>% 
+  kableExtra::column_spec(3, width = "25em")
+```
+
+```{r tabs4, echo = FALSE, warning = FALSE, results = "asis"}
+ kable(tabs4, format = "latex", booktabs = TRUE, escape = FALSE, align = "rrlr") %>% 
+  kableExtra::column_spec(3, width = "25em")
+```
+

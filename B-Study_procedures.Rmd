@@ -53,7 +53,7 @@ The demographic and consent page of the `shinydashboard` web application are dis
 
 \begin{figure}[H]
 \centering
-\includegraphics[height=16cm]{lineups/survey-demogs-1.pdf}
+\includegraphics[width=16cm]{lineups/survey-demogs-1.pdf}
 \caption{\label{fig:survey-demogs}The demographics questions tab of the shinydashboard survey application.}
 \end{figure}
 
@@ -61,13 +61,13 @@ The demographic and consent page of the `shinydashboard` web application are dis
 
 \begin{figure}[H]
 \centering
-\includegraphics[height=16cm]{lineups/survey-choro-1.pdf}
+\includegraphics[width=16cm]{lineups/survey-choro-1.pdf}
 \caption{\label{fig:survey-choro}An example of the choropleth map lineup shown in the survey tab of the shinydashboard app.}
 \end{figure}
 
 
 \begin{figure}[H]
 \centering
-\includegraphics[height=16cm]{lineups/survey-hex-1.pdf}
+\includegraphics[width=16cm]{lineups/survey-hex-1.pdf}
 \caption{\label{fig:survey-hex}An example of the hexagon tile map lineup shown in the survey tab of the shinydashboard app.}
 \end{figure}

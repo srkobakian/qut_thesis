@@ -48,9 +48,23 @@ figs4 <- tibble::tibble(
     "The amount of times each level of certainty was chosen by participants when viewing hexagon tile map or choropleth displays."), 
   Page = c(60, 60, 61, 62, 64, 65, 66)
 )
-
-bind_rows(figs2, figs3, figs4) %>% 
-  kable(format = "latex", booktabs = TRUE, escape = FALSE, align = "rrlr") %>% 
-  kableExtra::column_spec(3, width = "20em")
 ```
 
+
+
+```{r fig2, echo = FALSE, warning = FALSE, results = "asis"}
+ kable(figs2, format = "latex", booktabs = TRUE, escape = FALSE, align = "rrlr") %>% 
+  kableExtra::column_spec(3, width = "25em")
+```
+
+
+```{r fig3, echo = FALSE, warning = FALSE, results = "asis"}
+ kable(figs3, format = "latex", booktabs = TRUE, escape = FALSE, align = "rrlr") %>% 
+  kableExtra::column_spec(3, width = "25em")
+```
+
+
+```{r fig4, echo = FALSE, warning = FALSE, results = "asis"}
+ kable(figs4, format = "latex", booktabs = TRUE, escape = FALSE, align = "rrlr") %>% 
+  kableExtra::column_spec(3, width = "25em")
+```
