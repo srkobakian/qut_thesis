@@ -7,8 +7,8 @@ knit: "bookdown::render_book"
 ```{r figs, echo = FALSE, warning = FALSE, results = "asis"}
 # figures in the lit review paper
 figs2 <- tibble::tibble(
-  Chapter = c(rep("2", 6)),
-  Figure = c(seq(1:6)),
+  #Chapter = c(rep("2", 6)),
+  Figure = c(paste0("2.",seq(1:6))),
   Caption = c(
     "A selection of choropleth cancer maps from online atlases that are publicly available.",
     "Common alternatives to maps, showing the same information for the United States of America.",
@@ -21,8 +21,8 @@ figs2 <- tibble::tibble(
 
 # figures in the algorithm chapter
 figs3 <- tibble::tibble(
-  Chapter = c(rep("3", 7)),
-  Figure = c(seq(1:7)),
+  #Chapter = c(rep("3", 7)),
+  Figure = c(paste0("3.",seq(1:7))),
   Caption = c(
     "Grid points to create a tilegram.",
     "All possible hexagon locations from the initial grid are shown with blue outlines.",
@@ -36,8 +36,8 @@ figs3 <- tibble::tibble(
 
 
 figs4 <- tibble::tibble(
-  Chapter = c(rep("4", 7)),
-  Figure = c(seq(1:7)),
+  #Chapter = c(rep("4", 7)),
+  Figure = c(paste0("4.",seq(1:7))),
   Caption = c(
     "A choropleth map of the smoothed average of liver cancer diagnoses for Australian males.",
     "A hexagon tile map of the smoothed average of liver cancer diagnoses for Australian males.",

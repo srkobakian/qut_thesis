@@ -3,6 +3,11 @@ chapter: 2
 knit: "bookdown::render_book"
 ---
 
+```{r setup-2, echo=FALSE, message=FALSE, warning=FALSE, comment = FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, dpi=300, echo = FALSE, out.width = "100%", echo = FALSE)
+options("citation_format" = "pandoc")
+```
+
 # Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays {#ch:literature}
 
 This literature review chapter provides an overview of the key areas of interest in the literature that are relevant to this thesis. This chapter is organised as follows. Section 1 outlines the traditional spatial mapping technique, the choropleth map, and provides design inspiration using examples of online cancer atlases. Section 2 outlines contemporary mapping approaches, suggested as alternatives to the choropleth. Section 3 compares and critiques these alternative displays in light of the strengths and weaknesses of the choropleth method. section 4 considers how users interact with mapping displays in online cancer atlases, and how map creators can direct the attention of uses through animation. Additionally, the following chapters in this thesis each begin with a section to introduce the specific relevant literature.
@@ -49,22 +54,22 @@ A cancer atlas is a map, or collection of maps, representing cancer incidence an
 Cancer maps are effective tools for communicating incidence, survival, and mortality to a wide range of audiences, including the public and others not trained in statistical analysis. These visualizations enable non-expert audiences to interpret the outputs of sophisticated statistical analysis. Cruickshank (1947) as cited by S. D. Walter [@DMAHP], discusses using visuals as a 'formal statistical assessment of the spatial pattern'. Overwhelmingly, choropleth maps are visualisations chosen to communicate cancer statistics to members of the public and other non-expert audiences. 
 
 
-```{r choropleth-grid-create, message=FALSE, warning = FALSE, fig.cap = " A selection of choropleth cancer maps from online atlases that are publicly available. Maps of various countries were chosen: United Kingdom, Australia, Spain, USA, Canada, and display several different colour palettes and legends. These atllases are described in Table 1.", fig.align='center', fig.width=12, fig.height=10, out.width = "100%"}
+```{r choropleth-grid-create, message=FALSE, warning = FALSE, fig.cap = " A selection of choropleth cancer maps from online atlases that are publicly available. Maps of various countries were chosen: United Kingdom, Australia, Spain, USA, Canada, and display several different colour palettes and legends. These atllases are described in Table 1.", fig.align='center', fig.width=12, fig.height=10}
 knitr::include_graphics("figures/02-literature/choropleth_grid.png")
 ```
 
-
+\newpage
 Table 1: <!--\label{tab:choropleths}--> A selection of choropleth cancer maps from online atlases.
 
 |Fig.| Atlas | Statistic | Data source | 
 |:---:|:------------|:----------------------|:----------------|  
-|1a | The Environment and Health Atlas of England and Wales | relative risk for women developing lung cancer in England and Wales in 2010 [@EnvEnglandWales2]| [ Office for National Statistics (ONS) (England) and from the Welsh Cancer Intelligence and Surveillance Unit (WCISU) ](http://www.envhealthatlas.co.uk/homepage/)|
-|1b | Globocan 2018: Estimated Cancer Incidence, Mortality and Prevalence Worldwide | age standardized incidence rates (per 100,000) for all invasive cancers for both men and women, aggregated at a national level for 2018 [@Globocan]| [World Health Organization's International Agency for Research on Cancer](https://www.iarc.fr/). |
-|1c | Atlas of Cancer in Queensland | the relative incidence ratio of lung cancer in males in the state of QLD within Australia based on data from 1998 to 2007, Queensland Cancer Council[@QLDcancerAtlas] | [Queensland Cancer Registry](https://cancerqld.org.au/research/cancer-registries/queensland-cancer-registry/) |
-|1d | Bowel Cancer Australia Atlas | the percentage of Australian males between 50 - 54 years of age diagnosed with bowel cancer in 2016 in Australia [@Bowel]. |  [Bowel Cancer Australia](https://www.bowelcanceraustralia.org/)|
+|1a | The Environment and Health Atlas of England and Wales | relative risk for women developing lung cancer in England and Wales in 2010 [@EnvEnglandWales2]| *[Office for National Statistics (ONS) (England) and from the Welsh Cancer Intelligence and Surveillance Unit (WCISU)* ](http://www.envhealthatlas.co.uk/homepage/)|
+|1b | Globocan 2018: Estimated Cancer Incidence, Mortality and Prevalence Worldwide | age standardized incidence rates (per 100,000) for all invasive cancers for both men and women, aggregated at a national level for 2018 [@Globocan]| *[World Health Organization's International Agency for Research on Cancer](https://www.iarc.fr/)*. |
+|1c | Atlas of Cancer in Queensland | the relative incidence ratio of lung cancer in males in the state of QLD within Australia based on data from 1998 to 2007, Queensland Cancer Council[@QLDcancerAtlas] | *[Queensland Cancer Registry](https://cancerqld.org.au/research/cancer-registries/queensland-cancer-registry/)* |
+|1d | Bowel Cancer Australia Atlas | the percentage of Australian males between 50 - 54 years of age diagnosed with bowel cancer in 2016 in Australia [@Bowel]. |  *[Bowel Cancer Australia](https://www.bowelcanceraustralia.org/)*|
 |1e | United States Cancer Statistics: An Interactive Cancer Statistics Website | the incidence rate per 100,000, of all cancer types for men and women in the United States in 2016, aggregated at the state level [@USInteractive].|  *[Centers for Disease Control and Prevention](https://www.cdc.gov/)*, with data from state cancer registries. | 
-|1f | Map of Cancer Mortality Rates in Spain | side by side maps of relative risk of lung cancer for men vs women for 2004 to 2008 [@cancerSpain].| [Map of cancer mortality rates in Spain](https://elpais.com/elpais/2014/10/06/media/1412612722_141933.html)|
-|1g | Atlas of Childhood Cancer in Ontario | the incidence rate of childhood cancers per 100,000 (by census division) for children aged 0-14, in Ontario from 1995 to 2004 [@OntarioPediatric]. | [The Pediatric Oncology Group of Ontario Networked Information System](https://www.pogo.ca/research-data/pogonis-childhood-cancer-database/data-requests/)|
+|1f | Map of Cancer Mortality Rates in Spain | side by side maps of relative risk of lung cancer for men vs women for 2004 to 2008 [@cancerSpain].| *[Map of cancer mortality rates in Spain](https://elpais.com/elpais/2014/10/06/media/1412612722_141933.html)*|
+|1g | Atlas of Childhood Cancer in Ontario | the incidence rate of childhood cancers per 100,000 (by census division) for children aged 0-14, in Ontario from 1995 to 2004 [@OntarioPediatric]. | *[The Pediatric Oncology Group of Ontario Networked Information System](https://www.pogo.ca/research-data/pogonis-childhood-cancer-database/data-requests/)*|
 
 
 
@@ -143,7 +148,7 @@ The creation of cartograms was historically in the hands of professional cartogr
 There are two key issues to consider when creating alternative map displays, (1) the intended audience of the map, and (2) its purpose. Nusrat and Kobourov [@SAIC] provided a framework to investigate implementations of the many algorithms presented, and the "statistical accuracy, geographical accuracy, and topological accuracy". 
 
 
-```{r ggcartograms, fig.cap = " Common alternatives to maps, showing the same information for the United States of America: (a) contiguous cartogram, (b) non-contiguous, shape-preserved cartogram, (c)  Dorling cartogram (non-contiguous), (d) hexagon tilemap (non-contiguous). Maps (a) - (c) are created by resizing and reshaping the states of the USA to match the 2015 population of the state. This provides a better sense of the extent of disease relative to the population in the country and can help ease losing information about physically small but population-dense states. Map creators give each state equal size and thus equal emphasis in (d) the hexagon tile map.", message=FALSE, warning=FALSE, out.width = "100%"}
+```{r ggcartograms, fig.cap = " Common alternatives to maps, showing the same information for the United States of America: (a) contiguous cartogram, (b) non-contiguous, shape-preserved cartogram, (c)  Dorling cartogram (non-contiguous), (d) hexagon tilemap (non-contiguous). Maps (a) - (c) are created by resizing and reshaping the states of the USA to match the 2015 population of the state. This provides a better sense of the extent of disease relative to the population in the country and can help ease losing information about physically small but population-dense states. Map creators give each state equal size and thus equal emphasis in (d) the hexagon tile map.", message=FALSE, warning=FALSE}
 knitr::include_graphics("figures/02-literature/usa_grid.png")
 ```
 
@@ -215,7 +220,7 @@ Lucchesi and Wikle [@VUADBC] present bivariate choropleth maps blend color schem
 <!-- 408 words -->
 
 
-```{r auscartograms, fig.cap = " Cartograms showing melanoma incidence in Australia: (a) contiguous, partially population transformed, (b) non-contiguous shape preserved, (c) Dorling, (d) hexagon tile map. The contiguous cartogram has expanded the highly populated areas while preserving the full shapes of rural areas. If it accurately sized areas by population, the country would be unrecognizable. The shape-preserved is unreadable due to the small area sizes. The Dorling cartogram presents all areas but many are difficult to compare. The hexagon tile map provides a reasonable spatial distribution despite having isolated hexagons in the outback areas.", message=FALSE, warning=FALSE, cache=FALSE, fig.width=8, fig.height=6, dpi=300, , out.width = "100%"}
+```{r auscartograms, fig.cap = " Cartograms showing melanoma incidence in Australia: (a) contiguous, partially population transformed, (b) non-contiguous shape preserved, (c) Dorling, (d) hexagon tile map. The contiguous cartogram has expanded the highly populated areas while preserving the full shapes of rural areas. If it accurately sized areas by population, the country would be unrecognizable. The shape-preserved is unreadable due to the small area sizes. The Dorling cartogram presents all areas but many are difficult to compare. The hexagon tile map provides a reasonable spatial distribution despite having isolated hexagons in the outback areas.", message=FALSE, warning=FALSE, cache=FALSE, fig.width=8, fig.height=6, }
 knitr::include_graphics("figures/02-literature/auscartograms.png")
 ```
 
@@ -268,7 +273,7 @@ https://atlas.cancer.org.au/app/tour/lungcancer) that change the display to draw
 This implementation of animation gives users tools to plan their exploration.
 
 
-```{r interacting, fig.cap = " Interactive controls of displays in publicly available choropleth cancer maps: (i) GUI controls for statistic, sex, age groups, continents, and cancer types for Globocan 2018 [@Globocan], (ii) Menus for variable selection and zooming on Bowel Cancer Australia Atlas, (iii) Menus for choosing variables and countries in The Cancer Atlas, (iv) Tabs for different indicators and cancer types in Global Cancer Map, (v) Menus and toggles for variable and subset selection in United States Cancer Statistics: Data Visualizations.", results = "asis", message=FALSE, warning=FALSE, cache=FALSE, fig.width=8, fig.height=6, dpi=300, out.width = "100%"}
+```{r interacting, fig.cap = " Interactive controls of displays in publicly available choropleth cancer maps: (i) GUI controls for statistic, sex, age groups, continents, and cancer types for Globocan 2018 [@Globocan], (ii) Menus for variable selection and zooming on Bowel Cancer Australia Atlas, (iii) Menus for choosing variables and countries in The Cancer Atlas, (iv) Tabs for different indicators and cancer types in Global Cancer Map, (v) Menus and toggles for variable and subset selection in United States Cancer Statistics: Data Visualizations.", results = "asis", message=FALSE, warning=FALSE, cache=FALSE, fig.width=8, fig.height=6, echo = FALSE}
 knitr::include_graphics("figures/02-literature/interacting.png")
 ```
 
@@ -276,7 +281,7 @@ knitr::include_graphics("figures/02-literature/interacting.png")
 Figure 6 <!--\ref{fig:animating}--> shows two examples of more sophisticated interactive maps. The Spanish Cancer map (left) contains a linked display between a choropleth map and time series plots of cancer change. In linked plots, changing values in one display will trigger changes of corresponding elements in another display. Here, the temporal change in the choropleth map can be played out as an animation. Mousing over the time series plots will highlight the line for a particular region. The Canadian Breast Cancer Mortality map (right) has a magnifying glass that allows the user to zoom into small areas. It is easy to control and shows precise details in small areas. 
 
 
-```{r animating, fig.cap = "Two examples of advanced interactivity (and animation) in publicly available choropleth cancer maps: a. Linked maps and time-series line plots, with temporal animation in Map of Cancer Mortality Rates in Spain, b. A highly responsive magnifying glass on a map of Breast Cancer Mortality in Canada.", results = "asis", message=FALSE, warning=FALSE, cache=FALSE, fig.width=8, fig.height=6, dpi=300, out.width = "100%"}
+```{r animating, fig.cap = "Two examples of advanced interactivity (and animation) in publicly available choropleth cancer maps: a. Linked maps and time-series line plots, with temporal animation in Map of Cancer Mortality Rates in Spain, b. A highly responsive magnifying glass on a map of Breast Cancer Mortality in Canada.", results = "asis", message=FALSE, warning=FALSE, cache=FALSE, fig.width=8, fig.height=6}
 knitr::include_graphics("figures/02-literature/animating.png")
 ```
 

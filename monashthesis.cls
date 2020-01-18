@@ -197,7 +197,7 @@
         \vspace{5mm}
         {\huge\@author}\\
         \@degrees\\
-        \vspace{30mm}
+        \vspace{20mm}
     \includegraphics[width=3cm]{figures/crest}
     \vfill
     \large{
