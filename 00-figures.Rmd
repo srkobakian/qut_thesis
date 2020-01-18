@@ -55,18 +55,18 @@ figs4 <- tibble::tibble(
 
 
 ```{r fig2, echo = FALSE, warning = FALSE, results = "asis"}
- kable(figs2, format = "latex", booktabs = TRUE, escape = FALSE, align = "rrlr") %>% 
-  kableExtra::column_spec(3, width = "15cm")
+ kable(figs2, format = "latex", booktabs = TRUE, escape = FALSE, align = "rlr") %>% 
+  kableExtra::column_spec(2, width = "30em")
 ```
 
 
 ```{r fig3, echo = FALSE, warning = FALSE, results = "asis"}
- kable(figs3, format = "latex", booktabs = TRUE, escape = FALSE, align = "rrlr") %>% 
-  kableExtra::column_spec(3, width = "15cm")
+ kable(figs3, format = "latex", booktabs = TRUE, escape = FALSE, align = "rlr") %>% 
+  kableExtra::column_spec(2, width = "30em")
 ```
 
 
 ```{r fig4, echo = FALSE, warning = FALSE, results = "asis"}
- kable(figs4, format = "latex", booktabs = TRUE, escape = FALSE, align = "rrlr") %>% 
-  kableExtra::column_spec(3, width = "15cm")
+ kable(figs4, format = "latex", booktabs = TRUE, escape = FALSE, align = "rlr") %>% 
+  kableExtra::column_spec(2, width = "30em")
 ```
