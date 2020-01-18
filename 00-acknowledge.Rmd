@@ -8,19 +8,21 @@ This thesis would not be possible without the opportunity provided by Queensland
 
 I would like to acknowledge my supervisors for their tireless work in directing, encouraging and supporting this work.
 
-Professor Kerrie Mengersen (Professor of Statistics, Science and Engineering Faculty, QUT) provided the opportunity to study at Queensland University of Technology, organising and supervising this project.
-
-Dr Earl Duncan (Research Associate at ARC Centre of Excellence for Mathematical & Statistical Frontiers, QUT) provided time and effort for to discussion, editing and commenting throughout this degree.
-
 Professor Dianne Cook (Professor, Department of Econometrics and Business Statistics, Monash University) provided constant support, encouragement and recommendations throughout this degree.
+
+Dr Earl Duncan (Research Associate at ARC Centre of Excellence for Mathematical & Statistical Frontiers, QUT) provided regular time for discussion, editing and commenting throughout this degree.
+
+Professor Kerrie Mengersen (Professor of Statistics, Science and Engineering Faculty, QUT) provided the opportunity to study at Queensland University of Technology, organising and mentoring me through this project.
+
+
 Working closely with Prof. Di Cook enabled the rapid development of my research and writing skills. 
 
-## Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays. Manuscript submitted for publication
+## Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays
 
 With my coauthors Prof. Dianne Cook and Jessie Roberts, I would like to acknowledge Dr Susanna Cramb (Strategic Research Fellow, Institute of Health Biomedical Innovation, Queensland Univeristy of Technology) and Dr Peter Baade (Senior Research Fellow, Cancer Council Queensland) for providing the opportunity and time to discuss alternative map solutions for presentation in the Australian Cancer Atlas.
 It was in the development of this online cancer atlas that methods for disease map displays, and visual communication strategies were explored. 
 
-## Comparing the Effectiveness of the Choropleth Map with a Hexagon Tile Map for Communicating Cancer Manuscript in preparation
+## Comparing the Effectiveness of the Choropleth Map with a Hexagon Tile Map for Communicating Cancer
 
 I would like to thank Mitchell O'Hara-Wild was a co-developer of the taipan [@taipan] R package for the web app constructed to collect participant evaluations of lineups. 
 

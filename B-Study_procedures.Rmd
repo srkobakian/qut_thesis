@@ -39,7 +39,7 @@ The participants were trained using three displays. There were relatively simple
 
 \begin{figure}[H]
 \centering
-\includegraphics[height=16cm]{figures/fig8_training2.png}
+\includegraphics[width=16cm]{figures/fig8_training1.png}
 \caption{\label{fig:training1}The training lineups of choropleth maps.}
 \end{figure}
 
@@ -51,7 +51,7 @@ The participants were trained using three displays. There were relatively simple
 
 \begin{figure}[H]
 \centering
-\includegraphics[height=16cm]{figures/fig8_training2.png}
+\includegraphics[width=16cm]{figures/fig8_training2.png}
 \caption{\label{fig:training2}The training lineups of hexagon tile maps.}
 \end{figure}
 

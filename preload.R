@@ -11,5 +11,4 @@ library(sugarbag)
 
 knitr::opts_chunk$set(warning = FALSE, message = FALSE, cache = TRUE)
 options("citation_format" = "pandoc")
-BibOptions(check.entries = FALSE, style = "markdown", 
-  bib.style = "alphabetic", cite.style = 'alphabetic')
+BibOptions(first.inits = FALSE, bib.style = "numeric", check.entries = FALSE, style = "markdown")

@@ -423,7 +423,7 @@ Lineups were created using the Australian Statistical Areas at Level 3.
 \end{figure}
 
 
-## North West to South East Geographic Trend
+## North West to South East
 
 ### Replicate 1
 

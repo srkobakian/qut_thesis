@@ -549,6 +549,99 @@
       \verb 10.1093/ije/dyp395
       \endverb
     \endentry
+    \entry{sheets}{manual}{}
+      \name{author}{2}{}{%
+        {{hash=0f88b724c9f070dbceda00a5027d25bb}{%
+           family={Bryan},
+           familyi={B\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod}}}%
+        {{hash=47de67f162056ccd4863de62811c4cd1}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Joanna},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6e8c4a20f5746d0cd613b043ae9e928}
+      \strng{fullhash}{f6e8c4a20f5746d0cd613b043ae9e928}
+      \strng{bibnamehash}{f6e8c4a20f5746d0cd613b043ae9e928}
+      \strng{authorbibnamehash}{f6e8c4a20f5746d0cd613b043ae9e928}
+      \strng{authornamehash}{f6e8c4a20f5746d0cd613b043ae9e928}
+      \strng{authorfullhash}{f6e8c4a20f5746d0cd613b043ae9e928}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{R package version 0.3.0}
+      \field{title}{googlesheets: Manage Google Spreadsheets from R}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://CRAN.R-project.org/package=googlesheets
+      \endverb
+      \verb{url}
+      \verb https://CRAN.R-project.org/package=googlesheets
+      \endverb
+    \endentry
+    \entry{BCHLLSW09}{article}{}
+      \name{author}{7}{}{%
+        {{hash=8ba08e07192521fb311c151b039176a8}{%
+           family={Buja},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2d2cb450b209b02903ed2780e53200c9}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ffb27ae43142a83768e5183c258872c3}{%
+           family={Hofmann},
+           familyi={H\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8a11581cfa5c31d12bc95fc484047534}{%
+           family={Lawrence},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ef169ee8e8463d5c23dfbed3287e3f7d}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={E.-K.},
+           giveni={E\bibinithyphendelim K\bibinitperiod}}}%
+        {{hash=4b7e17f22fe7f93cab86f9522123e7a7}{%
+           family={Swayne},
+           familyi={S\bibinitperiod},
+           given={D.\bibnamedelimi F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=edd6a8678deb16723e739aef64ea5e18}{%
+           family={Wickham},
+           familyi={W\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{6b3c58ae800b174f1e08d050a800fad9}
+      \strng{fullhash}{f74a83dde1ceba9cec8010fca07ac1a2}
+      \strng{bibnamehash}{f74a83dde1ceba9cec8010fca07ac1a2}
+      \strng{authorbibnamehash}{f74a83dde1ceba9cec8010fca07ac1a2}
+      \strng{authornamehash}{6b3c58ae800b174f1e08d050a800fad9}
+      \strng{authorfullhash}{f74a83dde1ceba9cec8010fca07ac1a2}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Philosophical Transactions of the Royal Society, A (Invited)}
+      \field{note}{\tt doi: 10.1098/rsta.2009.0120}
+      \field{title}{Statistical Inference for Exploratory Data Analysis and Model Diagnostics}
+      \field{volume}{367}
+      \field{year}{2009}
+      \field{pages}{4361\bibrangedash 4383}
+      \range{pages}{23}
+    \endentry
     \entry{burbank}{book}{}
       \name{author}{1}{}{%
         {{hash=d71e67b8feab3ea578da28884af199f1}{%
@@ -577,6 +670,16 @@
       \field{labeltitlesource}{title}
       \field{title}{{Patterns in Cancer Mortality in the United States 1950-67}}
       \field{year}{1971}
+    \endentry
+    \entry{review}{article}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Manuscript submitted for publication.}
+      \field{title}{Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays}
+      \field{year}{2019}
     \endentry
     \entry{TACA}{online}{}
       \name{author}{1}{}{%
@@ -1467,6 +1570,36 @@
       \field{pages}{1\bibrangedash 21}
       \range{pages}{21}
     \endentry
+    \entry{figeight}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8ede9bea2ae94b8cb3777af59da0dcbe}{%
+           family={Inc},
+           familyi={I\bibinitperiod},
+           given={Figure\bibnamedelima Eight},
+           giveni={F\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{8ede9bea2ae94b8cb3777af59da0dcbe}
+      \strng{fullhash}{8ede9bea2ae94b8cb3777af59da0dcbe}
+      \strng{bibnamehash}{8ede9bea2ae94b8cb3777af59da0dcbe}
+      \strng{authorbibnamehash}{8ede9bea2ae94b8cb3777af59da0dcbe}
+      \strng{authornamehash}{8ede9bea2ae94b8cb3777af59da0dcbe}
+      \strng{authorfullhash}{8ede9bea2ae94b8cb3777af59da0dcbe}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Figure Eight}
+      \field{title}{The Essential High-Quality Data Annotation Platform}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.figure-eight.com/
+      \endverb
+      \verb{url}
+      \verb https://www.figure-eight.com/
+      \endverb
+    \endentry
     \entry{cartogram}{online}{}
       \name{author}{1}{}{%
         {{hash=4b88bb77f5004e3e259d7d7af477c151}{%
@@ -1965,6 +2098,39 @@
       \endverb
       \verb{url}
       \verb https://programmingdesignsystems.com/
+      \endverb
+    \endentry
+    \entry{POG}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ea0a6a067aea85f0014b448311fbd6c0}{%
+           family={Matheron},
+           familyi={M\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea0a6a067aea85f0014b448311fbd6c0}
+      \strng{fullhash}{ea0a6a067aea85f0014b448311fbd6c0}
+      \strng{bibnamehash}{ea0a6a067aea85f0014b448311fbd6c0}
+      \strng{authorbibnamehash}{ea0a6a067aea85f0014b448311fbd6c0}
+      \strng{authornamehash}{ea0a6a067aea85f0014b448311fbd6c0}
+      \strng{authorfullhash}{ea0a6a067aea85f0014b448311fbd6c0}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Economic Geology}
+      \field{title}{Principles of geostatistics}
+      \field{volume}{58}
+      \field{year}{1963}
+      \field{pages}{1246\bibrangedash 1266}
+      \range{pages}{21}
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.2113/gsecongeo.58.8.1246
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.2113/gsecongeo.58.8.1246
       \endverb
     \endentry
     \entry{mcgranaghan1993cartographic}{article}{}

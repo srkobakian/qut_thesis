@@ -51,18 +51,20 @@
 
 %% HEADERS AND FOOTERS
 \RequirePackage{fancyhdr}
-\pagestyle{fancy}
-\rfoot{\Large\sf\raisebox{-0.1cm}{\textbf{\thepage}}}
+\pagestyle{plain}
+%\rfoot{\Large\sf\raisebox{-0.1cm}{\thepage}}
 %\lhead{\textsf{\expandafter{\@title}}}
-\lhead{\textsf{\leftmark}}
-\rhead{}
-\cfoot{}
-\setlength{\headheight}{25pt}
-\renewcommand{\headrulewidth}{0.4pt}
+%\lfoot{\textsf\raisebox{-0.1cm}{\thepage}}
+%\rhead{}
+%\lhead{}
+%\cfoot{}
+\setlength{\headheight}{25.pt}
+\renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0.4pt}
 \fancypagestyle{plain}{%
-\fancyhf{} % clear all header and footer fields
-\fancyfoot[C]{\sf\thepage} % except the center
+\fancyhead[L,C,R][]{}
+\fancyfoot[LE,RO]{\raisebox{-0.1cm} \sf\thepage}
+\fancyfoot[LO,RE]{\leftmark}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}}
 

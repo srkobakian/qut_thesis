@@ -30,7 +30,7 @@ library(sugarbag)
  
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 options("citation_format" = "pandoc")
-BibOptions(check.entries = FALSE, style = "markdown", bib.style = "alphabetic", cite.style = 'alphabetic')
+BibOptions(check.entries = FALSE, style = "markdown")
 ```
 
 ## Introduction
@@ -344,7 +344,8 @@ hex_allocated <- allocate(
   verbose = FALSE)
 
 ## Prepare to plot
-fort_hex <- fortify_hexagon(data = hex_allocated, sf_id = "SA2_NAME16", hex_size = 0.2)
+fort_hex <- fortify_hexagon(data = hex_allocated,
+  sf_id = "SA2_NAME16", hex_size = 0.2)
 
 ## Make a plot
 library(ggplot2)
