@@ -52,21 +52,11 @@
 %% HEADERS AND FOOTERS
 \RequirePackage{fancyhdr}
 \pagestyle{plain}
-%\rfoot{\Large\sf\raisebox{-0.1cm}{\thepage}}
-%\lhead{\textsf{\expandafter{\@title}}}
-%\lfoot{\textsf\raisebox{-0.1cm}{\thepage}}
-%\rhead{}
-%\lhead{}
-%\cfoot{}
-\setlength{\headheight}{25.pt}
+\fancyhead[LE,RO]{\slshape \rightmark}
+\fancyhead[LO,RE]{\slshape \leftmark}
+\fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0.4pt}
-\fancypagestyle{plain}{%
-\fancyhead[L,C,R][]{}
-\fancyfoot[LE,RO]{\raisebox{-0.1cm} \sf\thepage}
-\fancyfoot[LO,RE]{\leftmark}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}}
+\renewcommand{\footrulewidth}{0pt}
 
 %% MATHS
 \RequirePackage{bm,amsmath}

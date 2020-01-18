@@ -56,17 +56,17 @@ figs4 <- tibble::tibble(
 
 ```{r fig2, echo = FALSE, warning = FALSE, results = "asis"}
  kable(figs2, format = "latex", booktabs = TRUE, escape = FALSE, align = "rlr") %>% 
-  kableExtra::column_spec(2, width = "30em")
+  kableExtra::column_spec(2, width = "35em")
 ```
 
 
 ```{r fig3, echo = FALSE, warning = FALSE, results = "asis"}
  kable(figs3, format = "latex", booktabs = TRUE, escape = FALSE, align = "rlr") %>% 
-  kableExtra::column_spec(2, width = "30em")
+  kableExtra::column_spec(2, width = "35em")
 ```
 
 
 ```{r fig4, echo = FALSE, warning = FALSE, results = "asis"}
  kable(figs4, format = "latex", booktabs = TRUE, escape = FALSE, align = "rlr") %>% 
-  kableExtra::column_spec(2, width = "30em")
+  kableExtra::column_spec(2, width = "35em")
 ```

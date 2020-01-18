@@ -31,11 +31,11 @@ tabs4 <- tibble::tibble(
 
 ```{r tabs2, echo = FALSE, warning = FALSE, results = "asis"}
  kable(tabs2, format = "latex", booktabs = TRUE, escape = FALSE, align = "rlr") %>% 
-  kableExtra::column_spec(2, width = "30em")
+  kableExtra::column_spec(2, width = "35em")
 ```
 
 ```{r tabs4, echo = FALSE, warning = FALSE, results = "asis"}
  kable(tabs4, format = "latex", booktabs = TRUE, escape = FALSE, align = "rlr") %>% 
-  kableExtra::column_spec(2, width = "30em")
+  kableExtra::column_spec(2, width = "35em")
 ```
 
