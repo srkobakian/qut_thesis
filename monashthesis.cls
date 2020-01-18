@@ -57,7 +57,7 @@
 \lhead{\textsf{\leftmark}}
 \rhead{}
 \cfoot{}
-\setlength{\headheight}{15pt}
+\setlength{\headheight}{25pt}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 \fancypagestyle{plain}{%

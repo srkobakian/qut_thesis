@@ -62,7 +62,7 @@ d <- d %>%
 # Remove contributors who did not provide any choices
 bad_contribs <- d %>% group_by(contributor) %>% 
   summarise(sum0 = sum(choice)) %>% 
-  filter(sum0 == 0) %>% 
+  filter(sum0 < 13) %>% 
   pull(contributor)
 
 d <- d %>% 
@@ -141,7 +141,8 @@ The detection rates for the NW-SE trend model was less varied than the detection
 plots %>% ggplot(aes(x = trend, y = pdetect, fill = trend)) + 
   geom_boxplot() + 
   scale_fill_manual(values = trend_colours) +
-  geom_jitter(width = 0.1) +
+  geom_jitter(width = 0.1) + 
+  guides(fill = FALSE) +
   ylab("Detection rate") + 
   ylim(c(0,1)) 
 ```
@@ -156,6 +157,7 @@ plots %>% ggplot(aes(x = type, y = pdetect, fill = type)) +
   geom_boxplot() + 
   geom_jitter(width = 0.1) +
   scale_fill_manual(values = type_colours) +
+  guides(fill = FALSE) +
   ylab("Detection rate") + 
   ylim(c(0,1))
 ```

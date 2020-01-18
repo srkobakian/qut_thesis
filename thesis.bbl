@@ -531,69 +531,6 @@
       \verb https://CRAN.R-project.org/package=eechidna
       \endverb
     \endentry
-    \entry{MACM}{article}{}
-      \name{author}{6}{}{%
-        {{hash=3fbe0e2fe5c1691cff7d68a96529802f}{%
-           family={d'Onofrio},
-           familyi={d\bibinitperiod},
-           given={Alberto},
-           giveni={A\bibinitperiod}}}%
-        {{hash=7bc00337760f6a72686a3a1a542c8a5f}{%
-           family={Mazzetta},
-           familyi={M\bibinitperiod},
-           given={Chiara},
-           giveni={C\bibinitperiod}}}%
-        {{hash=16bd2db884a897dcd0466913d15bc755}{%
-           family={Robertson},
-           familyi={R\bibinitperiod},
-           given={Chris},
-           giveni={C\bibinitperiod}}}%
-        {{hash=e68fb8785cf2d3ec1e07b9f318c3f3d0}{%
-           family={Smans},
-           familyi={S\bibinitperiod},
-           given={Michel},
-           giveni={M\bibinitperiod}}}%
-        {{hash=29a3e1f6660e35b4deaebe9318889556}{%
-           family={Boyle},
-           familyi={B\bibinitperiod},
-           given={Peter},
-           giveni={P\bibinitperiod}}}%
-        {{hash=e5caf7bae99ec7a0af86f8aa2dc06fe8}{%
-           family={Boniol},
-           familyi={B\bibinitperiod},
-           given={Mathieu},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{3d26408a99700c5b62524e1506622c04}
-      \strng{fullhash}{0ecc22fbef2c313d8e0828dc963717d1}
-      \strng{bibnamehash}{0ecc22fbef2c313d8e0828dc963717d1}
-      \strng{authorbibnamehash}{0ecc22fbef2c313d8e0828dc963717d1}
-      \strng{authornamehash}{3d26408a99700c5b62524e1506622c04}
-      \strng{authorfullhash}{0ecc22fbef2c313d8e0828dc963717d1}
-      \field{sortinit}{d}
-      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1754-6605}
-      \field{journaltitle}{Ecancermedicalscience}
-      \field{title}{{Maps and Atlases of Cancer Mortality: A Review of a Useful Tool to Trigger New Questions}}
-      \field{type}{Journal Article}
-      \field{volume}{10}
-      \field{year}{2016}
-      \field{pages}{670\bibrangedash 670}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3332/ecancer.2016.670
-      \endverb
-      \verb{urlraw}
-      \verb https://www.ncbi.nlm.nih.gov/pubmed/27610196
-      \endverb
-      \verb{url}
-      \verb https://www.ncbi.nlm.nih.gov/pubmed/27610196
-      \endverb
-    \endentry
     \entry{ACTUC}{inbook}{}
       \name{author}{1}{}{%
         {{hash=0c52e954d7bdb0fa0d93af1351f3785d}{%
@@ -608,7 +545,6 @@
       \strng{authorbibnamehash}{0c52e954d7bdb0fa0d93af1351f3785d}
       \strng{authornamehash}{0c52e954d7bdb0fa0d93af1351f3785d}
       \strng{authorfullhash}{0c52e954d7bdb0fa0d93af1351f3785d}
-      \field{extraname}{1}
       \field{sortinit}{D}
       \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
       \field{extradatescope}{labelyear}
@@ -625,131 +561,6 @@
       \range{pages}{9}
       \verb{doi}
       \verb 10.1002/9780470979587.ch33
-      \endverb
-    \endentry
-    \entry{TVSSS}{book}{}
-      \name{author}{1}{}{%
-        {{hash=0c52e954d7bdb0fa0d93af1351f3785d}{%
-           family={Dorling},
-           familyi={D\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {John Wiley}%
-        {Sons Ltd}%
-      }
-      \strng{namehash}{0c52e954d7bdb0fa0d93af1351f3785d}
-      \strng{fullhash}{0c52e954d7bdb0fa0d93af1351f3785d}
-      \strng{bibnamehash}{0c52e954d7bdb0fa0d93af1351f3785d}
-      \strng{authorbibnamehash}{0c52e954d7bdb0fa0d93af1351f3785d}
-      \strng{authornamehash}{0c52e954d7bdb0fa0d93af1351f3785d}
-      \strng{authorfullhash}{0c52e954d7bdb0fa0d93af1351f3785d}
-      \field{extraname}{2}
-      \field{sortinit}{D}
-      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{The Visualisation of Spatial Social Structure}}
-      \field{year}{2012}
-    \endentry
-    \entry{ACCAC}{article}{}
-      \name{author}{3}{}{%
-        {{hash=99e8ffa55e6675a5c434941dac5d4a97}{%
-           family={Dougenik},
-           familyi={D\bibinitperiod},
-           given={James\bibnamedelima A.},
-           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=6297c2264486dea876e58a22667ceb59}{%
-           family={Chrisman},
-           familyi={C\bibinitperiod},
-           given={Nicholas\bibnamedelima R.},
-           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=5c1999957e69d46012fcf5b88e3a7b4f}{%
-           family={Niemeyer},
-           familyi={N\bibinitperiod},
-           given={Duane\bibnamedelima R.},
-           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Routledge}%
-      }
-      \strng{namehash}{7f9511bf82f94446a7aa98b2da276db7}
-      \strng{fullhash}{7f9511bf82f94446a7aa98b2da276db7}
-      \strng{bibnamehash}{7f9511bf82f94446a7aa98b2da276db7}
-      \strng{authorbibnamehash}{7f9511bf82f94446a7aa98b2da276db7}
-      \strng{authornamehash}{7f9511bf82f94446a7aa98b2da276db7}
-      \strng{authorfullhash}{7f9511bf82f94446a7aa98b2da276db7}
-      \field{sortinit}{D}
-      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Professional Geographer}
-      \field{number}{1}
-      \field{title}{{An Algorithm to Construct Continuous Area Cartograms}}
-      \field{volume}{37}
-      \field{year}{1985}
-      \field{pages}{75\bibrangedash 81}
-      \range{pages}{7}
-      \verb{doi}
-      \verb 10.1111/j.0033-0124.1985.00075.x
-      \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1111/j.0033-0124.1985.00075.x
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1111/j.0033-0124.1985.00075.x
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1111/j.0033-0124.1985.00075.x
-      \endverb
-    \endentry
-    \entry{CTTMB}{article}{}
-      \name{author}{1}{}{%
-        {{hash=b499951e22d710dc8c2a1084931e89fc}{%
-           family={Griffin},
-           familyi={G\bibinitperiod},
-           given={T.L.C.},
-           giveni={T\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Taylor}%
-        {Francis}%
-      }
-      \strng{namehash}{b499951e22d710dc8c2a1084931e89fc}
-      \strng{fullhash}{b499951e22d710dc8c2a1084931e89fc}
-      \strng{bibnamehash}{b499951e22d710dc8c2a1084931e89fc}
-      \strng{authorbibnamehash}{b499951e22d710dc8c2a1084931e89fc}
-      \strng{authornamehash}{b499951e22d710dc8c2a1084931e89fc}
-      \strng{authorfullhash}{b499951e22d710dc8c2a1084931e89fc}
-      \field{sortinit}{G}
-      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Cartography}
-      \field{number}{3}
-      \field{title}{{Cartographic Transformation of the Thematic Map Base}}
-      \field{volume}{11}
-      \field{year}{1980}
-      \field{pages}{163\bibrangedash 174}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1080/00690805.1980.10438102
-      \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1080/00690805.1980.10438102
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1080/00690805.1980.10438102
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1080/00690805.1980.10438102
       \endverb
     \endentry
     \entry{IGF}{manual}{}
@@ -1054,49 +865,6 @@
       \verb https://CRAN.R-project.org/package=RColorBrewer
       \endverb
     \endentry
-    \entry{NAC}{article}{}
-      \name{author}{1}{}{%
-        {{hash=44ec51ff819b01126a5a150e6e21e699}{%
-           family={Olson},
-           familyi={O\bibinitperiod},
-           given={Judy\bibnamedelima M.},
-           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Routledge}%
-      }
-      \strng{namehash}{44ec51ff819b01126a5a150e6e21e699}
-      \strng{fullhash}{44ec51ff819b01126a5a150e6e21e699}
-      \strng{bibnamehash}{44ec51ff819b01126a5a150e6e21e699}
-      \strng{authorbibnamehash}{44ec51ff819b01126a5a150e6e21e699}
-      \strng{authornamehash}{44ec51ff819b01126a5a150e6e21e699}
-      \strng{authorfullhash}{44ec51ff819b01126a5a150e6e21e699}
-      \field{sortinit}{O}
-      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Professional Geographer}
-      \field{number}{4}
-      \field{title}{{Noncontiguous Area Cartograms}}
-      \field{volume}{28}
-      \field{year}{1976}
-      \field{pages}{371\bibrangedash 380}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1111/j.0033-0124.1976.00371.x
-      \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1111/j.0033-0124.1976.00371.x
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1111/j.0033-0124.1976.00371.x
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1111/j.0033-0124.1976.00371.x
-      \endverb
-    \endentry
     \entry{sf}{article}{}
       \name{author}{1}{}{%
         {{hash=422fc79d05d5bcdcc598a0a7c6f95159}{%
@@ -1303,32 +1071,6 @@
       \verb{url}
       \verb https://lib.dr.iastate.edu/etd/13988
       \endverb
-    \endentry
-    \entry{EI}{book}{}
-      \name{author}{1}{}{%
-        {{hash=41187f886abb9d98f33e5b3f52276d12}{%
-           family={Tufte},
-           familyi={T\bibinitperiod},
-           given={Edward\bibnamedelima R.},
-           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Graphics Press}%
-      }
-      \strng{namehash}{41187f886abb9d98f33e5b3f52276d12}
-      \strng{fullhash}{41187f886abb9d98f33e5b3f52276d12}
-      \strng{bibnamehash}{41187f886abb9d98f33e5b3f52276d12}
-      \strng{authorbibnamehash}{41187f886abb9d98f33e5b3f52276d12}
-      \strng{authornamehash}{41187f886abb9d98f33e5b3f52276d12}
-      \strng{authorfullhash}{41187f886abb9d98f33e5b3f52276d12}
-      \field{sortinit}{T}
-      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Envisioning Information}}
-      \field{year}{1990}
     \endentry
     \entry{png}{online}{}
       \name{author}{1}{}{%
