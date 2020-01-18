@@ -3,6 +3,11 @@ knit: "bookdown::render_book"
 ---
 
 
+```{r setup-procedures, echo=FALSE, message=FALSE, warning=FALSE, comment = FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE)
+options("citation_format" = "pandoc")
+```
+
 # Visual inference study survey procedure
 
 Participants were recruited via advertising on the Figure-Eight crowdsource platform.
@@ -41,22 +46,28 @@ This page also contained a question that asked participants for a validation cod
 The demographic and consent page of the `shinydashboard` web application are displayed in Fig. \ref{fig:survey-demogs}. Two example lineups are shown, one choropleth map lineup in Fig. \ref{fig:survey-choro} and one heaxgon tile map lineup in Fig. \ref{fig:survey-hex}.
 
 
-```{r survey-demogs, results = "asis", fig.cap = "The demographics questions tab of the shinydashboard survey application."}
-ggdraw() +
-  draw_plot(grid::rasterGrob(readPNG("figures/survey_demogs.png")))
-```
+<!-- ```{r survey-demogs, results = "asis", fig.cap = "The demographics questions tab of the shinydashboard survey application."} -->
+<!-- ggdraw() + -->
+<!--   draw_plot(grid::rasterGrob(readPNG("figures/survey_demogs.png"))) -->
+<!-- ``` -->
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=16cm]{lineups/survey-demogs-1.pdf}
+\caption{\label{fig:survey-demogs}The demographics questions tab of the shinydashboard survey application.}
+\end{figure}
 
 
 
-```{r survey-choro, results = "asis", fig.cap = "An example of the choropleth map lineup shown in the survey tab of the shinydashboard app."}
-ggdraw() +
-  draw_plot(grid::rasterGrob(readPNG("figures/survey_choro.png")))
-```
+\begin{figure}[H]
+\centering
+\includegraphics[height=16cm]{lineups/survey-choro-1.pdf}
+\caption{\label{fig:survey-choro}An example of the choropleth map lineup shown in the survey tab of the shinydashboard app.}
+\end{figure}
 
 
-
-
-```{r survey-hex, results = "asis", fig.cap = "An example of the hexagon tile map lineup shown in the survey tab of the shinydashboard app."}
-ggdraw() +
-  draw_plot(grid::rasterGrob(readPNG("figures/survey_hex.png")))
-```
+\begin{figure}[H]
+\centering
+\includegraphics[height=16cm]{lineups/survey-hex-1.pdf}
+\caption{\label{fig:survey-hex}An example of the hexagon tile map lineup shown in the survey tab of the shinydashboard app.}
+\end{figure}
