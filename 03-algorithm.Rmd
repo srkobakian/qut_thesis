@@ -17,4 +17,3 @@ The steps in this algorithm are implemented in the `sugarbag` [@sugarbag] packag
 
 \includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_algorithm.pdf}
 
-\includepdf[pages = {1-}, scale=1, pagecommand={}]{03-algorithm.pdf}

@@ -187,11 +187,14 @@
         \vspace{30mm}
         {\Huge{\textbf{\expandafter{\@title}}}}\\
         \vspace{15mm}
-        {\huge{A thesis submitted in fulfilment of the requirement for the degree of’\\
+        {\huge{A thesis submitted in fulfilment of the\\
+        \vspace{5mm}
+        requirement for the degree of\\
+        \vspace{10mm}
         Master of Philosophy (Statistics)}}\\
-        \vspace{30mm}
-        \large{by}\\
         \vspace{20mm}
+        \large{by}\\
+        \vspace{5mm}
         {\huge\@author}\\
         \@degrees\\
         \vspace{30mm}

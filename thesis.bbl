@@ -396,6 +396,50 @@
       \verb 10.1186/1476-072X-5-49
       \endverb
     \endentry
+    \entry{GOINO}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b1eee41cf6396557e87662d0f5e3d565}{%
+           family={Berry},
+           familyi={B\bibinitperiod},
+           given={Brian\bibnamedelimb J.\bibnamedelimi L.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=ed6a43ab540ec9ed4474e8c36b3a4f2d}{%
+           family={Morrill},
+           familyi={M\bibinitperiod},
+           given={Richard\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=59ec782f697f0582e93512f25a7ad64c}{%
+           family={Tobler},
+           familyi={T\bibinitperiod},
+           given={Waldo\bibnamedelima R.},
+           giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association of American Geographers}%
+      }
+      \strng{namehash}{4c27bb2b9cf8e99fe52e0ab880d46f17}
+      \strng{fullhash}{4c27bb2b9cf8e99fe52e0ab880d46f17}
+      \strng{bibnamehash}{4c27bb2b9cf8e99fe52e0ab880d46f17}
+      \strng{authorbibnamehash}{4c27bb2b9cf8e99fe52e0ab880d46f17}
+      \strng{authornamehash}{4c27bb2b9cf8e99fe52e0ab880d46f17}
+      \strng{authorfullhash}{4c27bb2b9cf8e99fe52e0ab880d46f17}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{4}
+      \field{journaltitle}{The Professional Geographer}
+      \field{title}{{Geographic Ordering of Information: New Opportunities}}
+      \field{volume}{16}
+      \field{year}{1964}
+      \field{pages}{39\bibrangedash 44}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1111/j.0033-0124.1964.039_q.x
+      \endverb
+    \endentry
     \entry{spData}{online}{}
       \name{author}{3}{}{%
         {{hash=a48f5d015a48190e796b22a334e99aa1}{%
@@ -434,6 +478,290 @@
       \endverb
       \verb{url}
       \verb https://CRAN.R-project.org/package=spData
+      \endverb
+    \endentry
+    \entry{Bowel}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9094402e4f51c0ff6e8c4afee74945df}{%
+           family={{Bowel Cancer Australia}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{9094402e4f51c0ff6e8c4afee74945df}
+      \strng{fullhash}{9094402e4f51c0ff6e8c4afee74945df}
+      \strng{bibnamehash}{9094402e4f51c0ff6e8c4afee74945df}
+      \strng{authorbibnamehash}{9094402e4f51c0ff6e8c4afee74945df}
+      \strng{authornamehash}{9094402e4f51c0ff6e8c4afee74945df}
+      \strng{authorfullhash}{9094402e4f51c0ff6e8c4afee74945df}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Bowel Cancer Australia Atlas}}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.bowelcanceratlas.org/
+      \endverb
+      \verb{url}
+      \verb http://www.bowelcanceratlas.org/
+      \endverb
+    \endentry
+    \entry{CIBMUK}{article}{}
+      \name{author}{2}{}{%
+        {{hash=787dbdbf9c5fdc8af727f185cdfe4489}{%
+           family={Brewster},
+           familyi={B\bibinitperiod},
+           given={Mark\bibnamedelima B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=e0d99f4c8c270e82f12b2806fb56647a}{%
+           family={Subramanian},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi V.},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{38fe7e892aa110eb64c1ab31d1fc3ceb}
+      \strng{fullhash}{38fe7e892aa110eb64c1ab31d1fc3ceb}
+      \strng{bibnamehash}{38fe7e892aa110eb64c1ab31d1fc3ceb}
+      \strng{authorbibnamehash}{38fe7e892aa110eb64c1ab31d1fc3ceb}
+      \strng{authornamehash}{38fe7e892aa110eb64c1ab31d1fc3ceb}
+      \strng{authorfullhash}{38fe7e892aa110eb64c1ab31d1fc3ceb}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0300-5771}
+      \field{journaltitle}{International Journal of Epidemiology}
+      \field{number}{4}
+      \field{title}{{Cartographic Insights into the Burden of Mortality in the United Kingdom: A Review of `The Grim Reaper’s Road Map'}}
+      \field{type}{Journal Article}
+      \field{volume}{39}
+      \field{year}{2010}
+      \field{pages}{1120\bibrangedash 1122}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1093/ije/dyp395
+      \endverb
+    \endentry
+    \entry{burbank}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d71e67b8feab3ea578da28884af199f1}{%
+           family={Burbank},
+           familyi={B\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {NCI, Washington DC}%
+      }
+      \list{publisher}{1}{%
+        {National Cancer Institute Monograph Vol. 33}%
+      }
+      \strng{namehash}{d71e67b8feab3ea578da28884af199f1}
+      \strng{fullhash}{d71e67b8feab3ea578da28884af199f1}
+      \strng{bibnamehash}{d71e67b8feab3ea578da28884af199f1}
+      \strng{authorbibnamehash}{d71e67b8feab3ea578da28884af199f1}
+      \strng{authornamehash}{d71e67b8feab3ea578da28884af199f1}
+      \strng{authorfullhash}{d71e67b8feab3ea578da28884af199f1}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Patterns in Cancer Mortality in the United States 1950-67}}
+      \field{year}{1971}
+    \endentry
+    \entry{TACA}{online}{}
+      \name{author}{1}{}{%
+        {{hash=83506015c25fb365fd54480eb0a1c85a}{%
+           family={{Cancer Council Queensland, Queensland University of Technology, and Cooperative Research Centre for Spatial Information}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{83506015c25fb365fd54480eb0a1c85a}
+      \strng{fullhash}{83506015c25fb365fd54480eb0a1c85a}
+      \strng{bibnamehash}{83506015c25fb365fd54480eb0a1c85a}
+      \strng{authorbibnamehash}{83506015c25fb365fd54480eb0a1c85a}
+      \strng{authornamehash}{83506015c25fb365fd54480eb0a1c85a}
+      \strng{authorfullhash}{83506015c25fb365fd54480eb0a1c85a}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Australian Cancer Atlas}}
+      \field{version}{09-2018}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://atlas.cancer.org.au
+      \endverb
+      \verb{url}
+      \verb https://atlas.cancer.org.au
+      \endverb
+    \endentry
+    \entry{MDAC}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=d365d87d243556cf8b91d39ecd5043f7}{%
+           family={Cano},
+           familyi={C\bibinitperiod},
+           given={R.\bibnamedelimi G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=db7229aaf30c63d019c594a14eadfedf}{%
+           family={Buchin},
+           familyi={B\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=1eaa13e93a5788ecf804024c813a79e9}{%
+           family={Castermans},
+           familyi={C\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=afe66fd08357597a0d4804c68920b621}{%
+           family={Pieterse},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1196c502567a587b5cb22593c3b4b6a7}{%
+           family={Sonke},
+           familyi={S\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=b543953da81a8169b63a997adea96e38}{%
+           family={Speckmann},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{44dcaafc9a14b6d15e97a6f28d2bbf6c}
+      \strng{fullhash}{0889e2d503cb477532b863a2f00b29e6}
+      \strng{bibnamehash}{0889e2d503cb477532b863a2f00b29e6}
+      \strng{authorbibnamehash}{0889e2d503cb477532b863a2f00b29e6}
+      \strng{authornamehash}{44dcaafc9a14b6d15e97a6f28d2bbf6c}
+      \strng{authorfullhash}{0889e2d503cb477532b863a2f00b29e6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer Graphics Forum}
+      \field{month}{06}
+      \field{number}{3}
+      \field{title}{{Mosaic Drawings and Cartograms}}
+      \field{volume}{34}
+      \field{year}{2015}
+      \field{pages}{361\bibrangedash 370}
+      \range{pages}{10}
+    \endentry
+    \entry{TNTEA}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8346a858131f64813986b8a5fbbb21c2}{%
+           family={Carr},
+           familyi={C\bibinitperiod},
+           given={D.\bibnamedelimi B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=ff138a5c3d73e16f9ae99b52727ea7f1}{%
+           family={Wallin},
+           familyi={W\bibinitperiod},
+           given={J.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=51e55d66d435e9e7fe8118a66ecfe0fe}{%
+           family={Carr},
+           familyi={C\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley and Sons}%
+      }
+      \strng{namehash}{c65a37b9d44c46cb0b67d99e2b4d54dd}
+      \strng{fullhash}{c65a37b9d44c46cb0b67d99e2b4d54dd}
+      \strng{bibnamehash}{c65a37b9d44c46cb0b67d99e2b4d54dd}
+      \strng{authorbibnamehash}{c65a37b9d44c46cb0b67d99e2b4d54dd}
+      \strng{authornamehash}{c65a37b9d44c46cb0b67d99e2b4d54dd}
+      \strng{authorfullhash}{c65a37b9d44c46cb0b67d99e2b4d54dd}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Statistics in Medicine}
+      \field{title}{{Two New Templates for Epidemiology Applications: Linked Micromap Plots and Conditioned Choropleth Maps}}
+      \field{volume}{19}
+      \field{year}{2000}
+      \field{pages}{2521\bibrangedash 2538}
+      \range{pages}{18}
+      \verb{urlraw}
+      \verb https://doi.org/10.1002/1097-0258(20000915/30)19:17/18<2521::AID-SIM585>3.0.CO;2-K
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1002/1097-0258(20000915/30)19:17/18%3C2521::AID-SIM585%3E3.0.CO;2-K
+      \endverb
+    \endentry
+    \entry{cliburn2002design}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5ada3a06c92e930ae0afda165b3dc87b}{%
+           family={Cliburn},
+           familyi={C\bibinitperiod},
+           given={Daniel\bibnamedelima C},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=c162b18c233dc96e8e99e686de1834a5}{%
+           family={Feddema},
+           familyi={F\bibinitperiod},
+           given={Johannes\bibnamedelima J},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=95e26e4df267de7507dc5765b057aba3}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=7ad78c38776aef3231a2f17e45399cb8}{%
+           family={Slocum},
+           familyi={S\bibinitperiod},
+           given={Terry\bibnamedelima A},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9db8286c009259dc959a8ba3f16478be}
+      \strng{fullhash}{6e5faf875621d65f183ff0c03cc70b42}
+      \strng{bibnamehash}{6e5faf875621d65f183ff0c03cc70b42}
+      \strng{authorbibnamehash}{6e5faf875621d65f183ff0c03cc70b42}
+      \strng{authornamehash}{9db8286c009259dc959a8ba3f16478be}
+      \strng{authorfullhash}{6e5faf875621d65f183ff0c03cc70b42}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers and Graphics}
+      \field{number}{6}
+      \field{title}{{Design and Evaluation of a Decision Support System in a Water Balance Application}}
+      \field{volume}{26}
+      \field{year}{2002}
+      \field{pages}{931\bibrangedash 949}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/S0097-8493(02)00181-4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/S0097-8493(02)00181-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/S0097-8493(02)00181-4
       \endverb
     \endentry
     \entry{eechidna}{manual}{}
@@ -531,6 +859,146 @@
       \verb https://CRAN.R-project.org/package=eechidna
       \endverb
     \endentry
+    \entry{MACM}{article}{}
+      \name{author}{6}{}{%
+        {{hash=3fbe0e2fe5c1691cff7d68a96529802f}{%
+           family={d'Onofrio},
+           familyi={d\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7bc00337760f6a72686a3a1a542c8a5f}{%
+           family={Mazzetta},
+           familyi={M\bibinitperiod},
+           given={Chiara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=16bd2db884a897dcd0466913d15bc755}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e68fb8785cf2d3ec1e07b9f318c3f3d0}{%
+           family={Smans},
+           familyi={S\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=29a3e1f6660e35b4deaebe9318889556}{%
+           family={Boyle},
+           familyi={B\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e5caf7bae99ec7a0af86f8aa2dc06fe8}{%
+           family={Boniol},
+           familyi={B\bibinitperiod},
+           given={Mathieu},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d26408a99700c5b62524e1506622c04}
+      \strng{fullhash}{0ecc22fbef2c313d8e0828dc963717d1}
+      \strng{bibnamehash}{0ecc22fbef2c313d8e0828dc963717d1}
+      \strng{authorbibnamehash}{0ecc22fbef2c313d8e0828dc963717d1}
+      \strng{authornamehash}{3d26408a99700c5b62524e1506622c04}
+      \strng{authorfullhash}{0ecc22fbef2c313d8e0828dc963717d1}
+      \field{sortinit}{d}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1754-6605}
+      \field{journaltitle}{Ecancermedicalscience}
+      \field{title}{{Maps and Atlases of Cancer Mortality: A Review of a Useful Tool to Trigger New Questions}}
+      \field{type}{Journal Article}
+      \field{volume}{10}
+      \field{year}{2016}
+      \field{pages}{670\bibrangedash 670}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3332/ecancer.2016.670
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ncbi.nlm.nih.gov/pubmed/27610196
+      \endverb
+      \verb{url}
+      \verb https://www.ncbi.nlm.nih.gov/pubmed/27610196
+      \endverb
+    \endentry
+    \entry{DQBCM}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=3653e0e729c21fc6920ba6800a592e93}{%
+           family={{Dang}},
+           familyi={D\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ba3143ed5e33b574134fc797953c03ed}{%
+           family={{North}},
+           familyi={N\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8e89956c17f13bcda5591c1537b38051}{%
+           family={{Shneiderman}},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2f502460fce93a3b47913a82bcf4646}
+      \strng{fullhash}{e2f502460fce93a3b47913a82bcf4646}
+      \strng{bibnamehash}{e2f502460fce93a3b47913a82bcf4646}
+      \strng{authorbibnamehash}{e2f502460fce93a3b47913a82bcf4646}
+      \strng{authornamehash}{e2f502460fce93a3b47913a82bcf4646}
+      \strng{authorfullhash}{e2f502460fce93a3b47913a82bcf4646}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Proceedings Fifth International Conference on Information Visualisation}}
+      \field{month}{7}
+      \field{title}{{Dynamic Queries and Brushing on Choropleth Maps}}
+      \field{year}{2001}
+      \field{pages}{757\bibrangedash 764}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/IV.2001.942141
+      \endverb
+    \endentry
+    \entry{NISCC}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a1286ee4b728c47e8730bac87bd52e9d}{%
+           family={Dent},
+           familyi={D\bibinitperiod},
+           given={Borden\bibnamedelima D.},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1286ee4b728c47e8730bac87bd52e9d}
+      \strng{fullhash}{a1286ee4b728c47e8730bac87bd52e9d}
+      \strng{bibnamehash}{a1286ee4b728c47e8730bac87bd52e9d}
+      \strng{authorbibnamehash}{a1286ee4b728c47e8730bac87bd52e9d}
+      \strng{authornamehash}{a1286ee4b728c47e8730bac87bd52e9d}
+      \strng{authorfullhash}{a1286ee4b728c47e8730bac87bd52e9d}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Geography}
+      \field{number}{7}
+      \field{title}{{A Note on the Importance of Shape in Cartogram Communication}}
+      \field{volume}{71}
+      \field{year}{1972}
+      \field{pages}{393\bibrangedash 401}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1080/00221347208981697
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/00221347208981697
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/00221347208981697
+      \endverb
+    \endentry
     \entry{ACTUC}{inbook}{}
       \name{author}{1}{}{%
         {{hash=0c52e954d7bdb0fa0d93af1351f3785d}{%
@@ -563,6 +1031,297 @@
       \verb 10.1002/9780470979587.ch33
       \endverb
     \endentry
+    \entry{ACCAC}{article}{}
+      \name{author}{3}{}{%
+        {{hash=99e8ffa55e6675a5c434941dac5d4a97}{%
+           family={Dougenik},
+           familyi={D\bibinitperiod},
+           given={James\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6297c2264486dea876e58a22667ceb59}{%
+           family={Chrisman},
+           familyi={C\bibinitperiod},
+           given={Nicholas\bibnamedelima R.},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=5c1999957e69d46012fcf5b88e3a7b4f}{%
+           family={Niemeyer},
+           familyi={N\bibinitperiod},
+           given={Duane\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{7f9511bf82f94446a7aa98b2da276db7}
+      \strng{fullhash}{7f9511bf82f94446a7aa98b2da276db7}
+      \strng{bibnamehash}{7f9511bf82f94446a7aa98b2da276db7}
+      \strng{authorbibnamehash}{7f9511bf82f94446a7aa98b2da276db7}
+      \strng{authornamehash}{7f9511bf82f94446a7aa98b2da276db7}
+      \strng{authorfullhash}{7f9511bf82f94446a7aa98b2da276db7}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Professional Geographer}
+      \field{number}{1}
+      \field{title}{{An Algorithm to Construct Continuous Area Cartograms}}
+      \field{volume}{37}
+      \field{year}{1985}
+      \field{pages}{75\bibrangedash 81}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1111/j.0033-0124.1985.00075.x
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1111/j.0033-0124.1985.00075.x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1111/j.0033-0124.1985.00075.x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1111/j.0033-0124.1985.00075.x
+      \endverb
+    \endentry
+    \entry{cancerSpain}{online}{}
+      \name{author}{1}{}{%
+        {{hash=36250a7350eaed2d572781988087916a}{%
+           family={{El Pais}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{36250a7350eaed2d572781988087916a}
+      \strng{fullhash}{36250a7350eaed2d572781988087916a}
+      \strng{bibnamehash}{36250a7350eaed2d572781988087916a}
+      \strng{authorbibnamehash}{36250a7350eaed2d572781988087916a}
+      \strng{authornamehash}{36250a7350eaed2d572781988087916a}
+      \strng{authorfullhash}{36250a7350eaed2d572781988087916a}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Map of Cancer Mortality Rates in Spain}}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://elpais.com/elpais/2014/10/06/media/1412612722_141933.html
+      \endverb
+      \verb{url}
+      \verb http://elpais.com/elpais/2014/10/06/media/1412612722_141933.html
+      \endverb
+    \endentry
+    \entry{EnvEnglandWales2}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b2b3565f46aef8e57b6dae73f100d338}{%
+           family={{Emperial College London - Small Area Health Statistics Unit}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{b2b3565f46aef8e57b6dae73f100d338}
+      \strng{fullhash}{b2b3565f46aef8e57b6dae73f100d338}
+      \strng{bibnamehash}{b2b3565f46aef8e57b6dae73f100d338}
+      \strng{authorbibnamehash}{b2b3565f46aef8e57b6dae73f100d338}
+      \strng{authornamehash}{b2b3565f46aef8e57b6dae73f100d338}
+      \strng{authorfullhash}{b2b3565f46aef8e57b6dae73f100d338}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Environmental and Health Atlas of England and Wales: National male lung cancer rate}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2010}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.envhealthatlas.co.uk/eha/Breast/
+      \endverb
+      \verb{url}
+      \verb http://www.envhealthatlas.co.uk/eha/Breast/
+      \endverb
+    \endentry
+    \entry{SE}{article}{}
+      \name{author}{1}{}{%
+        {{hash=502f9f6eb146ea3418da46618154b15e}{%
+           family={Exeter},
+           familyi={E\bibinitperiod},
+           given={Daniel\bibnamedelima J},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{502f9f6eb146ea3418da46618154b15e}
+      \strng{fullhash}{502f9f6eb146ea3418da46618154b15e}
+      \strng{bibnamehash}{502f9f6eb146ea3418da46618154b15e}
+      \strng{authorbibnamehash}{502f9f6eb146ea3418da46618154b15e}
+      \strng{authornamehash}{502f9f6eb146ea3418da46618154b15e}
+      \strng{authorfullhash}{502f9f6eb146ea3418da46618154b15e}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Encyclopedia of Geography: People, the Earth, Environment and Technology: People, the Earth, Environment and Technology}
+      \field{title}{{Spatial Epidemiology}}
+      \field{year}{2016}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+    \endentry
+    \entry{IARC_3}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ec18121a61d5567cb1953a84b4cb2c17}{%
+           family={{Ferlay J, Ervik M, Lam F, Colombet M, Mery L, Piñeros M, Znaor A, Soerjomataram I, Bray F}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Lyon, France}%
+      }
+      \list{publisher}{1}{%
+        {International Agency for Research on Cancer}%
+      }
+      \strng{namehash}{ec18121a61d5567cb1953a84b4cb2c17}
+      \strng{fullhash}{ec18121a61d5567cb1953a84b4cb2c17}
+      \strng{bibnamehash}{ec18121a61d5567cb1953a84b4cb2c17}
+      \strng{authorbibnamehash}{ec18121a61d5567cb1953a84b4cb2c17}
+      \strng{authornamehash}{ec18121a61d5567cb1953a84b4cb2c17}
+      \strng{authorfullhash}{ec18121a61d5567cb1953a84b4cb2c17}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Global Cancer Observatory: Cancer Today}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://gco.iarc.fr/today
+      \endverb
+      \verb{url}
+      \verb https://gco.iarc.fr/today
+      \endverb
+    \endentry
+    \entry{WP}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=671fbd42d8466fc6b45602bdf152ddbe}{%
+           family={Gamio},
+           familyi={G\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9ba42abcb64a36494c97f67239cac637}{%
+           family={D.},
+           familyi={D\bibinitperiod},
+           given={Cameron},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{c50507dca2690cb3ce82a18e45e5fa31}
+      \strng{fullhash}{c50507dca2690cb3ce82a18e45e5fa31}
+      \strng{bibnamehash}{c50507dca2690cb3ce82a18e45e5fa31}
+      \strng{authorbibnamehash}{c50507dca2690cb3ce82a18e45e5fa31}
+      \strng{authornamehash}{c50507dca2690cb3ce82a18e45e5fa31}
+      \strng{authorfullhash}{c50507dca2690cb3ce82a18e45e5fa31}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Poll: Redrawing the electoral map}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.washingtonpost.com/graphics/politics/2016-election/50-state-poll/
+      \endverb
+      \verb{url}
+      \verb https://www.washingtonpost.com/graphics/politics/2016-election/50-state-poll/
+      \endverb
+    \endentry
+    \entry{goodchild1994introduction}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a89646ede7ce7118279703f4814893bd}{%
+           family={Goodchild},
+           familyi={G\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e7a9100f1b2cca2e7dc45e058318de44}{%
+           family={Buttenfield},
+           familyi={B\bibinitperiod},
+           given={B},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d388a5d27ab4f06ef9800bed4c46eded}{%
+           family={Wood},
+           familyi={W\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f9fff145349569333097ee5902278d9}
+      \strng{fullhash}{1f9fff145349569333097ee5902278d9}
+      \strng{bibnamehash}{1f9fff145349569333097ee5902278d9}
+      \strng{authorbibnamehash}{1f9fff145349569333097ee5902278d9}
+      \strng{authornamehash}{1f9fff145349569333097ee5902278d9}
+      \strng{authorfullhash}{1f9fff145349569333097ee5902278d9}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Visualization in geographical information systems}
+      \field{title}{{On Introduction to Visualizing Data Validity}}
+      \field{year}{1994}
+      \field{pages}{141\bibrangedash 149}
+      \range{pages}{9}
+    \endentry
+    \entry{CTTMB}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b499951e22d710dc8c2a1084931e89fc}{%
+           family={Griffin},
+           familyi={G\bibinitperiod},
+           given={T.L.C.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Taylor}%
+        {Francis}%
+      }
+      \strng{namehash}{b499951e22d710dc8c2a1084931e89fc}
+      \strng{fullhash}{b499951e22d710dc8c2a1084931e89fc}
+      \strng{bibnamehash}{b499951e22d710dc8c2a1084931e89fc}
+      \strng{authorbibnamehash}{b499951e22d710dc8c2a1084931e89fc}
+      \strng{authornamehash}{b499951e22d710dc8c2a1084931e89fc}
+      \strng{authorfullhash}{b499951e22d710dc8c2a1084931e89fc}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cartography}
+      \field{number}{3}
+      \field{title}{{Cartographic Transformation of the Thematic Map Base}}
+      \field{volume}{11}
+      \field{year}{1980}
+      \field{pages}{163\bibrangedash 174}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1080/00690805.1980.10438102
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/00690805.1980.10438102
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/00690805.1980.10438102
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/00690805.1980.10438102
+      \endverb
+    \endentry
     \entry{IGF}{manual}{}
       \name{author}{1}{}{%
         {{hash=d22e0d585125aee316c3e63c4362366d}{%
@@ -592,6 +1351,43 @@
       \verb{url}
       \verb https://CRAN.R-project.org/package=geofacet
       \endverb
+    \endentry
+    \entry{CB}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c23c02d14a924232e5fe6a0510fe833d}{%
+           family={Harrower},
+           familyi={H\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bab67f8530fac2d5202692aaaff18c41}{%
+           family={Brewer},
+           familyi={B\bibinitperiod},
+           given={C.\bibnamedelimi A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The British Cartographic Society}%
+      }
+      \strng{namehash}{c27f9848b83423b4f033ac08272e8727}
+      \strng{fullhash}{c27f9848b83423b4f033ac08272e8727}
+      \strng{bibnamehash}{c27f9848b83423b4f033ac08272e8727}
+      \strng{authorbibnamehash}{c27f9848b83423b4f033ac08272e8727}
+      \strng{authornamehash}{c27f9848b83423b4f033ac08272e8727}
+      \strng{authorfullhash}{c27f9848b83423b4f033ac08272e8727}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{1}
+      \field{journaltitle}{{The Cartographic Journal}}
+      \field{month}{06}
+      \field{title}{{ColorBrewer.org: An Online Tool for Selecting Colour Schemes for Maps}}
+      \field{volume}{40}
+      \field{year}{2003}
+      \field{pages}{27\bibrangedash 37}
+      \range{pages}{11}
     \endentry
     \entry{GTPCCD}{article}{}
       \name{author}{4}{}{%
@@ -642,6 +1438,35 @@
       \endverb
       \keyw{computer graphics;graphical tests;power comparison;visual testing;standard statistical inference tests;graphical findings;distributional assumptions;lineups;graphical designs;coordinate system;polar coordinates;cartesian coordinates;spotting patterns;plot designs;Amazon Mechanical Turk;MTurk;Observers;Accuracy;Data models;Visual analytics;Statistical analysis;Inference mechanisms;Lineups;Visual inference;Power comparison;Efficiency of displays}
     \endentry
+    \entry{HEDP}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=0cf29709a84c463cc61c60dfabab5838}{%
+           family={Howe},
+           familyi={H\bibinitperiod},
+           given={GM},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0cf29709a84c463cc61c60dfabab5838}
+      \strng{fullhash}{0cf29709a84c463cc61c60dfabab5838}
+      \strng{bibnamehash}{0cf29709a84c463cc61c60dfabab5838}
+      \strng{authorbibnamehash}{0cf29709a84c463cc61c60dfabab5838}
+      \strng{authornamehash}{0cf29709a84c463cc61c60dfabab5838}
+      \strng{authorfullhash}{0cf29709a84c463cc61c60dfabab5838}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Cancer mapping}
+      \field{title}{{Historical Evolution of Disease Mapping in General and Specifically of Cancer Mapping}}
+      \field{year}{1989}
+      \field{pages}{1\bibrangedash 21}
+      \range{pages}{21}
+    \endentry
     \entry{cartogram}{online}{}
       \name{author}{1}{}{%
         {{hash=4b88bb77f5004e3e259d7d7af477c151}{%
@@ -671,6 +1496,89 @@
       \verb{url}
       \verb https://CRAN.R-project.org/package=cartogram
       \endverb
+    \endentry
+    \entry{FiveThirtyEight}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=7c9526bb0d33f70ee816797f1e58f313}{%
+           family={Kanjana},
+           familyi={K\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9713b89e2f75f42e03e2b71feb9fc71a}{%
+           family={Mehta},
+           familyi={M\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{c54c43276b174a77ce3ea40266e9a048}
+      \strng{fullhash}{c54c43276b174a77ce3ea40266e9a048}
+      \strng{bibnamehash}{c54c43276b174a77ce3ea40266e9a048}
+      \strng{authorbibnamehash}{c54c43276b174a77ce3ea40266e9a048}
+      \strng{authornamehash}{c54c43276b174a77ce3ea40266e9a048}
+      \strng{authorfullhash}{c54c43276b174a77ce3ea40266e9a048}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Who will win the presidency?}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://projects.fivethirtyeight.com/2016-election-forecast/
+      \endverb
+      \verb{url}
+      \verb https://projects.fivethirtyeight.com/2016-election-forecast/
+      \endverb
+    \endentry
+    \entry{ECGC}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=d329a5cdbc69e451a95e3985ca89ac81}{%
+           family={Keim},
+           familyi={K\bibinitperiod},
+           given={D.A},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5d7cdd0904c44be6a43310e04b71bea4}{%
+           family={North},
+           familyi={N\bibinitperiod},
+           given={S.C},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fb28e4e3465284d67a341e122c95e9db}{%
+           family={Panse},
+           familyi={P\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7d36a36a5f88aafe47e12889dbcb4821}{%
+           family={Schneidewind},
+           familyi={S\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{2a42759e1cbdf28752a1dea0ade1c64a}
+      \strng{fullhash}{89cd8a9da4789bc2999bd163b9dc97c7}
+      \strng{bibnamehash}{89cd8a9da4789bc2999bd163b9dc97c7}
+      \strng{authorbibnamehash}{89cd8a9da4789bc2999bd163b9dc97c7}
+      \strng{authornamehash}{2a42759e1cbdf28752a1dea0ade1c64a}
+      \strng{authorfullhash}{89cd8a9da4789bc2999bd163b9dc97c7}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{IEEE Symposium on Information Visualization, 2002. INFOVIS 2002}}
+      \field{isbn}{076951751X}
+      \field{title}{{Efficient Cartogram Generation: A Comparison}}
+      \field{volume}{2002}
+      \field{year}{2002}
+      \field{pages}{33\bibrangedash 36}
+      \range{pages}{4}
     \endentry
     \entry{sugarbag}{online}{}
       \name{author}{2}{}{%
@@ -742,6 +1650,198 @@
       \verb https://CRAN.R-project.org/package=taipan
       \endverb
     \endentry
+    \entry{CBATCC}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=c264132a31c29417a9c71844cefaa702}{%
+           family={Kocmoud},
+           familyi={K\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0bd47fa1088da9953e9cc066d9a9578c}{%
+           family={House},
+           familyi={H\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb46884cdcccfa8bac69257076d53a1c}
+      \strng{fullhash}{fb46884cdcccfa8bac69257076d53a1c}
+      \strng{bibnamehash}{fb46884cdcccfa8bac69257076d53a1c}
+      \strng{authorbibnamehash}{fb46884cdcccfa8bac69257076d53a1c}
+      \strng{authornamehash}{fb46884cdcccfa8bac69257076d53a1c}
+      \strng{authorfullhash}{fb46884cdcccfa8bac69257076d53a1c}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. Symp. Spatial Data Handling}
+      \field{title}{{A Constraint-based Approach to Constructing Continuous Cartograms}}
+      \field{year}{1998}
+      \field{pages}{236\bibrangedash 246}
+      \range{pages}{11}
+    \endentry
+    \entry{CD}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=a3d8ab8fd7f97b15a2a2582024bedc82}{%
+           family={Kraak},
+           familyi={K\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{location}{1}{%
+        {United States}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{a3d8ab8fd7f97b15a2a2582024bedc82}
+      \strng{fullhash}{a3d8ab8fd7f97b15a2a2582024bedc82}
+      \strng{bibnamehash}{a3d8ab8fd7f97b15a2a2582024bedc82}
+      \strng{authorbibnamehash}{a3d8ab8fd7f97b15a2a2582024bedc82}
+      \strng{authornamehash}{a3d8ab8fd7f97b15a2a2582024bedc82}
+      \strng{authorfullhash}{a3d8ab8fd7f97b15a2a2582024bedc82}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{The International Encyclopedia of Geography: People, the Earth, Environment, and Technology}}
+      \field{isbn}{978-1-1187-8635-2}
+      \field{title}{{Cartographic Design}}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 16}
+      \range{pages}{16}
+    \endentry
+    \entry{ORC}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3d59fa21cf3004cfd6cc43712546d3cf}{%
+           family={Kreveld},
+           familyi={K\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=d1b091611207641ad30b432737e7581a}{%
+           family={Speckmann},
+           familyi={S\bibinitperiod},
+           given={Bettina},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{8542b4ba63bf3bbab7b5d929c4e8bf82}
+      \strng{fullhash}{8542b4ba63bf3bbab7b5d929c4e8bf82}
+      \strng{bibnamehash}{8542b4ba63bf3bbab7b5d929c4e8bf82}
+      \strng{authorbibnamehash}{8542b4ba63bf3bbab7b5d929c4e8bf82}
+      \strng{authornamehash}{8542b4ba63bf3bbab7b5d929c4e8bf82}
+      \strng{authorfullhash}{8542b4ba63bf3bbab7b5d929c4e8bf82}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0925-7721}
+      \field{journaltitle}{{Computational Geometry}}
+      \field{note}{Special Issue on the 20th European Workshop on Computational Geometry}
+      \field{number}{3}
+      \field{title}{On rectangular cartograms}
+      \field{volume}{37}
+      \field{year}{2007}
+      \field{pages}{175\bibrangedash 187}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.comgeo.2006.06.002
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0925772106000770
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0925772106000770
+      \endverb
+      \keyw{Cartogram,Rectangular layout}
+    \endentry
+    \entry{VSSDCUC}{article}{}
+      \name{author}{2}{}{%
+        {{hash=65da9f72985658f75604df27abfd13e0}{%
+           family={Kronenfeld},
+           familyi={K\bibinitperiod},
+           given={Barry\bibnamedelima J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=de77f2be27e8c36c33556bb3e7ae4f4b}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={David\bibnamedelimb W.\bibnamedelimi S.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{03cf8b11a9cc86177232e009885a3e7a}
+      \strng{fullhash}{03cf8b11a9cc86177232e009885a3e7a}
+      \strng{bibnamehash}{03cf8b11a9cc86177232e009885a3e7a}
+      \strng{authorbibnamehash}{03cf8b11a9cc86177232e009885a3e7a}
+      \strng{authornamehash}{03cf8b11a9cc86177232e009885a3e7a}
+      \strng{authorfullhash}{03cf8b11a9cc86177232e009885a3e7a}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1476-072X}
+      \field{journaltitle}{International Journal of Health Geographics}
+      \field{number}{1}
+      \field{title}{{Visualizing Statistical Significance of Disease Clusters Using Cartograms}}
+      \field{type}{Journal Article}
+      \field{volume}{16}
+      \field{year}{2017}
+      \field{pages}{19}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s12942-017-0093-9
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1186/s12942-017-0093-9
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1186/s12942-017-0093-9
+      \endverb
+    \endentry
+    \entry{TAAM}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6755c7075f9f28f575a1f557df12941e}{%
+           family={Levison},
+           familyi={L\bibinitperiod},
+           given={M.\bibnamedelimi E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=9109fbced4254bbb12d3dc9cb86ead0c}{%
+           family={Haddon\bibnamedelima Jr},
+           familyi={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{cdfa122a6daf1418c30f4b401c9a2682}
+      \strng{fullhash}{cdfa122a6daf1418c30f4b401c9a2682}
+      \strng{bibnamehash}{cdfa122a6daf1418c30f4b401c9a2682}
+      \strng{authorbibnamehash}{cdfa122a6daf1418c30f4b401c9a2682}
+      \strng{authornamehash}{cdfa122a6daf1418c30f4b401c9a2682}
+      \strng{authorfullhash}{cdfa122a6daf1418c30f4b401c9a2682}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00946214}
+      \field{journaltitle}{Public Health Reports}
+      \field{title}{{The Area Adjusted Map. An Epidemiologic Device}}
+      \field{type}{Journal Article}
+      \field{volume}{80}
+      \field{year}{1965}
+      \field{pages}{55\bibrangedash 59}
+      \range{pages}{5}
+    \endentry
     \entry{VUADBC}{article}{}
       \name{author}{2}{}{%
         {{hash=3b098b1988c85b17411f187903311ee2}{%
@@ -780,6 +1880,42 @@
       \verb https://doi.org/10.1002/sta4.150
       \endverb
     \endentry
+    \entry{maceachren1992visualizing}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6de69b4bce6221035aaefc33c11304d4}{%
+           family={MacEachren},
+           familyi={M\bibinitperiod},
+           given={Alan\bibnamedelima M},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{6de69b4bce6221035aaefc33c11304d4}
+      \strng{fullhash}{6de69b4bce6221035aaefc33c11304d4}
+      \strng{bibnamehash}{6de69b4bce6221035aaefc33c11304d4}
+      \strng{authorbibnamehash}{6de69b4bce6221035aaefc33c11304d4}
+      \strng{authornamehash}{6de69b4bce6221035aaefc33c11304d4}
+      \strng{authorfullhash}{6de69b4bce6221035aaefc33c11304d4}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cartographic Perspectives}
+      \field{number}{13}
+      \field{title}{{Visualizing Uncertain Information}}
+      \field{year}{1992}
+      \field{pages}{10\bibrangedash 19}
+      \range{pages}{10}
+      \verb{doi}
+      \verb https://doi.org/10.14714/CP13.1000
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.14714/CP13.1000
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.14714/CP13.1000
+      \endverb
+    \endentry
     \entry{ABSmaps}{manual}{}
       \name{author}{1}{}{%
         {{hash=8fbb1e5213446c41f948a3e17ff2a7ea}{%
@@ -801,6 +1937,75 @@
       \field{note}{R package version 0.1.1}
       \field{title}{absmapsdata: A catalogue of ready-to-use ASGS mapping data}
       \field{year}{2019}
+    \endentry
+    \entry{PUCS}{online}{}
+      \name{author}{1}{}{%
+        {{hash=80618c47abbc67e04207530658e2d6a6}{%
+           family={Madsen},
+           familyi={M\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{80618c47abbc67e04207530658e2d6a6}
+      \strng{fullhash}{80618c47abbc67e04207530658e2d6a6}
+      \strng{bibnamehash}{80618c47abbc67e04207530658e2d6a6}
+      \strng{authorbibnamehash}{80618c47abbc67e04207530658e2d6a6}
+      \strng{authornamehash}{80618c47abbc67e04207530658e2d6a6}
+      \strng{authorfullhash}{80618c47abbc67e04207530658e2d6a6}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Programming Design Systems}}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://programmingdesignsystems.com/
+      \endverb
+      \verb{url}
+      \verb https://programmingdesignsystems.com/
+      \endverb
+    \endentry
+    \entry{mcgranaghan1993cartographic}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fe1140c7e138a6ef26d70d0f4b499b20}{%
+           family={McGranaghan},
+           familyi={M\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {University of Toronto Press}%
+      }
+      \strng{namehash}{fe1140c7e138a6ef26d70d0f4b499b20}
+      \strng{fullhash}{fe1140c7e138a6ef26d70d0f4b499b20}
+      \strng{bibnamehash}{fe1140c7e138a6ef26d70d0f4b499b20}
+      \strng{authorbibnamehash}{fe1140c7e138a6ef26d70d0f4b499b20}
+      \strng{authornamehash}{fe1140c7e138a6ef26d70d0f4b499b20}
+      \strng{authorfullhash}{fe1140c7e138a6ef26d70d0f4b499b20}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cartographica: The International Journal for Geographic Information and Geovisualization}
+      \field{number}{2-3}
+      \field{title}{{A Cartographic View of Spatial Data Quality}}
+      \field{volume}{30}
+      \field{year}{1993}
+      \field{pages}{8\bibrangedash 19}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.3138/310V-0067-7570-6566
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.3138/310V-0067-7570-6566
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.3138/310V-0067-7570-6566
+      \endverb
     \endentry
     \entry{ACA}{inproceedings}{}
       \name{author}{2}{}{%
@@ -835,6 +2040,160 @@
       \verb 10.1109/IDEAS.2000.880581
       \endverb
     \endentry
+    \entry{HTLWM}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6000a6b4b36d65627d988741d5274854}{%
+           family={Monmonier},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{6000a6b4b36d65627d988741d5274854}
+      \strng{fullhash}{6000a6b4b36d65627d988741d5274854}
+      \strng{bibnamehash}{6000a6b4b36d65627d988741d5274854}
+      \strng{authorbibnamehash}{6000a6b4b36d65627d988741d5274854}
+      \strng{authornamehash}{6000a6b4b36d65627d988741d5274854}
+      \strng{authorfullhash}{6000a6b4b36d65627d988741d5274854}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780226436081}
+      \field{title}{{How to Lie with Maps (Third Edition)}}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1191/0309132505ph540pr
+      \endverb
+      \verb{urlraw}
+      \verb https://books.google.com.au/books?id=MwdRDwAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.com.au/books?id=MwdRDwAAQBAJ
+      \endverb
+    \endentry
+    \entry{CDWCS}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5ebe667858f20edeff6b86f57cab73a4}{%
+           family={Monmonier},
+           familyi={M\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ebe667858f20edeff6b86f57cab73a4}
+      \strng{fullhash}{5ebe667858f20edeff6b86f57cab73a4}
+      \strng{bibnamehash}{5ebe667858f20edeff6b86f57cab73a4}
+      \strng{authorbibnamehash}{5ebe667858f20edeff6b86f57cab73a4}
+      \strng{authornamehash}{5ebe667858f20edeff6b86f57cab73a4}
+      \strng{authorfullhash}{5ebe667858f20edeff6b86f57cab73a4}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Progress in Human Geography}
+      \field{number}{2}
+      \field{title}{{Cartography: Distortions, World-views and Creative Solutions}}
+      \field{volume}{29}
+      \field{year}{2005}
+      \field{pages}{217\bibrangedash 224}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1191/0309132505ph540pr
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1191/0309132505ph540pr
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1191/0309132505ph540pr
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1191/0309132505ph540pr
+      \endverb
+    \endentry
+    \entry{NPR}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=62f7bf8ee1baee2334de645f5c26f2cb}{%
+           family={Montanaro},
+           familyi={M\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{62f7bf8ee1baee2334de645f5c26f2cb}
+      \strng{fullhash}{62f7bf8ee1baee2334de645f5c26f2cb}
+      \strng{bibnamehash}{62f7bf8ee1baee2334de645f5c26f2cb}
+      \strng{authorbibnamehash}{62f7bf8ee1baee2334de645f5c26f2cb}
+      \strng{authornamehash}{62f7bf8ee1baee2334de645f5c26f2cb}
+      \strng{authorfullhash}{62f7bf8ee1baee2334de645f5c26f2cb}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{NPR Battleground Map: Hillary Clinton Is Winning — And It's Not Close}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.npr.org/2016/10/18/498406765/npr-battleground-map-hillary-clinton-is-winning-and-its-not-close
+      \endverb
+      \verb{url}
+      \verb https://www.npr.org/2016/10/18/498406765/npr-battleground-map-hillary-clinton-is-winning-and-its-not-close
+      \endverb
+    \endentry
+    \entry{SAMGIS}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c393bc5cac12ab52d88f0b5c94433ec7}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={Dale\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ebdeaae8e82c87a453b40449f402f07d}{%
+           family={Carpenter},
+           familyi={C\bibinitperiod},
+           given={Tim\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{047f626302bfcb45277980db8f010f78}
+      \strng{fullhash}{047f626302bfcb45277980db8f010f78}
+      \strng{bibnamehash}{047f626302bfcb45277980db8f010f78}
+      \strng{authorbibnamehash}{047f626302bfcb45277980db8f010f78}
+      \strng{authornamehash}{047f626302bfcb45277980db8f010f78}
+      \strng{authorfullhash}{047f626302bfcb45277980db8f010f78}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1478-6729}
+      \field{journaltitle}{Epidemiologic Reviews}
+      \field{month}{07}
+      \field{number}{2}
+      \field{title}{{Spatial Analytical Methods and Geographic Information Systems: Use in Health Research and Epidemiology}}
+      \field{volume}{21}
+      \field{year}{1999}
+      \field{pages}{143\bibrangedash 161}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1093/oxfordjournals.epirev.a017993
+      \endverb
+      \verb{eprint}
+      \verb http://oup.prod.sis.lan/epirev/article-pdf/21/2/143/6727658/21-2-143.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/oxfordjournals.epirev.a017993
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/oxfordjournals.epirev.a017993
+      \endverb
+    \endentry
     \entry{RColorBrewer}{online}{}
       \name{author}{1}{}{%
         {{hash=0a96f8830584fc792d4a4460866d7397}{%
@@ -863,6 +2222,125 @@
       \endverb
       \verb{url}
       \verb https://CRAN.R-project.org/package=RColorBrewer
+      \endverb
+    \endentry
+    \entry{NICR_1}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d4dad23225eeaba22134b0f55164e5fc}{%
+           family={{Northern Ireland Cancer Registry}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{d4dad23225eeaba22134b0f55164e5fc}
+      \strng{fullhash}{d4dad23225eeaba22134b0f55164e5fc}
+      \strng{bibnamehash}{d4dad23225eeaba22134b0f55164e5fc}
+      \strng{authorbibnamehash}{d4dad23225eeaba22134b0f55164e5fc}
+      \strng{authornamehash}{d4dad23225eeaba22134b0f55164e5fc}
+      \strng{authorfullhash}{d4dad23225eeaba22134b0f55164e5fc}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{All-Ireland Cancer Atlas (1995-2007)}}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb http://www.ncri.ie/publications/cancer-atlases
+      \endverb
+      \verb{url}
+      \verb http://www.ncri.ie/publications/cancer-atlases
+      \endverb
+    \endentry
+    \entry{SAIC}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c7a975a81ed7dd45d12c93db01e47c05}{%
+           family={Nusrat},
+           familyi={N\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod}}}%
+        {{hash=94f60f08e1c4d544d6ce3b9e40e1b9ce}{%
+           family={Kobourov},
+           familyi={K\bibinitperiod},
+           given={Stephen\bibnamedelima G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{ded044774f7c3122ac4194c7068f968b}
+      \strng{fullhash}{ded044774f7c3122ac4194c7068f968b}
+      \strng{bibnamehash}{ded044774f7c3122ac4194c7068f968b}
+      \strng{authorbibnamehash}{ded044774f7c3122ac4194c7068f968b}
+      \strng{authornamehash}{ded044774f7c3122ac4194c7068f968b}
+      \strng{authorfullhash}{ded044774f7c3122ac4194c7068f968b}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Computer Graphics Forum}
+      \field{number}{3}
+      \field{title}{{The State of the Art in Cartograms}}
+      \field{volume}{35}
+      \field{year}{2016}
+      \field{pages}{619\bibrangedash 642}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1111/cgf.12932
+      \endverb
+      \verb{eprint}
+      \verb 1605.08485
+      \endverb
+      \verb{urlraw}
+      \verb https://dblp.org/rec/bib/journals/corr/NusratK16
+      \endverb
+      \verb{url}
+      \verb https://dblp.org/rec/bib/journals/corr/NusratK16
+      \endverb
+    \endentry
+    \entry{NAC}{article}{}
+      \name{author}{1}{}{%
+        {{hash=44ec51ff819b01126a5a150e6e21e699}{%
+           family={Olson},
+           familyi={O\bibinitperiod},
+           given={Judy\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{44ec51ff819b01126a5a150e6e21e699}
+      \strng{fullhash}{44ec51ff819b01126a5a150e6e21e699}
+      \strng{bibnamehash}{44ec51ff819b01126a5a150e6e21e699}
+      \strng{authorbibnamehash}{44ec51ff819b01126a5a150e6e21e699}
+      \strng{authornamehash}{44ec51ff819b01126a5a150e6e21e699}
+      \strng{authorfullhash}{44ec51ff819b01126a5a150e6e21e699}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Professional Geographer}
+      \field{number}{4}
+      \field{title}{{Noncontiguous Area Cartograms}}
+      \field{volume}{28}
+      \field{year}{1976}
+      \field{pages}{371\bibrangedash 380}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1111/j.0033-0124.1976.00371.x
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1111/j.0033-0124.1976.00371.x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1111/j.0033-0124.1976.00371.x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1111/j.0033-0124.1976.00371.x
       \endverb
     \endentry
     \entry{sf}{article}{}
@@ -935,6 +2413,177 @@
       \endverb
       \verb{url}
       \verb https://CRAN.R-project.org/package=gstat
+      \endverb
+    \endentry
+    \entry{TGA}{online}{}
+      \name{author}{1}{}{%
+        {{hash=baa847ed0a47fe330db451600329cf32}{%
+           family={Pedersen},
+           familyi={P\bibinitperiod},
+           given={Thomas\bibnamedelima Lin},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{baa847ed0a47fe330db451600329cf32}
+      \strng{fullhash}{baa847ed0a47fe330db451600329cf32}
+      \strng{bibnamehash}{baa847ed0a47fe330db451600329cf32}
+      \strng{authorbibnamehash}{baa847ed0a47fe330db451600329cf32}
+      \strng{authornamehash}{baa847ed0a47fe330db451600329cf32}
+      \strng{authorfullhash}{baa847ed0a47fe330db451600329cf32}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{note}{Keynote talk at useR!2018}
+      \field{title}{{The Grammar of Animation}}
+      \field{urlday}{16}
+      \field{urlmonth}{11}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://youtu.be/21ZWDrTukEs
+      \endverb
+      \verb{url}
+      \verb https://youtu.be/21ZWDrTukEs
+      \endverb
+    \endentry
+    \entry{gganimate}{manual}{}
+      \name{author}{2}{}{%
+        {{hash=baa847ed0a47fe330db451600329cf32}{%
+           family={Pedersen},
+           familyi={P\bibinitperiod},
+           given={Thomas\bibnamedelima Lin},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=42a6c387e6c733bd0db8180d2bbacd30}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6de184a80f5b74d9230aa6c8576f7e8}
+      \strng{fullhash}{b6de184a80f5b74d9230aa6c8576f7e8}
+      \strng{bibnamehash}{b6de184a80f5b74d9230aa6c8576f7e8}
+      \strng{authorbibnamehash}{b6de184a80f5b74d9230aa6c8576f7e8}
+      \strng{authornamehash}{b6de184a80f5b74d9230aa6c8576f7e8}
+      \strng{authorfullhash}{b6de184a80f5b74d9230aa6c8576f7e8}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{R package version 1.0.3}
+      \field{title}{{gganimate: A Grammar of Animated Graphics}}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://CRAN.R-project.org/package=gganimate
+      \endverb
+      \verb{url}
+      \verb https://CRAN.R-project.org/package=gganimate
+      \endverb
+    \endentry
+    \entry{OntarioPediatric}{online}{}
+      \name{author}{1}{}{%
+        {{hash=44332b6c873d7329f2fabc865d5c81ca}{%
+           family={{Pediatric Oncology Group of Ontario}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{44332b6c873d7329f2fabc865d5c81ca}
+      \strng{fullhash}{44332b6c873d7329f2fabc865d5c81ca}
+      \strng{bibnamehash}{44332b6c873d7329f2fabc865d5c81ca}
+      \strng{authorbibnamehash}{44332b6c873d7329f2fabc865d5c81ca}
+      \strng{authornamehash}{44332b6c873d7329f2fabc865d5c81ca}
+      \strng{authorfullhash}{44332b6c873d7329f2fabc865d5c81ca}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Incidence Rate of Childhood Cancers, Atlas of Childhood Cancer in Ontario (1985-2004)}}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.pogo.ca/wp-content/uploads/2015/02/POGO_CC-Atlas-3-Incidence_Feb-2015.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.pogo.ca/wp-content/uploads/2015/02/POGO_CC-Atlas-3-Incidence_Feb-2015.pdf
+      \endverb
+    \endentry
+    \entry{DMIV}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=cacd132852b1351db8c33bc772596971}{%
+           family={Perin},
+           familyi={P\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universit{é} Paris Sud - Paris XI}%
+      }
+      \strng{namehash}{cacd132852b1351db8c33bc772596971}
+      \strng{fullhash}{cacd132852b1351db8c33bc772596971}
+      \strng{bibnamehash}{cacd132852b1351db8c33bc772596971}
+      \strng{authorbibnamehash}{cacd132852b1351db8c33bc772596971}
+      \strng{authornamehash}{cacd132852b1351db8c33bc772596971}
+      \strng{authorfullhash}{cacd132852b1351db8c33bc772596971}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{number}{2014PA112299}
+      \field{title}{{Direct Manipulation for Information Visualization}}
+      \field{type}{Theses}
+      \field{year}{2014}
+      \verb{file}
+      \verb https://hal.inria.fr/tel-01096366/file/VA2_PERIN_CHARLES_17112014.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.inria.fr/tel-01096366
+      \endverb
+      \verb{url}
+      \verb https://hal.inria.fr/tel-01096366
+      \endverb
+      \keyw{Visualization ; Interaction ; Direct manipulation ; Instrumental interaction ; Opportunistic interaction ; Discoverability ; Visualisation ; Manipulation directe ; Interaction instrumentale ; Interaction opportuniste}
+    \endentry
+    \entry{QLDcancerAtlas}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d0d6096ca53ea3ea5f0ff26a09c57a66}{%
+           family={{Queensland Cancer Registry}},
+           familyi={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0d6096ca53ea3ea5f0ff26a09c57a66}
+      \strng{fullhash}{d0d6096ca53ea3ea5f0ff26a09c57a66}
+      \strng{bibnamehash}{d0d6096ca53ea3ea5f0ff26a09c57a66}
+      \strng{authorbibnamehash}{d0d6096ca53ea3ea5f0ff26a09c57a66}
+      \strng{authornamehash}{d0d6096ca53ea3ea5f0ff26a09c57a66}
+      \strng{authorfullhash}{d0d6096ca53ea3ea5f0ff26a09c57a66}
+      \field{sortinit}{Q}
+      \field{sortinithash}{c54e16deb53fc904a621fa8fd8703b5a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The Atlas of Cancer in Queensland (1998 - 2007)}}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://cancerqld.org.au/research/queensland-cancer-statistics/queensland-cancer-atlas/
+      \endverb
+      \verb{url}
+      \verb https://cancerqld.org.au/research/queensland-cancer-statistics/queensland-cancer-atlas/
       \endverb
     \endentry
     \entry{R}{manual}{}
@@ -1039,6 +2688,42 @@
       \verb 10.1080/00221343608987880
       \endverb
     \endentry
+    \entry{roberts2019communication}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=dea1a1246e46ae71709e1c24bdd459b1}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={Jessie},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Queensland University of Technology}%
+      }
+      \strng{namehash}{dea1a1246e46ae71709e1c24bdd459b1}
+      \strng{fullhash}{dea1a1246e46ae71709e1c24bdd459b1}
+      \strng{bibnamehash}{dea1a1246e46ae71709e1c24bdd459b1}
+      \strng{authorbibnamehash}{dea1a1246e46ae71709e1c24bdd459b1}
+      \strng{authornamehash}{dea1a1246e46ae71709e1c24bdd459b1}
+      \strng{authorfullhash}{dea1a1246e46ae71709e1c24bdd459b1}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Communication of Statistical Uncertainty to Non-expert Audiences}}
+      \field{type}{mathesis}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.5204/thesis.eprints.130786
+      \endverb
+      \verb{urlraw}
+      \verb https://eprints.qut.edu.au/130786/
+      \endverb
+      \verb{url}
+      \verb https://eprints.qut.edu.au/130786/
+      \endverb
+    \endentry
     \entry{chowd}{thesis}{}
       \name{author}{1}{}{%
         {{hash=7a70f5a2177271eed9d7cd19d3a77524}{%
@@ -1072,6 +2757,194 @@
       \verb https://lib.dr.iastate.edu/etd/13988
       \endverb
     \endentry
+    \entry{BCM}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6578791b94eb20524ac58c33876bad74}{%
+           family={Skowronnek},
+           familyi={S\bibinitperiod},
+           given={Alsino},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6578791b94eb20524ac58c33876bad74}
+      \strng{fullhash}{6578791b94eb20524ac58c33876bad74}
+      \strng{bibnamehash}{6578791b94eb20524ac58c33876bad74}
+      \strng{authorbibnamehash}{6578791b94eb20524ac58c33876bad74}
+      \strng{authornamehash}{6578791b94eb20524ac58c33876bad74}
+      \strng{authorfullhash}{6578791b94eb20524ac58c33876bad74}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{Infovis Reading Group WS 2015/16}}
+      \field{title}{{Beyond Choropleth Maps – A Review of Techniques to Visualize Quantitative Areal Geodata}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://alsino.io/static/papers/BeyondChoropleths_AlsinoSkowronnek.pdf
+      \endverb
+      \verb{url}
+      \verb https://alsino.io/static/papers/BeyondChoropleths_AlsinoSkowronnek.pdf
+      \endverb
+    \endentry
+    \entry{abs2016}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2316adb6f494021c8f252c92fb598cb6}{%
+           family={Statistics},
+           familyi={S\bibinitperiod},
+           given={Australian\bibnamedelima Bureau},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{2316adb6f494021c8f252c92fb598cb6}
+      \strng{fullhash}{2316adb6f494021c8f252c92fb598cb6}
+      \strng{bibnamehash}{2316adb6f494021c8f252c92fb598cb6}
+      \strng{authorbibnamehash}{2316adb6f494021c8f252c92fb598cb6}
+      \strng{authornamehash}{2316adb6f494021c8f252c92fb598cb6}
+      \strng{authorfullhash}{2316adb6f494021c8f252c92fb598cb6}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)
+      \endverb
+      \verb{url}
+      \verb https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)
+      \endverb
+    \endentry
+    \entry{TFYCC}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5c70a49c5e68c63482945017e7da9265}{%
+           family={Tobler},
+           familyi={T\bibinitperiod},
+           given={Waldo},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Taylor}%
+        {Francis Group}%
+      }
+      \strng{namehash}{5c70a49c5e68c63482945017e7da9265}
+      \strng{fullhash}{5c70a49c5e68c63482945017e7da9265}
+      \strng{bibnamehash}{5c70a49c5e68c63482945017e7da9265}
+      \strng{authorbibnamehash}{5c70a49c5e68c63482945017e7da9265}
+      \strng{authornamehash}{5c70a49c5e68c63482945017e7da9265}
+      \strng{authorfullhash}{5c70a49c5e68c63482945017e7da9265}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0004-5608}
+      \field{journaltitle}{Annals of the Association of American Geographers}
+      \field{number}{1}
+      \field{title}{{Thirty Five Years of Computer Cartograms}}
+      \field{volume}{94}
+      \field{year}{2004}
+      \field{pages}{58\bibrangedash 73}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1111/j.1467-8306.2004.09401004.x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1111/j.1467-8306.2004.09401004.x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1111/j.1467-8306.2004.09401004.x
+      \endverb
+      \keyw{Anamorphoses; Cartograms; Map Distortion; Map Projections; Quasiconformal}
+    \endentry
+    \entry{TVDQI}{book}{}
+      \name{author}{1}{}{%
+        {{hash=41187f886abb9d98f33e5b3f52276d12}{%
+           family={Tufte},
+           familyi={T\bibinitperiod},
+           given={Edward\bibnamedelima R},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Graphics press Cheshire, CT}%
+      }
+      \strng{namehash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{fullhash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{bibnamehash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{authorbibnamehash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{authornamehash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{authorfullhash}{41187f886abb9d98f33e5b3f52276d12}
+      \field{extraname}{1}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The visual display of quantitative information}
+      \field{volume}{2}
+      \field{year}{2001}
+    \endentry
+    \entry{EI}{book}{}
+      \name{author}{1}{}{%
+        {{hash=41187f886abb9d98f33e5b3f52276d12}{%
+           family={Tufte},
+           familyi={T\bibinitperiod},
+           given={Edward\bibnamedelima R.},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Graphics Press}%
+      }
+      \strng{namehash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{fullhash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{bibnamehash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{authorbibnamehash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{authornamehash}{41187f886abb9d98f33e5b3f52276d12}
+      \strng{authorfullhash}{41187f886abb9d98f33e5b3f52276d12}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Envisioning Information}}
+      \field{year}{1990}
+    \endentry
+    \entry{USInteractive}{online}{}
+      \name{author}{1}{}{%
+        {{hash=683157e63d05ad4f35111c07036545ab}{%
+           family={{U.S. Department of Health and Human Services, Centers for Disease Control and Prevention and National Cancer Institute - Cancer Statistics Working Group}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{683157e63d05ad4f35111c07036545ab}
+      \strng{fullhash}{683157e63d05ad4f35111c07036545ab}
+      \strng{bibnamehash}{683157e63d05ad4f35111c07036545ab}
+      \strng{authorbibnamehash}{683157e63d05ad4f35111c07036545ab}
+      \strng{authornamehash}{683157e63d05ad4f35111c07036545ab}
+      \strng{authorfullhash}{683157e63d05ad4f35111c07036545ab}
+      \field{sortinit}{U}
+      \field{sortinithash}{77a6935510e008adcf5b555e7b4f0711}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{U.S. Cancer Statistics Data Visualizations Tool (data 1999-2016)}}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.cdc.gov/cancer/dataviz
+      \endverb
+      \verb{url}
+      \verb http://www.cdc.gov/cancer/dataviz
+      \endverb
+    \endentry
     \entry{png}{online}{}
       \name{author}{1}{}{%
         {{hash=0580413dcd6a84cb1a5b41a43c1a2d5a}{%
@@ -1100,6 +2973,160 @@
       \endverb
       \verb{url}
       \verb https://CRAN.R-project.org/package=png
+      \endverb
+    \endentry
+    \entry{viridis}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ba6508de0d8b53d5150c488caf1938ba}{%
+           family={{van der Walt, S. and Smith, N}},
+           familyi={v\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba6508de0d8b53d5150c488caf1938ba}
+      \strng{fullhash}{ba6508de0d8b53d5150c488caf1938ba}
+      \strng{bibnamehash}{ba6508de0d8b53d5150c488caf1938ba}
+      \strng{authorbibnamehash}{ba6508de0d8b53d5150c488caf1938ba}
+      \strng{authornamehash}{ba6508de0d8b53d5150c488caf1938ba}
+      \strng{authorfullhash}{ba6508de0d8b53d5150c488caf1938ba}
+      \field{sortinit}{v}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{mpl colormaps}}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://bids.github.io/colormap/
+      \endverb
+      \verb{url}
+      \verb https://bids.github.io/colormap/
+      \endverb
+    \endentry
+    \entry{van1994visualization}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=b9ece579efd30e6bbbb2cfb074fb3d26}{%
+           family={Van\bibnamedelimb der\bibnamedelima Wel},
+           familyi={V\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Frans\bibnamedelima JM},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=3373500e3117bddf8a4e792244b40390}{%
+           family={Hootsmans},
+           familyi={H\bibinitperiod},
+           given={Rob\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0ef9123217b9d8804a3f6c72f4090f3d}{%
+           family={Ormeling},
+           familyi={O\bibinitperiod},
+           given={Ferjan},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{d28653d1e4e6fbbfbbb23563438fde4f}
+      \strng{fullhash}{d28653d1e4e6fbbfbbb23563438fde4f}
+      \strng{bibnamehash}{d28653d1e4e6fbbfbbb23563438fde4f}
+      \strng{authorbibnamehash}{d28653d1e4e6fbbfbbb23563438fde4f}
+      \strng{authornamehash}{d28653d1e4e6fbbfbbb23563438fde4f}
+      \strng{authorfullhash}{d28653d1e4e6fbbfbbb23563438fde4f}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Modern Cartography Series}
+      \field{title}{{Visualization of Data Quality}}
+      \field{volume}{2}
+      \field{year}{1994}
+      \field{pages}{313\bibrangedash 331}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 1473871616629516
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/B978-0-08-042415-6.50023-5
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/B978-0-08-042415-6.50023-5
+      \endverb
+    \endentry
+    \entry{MMST}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e04ee7d2085eb56b54a7e51315aae2ca}{%
+           family={W.},
+           familyi={W\bibinitperiod},
+           given={Pickle\bibnamedelima L.},
+           giveni={P\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=8346a858131f64813986b8a5fbbb21c2}{%
+           family={Carr},
+           familyi={C\bibinitperiod},
+           given={D.\bibnamedelimi B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=623edf9d060af97de11a8dca18e2f6a2}{%
+           family={Pearson},
+           familyi={P\bibinitperiod},
+           given={J.\bibnamedelimi B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{db13cc80ba453dcc60d24b3c8c9fddd7}
+      \strng{fullhash}{db13cc80ba453dcc60d24b3c8c9fddd7}
+      \strng{bibnamehash}{db13cc80ba453dcc60d24b3c8c9fddd7}
+      \strng{authorbibnamehash}{db13cc80ba453dcc60d24b3c8c9fddd7}
+      \strng{authornamehash}{db13cc80ba453dcc60d24b3c8c9fddd7}
+      \strng{authorfullhash}{db13cc80ba453dcc60d24b3c8c9fddd7}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1548-7660}
+      \field{journaltitle}{Journal of Statistical Software}
+      \field{number}{3}
+      \field{title}{{micromapST: Exploring and Communicating Geospatial Patterns in US State Data}}
+      \field{volume}{63}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 25}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.18637/jss.v063.i03
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstatsoft.org/v063/i03
+      \endverb
+      \verb{url}
+      \verb https://www.jstatsoft.org/v063/i03
+      \endverb
+    \endentry
+    \entry{DMAHP}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d2b1bc889dc1c5b3326c9a17fc232158}{%
+           family={Walter},
+           familyi={W\bibinitperiod},
+           given={S.\bibnamedelimi D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{d2b1bc889dc1c5b3326c9a17fc232158}
+      \strng{fullhash}{d2b1bc889dc1c5b3326c9a17fc232158}
+      \strng{bibnamehash}{d2b1bc889dc1c5b3326c9a17fc232158}
+      \strng{authorbibnamehash}{d2b1bc889dc1c5b3326c9a17fc232158}
+      \strng{authornamehash}{d2b1bc889dc1c5b3326c9a17fc232158}
+      \strng{authorfullhash}{d2b1bc889dc1c5b3326c9a17fc232158}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780191723667}
+      \field{title}{{Disease Mapping: A Historical Perspective}}
+      \field{year}{2001}
+      \verb{doi}
+      \verb https://dx.doi.org/10.1093/acprof:oso/9780198515326.003.0012
       \endverb
     \endentry
     \entry{GIIV}{article}{}
@@ -1293,6 +3320,37 @@
       \verb https://CRAN.R-project.org/package=cowplot
       \endverb
     \endentry
+    \entry{Globocan}{online}{}
+      \name{author}{1}{}{%
+        {{hash=aed6e786f8267d26008c0b6d043b47ab}{%
+           family={{World Health Organization's International Agency for Research on Cancer}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{aed6e786f8267d26008c0b6d043b47ab}
+      \strng{fullhash}{aed6e786f8267d26008c0b6d043b47ab}
+      \strng{bibnamehash}{aed6e786f8267d26008c0b6d043b47ab}
+      \strng{authorbibnamehash}{aed6e786f8267d26008c0b6d043b47ab}
+      \strng{authornamehash}{aed6e786f8267d26008c0b6d043b47ab}
+      \strng{authorfullhash}{aed6e786f8267d26008c0b6d043b47ab}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Globocan 2018: Estimated Cancer Incidence, Mortality and Prevalence}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://globocan.iarc.fr/Pages/Map.aspx
+      \endverb
+      \verb{url}
+      \verb http://globocan.iarc.fr/Pages/Map.aspx
+      \endverb
+    \endentry
     \entry{knitr}{incollection}{}
       \name{author}{1}{}{%
         {{hash=25ce25b9d444076e0963bcf9fa3a6f92}{%
@@ -1376,6 +3434,45 @@
       \endverb
       \verb{url}
       \verb https://CRAN.R-project.org/package=kableExtra
+      \endverb
+    \endentry
+    \entry{WSJ}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=bfb58c6e56653f6ae5ca1bc0818a6aad}{%
+           family={Zitner},
+           familyi={Z\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d6b64447a083e297da7826c1698d04a0}{%
+           family={Yeip},
+           familyi={Y\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7b73872adce91418c451e6bff3b874c7}{%
+           family={Wolfe},
+           familyi={W\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{48784d17f719ec7f3b6b6432016f8936}
+      \strng{fullhash}{48784d17f719ec7f3b6b6432016f8936}
+      \strng{bibnamehash}{48784d17f719ec7f3b6b6432016f8936}
+      \strng{authorbibnamehash}{48784d17f719ec7f3b6b6432016f8936}
+      \strng{authornamehash}{48784d17f719ec7f3b6b6432016f8936}
+      \strng{authorfullhash}{48784d17f719ec7f3b6b6432016f8936}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Draw the 2016 Electoral College Map}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb (http://graphics.wsj.com/elections/2016/2016-electoral-college-map-predictions/)
+      \endverb
+      \verb{url}
+      \verb (http://graphics.wsj.com/elections/2016/2016-electoral-college-map-predictions/)
       \endverb
     \endentry
   \enddatalist
