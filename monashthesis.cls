@@ -48,15 +48,26 @@
  {labelfont={bf},textfont={it},labelsep=colon}
 \captionsetup[figure]{style=italic,format=hang,singlelinecheck=true}
 \captionsetup[table]{style=italic,format=hang,singlelinecheck=true}
+\captionsetup[longtable]{style=italic,format=hang,singlelinecheck=true}
 
 %% HEADERS AND FOOTERS
+
 \RequirePackage{fancyhdr}
-\pagestyle{plain}
-\fancyhead[LE,RO]{\slshape \rightmark}
-\fancyhead[LO,RE]{\slshape \leftmark}
-\fancyfoot[C]{\thepage}
+\pagestyle{fancy}
+\rhead{}
+\cfoot{}
+\fancyhead[LE,RO]{\textsl{\thepage}}
+\fancyhead[LO]{\textsl{\leftmark}}
+\fancyhead[RE]{}
+\setlength{\headheight}{27pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[R]{\sf\thepage} % except the center
 \renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+
 
 %% MATHS
 \RequirePackage{bm,amsmath}
@@ -76,12 +87,12 @@
 
 %% SECTION TITLES
 \RequirePackage[compact,sf,bf]{titlesec}
-\titleformat{\section}[block]
-  {\fontsize{15}{17}\bfseries\sffamily}
+\titleformat{\section}
+  {\fontsize{15}{17}}
   {\thesection}
   {0.4em}{}
-\titleformat{\subsection}[block]
-  {\fontsize{12}{14}\bfseries\sffamily}
+\titleformat{\subsection}
+  {\fontsize{12}{14}}
   {\thesubsection}
   {0.4em}{}
 \titlespacing{\section}{0pt}{*2}{*0.2}

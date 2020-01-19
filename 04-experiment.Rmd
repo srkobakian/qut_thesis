@@ -253,7 +253,7 @@ Data is generated for each of the trend models, with four replicates, and each d
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/04-experiment/experiment_design.png}
+\includegraphics[width=16cm]{figures/04-experiment/experiment_design.pdf}
 \caption{\label{fig:exp-design}The experimental design used in the visual inference study.}
 \end{figure}
 
@@ -449,7 +449,8 @@ d %>% group_by(type, trend) %>%
   mutate(Type = types) %>% select(Type, `NW-SE`, `Three Cities`, `All Cities`) %>%
   knitr::kable(., format = "latex", align = "lccc", booktabs = TRUE, 
     linesep = c("", "\\addlinespace"),
-    caption = "The mean and standard deviation of the rate of detection for each trend model, calculated for the choropleth and hexagon tile map displays.")
+    caption = "The mean and standard deviation of the rate of detection for each trend model, calculated for the choropleth and hexagon tile map displays.") %>% 
+  kable_styling(latex_options =c("hold_position"))
 ```
 
 
@@ -494,7 +495,8 @@ tidy(glmer1) %>%
     `P val` = p.value) %>% 
   knitr::kable(format = "latex", escape = FALSE, align= "rrlrr", 
     booktabs = T, linesep = c("", "\\addlinespace", "", "\\addlinespace", ""), 
-    caption = "The model output for the generalised linear mixed effect model for detection rate. This model considers the type of display, the trend model hidden in the data plot, and accounts for contributor performance.")
+    caption = "The model output for the generalised linear mixed effect model for detection rate. This model considers the type of display, the trend model hidden in the data plot, and accounts for contributor performance.") %>% 
+  kable_styling(latex_options =c("hold_position"))
 ```
 
 
@@ -573,8 +575,8 @@ d %>%
   knitr::kable(., format = "latex", booktabs = TRUE,
     linesep = c("", "\\addlinespace", "", "\\addlinespace",""),
     caption = "The amount of participants that selected each reason for their choice of plot when looking at each trend model shown in Choropleth and Hexagon Tile maps. The facets show whether or not the choice was correct.") %>% 
-  #kable_styling(bootstrap_options = "hold_position") %>% 
-  collapse_rows(., columns = 1)
+  collapse_rows(., columns = 1) %>% 
+  kable_styling(latex_options = c("hold_position"))
 ```
 
 

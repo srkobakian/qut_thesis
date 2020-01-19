@@ -4,7 +4,7 @@ knit: "bookdown::render_book"
 ---
 
 ```{r setup-2, echo=FALSE, message=FALSE, warning=FALSE, comment = FALSE}
-knitr::opts_chunk$set(warning = FALSE, message = FALSE, dpi=300, echo = FALSE, out.width = "100%", echo = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, dpi=300, out.width = "100%", echo = FALSE)
 options("citation_format" = "pandoc")
 ```
 
@@ -54,50 +54,85 @@ A cancer atlas is a map, or collection of maps, representing cancer incidence an
 Cancer maps are effective tools for communicating incidence, survival, and mortality to a wide range of audiences, including the public and others not trained in statistical analysis. These visualizations enable non-expert audiences to interpret the outputs of sophisticated statistical analysis. Cruickshank (1947) as cited by S. D. Walter [@DMAHP], discusses using visuals as a 'formal statistical assessment of the spatial pattern'. Overwhelmingly, choropleth maps are visualisations chosen to communicate cancer statistics to members of the public and other non-expert audiences. 
 
 
-```{r choropleth-grid-create, message=FALSE, warning = FALSE, fig.cap = " A selection of choropleth cancer maps from online atlases that are publicly available. Maps of various countries were chosen: United Kingdom, Australia, Spain, USA, Canada, and display several different colour palettes and legends. These atllases are described in Table 1.", fig.align='center', fig.width=12, fig.height=10}
+```{r choropleth-grid-create, fig.cap = " A selection of choropleth cancer maps from online atlases that are publicly available. Maps of various countries were chosen: United Kingdom, Australia, Spain, USA, Canada, and display several different colour palettes and legends. These atllases are described in Table 1.",  fig.width=12, fig.height=10, warning = FALSE, message = FALSE, dpi=300, out.width = "100%", echo = FALSE}
 knitr::include_graphics("figures/02-literature/choropleth_grid.png")
 ```
 
 \newpage
-Table 1: <!--\label{tab:choropleths}--> A selection of choropleth cancer maps from online atlases.
 
-|Fig.| Atlas | Statistic | Data source | 
-|:---:|:------------|:----------------------|:----------------|  
-|1a | The Environment and Health Atlas of England and Wales | relative risk for women developing lung cancer in England and Wales in 2010 [@EnvEnglandWales2]| *[Office for National Statistics (ONS) (England) and from the Welsh Cancer Intelligence and Surveillance Unit (WCISU)* ](http://www.envhealthatlas.co.uk/homepage/)|
-|1b | Globocan 2018: Estimated Cancer Incidence, Mortality and Prevalence Worldwide | age standardized incidence rates (per 100,000) for all invasive cancers for both men and women, aggregated at a national level for 2018 [@Globocan]| *[World Health Organization's International Agency for Research on Cancer](https://www.iarc.fr/)*. |
-|1c | Atlas of Cancer in Queensland | the relative incidence ratio of lung cancer in males in the state of QLD within Australia based on data from 1998 to 2007, Queensland Cancer Council[@QLDcancerAtlas] | *[Queensland Cancer Registry](https://cancerqld.org.au/research/cancer-registries/queensland-cancer-registry/)* |
-|1d | Bowel Cancer Australia Atlas | the percentage of Australian males between 50 - 54 years of age diagnosed with bowel cancer in 2016 in Australia [@Bowel]. |  *[Bowel Cancer Australia](https://www.bowelcanceraustralia.org/)*|
-|1e | United States Cancer Statistics: An Interactive Cancer Statistics Website | the incidence rate per 100,000, of all cancer types for men and women in the United States in 2016, aggregated at the state level [@USInteractive].|  *[Centers for Disease Control and Prevention](https://www.cdc.gov/)*, with data from state cancer registries. | 
-|1f | Map of Cancer Mortality Rates in Spain | side by side maps of relative risk of lung cancer for men vs women for 2004 to 2008 [@cancerSpain].| *[Map of cancer mortality rates in Spain](https://elpais.com/elpais/2014/10/06/media/1412612722_141933.html)*|
-|1g | Atlas of Childhood Cancer in Ontario | the incidence rate of childhood cancers per 100,000 (by census division) for children aged 0-14, in Ontario from 1995 to 2004 [@OntarioPediatric]. | *[The Pediatric Oncology Group of Ontario Networked Information System](https://www.pogo.ca/research-data/pogonis-childhood-cancer-database/data-requests/)*|
+```{r choropleths, results = "asis"}
+data.frame(
+  stringsAsFactors = FALSE,
+                `Fig.` = c("1a","1b", "1c","1d","1e","1f","1g"),
+                 Atlas = c("The Environment and Health Atlas of England and Wales",
+                       "Globocan 2018: Estimated Cancer Incidence, Mortality and Prevalence Worldwide",
+                       "Atlas of Cancer in Queensland",
+                       "Bowel Cancer Australia Atlas",
+                       "United States Cancer Statistics: An Interactive Cancer Statistics Website",
+                       "Map of Cancer Mortality Rates in Spain",
+                       "Atlas of Childhood Cancer in Ontario"),
+                Statistic = c(
+                "relative risk for women developing lung cancer in England and Wales in 2010",
+                       "age standardized incidence rates (per 100,000) for all invasive cancers for both men and women, aggregated at a national level for 2018",
+                       "the relative incidence ratio of lung cancer in males in the state of QLD within Australia based on data from 1998 to 2007, Queensland Cancer Council",
+                       "the percentage of Australian males between 50 - 54 years of age diagnosed with bowel cancer in 2016 in Australia.",
+                       "the incidence rate per 100,000, of all cancer types for men and women in the United States in 2016, aggregated at the state level.",
+                       "side by side maps of relative risk of lung cancer for men vs women for 2004 to 2008.",
+                       "the incidence rate of childhood cancers per 100,000 (by census division) for children aged 0-14, in Ontario from 1995 to 2004."),
+                `Data source` = c(
+                       "Office for National Statistics (ONS) (England) and from the Welsh Cancer Intelligence and Surveillance Unit (WCISU).",
+                       "World Health Organization's International Agency for Research on Cancer",
+                       "Queensland Cancer Registry.",
+                       "Bowel Cancer Australia.",
+                       "Centers for Disease Control and Prevention, with data from state cancer registries.",
+                       "Map of cancer mortality rates in Spain.",
+                       "The Pediatric Oncology Group of Ontario Networked Information System.")) %>%  
+  knitr::kable(., format = "latex", align = "llll", booktabs = TRUE, 
+    linesep = c("", "\\addlinespace"),
+    caption = "A selection of choropleth cancer maps from online atlases.") %>% 
+  kableExtra::column_spec(2, width = "7em") %>% 
+  kableExtra::column_spec(3, width = "15em") %>% 
+  kableExtra::column_spec(4, width = "15em")
+```
 
 
 
-Epidemiologists and statisticians have developed the statistics used to communicate the burden of cancer over several decades. Table 2<!--\ref{tab:measures}--> summarizes the measures commonly presented in published cancer atlases. Mortality rates are commonly presented as relative rates of risk across the population and age-adjusted to correct for the higher prevalence of cancers in older populations. As described in Howe [@HEDP], Englishman P. Stocks advanced the field of mortality statistics by introducing the standardized mortality ratios in the 1930s, which is an improvement on crude death rates. 
 
-Table 2: <!--\label{tab:measures}--> Common measures for reporting cancer information.
+Epidemiologists and statisticians have developed the statistics used to communicate the burden of cancer over several decades. Table \ref{tab:measures} summarizes the measures commonly presented in published cancer atlases. Mortality rates are commonly presented as relative rates of risk across the population and age-adjusted to correct for the higher prevalence of cancers in older populations. As described in Howe [@HEDP], Englishman P. Stocks advanced the field of mortality statistics by introducing the standardized mortality ratios in the 1930s, which is an improvement on crude death rates. 
 
-|Measure |Details| 
-|:--------------------|:------------------------------------------------|  
-|1. Count| Crude cancer counts|
-|2. Rate per 100,000| Cancer incidence per 100,000 population|  
-|3. IR (Incidence Ratio)| $(IR)_i=\frac{(Incidence\ Rate)_i}{Average\ Incidence\ Rate}$, |
-|| The cancer incidence rate in region $i$ over the average cancer incidence rate for all of the regions|
-|4. Age-Adjusted Rate per 100,000| Standardized by age structure or region|   
-|5. Age-Adjusted Relative Risk| Standardized by age structure in each region $i$|  
-|6. SIR (Standardized Incidence Ratio)| Incidence standardized by population at risk in each region $i$|
-|7. Below or above Expected| An alternative expression of the SIR|
-|8. RER | $RER = \frac{(Cancer\ related\ mortality)_i}{Average\ cancer\ related\ mortality}$|
-|(Relative Excess Risk)| Represents the estimate of cancer-related mortality within five years of diagnosis. Also referred to as 'excess hazard ratio'| 
 
+```{r measures, results = "asis"}
+data.table::data.table(
+          Measure = c(
+                 "1. Count","2. Rate per 100,000","3. IR (Incidence Ratio)",NA,
+                 "4. Age-Adjusted Rate per 100,000","5. Age-Adjusted Relative Risk",
+                 "6. SIR (Standardized Incidence Ratio)",
+                 "7. Below or above Expected","8. RER","(Relative Excess Risk)"),
+          Details = c(
+                  "Crude cancer counts",
+                 "Cancer incidence per 100,000 population",
+                 "$(IR)_i=\\frac{(Incidence\\ Rate)_i}{Average\\ Incidence\\ Rate}$,",
+                 "The cancer incidence rate in region $i$ over the average cancer incidence rate for all of the regions",
+                 "Standardized by age structure or region",
+                 "Standardized by age structure in each region $i$",
+                 "Incidence standardized by population at risk in each region $i$",
+                 "An alternative expression of the SIR",
+                 "$RER = \\frac{(Cancer\\ related\\ mortality)_i}{Average\\ cancer\\ related\\ mortality}$",
+                 "Represents the estimate of cancer-related mortality within five years of diagnosis. Also referred to as 'excess hazard ratio'")) %>%  
+  knitr::kable(., format = "latex", align = "llll", booktabs = TRUE, escape = FALSE,
+    linesep = c("", "\\addlinespace"),
+    caption = "Common measures for reporting cancer information.") %>% 
+  kableExtra::column_spec(1, width = "10em") %>% 
+  kableExtra::column_spec(2, width = "25em")
+```
 
 <!-- 416 words -->
-Roberts [@roberts2019communication] identified 33 cancer atlases published between 2010 and 2018. Each of these online atlases uses choropleth maps. All except one of these were published by non-commercial organizations, including not-for-profits, government, research organizations, advocacy groups or government-funded partnerships. Figure 1<!--\ref{fig:choropleth-grid-create}--> displays a subset of maps from these atlases, the selection varies in the geographies explored. Figure 1<!--\ref{fig:choropleth-grid-create}-->b shows Globocan 2018 [@Globocan] which explores Estimated Cancer Incidence, Mortality and Prevalence Worldwide using data sourced from cancer registries of each country. The Bowel Cancer Australia Atlas in Figure 1<!--\ref{fig:choropleth-grid-create}-->d presents an example of a cancer specific atlas -- it shows the average Standardized Incidence Ratio of colorectal cancer for Australian males from 2006 to 2010 [@Bowel]. Like many of the atlases examined, there is a choice of gender displayed in the Bowel Cancer Atlas. Gender is displayed in side-by-side maps in the Map of Cancer Mortality Rates in Spain (Figure 1f)<!--\ref{fig:choropleth-grid-create}--> [@cancerSpain]. 
+Roberts [@roberts2019communication] identified 33 cancer atlases published between 2010 and 2018. Each of these online atlases uses choropleth maps. All except one of these were published by non-commercial organizations, including not-for-profits, government, research organizations, advocacy groups or government-funded partnerships. Figure \ref{fig:choropleth-grid-create} displays a subset of maps from these atlases, the selection varies in the geographies explored. Figure \ref{fig:choropleth-grid-create}b shows Globocan 2018 [@Globocan] which explores Estimated Cancer Incidence, Mortality and Prevalence Worldwide using data sourced from cancer registries of each country. The Bowel Cancer Australia Atlas in Figure \ref{fig:choropleth-grid-create}d presents an example of a cancer specific atlas -- it shows the average Standardized Incidence Ratio of colorectal cancer for Australian males from 2006 to 2010 [@Bowel]. Like many of the atlases examined, there is a choice of gender displayed in the Bowel Cancer Atlas. Gender is displayed in side-by-side maps in the Map of Cancer Mortality Rates in Spain (Figure \ref{fig:choropleth-grid-create}f) [@cancerSpain]. 
 
-Resolution of the maps varies greatly. Figure 1<!--\ref{fig:choropleth-grid-create}-->b shows global information at a national level. The United States Cancer Statistics [@USInteractive] shows data aggregated at the state level. The Environment and Health Atlas of England and Wales [@EnvEnglandWales2] (Figure 1<!--\ref{fig:choropleth-grid-create}-->a) shows the relative risk for women developing lung cancer  at a neighborhood (small-area) scale. The Atlas of Cancer in Queensland (Figure 1<!--\ref{fig:choropleth-grid-create}-->c) shows the relative incidence ratio of lung cancer in males for each Statistical Area at Level 2 [@abs2016] in the state of Queensland within Australia [@QLDcancerAtlas].
+Resolution of the maps varies greatly. Figure \ref{fig:choropleth-grid-create}b shows global information at a national level. The United States Cancer Statistics [@USInteractive] shows data aggregated at the state level. The Environment and Health Atlas of England and Wales [@EnvEnglandWales2] (Figure \ref{fig:choropleth-grid-create}a) shows the relative risk for women developing lung cancer  at a neighborhood (small-area) scale. The Atlas of Cancer in Queensland (Figure \ref{fig:choropleth-grid-create}c) shows the relative incidence ratio of lung cancer in males for each Statistical Area at Level 2 [@abs2016] in the state of Queensland within Australia [@QLDcancerAtlas].
 
 
-Age-specific atlases are less common. Figure 1<!--\ref{fig:choropleth-grid-create}-->g displays Atlas of Childhood Cancer in Ontario, this communicates the incidence rate of childhood cancers per 100,000 (by census division) for children aged 0-14, in Ontario from 1995 to 2004 [@OntarioPediatric]. 
+Age-specific atlases are less common. Figure \ref{fig:choropleth-grid-create}g displays Atlas of Childhood Cancer in Ontario, this communicates the incidence rate of childhood cancers per 100,000 (by census division) for children aged 0-14, in Ontario from 1995 to 2004 [@OntarioPediatric]. 
 
 
 ### Additional considerations
@@ -121,7 +156,7 @@ Choropleth maps colour each geographic unit to allow map users to measure the va
 The use of borders and backgrounds, and their colours, can also change the appearance of the colors representing the value of the statistics [@CB]. These supports can be used to implement a reference point in the colour scheme as well as orient users to the geographic regions. 
 
 
-Inset maps like in Brisbane city in Figure 1<!--\ref{fig:choropleth-grid-create}-->c of the state of Queensland are commonly used to reduce distorted interpretations, but it is a bandaid remedy. For Australia, many, many inset maps would be needed.
+Inset maps like in Brisbane city in Figure \ref{fig:choropleth-grid-create}c of the state of Queensland are commonly used to reduce distorted interpretations, but it is a bandaid remedy. For Australia, many, many inset maps would be needed.
 
 
 ## Contemporary alternatives to choropleth maps {#ch:alternatives}
@@ -148,23 +183,28 @@ The creation of cartograms was historically in the hands of professional cartogr
 There are two key issues to consider when creating alternative map displays, (1) the intended audience of the map, and (2) its purpose. Nusrat and Kobourov [@SAIC] provided a framework to investigate implementations of the many algorithms presented, and the "statistical accuracy, geographical accuracy, and topological accuracy". 
 
 
-```{r ggcartograms, fig.cap = " Common alternatives to maps, showing the same information for the United States of America: (a) contiguous cartogram, (b) non-contiguous, shape-preserved cartogram, (c)  Dorling cartogram (non-contiguous), (d) hexagon tilemap (non-contiguous). Maps (a) - (c) are created by resizing and reshaping the states of the USA to match the 2015 population of the state. This provides a better sense of the extent of disease relative to the population in the country and can help ease losing information about physically small but population-dense states. Map creators give each state equal size and thus equal emphasis in (d) the hexagon tile map.", message=FALSE, warning=FALSE}
+```{r ggcartograms, fig.cap = " Common alternatives to maps, showing the same information for the United States of America: (a) contiguous cartogram, (b) non-contiguous, shape-preserved cartogram, (c)  Dorling cartogram (non-contiguous), (d) hexagon tile map (non-contiguous). Maps (a) - (c) are created by resizing and reshaping the states of the USA to match the 2015 population of the state. This provides a better sense of the extent of disease relative to the population in the country and can help ease losing information about physically small but population-dense states. Map creators give each state equal size and thus equal emphasis in (d) the hexagon tile map.", message=FALSE, warning=FALSE}
 knitr::include_graphics("figures/02-literature/usa_grid.png")
 ```
 
 
-Table 3: <!--\label{tab:usa}--> Maps used to present statistics for the United States of America. The colour of each state communicates the average age-adjusted rate of incidence for lung and bronchus for females and males in the United States 2012-2016.
+```{r usa, results = "asis"}
+data.table::data.table(
+  Figure = c("2.2a", "2.2b", "2.2c", "2.2d"),
+  `Map display` = c("Contiguous", "Non-contiguous", "Dorling", "Hexagon tile map"),
+  Details = c("It has distorted each state's shape according to the population of the state in 2015. The state of California has become much larger because of the large population density. This draws attention to the densely populated North-East region and detracts from the less populated Mid West.", 
+    "It maintains the geographic shape of the states, but the size has altered according to the population of the state in 2015. The state of California has remained closer to its original size than its surrounding states. The North-East states have remained closer to their geographical size, for Massachusetts and Connecticut. This draws attention to the densely populated North-East region and the sparse Mid West.",
+    " Circles are used to represent each state, but the population of the state determines the size in 2015.  The North-East states remain closer to their neighbors and are slightly displaced from their geographic location. It highlights the sparsity of the population in the Mid West by the distance between the circles at the geographic centroids.", 
+    "A hexagon of equal size represents each state. It is easy to contrast the neighboring states however the North-East regions have been displaced from their geographic location. It highlights the sparsity of the population in the Mid West by the light yellow color, the Age-Adjusted rate in Kentucky is the darkest and its neighbors are similar.")
+) %>%  
+  knitr::kable(., format = "latex", align = "llll", booktabs = TRUE, 
+    linesep = c("\\addlinespace", "\\addlinespace", "\\addlinespace", "\\addlinespace"),
+    caption = "Maps used to present statistics for the United States of America. The colour of each state communicates the average age-adjusted rate of incidence for lung and bronchus for females and males in the United States 2012-2016.") %>% 
+  kableExtra::column_spec(3, width = "25em")
+```
 
-|Map display |Details| 
-|:--------------------|:------------------------------------------------|  
-|a. Contiguous| It has distorted each state's shape according to the population of the state in 2015. The state of California has become much larger because of the large population density. This draws attention to the densely populated North-East region and detracts from the less populated Mid West.|
-|b. Non-contiguous| It maintains the geographic shape of the states, but the size has altered according to the population of the state in 2015. The state of California has remained closer to its original size than its surrounding states. The North-East states have remained closer to their geographical size, for Massachusetts and Connecticut. This draws attention to the densely populated North-East region and the sparse Mid West.|
-|c. Dorling| Circles are used to represent each state, but the population of the state determines the size in 2015.  The North-East states remain closer to their neighbors and are slightly displaced from their geographic location. It highlights the sparsity of the population in the Mid West by the distance between the circles at the geographic centroids.|
-|d. Hexagon Tessellation| A hexagon of equal size represents each state. It is easy to contrast the neighboring states however the North-East regions have been displaced from their geographic location. It highlights the sparsity of the population in the Mid West by the light yellow color, the Age-Adjusted rate in Kentucky is the darkest and its neighbors are similar.|
 
-
-
-Figure 2<!--\ref{fig:ggcartograms}--> shows four different cartograms for the same data. The information in Table 3<!--\ref{tab:usa}--> summarizes what can be observed in the four types of cartograms.
+Figure \ref{fig:ggcartograms} shows four different cartograms for the same data. The information in Table \ref{tab:usa} summarizes what can be observed in the four types of cartograms.
 
 #### Contiguous
 
@@ -173,7 +213,7 @@ Figure 2<!--\ref{fig:ggcartograms}--> shows four different cartograms for the sa
 
 A contiguous cartogram alters the choropleth according to a statistic and maintains connectivity of the map regions. Min Ouyang and Revesz [@ACA] present three algorithms for creating value-by-area cartograms. They implement 'map deformation' to account for the value assigned to each area. Other methods include Tobler’s Pseudo-Cartogram Method, Dorling’s Cellular Automaton Method [@ACTUC], Radial Expansion Method, Rubber Sheet Method, Line Integral Method, Constraint-Based Method [@CBATCC].
 
-Figure 2a<!--\ref{fig:ggcartograms}--> shows a population contiguous cartogram of the United States. All states are visible and the shape of the United States overall is still recognizable. In contrast, Figure 3<!--\ref{fig:auscartograms}--> a shows an Australian contiguous cartogram also based on population. The south east is enlarged, but high population areas are still small, and low population areas are still large on the map. The algorithm doesn't fully reach an optimal configuration where area matches population -- Australia is too heterogeneous for the algorithm to handle. 
+Figure \ref{fig:ggcartograms}a shows a population contiguous cartogram of the United States. All states are visible and the shape of the United States overall is still recognizable. In contrast, Figure \ref{fig:auscartograms}a shows an Australian contiguous cartogram also based on population. The south east is enlarged, but high population areas are still small, and low population areas are still large on the map. The algorithm doesn't fully reach an optimal configuration where area matches population -- Australia is too heterogeneous for the algorithm to handle. 
 
 To be able to recognize the significant changes, a reader will usually have to know the initial geography to find the differences in the new cartogram layout [@NAC]. The shapes of small areas on a choropleth map and a cartogram are preserved using Tobler's Conformal mapping method.
 Koccmoud and House [@CBATCC] present this issue as conflicting tasks or aims, to adjust region sizes and retain region shapes. 
@@ -235,24 +275,20 @@ Cartograms provide the spatial distortion to more accurately convey the statisti
 Some mix of tiling, faceting or even micromaps, which allow some spatial continuity while also zooming into small areas, are good solutions for difficult geographies. Table 3 <!--\ref{tab:methods}--> summarizes the key criteria for testing maps and alternative displays. Moore and Carpenter [@SAMGIS] and Bell et al. [@CPISACA] provide suggestions and comments to help map creators best communicate their health data and spatial analysis.
 
 
-Table 4: <!--\label{tab:methods}--> Summary of features and constraints of common mapping methods used to display cancer statistics (Y=Yes, N=No, S=Sometimes).
 
-
-|                     | Choropleth | Contiguous | Non-contig | Dorling | Tile maps | Geofacets |
-|:-----------|:------------:|:-----------:|:---------------:|:---------:|:-----------:|:----------:|
-|Spatial distortion   |  N  |  Y  |  Y  |  Y  |  Y  |  Y  |
-|Preserves neighbors  |  Y  |  Y  |  Y  |  S  |  S  |  S  |
-|Conceals small areas |  Y  |  S  |  N  |  N  |  N  |  N  |
-|Uniform shape        |  N  |  N  |  N  |  Y  |  Y  |  Y  |
-|Univariate only      |  Y  |  Y  |  Y  |  S  |  S  |  N  |
-|Manual construction  |  N  |  N  |  N  |  N  |  Y  |  Y  |
-
-
-<!-- Creating maps of diseases now involves more decisions to be made by map makers, rather than cartographers. 
-Technology has played an enormous role in increasing the opportunities for map makers.
-The computation and graphics power have made creation, alteration and interactivity possible.
-as these options have expanded and it is the objectives of the investigator that will drive the choices. @CPISACA and @SAMGIS have provided suggestions and comments to help map creators best communicate their health data and spatial analyses.-->
-
+```{r methods, results = "asis"}
+tibble::tribble( ~Feature, ~Choropleth, ~Contiguous , ~`Non-contig` , ~Dorling , ~`Tile maps` , ~Geofacets,
+ "Spatial distortion" , "N" , "Y" , "Y" , "Y" , "Y" , "Y",
+ "Preserves neighbors" , "Y" , "Y" , "Y" , "S" , "S" , "S",
+ "Conceals small areas" , "Y" , "S" , "N" , "N" , "N" , "N",
+ "Uniform shape" , "N" , "N" , "N" , "Y" , "Y" , "Y",
+ "Univariate only" , "Y" , "Y" , "Y" , "S" , "S" , "N",
+ "Manual construction" , "N" , "N" , "N" , "N" , "Y" , "Y") %>%  
+  knitr::kable(., format = "latex", align = "lllllll", booktabs = TRUE, 
+    linesep = c("", "", "", "", "", ""),
+    caption = "Summary of features and constraints of common mapping methods used to display cancer statistics (Y=Yes, N=No, S=Sometimes) ") %>% 
+  kableExtra::column_spec(1, width = "7em")
+```
 
 ## User interaction {#ch:interacting}
 <!-- 634 words -->

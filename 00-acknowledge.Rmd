@@ -17,18 +17,18 @@ Professor Kerrie Mengersen (Professor of Statistics, Science and Engineering Fac
 
 Working closely with Prof. Di Cook enabled the rapid development of my research and writing skills. 
 
-## Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays
+## Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays {-}
 
 With my coauthors Prof. Dianne Cook and Jessie Roberts, I would like to acknowledge Dr Susanna Cramb (Strategic Research Fellow, Institute of Health Biomedical Innovation, Queensland Univeristy of Technology) and Dr Peter Baade (Senior Research Fellow, Cancer Council Queensland) for providing the opportunity and time to discuss alternative map solutions for presentation in the Australian Cancer Atlas.
 It was in the development of this online cancer atlas that methods for disease map displays, and visual communication strategies were explored. 
 
-## Comparing the Effectiveness of the Choropleth Map with a Hexagon Tile Map for Communicating Cancer
+## Comparing the Effectiveness of the Choropleth Map with a Hexagon Tile Map for Communicating Cancer {-}
 
 I would like to thank Mitchell O'Hara-Wild was a co-developer of the taipan [@taipan] R package for the web app constructed to collect participant evaluations of lineups. 
 
 We are thankful for the NUMBATs (Non-Uniform Monash Business Analytics Team) for participating in the pilot study that helped to assess the experimental design and determine an appropriate sample size for the study. 
 
-## R packages 
+## R packages {-}
 
 Several `R` [@R] packages were used to produce this thesis:
 
@@ -38,7 +38,6 @@ Several `R` [@R] packages were used to produce this thesis:
  - `eechidna` [@eechidna]
  - `ggplot2` [@ggplot2] 
  - `ggthemes` [@ggthemes]
- - `grid` [@grid]
  - `gstat` [@gstat]
  - `kableExtra` [@kableExtra].
  - `knitr` [@knitr]

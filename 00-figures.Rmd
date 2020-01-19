@@ -16,7 +16,7 @@ figs2 <- tibble::tibble(
     "Cartograms showing melanoma incidence in Australia.",
     "Interactive controls of displays in publicly available choropleth cancer maps",
     "Two examples of advanced interactivity (and animation) in publicly available choropleth cancer maps."),
-  Page = c(16, 26, 30, 31, 34, 35)
+  Page = c(16, 23, 28, 29, 33, 34)
 )
 
 # figures in the algorithm chapter
@@ -33,7 +33,7 @@ figs3 <- tibble::tibble(
     "The Australian Cancer Atlas data has determined the colour of each Statistical Area of Australian at Level 2",
     "A choropleth map of the Statistical Areas of Australia at Level 2.",
     "A hexagon tile map of the Statistical Areas of Australia at Level 2."), 
-  Page = c(44, 45, 47, 49, 50, 51, 52, 55, 56)
+  Page = c(42, 43, 45, 47, 47, 48, 59, 52, 53)
 )
 
 
@@ -48,7 +48,7 @@ figs4 <- tibble::tibble(
     "The detection rates achieved by participants are contrasted when viewing the four replicates of the three trend models",
     "The distribution of the time taken (seconds) to submit a response for each combination of trend, whether the data plot was detected, and type of display, shown using horizontally jittered dotplots.",
     "The amount of times each level of certainty was chosen by participants when viewing hexagon tile map or choropleth displays."), 
-  Page = c(60, 60, 61, 62, 64, 65, 66)
+  Page = c(61, 62, 65, 67, 75, 77, 79)
 )
 ```
 
@@ -56,17 +56,17 @@ figs4 <- tibble::tibble(
 
 ```{r fig2, echo = FALSE, warning = FALSE, results = "asis"}
  kable(figs2, format = "latex", booktabs = TRUE, escape = FALSE, align = "rlr") %>% 
-  kableExtra::column_spec(2, width = "35em")
+  kableExtra::column_spec(2, width = "30em")
 ```
 
 
 ```{r fig3, echo = FALSE, warning = FALSE, results = "asis"}
  kable(figs3, format = "latex", booktabs = TRUE, escape = FALSE, align = "rlr") %>% 
-  kableExtra::column_spec(2, width = "35em")
+  kableExtra::column_spec(2, width = "30em")
 ```
 
 
 ```{r fig4, echo = FALSE, warning = FALSE, results = "asis"}
  kable(figs4, format = "latex", booktabs = TRUE, escape = FALSE, align = "rlr") %>% 
-  kableExtra::column_spec(2, width = "35em")
+  kableExtra::column_spec(2, width = "30em")
 ```

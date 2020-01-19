@@ -8,7 +8,9 @@ library(knitcitations)
 library(RefManageR)
 library(sf)
 library(sugarbag)
+library(magick)
 
-knitr::opts_chunk$set(warning = FALSE, message = FALSE, cache = TRUE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, 
+                      fig.align='center',out.width = "100%", dpi=300)
 options("citation_format" = "pandoc")
 BibOptions(first.inits = FALSE, bib.style = "numeric", check.entries = FALSE, style = "markdown")
