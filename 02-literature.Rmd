@@ -86,7 +86,7 @@ data.frame(
                        "Bowel Cancer Australia.",
                        "Centers for Disease Control and Prevention, with data from state cancer registries.",
                        "Map of cancer mortality rates in Spain.",
-                       "The Pediatric Oncology Group of Ontario Networked Information System.")) %>%  
+                       "The Paediatric Oncology Group of Ontario Networked Information System.")) %>%  
   knitr::kable(., format = "latex", align = "llll", booktabs = TRUE, 
     linesep = c("", "\\addlinespace"),
     caption = "A selection of choropleth cancer maps from online atlases.") %>% 
@@ -129,7 +129,7 @@ data.table::data.table(
 <!-- 416 words -->
 Roberts [@roberts2019communication] identified 33 cancer atlases published between 2010 and 2018. Each of these online atlases uses choropleth maps. All except one of these were published by non-commercial organizations, including not-for-profits, government, research organizations, advocacy groups or government-funded partnerships. Figure \ref{fig:choropleth-grid-create} displays a subset of maps from these atlases, the selection varies in the geographies explored. Figure \ref{fig:choropleth-grid-create}b shows Globocan 2018 [@Globocan] which explores Estimated Cancer Incidence, Mortality and Prevalence Worldwide using data sourced from cancer registries of each country. The Bowel Cancer Australia Atlas in Figure \ref{fig:choropleth-grid-create}d presents an example of a cancer specific atlas -- it shows the average Standardized Incidence Ratio of colorectal cancer for Australian males from 2006 to 2010 [@Bowel]. Like many of the atlases examined, there is a choice of gender displayed in the Bowel Cancer Atlas. Gender is displayed in side-by-side maps in the Map of Cancer Mortality Rates in Spain (Figure \ref{fig:choropleth-grid-create}f) [@cancerSpain]. 
 
-Resolution of the maps varies greatly. Figure \ref{fig:choropleth-grid-create}b shows global information at a national level. The United States Cancer Statistics [@USInteractive] shows data aggregated at the state level. The Environment and Health Atlas of England and Wales [@EnvEnglandWales2] (Figure \ref{fig:choropleth-grid-create}a) shows the relative risk for women developing lung cancer  at a neighborhood (small-area) scale. The Atlas of Cancer in Queensland (Figure \ref{fig:choropleth-grid-create}c) shows the relative incidence ratio of lung cancer in males for each Statistical Area at Level 2 [@abs2016] in the state of Queensland within Australia [@QLDcancerAtlas].
+Resolution of the maps varies greatly. Figure \ref{fig:choropleth-grid-create}b shows global information at a national level. The United States Cancer Statistics [@USInteractive] shows data aggregated at the state level. The Environment and Health Atlas of England and Wales [@EnvEnglandWales2] (Figure \ref{fig:choropleth-grid-create}a) shows the relative risk for women developing lung cancer  at a neighbourhood (small-area) scale. The Atlas of Cancer in Queensland (Figure \ref{fig:choropleth-grid-create}c) shows the relative incidence ratio of lung cancer in males for each Statistical Area at Level 2 [@abs2016] in the state of Queensland within Australia [@QLDcancerAtlas].
 
 
 Age-specific atlases are less common. Figure \ref{fig:choropleth-grid-create}g displays Atlas of Childhood Cancer in Ontario, this communicates the incidence rate of childhood cancers per 100,000 (by census division) for children aged 0-14, in Ontario from 1995 to 2004 [@OntarioPediatric]. 
@@ -226,7 +226,7 @@ The white space presents the meaningful empty-space property [@ECGC], [@NAC] but
 
 #### Dorling
 
-Daniel Dorling presents an alternative display engineered to highlight the spatial distribution and neighborhood relationships without complex distortions of borders and boundaries [@ACTUC]:
+Daniel Dorling presents an alternative display engineered to highlight the spatial distribution and neighbourhood relationships without complex distortions of borders and boundaries [@ACTUC]:
 
 >"If, for instance, it is desirable that areas on a map have boundaries which are as simple as possible, why not draw the areas as simple shapes in the first place?"
 

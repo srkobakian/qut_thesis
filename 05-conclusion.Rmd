@@ -11,9 +11,9 @@ Cancer Atlases are used to develop hypotheses about spatial distributions of can
 
 The first aim of this thesis was to present an alternative visualisation method for spatial data. This thesis has provided a new algorithm to present spatial distributions of disease data, and includes an R code [@R] implementation. The spatial data sets with population related distributions will be effectively communicated by this display. The hexagon tile map display will represent each area equally on the map space to effectively convey the spatial distribution. This does not require manual creation of layouts, and the displays are reusable for any data set that uses the same set of geographic units.
 
-The second aim was to test effectiveness of the hexagon tile map relative to the choropleth map. It was expected that the familiar map base would have advantages in communicating geospatial distributions. However, when tested using the lineup protocol the results for the choropleth map and hexagon tile map were extrememly close. The hexagon tile map was much more effective for communicating the population related distributions. 
+The second aim was to test effectiveness of the hexagon tile map relative to the choropleth map. It was expected that the familiar map base would have advantages in communicating geospatial distributions. However, when tested using the lineup protocol the results for the choropleth map and hexagon tile map were extremely close. The hexagon tile map was much more effective for communicating the population related distributions. 
 
-To achieve the third aim of this thesis, the hexagon tile map output allows for animation between the choropleth display and the hexagon tile map display. This was acheived through the implementation of the `sugarbag` [@sugarbag] package for R [@R]. 
+To achieve the third aim of this thesis, the hexagon tile map output allows for animation between the choropleth display and the hexagon tile map display. This was achieved through the implementation of the `sugarbag` [@sugarbag] package for R [@R]. 
 
 
 <!--  Summarize and reflect on the research -->
@@ -39,6 +39,6 @@ The animations created of the Australian Statistical Areas at Level 2 highlight 
 
 <!--  Show what new knowledge you have contributed -->
   
-This work has contributed a new alternative visualisation method to highlight the communities in spatial data sets. This is valuable as the spatial distributions of cancer burden for different types of cancers largely relates to the population rather than the geography. It also contributes an algorithm to produce these displays for any set of spatial polygons. Through this thesis an open-source `R` package implementation has been inlcuded on the CRAN package respositiory, with associated examples and documentation for use by any `R` user.
+This work has contributed a new alternative visualisation method to highlight the communities in spatial data sets. This is valuable as the spatial distributions of cancer burden for different types of cancers largely relates to the population rather than the geography. It also contributes an algorithm to produce these displays for any set of spatial polygons. Through this thesis an open-source `R` package implementation has been included on the CRAN package repository, with associated examples and documentation for use by any `R` user.
 This work has also contributed to the literature of visual inference studies, by using the "lineup" protocol developed by Buja et al. and used by @GIIV, and @GTPCCD.
 To communicate human related spatial patterns of disease, map creators should consider the use of alternative displays. The hexagon tile map display has proven effective in this thesis for communicating spatial distributions in sets of heterogeneous geographic units. This thesis provides a practical guide for map creators to communicate spatial displays of cancer data in Australia.

@@ -18,7 +18,7 @@ This thesis and it's contributions were motivated by the Australian Cancer Atlas
 
 The choropleth map used in the ACA is familiar to the general public of Australia. It is appropriate to use this map display as users can orient themselves on the map and find the geographic areas relevant to them.
 However, when the intention of the map user is to understand the whole spatial distribution, the information derived from the colours displayed on the map can be misleading.
-The rural areas in outback Australia are over emphasised, and the densely populated inner city areas are not given enough attention, as they cannot be sen using a choropleth map.
+The rural areas in outback Australia are over emphasised, and the densely populated inner city areas are not given enough attention, as they cannot be seen using a choropleth map.
 
 ## Testing graphical displays
 
