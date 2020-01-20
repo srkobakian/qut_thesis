@@ -2,6 +2,6 @@
 knit: "bookdown::render_book"
 ---
 
-# Ethics Approval {#ch:ethics}
+# Ethics Approval {#ethics}
 
 \includepdf[pages = {1-}, scale=1]{Ethics_1.pdf}

@@ -8,7 +8,7 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE, dpi=300, out.width = "10
 options("citation_format" = "pandoc")
 ```
 
-# Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays {#ch:literature}
+# Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays {#literature}
 
 This literature review chapter provides an overview of the key areas of interest in the literature that are relevant to this thesis. This chapter is organised as follows. Section 1 outlines the traditional spatial mapping technique, the choropleth map, and provides design inspiration using examples of online cancer atlases. Section 2 outlines contemporary mapping approaches, suggested as alternatives to the choropleth. Section 3 compares and critiques these alternative displays in light of the strengths and weaknesses of the choropleth method. section 4 considers how users interact with mapping displays in online cancer atlases, and how map creators can direct the attention of uses through animation. Additionally, the following chapters in this thesis each begin with a section to introduce the specific relevant literature.
 
@@ -33,7 +33,7 @@ To visualize and communicate geospatial cancer statistics over geographic domain
 The paper is structured as follows. The next section describes the choropleth map, which is the common approach to disease maps and presents examples of atlases in use today and discusses the limitations of the choropleth map. Section 3 describes alternative displays, including the cartogram, which is useful when the map has heterogeneously sized geographic units. Section 4 presents the limitations of the production and use of alternative displays. Disease maps are more useful when made interactive, and common options are described in Section 5, along with a discussion of benefits and disadvantages.
 
 
-## Traditional approaches for cancer map displays {#ch:choropleth-maps}
+## Traditional approaches for cancer map displays {#choropleth-maps}
 <!-- 381 words -->
 <!-- what is a choropleth map -->
 A choropleth map displays the geographical distribution of data over a set of spatial units by shading areas of a map [@EI], [@BCM]. Faithful rendering of the geography, when combined with an appropriate color scheme, can reveal spatial patterns among data values. Identifying and explaining spatial structures, patterns, and processes involve considering the individuals and organizing them into representable units of communities [@SAMGIS]. Early versions of choropleth maps used symbols or patterns instead of color. Choropleth maps can be used for displaying disease data [@DMAHP], including cancer data [@CPISACA]. In epidemiology, choropleth maps are often used as a tool to study the spatial distribution of cancer incidence and mortality.
@@ -42,7 +42,7 @@ A choropleth map displays the geographical distribution of data over a set of sp
 Displaying familiar state boundaries can make a map easier to read [@CIBMUK] and allow viewers to infer the spatial relationships visually in the data using their mental model of the geography. The map users of disease displays may include researchers, the public, policymakers, and the media [@CPISACA]. For these users, the familiarity of the geography is a worthy consideration when presenting results of spatial analysis.
 
 
-### Cancer atlases {#ch:public}
+### Cancer atlases {#public}
 <!-- 360 words -->
 <!-- Displaying of cancer data on choropleth maps -->
 A cancer atlas is a map, or collection of maps, representing cancer incidence and mortality for a country, or group of countries. Atlases are key to developing hypotheses regarding areas with unusually high rates, and geographic correlations [@MACM]. The data collection methods across regions and the administrative control within regions lends itself to choropleth visualization. Cancer maps and atlases date back to Haviland's maps in 1875, and early work in US cancer atlases appearing in 1971 [@burbank]. The presentation of cancer statistics has increased with greater access to computational power and the availability of geographic information systems software [@SE].
@@ -71,15 +71,15 @@ data.frame(
                 Statistic = c(
                 "relative risk for women developing lung cancer in England and Wales in 2010",
                        "age standardized incidence rates (per 100,000) for all invasive cancers for both men and women, aggregated at a national level for 2018",
-                       "the relative incidence ratio of lung cancer in males in the state of QLD within Australia based on data from 1998 to 2007, Queensland Cancer Council",
-                       "the percentage of Australian males between 50 - 54 years of age diagnosed with bowel cancer in 2016 in Australia.",
+                       "the relative incidence ratio of lung cancer in males in the state of QLD within Australia based on data from 1998 to 2007",
+                       "the percentage of Australian males between 50 - 54 years of age diagnosed with bowel cancer in 2016.",
                        "the incidence rate per 100,000, of all cancer types for men and women in the United States in 2016, aggregated at the state level.",
                        "side by side maps of relative risk of lung cancer for men vs women for 2004 to 2008.",
                        "the incidence rate of childhood cancers per 100,000 (by census division) for children aged 0-14, in Ontario from 1995 to 2004."),
                 `Data source` = c(
                        "Office for National Statistics (ONS) (England) and from the Welsh Cancer Intelligence and Surveillance Unit (WCISU).",
                        "World Health Organization's International Agency for Research on Cancer",
-                       "Queensland Cancer Registry.",
+                       "Queensland Cancer Council, Queensland Cancer Registry.",
                        "Bowel Cancer Australia.",
                        "Centers for Disease Control and Prevention, with data from state cancer registries.",
                        "Map of cancer mortality rates in Spain.",
@@ -87,8 +87,8 @@ data.frame(
   knitr::kable(., format = "latex", align = "llll", booktabs = TRUE, 
     linesep = c("", "\\addlinespace"),
     caption = "A selection of choropleth cancer maps from online atlases.") %>% 
-  kableExtra::column_spec(2, width = "7em") %>% 
-  kableExtra::column_spec(3, width = "10em") %>% 
+  kableExtra::column_spec(2, width = "10em") %>% 
+  kableExtra::column_spec(3, width = "15em") %>% 
   kableExtra::column_spec(4, width = "10em")
 ```
 
@@ -143,7 +143,7 @@ Maps can also be used to focus on demographic strata, such as age and sex. Some 
 Introducing population and demographic information helps to interpret the rates in areas effectively, but there will still be uncertainty around the rates. To address this, a cancer atlas often communicates uncertainty about the value of a statistic. There are several potential sources of uncertainty: sampling error, errors arising from the disease reporting process (or data collection), and errors arising from the statistical modelling or simulation process. The most common measures used to present uncertainty are credible or confidence intervals (CIs). Displaying the uncertainty associated with reported statistics is a vital feature of a cancer map, but it is difficult to display effectively. The map focuses on displaying the statistic and lacks additional space to represent the uncertainty. Providing an adjacent map or overlaying maps with symbols [@VSSDCUC] are two common solutions. 
 
 
-### Limitations of choropleth displays {#ch:chorolimit}
+### Limitations of choropleth displays {#chorolimit}
 
 Australia presents an extreme case of an urban rural divide. The land mass occupied by urban electoral districts is only 10% of Australia, yet 90% of the population live in these urban areas [@ACTUC]. 
 
@@ -156,7 +156,7 @@ The use of borders and backgrounds, and their colours, can also change the appea
 Inset maps like in Brisbane city in Figure \ref{fig:choropleth-grid-create}c of the state of Queensland are commonly used to reduce distorted interpretations, but it is a bandaid remedy. For Australia, many, many inset maps would be needed.
 
 
-## Contemporary alternatives to choropleth maps {#ch:alternatives}
+## Contemporary alternatives to choropleth maps {#alternatives}
 
 ### Cartograms
 <!-- 1496 words inc table-->
@@ -287,7 +287,7 @@ tibble::tribble( ~Feature, ~`Choro.`, ~`Contig.` , ~`Non-contig.` , ~Dorling , ~
   kableExtra::column_spec(1, width = "7em")
 ```
 
-## User interaction {#ch:interacting}
+## User interaction {#interacting}
 <!-- 634 words -->
 
 

@@ -168,11 +168,13 @@ plots %>% ggplot(aes(x = type, y = pdetect, fill = type)) +
 
 
 
-### Lineups
+## Lineups
 
-Each lineup had twelve map displays, this gave participants the choice of any plot, and the choice to not provide a response. this non-reponse is indicated by 0.
+The choropleth map lineups were created using the Australian Statistical Areas at Level 3. Each lineup had twelve map displays, this gave participants the choice of any plot, and the choice to not provide a response. this non-reponse is indicated by 0.
 The choices made by participants are displayed in Fig. \ref{fig:choices}. The height of each orange lollipop indiates the proportion of participants that selected the map display of real data, they represent the correct choices.
 The green lollipops show the proportion of participants that selected the incorrect displays in each lineup.
+
+
 
 
 The proportion of choices are also presented separately for each trend model in Table. \ref{tab:choice-nwse}, Table. \ref{tab:choice-three}, and  Table. \ref{tab:choice-all}.
@@ -241,10 +243,7 @@ knitr::kable(choice_tabs$data[[3]], format = "latex",
   collapse_rows(., columns = c(1,2))
 ```
 
-## Lineups
-
-Lineups were created using the Australian Statistical Areas at Level 3.
-
+\newpage
 ### All Cities
 
 #### Replicate 1

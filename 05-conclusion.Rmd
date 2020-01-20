@@ -4,7 +4,7 @@ knit: "bookdown::render_book"
 ---
 
 
-# Discussion and Conclusion {#ch:conclusion}
+# Discussion and Conclusion {#conclusion}
 
   <!--  Clearly state the answer to the main research question -->
 Cancer Atlases are used to develop hypotheses about spatial distributions of cancer statistics [@CPISACA]. However, the use of the choropleth map may lead to misinterpretation of the overall distribution. This is because of the overemphasis on the large geographic areas, and the lack of visibility for the small inner-city communities [@ACTUC].

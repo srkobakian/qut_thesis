@@ -3,9 +3,9 @@ chapter: 4
 knit: "bookdown::render_book"
 ---
 
-# Comparing the Effectiveness of the Choropleth Map with a Hexagon Tile Map for Communicating Cancer {#ch:experiment}
+# Comparing the Effectiveness of the Choropleth Map with a Hexagon Tile Map for Communicating Cancer {#experiment}
 
-This chapter tests the performance of the hexagon tile map display created using the algorithm discussed in Section \ref{ch:algorithm}.
+This chapter tests the performance of the hexagon tile map display created using the algorithm discussed in Section \ref{algorithm}.
 It outlines the lineup protocol method of visual inference that can be used to test the effectiveness of information visualisations.
 Using a two factor experimental design, the experiment contrasts the performance of participants when they viewed a choropleth map, and their performance when viewing a hexagon tile map.
 The experiment also considered three types of spatial trends, one geographic trend, and two population related distributions. 
@@ -30,7 +30,7 @@ knitr::opts_chunk$set(
   message = FALSE,
   cache = FALSE,
   dpi = 300,
-  out.width = "100%")
+  out.width = "80%")
 options("citation_format" = "pandoc")
 BibOptions(check.entries = FALSE, style = "markdown")
 ```
@@ -160,7 +160,7 @@ This study compares the effectiveness of the spatial display, a hexagon tile map
 
 The hexagon tile map was designed for Australia, motivated by a need to display spatial statistics for the Australian Cancer Atlas. None of the existing approaches for creating cartograms or hexagon tiling perform well for the Australian landscape, which has vast open spaces and concentrations of population in small regions clustered on the coastlines. 
 
-The Australian Cancer Atlas [TACA] is an online interactive web tool created to explore the burden of cancer on Australian communities. There are many cancer types to be explored individually or aggregated. The Australian Cancer Atlas allows users to explore the patterns in the distributions of cancer statistics over the geographic space of Australia. It uses a choropleth map display and diverging color scheme to draw attention to relationships between neighboring areas. The hexagon tile map may be a useful alternative display to enhance the atlas. 
+The Australian Cancer Atlas [@TACA] is an online interactive web tool created to explore the burden of cancer on Australian communities. There are many cancer types to be explored individually or aggregated. The Australian Cancer Atlas allows users to explore the patterns in the distributions of cancer statistics over the geographic space of Australia. It uses a choropleth map display and diverging color scheme to draw attention to relationships between neighboring areas. The hexagon tile map may be a useful alternative display to enhance the atlas. 
 
 The experiment was conducted using the lineup protocol, a visual inference procedure [@GIIV], to objectively test the effectiveness of the two displays. 
 
@@ -178,14 +178,14 @@ Spatial visualisations communicate the distribution of statistics over geographi
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/04-experiment/aus_liver_m.png}
+\includegraphics[width=16cm]{figures/04-experiment/aus_liver_m.pdf}
 \caption{\label{fig:liver-geo}A choropleth map of the smoothed average of liver cancer diagnoses for Australian males. The diverging colour scheme uses dark blue areas for much lower than average diagnoses, yellow areas with diagnoses around the Australian average, red shows diagnoses much higher than average. The hexagon tile map shows concentrations of higher than expected liver cancer rates in the cities of Melbourne and Sydney, which is not visible from the choropleth.}
 \end{figure}
 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/04-experiment/aus_liver_m_hex.png}
+\includegraphics[width=16cm]{figures/04-experiment/aus_liver_m_hex.pdf}
 \caption{\label{fig:liver-hex}A hexagon tile map of the smoothed average of liver cancer diagnoses for Australian males. The diverging colour scheme uses dark blue areas for much lower than average diagnoses, yellow areas with diagnoses around the Australian average, red shows diagnoses much higher than average. The hexagon tile map shows concentrations of higher than expected liver cancer rates in the cities of Melbourne and Sydney, which is not visible from the choropleth.}
 \end{figure}
 
@@ -574,7 +574,7 @@ d %>%
   ungroup() %>% 
   knitr::kable(., format = "latex", booktabs = TRUE,
     linesep = c("", "\\addlinespace", "", "\\addlinespace",""),
-    caption = "The amount of participants that selected each reason for their choice of plot when looking at each trend model shown in choropleth and hexagon Tile maps. The facets show whether or not the choice was correct.") %>% 
+    caption = "The amount of participants that selected each reason for their choice of plot when looking at each trend model shown in choropleth and hexagon tile maps. The facets show whether or not the choice was correct.") %>% 
   collapse_rows(., columns = 1) %>% 
   kable_styling(latex_options = c("hold_position"))
 ```

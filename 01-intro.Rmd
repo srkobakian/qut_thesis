@@ -4,7 +4,7 @@ knit: "bookdown::render_book"
 ---
 
 
-# Introduction {#ch:intro}
+# Introduction {#intro}
 
 Maps can contribute to the interpretation of spatial distributions of disease occurrence, and help to locate disease clusters. Disease data is commonly aggregated to political areas; privacy is one reason for this and another is that it is the responsibility of the political entity to respond. The typical visualisation for aggregated spatial data is a choropleth map, where areas are coloured according to a numerical value. A choropleth map is the most common display for the presentation of disease data.
 

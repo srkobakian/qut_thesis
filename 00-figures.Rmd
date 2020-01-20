@@ -16,7 +16,7 @@ figs2 <- tibble::tibble(
     "Cartograms showing melanoma incidence in Australia.",
     "Interactive controls of displays in publicly available choropleth cancer maps",
     "Two examples of advanced interactivity (and animation) in publicly available choropleth cancer maps."),
-  Page = c(16, 23, 28, 29, 33, 34)
+  Page = c(15, 22, 27, 28, 31, 32)
 )
 
 # figures in the algorithm chapter
@@ -33,7 +33,7 @@ figs3 <- tibble::tibble(
     "The Australian Cancer Atlas data has determined the colour of each Statistical Area of Australian at Level 2",
     "A choropleth map of the Statistical Areas of Australia at Level 2.",
     "A hexagon tile map of the Statistical Areas of Australia at Level 2."), 
-  Page = c(42, 43, 45, 47, 47, 48, 59, 52, 53)
+  Page = c(39, 40, 41, 43, 43, 44, 45, 48, 49)
 )
 
 
@@ -48,26 +48,26 @@ figs4 <- tibble::tibble(
     "The detection rates achieved by participants are contrasted when viewing the four replicates of the three trend models",
     "The distribution of the time taken (seconds) to submit a response for each combination of trend, whether the data plot was detected, and type of display, shown using horizontally jittered dot plots.",
     "The amount of times each level of certainty was chosen by participants when viewing hexagon tile map or choropleth displays."), 
-  Page = c(61, 62, 65, 67, 75, 77, 79)
+  Page = c(54, 55, 58, 60, 68, 70, 72)
 )
 ```
 
 
 
-```{r fig2, echo = FALSE, warning = FALSE, results = "asis"}
-bind_rows(figs2, fig3, figs4) %>% 
+```{r fig_table1, echo = FALSE, warning = FALSE, results = "asis"}
+bind_rows(figs2, figs3[1:6,]) %>% 
   kable(., format = "latex", booktabs = TRUE, escape = FALSE, align = "rlr") %>% 
   kableExtra::column_spec(2, width = "30em")
 ```
 
 
-```{r fig3, echo = FALSE, warning = FALSE, results = "asis"}
- kable(figs3, format = "latex", booktabs = TRUE, escape = FALSE, align = "rlr") %>% 
-  kableExtra::column_spec(2, width = "30em")
-```
+<!-- ```{r fig3, echo = FALSE, warning = FALSE, results = "asis"} -->
+<!--  kable(figs3, format = "latex", booktabs = TRUE, escape = FALSE, align = "rlr") %>%  -->
+<!--   kableExtra::column_spec(2, width = "30em") -->
+<!-- ``` -->
 
 
-```{r fig4, echo = FALSE, warning = FALSE, results = "asis"}
- kable(figs4, format = "latex", booktabs = TRUE, escape = FALSE, align = "rlr") %>% 
+```{r fig_table2, echo = FALSE, warning = FALSE, results = "asis"}
+bind_rows(figs3[7:9,], figs4) %>% kable(., format = "latex", booktabs = TRUE, escape = FALSE, align = "rlr") %>% 
   kableExtra::column_spec(2, width = "30em")
 ```

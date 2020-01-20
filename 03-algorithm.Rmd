@@ -4,7 +4,7 @@ knit: "bookdown::render_book"
 ---
 
 
-# An Algorithm For Spatial Mapping Using a Hexagon Tile Map, With Application to Australian Maps {#ch:algorithm}
+# An Algorithm For Spatial Mapping Using a Hexagon Tile Map, With Application to Australian Maps {#algorithm}
 
 This chapter relates to the first research aim as stated in Section \ref{sec:aims}.
 The chapter introduces the steps of the algorithm.

@@ -15,7 +15,7 @@ tabs2 <- tibble::tibble(
     "Maps used to present statistics for the United States of America.",
     "Summary of features and constraints of common mapping methods used to display
 cancer statistics."),
-  Page = c(17, 18, 24, 31)
+  Page = c(16, 17, 23, 29)
 )
 
 tabs4 <- tibble::tibble(
@@ -24,7 +24,7 @@ tabs4 <- tibble::tibble(
     "The mean and standard deviation of the rate of detection for each trend model, calculated for the choropleth and hexagon tile map displays.",
     "The model output for the generalised linear mixed effect model for detection rate.",
     "The amount of participants that selected each reason for their choice of plot when looking at each trend model shown in Choropleth and Hexagon Tile maps."),
-  Page = c(75, 76, 79)
+  Page = c(67, 69, 72)
 )
 
 

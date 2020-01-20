@@ -4,22 +4,22 @@ knit: "bookdown::render_book"
 
 # List of Publications {-}
 
-1. The exploration of the literature regarding current practices for visualising spatial data is presented in Chapter \ref{ch:literature} has been submitted to the journal *Annals of Cancer Epidemiology* for publication.
+1. The exploration of the literature regarding current practices for visualising spatial data is presented in Chapter \ref{literature} has been submitted to the journal *Annals of Cancer Epidemiology* for publication.
   
 Kobakian S. and Cook, D. and Roberts, J. (2019). Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays. Manuscript submitted for publication.
 
 
-2.  The algorithm is documented in Chapter \ref{ch:algorithm} and will be submitted to the *Journal of Statistical Software*.
+2.  The algorithm is documented in Chapter \ref{algorithm} and will be submitted to the *Journal of Statistical Software*.
 
 Kobakian S. and Cook, D. (2020). An Algorithm For Spatial Mapping Using a Hexagon Tile Map, With Application to Australian Maps. Manuscript in preparation.
 
 
-3.  The details of the experiment to test the alternative hexagon tile map is documented in Chapter \ref{ch:experiment} will be submitted to the *IEEE Transactions of Visualisation and Computer Graphics* under the title "Comparing the Effectiveness of the Choropleth Map with a Hexagon Tile Map for Communicating Cancer"
+3.  The details of the experiment to test the alternative hexagon tile map is documented in Chapter \ref{experiment} will be submitted to the *IEEE Transactions of Visualisation and Computer Graphics* under the title "Comparing the Effectiveness of the Choropleth Map with a Hexagon Tile Map for Communicating Cancer"
 
 Kobakian S. and Cook, D. (2020). Comparing the Effectiveness of the Choropleth Map with a Hexagon Tile Map for Communicating Cancer Manuscript in preparation.
 
 
-4.  The code for the algorithm documented in Chapter \ref{ch:algorithm} is currently hosted on *CRAN* as the package sugarbag.
+4.  The code for the algorithm documented in Chapter \ref{algorithm} is currently hosted on *CRAN* as the package sugarbag.
 
   Kobakian, S. and Cook, D. (2019). sugarbag: Create Tessellated Hexagon Maps. https://srkobakian.github.io/sugarbag/, https://github.com/srkobakian/sugarbag.
   
