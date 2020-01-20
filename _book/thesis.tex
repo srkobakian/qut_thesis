@@ -157,7 +157,7 @@ Kobakian S. and Cook, D. and Roberts, J. (2019). Cancer Applications of Chorople
 \setcounter{enumi}{1}
 \tightlist
 \item
-  The discussion of the algorithm documented in Chapter \ref{ch:algorithm} will be submitted to the \emph{Journal of Statistical Software}.
+  The algorithm is documented in Chapter \ref{ch:algorithm} and will be submitted to the \emph{Journal of Statistical Software}.
 \end{enumerate}
 
 Kobakian S. and Cook, D. (2020). An Algorithm For Spatial Mapping Using a Hexagon Tile Map, With Application to Australian Maps. Manuscript in preparation.
@@ -208,7 +208,7 @@ Dr Earl Duncan (Research Associate at ARC Centre of Excellence for Mathematical 
 
 Professor Kerrie Mengersen (Professor of Statistics, Science and Engineering Faculty, QUT) provided the opportunity to study at Queensland University of Technology, organising and mentoring me through this project.
 
-Working closely with Prof.~Di Cook enabled the rapid development of my research and writing skills.
+Working closely with Prof.~Dianne Cook enabled the rapid development of my research and writing skills.
 
 \hypertarget{cancer-applications-of-choropleth-maps-and-the-potential-of-cartograms-and-alternative-map-displays}{%
 \section*{Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays}\label{cancer-applications-of-choropleth-maps-and-the-potential-of-cartograms-and-alternative-map-displays}}
@@ -229,16 +229,20 @@ We are thankful for the NUMBATs (Non-Uniform Monash Business Analytics Team) for
 \section*{R packages}\label{r-packages}}
 \addcontentsline{toc}{section}{R packages}
 
-Several \texttt{R} \autocite{R} packages were used to produce this thesis:
+Numerous \texttt{R} \autocite{R} packages were used to produce this thesis:
 
 \begin{itemize}
 \tightlist
 \item
   \texttt{absmapsdata} \autocite{ABSmaps}
 \item
+  \texttt{broom} \autocite{broom}
+\item
   \texttt{cartogram} \autocite{cartogram}
 \item
   \texttt{cowplot} \autocite{cowplot}
+\item
+  \texttt{dplyr} \autocite{dplyr}
 \item
   \texttt{eechidna} \autocite{eechidna}
 \item
@@ -248,13 +252,17 @@ Several \texttt{R} \autocite{R} packages were used to produce this thesis:
 \item
   \texttt{gstat} \autocite{gstat}
 \item
-  \texttt{kableExtra} \autocite{kableExtra}.
+  \texttt{kableExtra} \autocite{kableExtra}
 \item
   \texttt{knitr} \autocite{knitr}
 \item
   \texttt{lme4} \autocite{lme4}
 \item
+  \texttt{lubridate} \autocite{lubridate}
+\item
   \texttt{nullabor} \autocite{nullabor}
+\item
+  \texttt{magrittr} \autocite{magrittr}
 \item
   \texttt{png} \autocite{png}
 \item
@@ -270,21 +278,24 @@ Several \texttt{R} \autocite{R} packages were used to produce this thesis:
 \item
   \texttt{sugarbag} \autocite{sugarbag}
 \item
-  \texttt{tidyverse} \autocite{tidyverse}
+  \texttt{tibble} \autocite{tibble}
+\item
+  \texttt{tidyr} \autocite{tibble}
 \end{itemize}
 
 \hypertarget{ch:intro}{%
 \chapter{Introduction}\label{ch:intro}}
 
-Maps can contribute to the interpretation of spatial distributions of disease occurrence, and help to locate disease clusters. Disease data is commonly aggravated to political areas. privacy is one reason for this and another is the responsibility of the political entity to respond. The typical visualisation for aggregated spatial data is a choropleth map, where areas are coloured according to a numerical value. A choropleth map is the most common display for the presentation of geospatial data.
+Maps can contribute to the interpretation of spatial distributions of disease occurrence, and help to locate disease clusters. Disease data is commonly aggregated to political areas; privacy is one reason for this and another is that it is the responsibility of the political entity to respond. The typical visualisation for aggregated spatial data is a choropleth map, where areas are coloured according to a numerical value. A choropleth map is the most common display for the presentation of disease data.
 
-Choropleth maps do a disservice to the map reader, as the attention of the map user is distributed according to the size of the area. Using a choropleth map to get a broad perspective of Australia can be misleading, when the size of geographical areas misrepresent the spatial distribution of a dataset. This representation is not practical if each area is considered equally important. In Australia, the population is not equally dispersed across the geographic map base.
-Instead, the communities are densely populated in the inner city areas, especially around the capital cities. There are several visualisation methods that have been developed to emphasise the population dense areas. These alternatives should be considered when planning the communication of geospatial statistics, as visualisations should be chosen to best represent the spatial distribution. This work is motivated by the Australian Cancer Atlas, which presents the spatial patterns of cancer in Australia. The aim of this thesis is to contribute an algorithm that creates effective visualisations for the communication of geospatial population statistics.
+Choropleth maps can mislead the map reader, as the attention of the map user is distributed according to the size of the area. Australia provides an extreme example of potential bias and loss of valuable information. In Australia, the geography mismatchs the population, because the communities are densely populated in the inner city areas, especially around the capital cities, and the coastline. There are alternative visualisation methods, like cartograms, that have been developed to correctly focus on the population dense areas. These alternatives should be considered when planning the communication of geospatial statistics, as visualisations should be chosen to best represent the spatial distribution.
+
+This thesis research is motivated by the Australian Cancer Atlas, which presents the spatial patterns of cancer in Australia. The aim of this thesis is to contribute an algorithm that creates effective visualisations for the communication of geospatial population statistics.
 
 \hypertarget{the-australian-cancer-atlas}{%
 \section{The Australian Cancer Atlas}\label{the-australian-cancer-atlas}}
 
-This thesis and it's contributions were motivated by the Australian Cancer Atlas (ACA), an online, interactive web tool for exploring the impact of cancer on Australian communities. The prominent display used by the ACA to present incidence rates or excess death rates is the choropleth map. The set of geographic units shown are the Australian Statistical Areas, at Level 2 (SA2s). There are almost 2,200 individual SA2s.
+The Australian Cancer Atlas (ACA) is an online, interactive web tool for exploring the impact of cancer on Australian communities. The prominent display used by the ACA to present incidence rates or excess death rates is the choropleth map. The set of geographic units shown are the Australian Statistical Areas, at Level 2 (SA2s). There are almost 2,200 individual SA2s.
 
 The choropleth map used in the ACA is familiar to the general public of Australia. It is appropriate to use this map display as users can orient themselves on the map and find the geographic areas relevant to them.
 However, when the intention of the map user is to understand the whole spatial distribution, the information derived from the colours displayed on the map can be misleading.
@@ -298,12 +309,6 @@ Buja et al \autocite{GIIV} provide the `lineup' protocol as a formal framework f
 It takes inspiration from a police lineup.
 The lineup protocol can be used to test if the hexagon tile map is effective, a map displaying a real population based distribution can be hidden in a collection of maps that display null distributions \autocite{chowd}.
 
-The `witness' in this regard is the participant recruited from a crowdsource platform.
-The visualisation in the lineup that contains a real distribution is considered the `accused'.
-It is put in a lineup of innocent displays that do not show a population based distribution.
-If the `witness' chooses the `accused' when asked `Which display is the most different?' from the innocent plots, it can be considered that there may be a pattern displayed that is not present in the others.
-In this protocol, the null hypothesis can be rejected in favour of the alternative when the `accused' display is chosen to be the most different display in the lineup. The null hypothesis fails to be rejected when it is not selected in the lineup.
-
 \hypertarget{sec:aims}{%
 \section{Aims and Objectives}\label{sec:aims}}
 
@@ -313,7 +318,7 @@ It considers the visualisation methods developed over the past two centuries tha
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  \emph{Devising an Algorithm for creating hexagon tile maps of Australia:} The algorithm will take geospatial areas and create an alternative visualisation of the spatial distribution.
+  \emph{Devising an algorithm for creating hexagon tile maps of Australia:} The algorithm will take geospatial areas and create an alternative visualisation of the spatial distribution.
 \item
   \emph{Test the effectiveness of the hexagon tile map relative to the choropleth map:} The hexagon tile map produced by the algorithm will be contrasted with the traditional choropleth map, applying the same colour methods to represent the data.
 \item
@@ -334,9 +339,9 @@ The thesis is structured as follows: Chapter two contains a literature review.
 The literature reviews considers the current peer reviewed literature and published books that explore spatial distributions of cancer across the globe.
 It also considers how to evaluate the visualisation methods used for spatial data.
 
-Chapter three explores the algorithm to create hexagon tile maps and the code used to create a small example of Tasmania in Australia.
-Chapter four discusses an experiment that uses visual inference. It contains the methods and results that compare the use of a choropleth map and a hexagon tile map.
-Chapter five provides a conclusion of the results of the visual inference study and how the hexagon tile map may be used in practice.
+Chapter 3 explores the algorithm to create hexagon tile maps and the code used to create a small example of Tasmania in Australia.
+Chapter 4 discusses an experiment that uses visual inference. It contains the methods and results that compare the use of a choropleth map and a hexagon tile map.
+Chapter 5 summarises the contributions of this thesis and possible future work.
 
 \hypertarget{ch:literature}{%
 \chapter{Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays}\label{ch:literature}}
@@ -344,8 +349,6 @@ Chapter five provides a conclusion of the results of the visual inference study 
 This literature review chapter provides an overview of the key areas of interest in the literature that are relevant to this thesis. This chapter is organised as follows. Section 1 outlines the traditional spatial mapping technique, the choropleth map, and provides design inspiration using examples of online cancer atlases. Section 2 outlines contemporary mapping approaches, suggested as alternatives to the choropleth. Section 3 compares and critiques these alternative displays in light of the strengths and weaknesses of the choropleth method. section 4 considers how users interact with mapping displays in online cancer atlases, and how map creators can direct the attention of uses through animation. Additionally, the following chapters in this thesis each begin with a section to introduce the specific relevant literature.
 
 This chapter was submitted for publication to the journal \emph{Annals of Cancer Epidemiology} for publication. This was intended for an audience of cancer atlas creators to be inspired by current atlases, and to encourage the pursuit of alternative displays.
-
-\includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_literature.pdf}
 
 \newpage
 
@@ -393,7 +396,7 @@ Cancer maps are effective tools for communicating incidence, survival, and morta
 
 \caption{\label{tab:choropleths}A selection of choropleth cancer maps from online atlases.}
 \centering
-\begin{tabular}[t]{l>{\raggedright\arraybackslash}p{7em}>{\raggedright\arraybackslash}p{15em}>{\raggedright\arraybackslash}p{15em}}
+\begin{tabular}[t]{l>{\raggedright\arraybackslash}p{7em}>{\raggedright\arraybackslash}p{10em}>{\raggedright\arraybackslash}p{10em}}
 \toprule
 Fig. & Atlas & Statistic & Data.source\\
 \midrule
@@ -602,7 +605,7 @@ Some mix of tiling, faceting or even micromaps, which allow some spatial continu
 \centering
 \begin{tabular}[t]{>{\raggedright\arraybackslash}p{7em}llllll}
 \toprule
-Feature & Choropleth & Contiguous & Non-contig & Dorling & Tile maps & Geofacets\\
+Feature & Choro. & Contig. & Non-contig. & Dorling & Tiles & Geofacets\\
 \midrule
 Spatial distortion & N & Y & Y & Y & Y & Y\\
 Preserves neighbors & Y & Y & Y & S & S & S\\
@@ -664,14 +667,12 @@ Interaction with maps is an important component of public atlases, and is easy t
 \chapter{An Algorithm For Spatial Mapping Using a Hexagon Tile Map, With Application to Australian Maps}\label{ch:algorithm}}
 
 This chapter relates to the first research aim as stated in Section \ref{sec:aims}.
-The chapter introduces the step devised for the algorithm.
-The chapter frames the steps in light of the \texttt{sugarbag} \autocite{sugarbag} package functions that allow users to enact the algorithm in \texttt{R} \autocite{R}. It uses the Statistical Areas of Australia at Level 2, taking a subset and considering only those located within the island of Tasmania.
+The chapter introduces the steps of the algorithm.
+The steps follow the procedures implemented in the \texttt{sugarbag} \autocite{sugarbag} package functions, that allow users to run the algorithm in \texttt{R} \autocite{R}. It uses the Statistical Areas of Australia at Level 2, taking a subset and considering only those located within the island of Tasmania.
 It also provides an example of how to animate between the choropleth map display and the hexagon tile map.
 
-This chapter was submitted for publication to the \emph{Journal of Statistical Software} for publication.
+This chapter will be submitted for publication to the \emph{Journal of Statistical Software} for publication.
 The steps in this algorithm are implemented in the \texttt{sugarbag} \autocite{sugarbag} package for \texttt{R} \autocite{R}.
-
-\includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_algorithm.pdf}
 
 \hypertarget{abstract-2}{%
 \section*{Abstract}\label{abstract-2}}
@@ -771,7 +772,7 @@ The centroids can be derived from the set of polygons using the \texttt{create\_
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/1centroids.png}
+\includegraphics[width=14cm]{figures/03-algorithm/1centroids.png}
 \caption{\label{fig:centroids_plot}The geographic shapes of the Statistical Areas of Tasmania at Level 2. The points show the locations of the centroids of the SA2 areas.}
 \end{figure}
 
@@ -793,7 +794,7 @@ Figure \ref{fig:grid2} shows the original grid on the left, to allow for tessell
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/2grid.png}
+\includegraphics[width=14cm]{figures/03-algorithm/2grid.png}
 \caption{\label{fig:grid2}Grid points to create a tile map.}
 \end{figure}
 
@@ -820,7 +821,7 @@ The grid points are kept only if they fall between the rolling average of the mi
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/3grid.png}
+\includegraphics[width=8cm]{figures/03-algorithm/3grid.png}
 \caption{\label{fig:filter-grid}All possible hexagon locations from the initial grid are shown with blue outlines. The blue dots show the grid points left to choose from after the buffer step. The rolling windows show the collections of rows and columns used to filter the hexagon locations.}
 \end{figure}
 
@@ -857,7 +858,7 @@ The algorithm then removes the outer corners of the square, creating a circle of
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/4grid.png}
+\includegraphics[width=14cm]{figures/03-algorithm/4grid.png}
 \caption{\label{fig:buffers}Filter for grid points within a square, then circular, distance for those closest to the centroid.}
 \end{figure}
 
@@ -865,7 +866,7 @@ The \texttt{width} parameter is used to take a slice of the remaining points. Th
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/5allocate.png}
+\includegraphics[width=14cm]{figures/03-algorithm/5allocate.png}
 \caption{\label{fig:angles}Filter for grid points within the angle from the focal point to the centroid.}
 \end{figure}
 
@@ -874,7 +875,7 @@ By default the angle filter to hexagon grid points that fall within the bounds o
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/6allocate.png}
+\includegraphics[width=14cm]{figures/03-algorithm/6allocate.png}
 \caption{\label{fig:buffs}A complete hexagon tile map of Tasmania.}
 \end{figure}
 
@@ -884,7 +885,7 @@ The small red areas visible in the choropleth map (a) along the north coast are 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/7SIR.png}
+\includegraphics[width=14cm]{figures/03-algorithm/7SIR.png}
 \caption{\label{fig:sir}The Australian Cancer Atlas data has determined the colour of each Statistical Area of Australian at Level 2. A choropleth map (a) of SIR is paired with a hexagon tile map (b) to contrast the colours that are made obvious when every SA2 is equally represented.}
 \end{figure}
 
@@ -970,7 +971,7 @@ To create this choropleth map the SA2 polygons for 2011 from the ABS. The SIRs f
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/aus_melanoma_p.pdf}
+\includegraphics[width=14cm]{figures/03-algorithm/aus_melanoma_p.pdf}
 \caption{\label{fig:melanoma-geo}A choropleth map of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated SIR of Melanoma for all persons, they range from much lower than average (blue) to much higher than average (red)}
 \end{figure}
 
@@ -988,7 +989,7 @@ To create the hexagon tile map display, the same steps are followed as outlined 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/aus_melanoma_p_hex.pdf}
+\includegraphics[width=14cm]{figures/03-algorithm/aus_melanoma_p_hex.pdf}
 \caption{\label{fig:melanoma-hex}A hexagon tile map of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated SIR, they range from much lower than average (blue) to much higher than average (red)}
 \end{figure}
 
@@ -1025,9 +1026,7 @@ Using a two factor experimental design, the experiment contrasts the performance
 The experiment also considered three types of spatial trends, one geographic trend, and two population related distributions.
 The results showed that participants did in fact more frequently find the population related distributions when using the hexagon tile map.
 
-This chapter has been submitted to the journal \emph{IEEE Transactions of Visualisation and Computer Graphics}.
-
-\includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_experiment.pdf}
+This chapter will be submitted to the journal \emph{IEEE Transactions of Visualisation and Computer Graphics}.
 
 \hypertarget{abstract-3}{%
 \section*{Abstract}\label{abstract-3}}
@@ -1286,7 +1285,9 @@ Of the 92 participants, 67 were male, and 25 female. Most participants (56) had 
 \hypertarget{accuracy}{%
 \subsection{Accuracy}\label{accuracy}}
 
-Fig. \ref{fig:detect-compare} displays the average detection rates for the two types of plot separately for each trend model. Each trend model was tested using four repetitions, evaluations on the same data set were seen as either choropleths or hexagon tile maps by each group as specified in Table. \ref{fig:exp-design}; the detection rates for each display are connected by a line segment. The Three Cities and All Cities trend models shown in the hexagon tile map allowed viewers to detect the data plot substantially more often than the choropleth counterparts. One replicate for the All Cities group had similar detection rates for both plot types, the rate of detection using the choropleth map was much higher than other replicates. Surprisingly, participants could also detect the gradual spatial trend in the NW-SE group from the hexagon tile map. We expected that the choropleth map would be superior for the type of spatial pattern, but the data suggests the hexagon tile map performs slightly better, or equally as well.
+Fig. \ref{fig:detect-compare} displays the average detection rates for the two types of plot separately for each trend model. Each trend model was tested using four repetitions, evaluations on the same data set were seen as either choropleths or hexagon tile maps by each group as specified in Table. \ref{fig:exp-design}; the detection rates for each display are connected by a line segment. The Three Cities and All Cities trend models shown in the hexagon tile map allowed viewers to detect the data plot substantially more often than the choropleth counterparts.
+One replicate for the All Cities group had a similar detection rate for both the choropleth and the hexagon tile map. Interestingly, in post-analysis we found that participants chose the data display in the choropleth lineup for reasons unrelated to the All Cities data structure.
+Participants detected the gradual spatial trend in the NW-SE group equally well from both map types. This was a pleasant surprise; we expected that the choropleth map would be superior for the type of spatial pattern, but the data suggests the hexagon tile map performs equally as well.
 
 \begin{figure}
 
@@ -1297,7 +1298,7 @@ Fig. \ref{fig:detect-compare} displays the average detection rates for the two t
 \caption{The detection rates achieved by participants are contrasted when viewing the four replicates of the three trend models. Each point shows the probability of detection for the lineup display, the facets separate the trend models hidden in the lineup. The points for the same data set shown in a choroleth or hexagon tile map display are linked to show the difference in the detection rate.}\label{fig:detect-compare}
 \end{figure}
 
-Table. \ref{tab:desc-stats} shows the means and standard deviations of the detection rate for each type of plot and each trend model. This also gives the standard deviations, the smallest standard deviation for all sets of replicates was the Three Cities trend model shown in a Choropleth display. This group of displays had a very small detection rate of 0.04. The mean detection rate for the Three Cities trend model shown as choropleth map lineups was also the smallest at 0.40.
+Table. \ref{tab:desc-stats} shows the means and standard deviations of the detection rate for each type of plot and each trend model. This also gives the standard deviations, the smallest standard deviation for all sets of replicates was the Three Cities trend model shown in a choropleth display. This group of displays had a very small detection rate of 0.04. The mean detection rate for the Three Cities trend model shown as choropleth map lineups was also the smallest at 0.40.
 The North-West to South-East (NW-SE) trend model unexpectedly had a higher mean detection rate for the hexagon tile map displays, but the difference in the means of detection rate was only 0.10.
 
 \begin{table}[!h]
@@ -1375,7 +1376,7 @@ For each trend model, participants were more likely to doubt their choice and ch
 
 }
 
-\caption{The amount of times each level of certainty was chosen by participants when viewing hexagon tile map or choropleth displays. Participants were more likely to choose a high certainty when considering a Choropleth map. The mid value of 3 was the default certainty, it was chosen most for the Hexagon tile map displays.}\label{fig:certainty}
+\caption{The amount of times each level of certainty was chosen by participants when viewing hexagon tile map or choropleth displays. Participants were more likely to choose a high certainty when considering a choropleth map, but more likely to be wrong for the All Cities and Three Cities patterns. Participants were less certain in their responses for the hexagon tile map lineups, perhaps reflecting the lack of familiarity.}\label{fig:certainty}
 \end{figure}
 
 \hypertarget{reason}{%
@@ -1391,7 +1392,7 @@ The choice ``None of these reasons'' was used as the default value to minimise n
 
 \begin{table}[!h]
 
-\caption{\label{tab:reason}The amount of participants that selected each reason for their choice of plot when looking at each trend model shown in Choropleth and Hexagon Tile maps. The facets show whether or not the choice was correct.}
+\caption{\label{tab:reason}The amount of participants that selected each reason for their choice of plot when looking at each trend model shown in choropleth and hexagon Tile maps. The facets show whether or not the choice was correct.}
 \centering
 \begin{tabular}[t]{llll}
 \toprule
@@ -1434,7 +1435,7 @@ The high levels of the mid range value of 3 could indicate that the participant 
 
 The color scaling applied in Three cities and All cities displays resulted in the rural areas of the real data plot appearing more blue or yellow than the other plots in the lineups.
 Due to the consistent coloring of rural areas in a choropleth display, the choice ``All areas have similar colors'' was most common reason for a participants choice. The All Cities displays colored the inner-city areas of all capital cities more red, this was observable to participants and explains the equal choice of the city clusters or rural color consistency.
-Choosing ``Clusters of colour'' was expected when participants viewed the Hexagon tile map display of the All Cities and Three Cities distributions. It was unexpected that it was also the most common reason for the NW-SE hexagon tile map displays.
+Choosing ``Clusters of colour'' was expected when participants viewed the hexagon tile map display of the All Cities and Three Cities distributions. It was unexpected that it was also the most common reason for the NW-SE hexagon tile map displays.
 Due to the spatial covariance introduced in the smoothing, groups of similarly colored hexagons were present in all of the hexagon tile map displays. All Cities and Three Cities distributions of real data trends had distinctly different patterns or red inner-city areas, while some of the plots in each lineup may have shared similar features.
 
 \hypertarget{conclusion-1}{%
@@ -1447,10 +1448,10 @@ The hexagon tile map display should be considered as an alternative visualizatio
 The increasing population densities of capital cities despite large land area exacerbates the difference in the smallest and largest communities.
 The population density structure of Australia can be considered similar to that of Canada, New Zealand and many other countries. Therefore, this display is not only relevant to Australia, but all nations or population distributions that experience densely populated cities separated by vast rural expanses.
 
-\hypertarget{acknowledgment}{%
-\section{Acknowledgment}\label{acknowledgment}}
+\hypertarget{supplementary-meaterial}{%
+\section{Supplementary meaterial}\label{supplementary-meaterial}}
 
-The appendix contains:
+The appendix \ref{appendix} contains:
 
 \begin{itemize}
 \tightlist

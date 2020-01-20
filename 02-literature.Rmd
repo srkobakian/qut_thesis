@@ -15,9 +15,6 @@ This literature review chapter provides an overview of the key areas of interest
 This chapter was submitted for publication to the journal *Annals of Cancer Epidemiology* for publication. This was intended for an audience of cancer atlas creators to be inspired by current atlases, and to encourage the pursuit of alternative displays.
 
 
-\includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_literature.pdf}
-
-
 \newpage
 
 ## Abstract {-}
@@ -91,8 +88,8 @@ data.frame(
     linesep = c("", "\\addlinespace"),
     caption = "A selection of choropleth cancer maps from online atlases.") %>% 
   kableExtra::column_spec(2, width = "7em") %>% 
-  kableExtra::column_spec(3, width = "15em") %>% 
-  kableExtra::column_spec(4, width = "15em")
+  kableExtra::column_spec(3, width = "10em") %>% 
+  kableExtra::column_spec(4, width = "10em")
 ```
 
 
@@ -277,7 +274,7 @@ Some mix of tiling, faceting or even micromaps, which allow some spatial continu
 
 
 ```{r methods, results = "asis"}
-tibble::tribble( ~Feature, ~Choropleth, ~Contiguous , ~`Non-contig` , ~Dorling , ~`Tile maps` , ~Geofacets,
+tibble::tribble( ~Feature, ~`Choro.`, ~`Contig.` , ~`Non-contig.` , ~Dorling , ~`Tiles` , ~Geofacets,
  "Spatial distortion" , "N" , "Y" , "Y" , "Y" , "Y" , "Y",
  "Preserves neighbors" , "Y" , "Y" , "Y" , "S" , "S" , "S",
  "Conceals small areas" , "Y" , "S" , "N" , "N" , "N" , "N",

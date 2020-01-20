@@ -15,7 +15,7 @@ This thesis research is motivated by the Australian Cancer Atlas, which presents
 
 ## The Australian Cancer Atlas
 
-This thesis and it's contributions were motivated by the Australian Cancer Atlas (ACA), an online, interactive web tool for exploring the impact of cancer on Australian communities. The prominent display used by the ACA to present incidence rates or excess death rates is the choropleth map. The set of geographic units shown are the Australian Statistical Areas, at Level 2 (SA2s). There are almost 2,200 individual SA2s.
+The Australian Cancer Atlas (ACA) is an online, interactive web tool for exploring the impact of cancer on Australian communities. The prominent display used by the ACA to present incidence rates or excess death rates is the choropleth map. The set of geographic units shown are the Australian Statistical Areas, at Level 2 (SA2s). There are almost 2,200 individual SA2s.
 
 The choropleth map used in the ACA is familiar to the general public of Australia. It is appropriate to use this map display as users can orient themselves on the map and find the geographic areas relevant to them.
 However, when the intention of the map user is to understand the whole spatial distribution, the information derived from the colours displayed on the map can be misleading.
@@ -28,12 +28,8 @@ Buja et al [@GIIV] provide the 'lineup' protocol as a formal framework for testi
 It takes inspiration from a police lineup.
 The lineup protocol can be used to test if the hexagon tile map is effective, a map displaying a real population based distribution can be hidden in a collection of maps that display null distributions [@chowd]. 
 
-The 'witness' in this regard is the participant recruited from a crowdsource platform.
-The visualisation in the lineup that contains a real distribution is considered the 'accused'.
-It is put in a lineup of innocent displays that do not show a population based distribution.
-If the 'witness' chooses the 'accused' when asked 'Which display is the most different?' from the innocent plots, it can be considered that there may be a pattern displayed that is not present in the others. 
-In this protocol, the null hypothesis can be rejected in favour of the alternative when the 'accused' display is chosen to be the most different display in the lineup. The null hypothesis fails to be rejected when it is not selected in the lineup.
 
+<!-- Talk about same data, same info for lineup, power comparison of competing designs -->
 
 
 ## Aims and Objectives {#sec:aims}
@@ -41,7 +37,7 @@ In this protocol, the null hypothesis can be rejected in favour of the alternati
 This thesis aims to provide a solution to presenting geospatial data regarding populations. 
 It considers the visualisation methods developed over the past two centuries that shift the focus from the geographic map base.
 
-1. *Devising an Algorithm for creating hexagon tile maps of Australia:* The algorithm will take geospatial areas and create an alternative visualisation of the spatial distribution.
+1. *Devising an algorithm for creating hexagon tile maps of Australia:* The algorithm will take geospatial areas and create an alternative visualisation of the spatial distribution.
 
 2. *Test the effectiveness of the hexagon tile map relative to the choropleth map:* The hexagon tile map produced by the algorithm will be contrasted with the traditional choropleth map, applying the same colour methods to represent the data. 
 
@@ -60,6 +56,6 @@ The thesis is structured as follows: Chapter two contains a literature review.
 The literature reviews considers the current peer reviewed literature and published books that explore spatial distributions of cancer across the globe.
 It also considers how to evaluate the visualisation methods used for spatial data.
 
-Chapter three explores the algorithm to create hexagon tile maps and the code used to create a small example of Tasmania in Australia.
-Chapter four discusses an experiment that uses visual inference. It contains the methods and results that compare the use of a choropleth map and a hexagon tile map.
-Chapter five provides a conclusion of the results of the visual inference study and how the hexagon tile map may be used in practice.
+Chapter 3 explores the algorithm to create hexagon tile maps and the code used to create a small example of Tasmania in Australia.
+Chapter 4 discusses an experiment that uses visual inference. It contains the methods and results that compare the use of a choropleth map and a hexagon tile map.
+Chapter 5 summarises the contributions of this thesis and possible future work.

@@ -7,7 +7,7 @@ knit: "bookdown::render_book"
 \appendix
 \renewcommand\thesubsection{\thesection.\Alph{subsection}}
 
-# Appendix
+# Appendix 
 
 
 ```{r setup-lineups, echo=FALSE, message=FALSE, warning=FALSE, comment = FALSE}

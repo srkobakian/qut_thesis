@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.31)  20 JAN 2020 11:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.31)  20 JAN 2020 12:25
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1193,7 +1193,22 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
-(thesis.bbl)
+(thesis.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                magrittr
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                tibble
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 28.
 Package biblatex Info: Reference segment=0 on input line 28.
 \AtBeginShipoutBox=\box61
@@ -1334,677 +1349,511 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 
 ]
 Chapter 1.
-[7] [8] [9] [10]
-Chapter 2.
-<statement-of-contribution_literature.pdf, id=455, 598.27513pt x 845.19763pt>
-File: statement-of-contribution_literature.pdf Graphic file (type pdf)
-<use statement-of-contribution_literature.pdf>
-Package pdftex.def Info: statement-of-contribution_literature.pdf  used on inpu
-t line 348.
-(pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
-File: statement-of-contribution_literature.pdf Graphic file (type pdf)
-<use statement-of-contribution_literature.pdf>
-Package pdftex.def Info: statement-of-contribution_literature.pdf  used on inpu
-t line 348.
-(pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
-<statement-of-contribution_literature.pdf, id=458, page=1, 598.27513pt x 845.19
-763pt>
-File: statement-of-contribution_literature.pdf Graphic file (type pdf)
-<use statement-of-contribution_literature.pdf, page 1>
-Package pdftex.def Info: statement-of-contribution_literature.pdf , page1 used 
-on input line 348.
-(pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
-File: statement-of-contribution_literature.pdf Graphic file (type pdf)
-<use statement-of-contribution_literature.pdf, page 1>
-Package pdftex.def Info: statement-of-contribution_literature.pdf , page1 used 
-on input line 348.
-(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
-[11
+[7] [8] [9] [10
 
 ]
-File: statement-of-contribution_literature.pdf Graphic file (type pdf)
-<use statement-of-contribution_literature.pdf, page 1>
-Package pdftex.def Info: statement-of-contribution_literature.pdf , page1 used 
-on input line 348.
-(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
-File: statement-of-contribution_literature.pdf Graphic file (type pdf)
-<use statement-of-contribution_literature.pdf, page 1>
-Package pdftex.def Info: statement-of-contribution_literature.pdf , page1 used 
-on input line 348.
-(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
-File: statement-of-contribution_literature.pdf Graphic file (type pdf)
-<use statement-of-contribution_literature.pdf, page 1>
-Package pdftex.def Info: statement-of-contribution_literature.pdf , page1 used 
-on input line 348.
-(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
-[12 <./statement-of-contribution_literature.pdf>]
+Chapter 2.
+[11]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 354.
+(hyperref)                be the same. Added a new anchor on input line 357.
 
-[13] [14]
-<figures/02-literature/choropleth_grid.png, id=535, 867.24pt x 722.7pt>
+[12] [13]
+<figures/02-literature/choropleth_grid.png, id=495, 867.24pt x 722.7pt>
 File: figures/02-literature/choropleth_grid.png Graphic file (type png)
 <use figures/02-literature/choropleth_grid.png>
 Package pdftex.def Info: figures/02-literature/choropleth_grid.png  used on inp
-ut line 383.
+ut line 386.
 (pdftex.def)             Requested size: 426.79135pt x 355.65892pt.
-[15]
-Overfull \hbox (44.45862pt too wide) in paragraph at lines 396--412
- [][] 
- []
+[14]
 
-[16 <./figures/02-literature/choropleth_grid.png (PNG copy)>] [17] [18] [19] [2
-0] [21] [22]
-<figures/02-literature/usa_grid.png, id=665, 867.24pt x 722.7pt>
+LaTeX Warning: Float too large for page by 16.06252pt on input line 415.
+
+[15 <./figures/02-literature/choropleth_grid.png (PNG copy)>] [16] [17] [18] [1
+9] [20] [21]
+<figures/02-literature/usa_grid.png, id=624, 867.24pt x 722.7pt>
 File: figures/02-literature/usa_grid.png Graphic file (type png)
 <use figures/02-literature/usa_grid.png>
 Package pdftex.def Info: figures/02-literature/usa_grid.png  used on input line
- 489.
+ 492.
 (pdftex.def)             Requested size: 426.79135pt x 355.65892pt.
 
-Overfull \hbox (0.6038pt too wide) in paragraph at lines 500--513
+Overfull \hbox (0.6038pt too wide) in paragraph at lines 503--516
  [][] 
  []
 
-[23 <./figures/02-literature/usa_grid.png (PNG copy)>] [24] [25] [26]
-<figures/02-literature/gggrids.png, id=731, 1156.32pt x 578.16pt>
+[22 <./figures/02-literature/usa_grid.png (PNG copy)>] [23] [24] [25]
+<figures/02-literature/gggrids.png, id=690, 1156.32pt x 578.16pt>
 File: figures/02-literature/gggrids.png Graphic file (type png)
 <use figures/02-literature/gggrids.png>
 Package pdftex.def Info: figures/02-literature/gggrids.png  used on input line 
-561.
+564.
 (pdftex.def)             Requested size: 426.79135pt x 213.39536pt.
-[27]
-<figures/02-literature/auscartograms.png, id=745, 867.24pt x 650.43pt>
+[26]
+<figures/02-literature/auscartograms.png, id=704, 867.24pt x 650.43pt>
 File: figures/02-literature/auscartograms.png Graphic file (type png)
 <use figures/02-literature/auscartograms.png>
 Package pdftex.def Info: figures/02-literature/auscartograms.png  used on input
- line 580.
+ line 583.
 (pdftex.def)             Requested size: 426.79135pt x 320.09302pt.
-[28 <./figures/02-literature/gggrids.png (PNG copy)>] [29 <./figures/02-literat
-ure/auscartograms.png (PNG copy)>]
-Overfull \hbox (32.43918pt too wide) in paragraph at lines 603--615
- [][] 
- []
-
-[30] [31]
-<figures/02-literature/interacting.png, id=806, 867.24pt x 650.43pt>
+[27 <./figures/02-literature/gggrids.png (PNG copy)>] [28 <./figures/02-literat
+ure/auscartograms.png (PNG copy)>] [29] [30]
+<figures/02-literature/interacting.png, id=765, 867.24pt x 650.43pt>
 File: figures/02-literature/interacting.png Graphic file (type png)
 <use figures/02-literature/interacting.png>
 Package pdftex.def Info: figures/02-literature/interacting.png  used on input l
-ine 635.
+ine 638.
 (pdftex.def)             Requested size: 426.79135pt x 320.09302pt.
-<figures/02-literature/animating.png, id=807, 867.24pt x 505.89pt>
+<figures/02-literature/animating.png, id=766, 867.24pt x 505.89pt>
 File: figures/02-literature/animating.png Graphic file (type png)
 <use figures/02-literature/animating.png>
 Package pdftex.def Info: figures/02-literature/animating.png  used on input lin
-e 646.
+e 649.
 (pdftex.def)             Requested size: 426.79135pt x 248.96123pt.
-[32 <./figures/02-literature/interacting.png (PNG copy)>] [33 <./figures/02-lit
-erature/animating.png (PNG copy)>] [34]
-Chapter 3.
-<statement-of-contribution_algorithm.pdf, id=830, 598.27513pt x 845.19763pt>
-File: statement-of-contribution_algorithm.pdf Graphic file (type pdf)
-<use statement-of-contribution_algorithm.pdf>
-Package pdftex.def Info: statement-of-contribution_algorithm.pdf  used on input
- line 674.
-(pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
-File: statement-of-contribution_algorithm.pdf Graphic file (type pdf)
-<use statement-of-contribution_algorithm.pdf>
-Package pdftex.def Info: statement-of-contribution_algorithm.pdf  used on input
- line 674.
-(pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
-<statement-of-contribution_algorithm.pdf, id=833, page=1, 598.27513pt x 845.197
-63pt>
-File: statement-of-contribution_algorithm.pdf Graphic file (type pdf)
-<use statement-of-contribution_algorithm.pdf, page 1>
-Package pdftex.def Info: statement-of-contribution_algorithm.pdf , page1 used o
-n input line 674.
-(pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
-File: statement-of-contribution_algorithm.pdf Graphic file (type pdf)
-<use statement-of-contribution_algorithm.pdf, page 1>
-Package pdftex.def Info: statement-of-contribution_algorithm.pdf , page1 used o
-n input line 674.
-(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
-[35
+[31 <./figures/02-literature/interacting.png (PNG copy)>] [32 <./figures/02-lit
+erature/animating.png (PNG copy)>] [33] [34
 
 ]
-File: statement-of-contribution_algorithm.pdf Graphic file (type pdf)
-<use statement-of-contribution_algorithm.pdf, page 1>
-Package pdftex.def Info: statement-of-contribution_algorithm.pdf , page1 used o
-n input line 674.
-(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
-File: statement-of-contribution_algorithm.pdf Graphic file (type pdf)
-<use statement-of-contribution_algorithm.pdf, page 1>
-Package pdftex.def Info: statement-of-contribution_algorithm.pdf , page1 used o
-n input line 674.
-(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
-File: statement-of-contribution_algorithm.pdf Graphic file (type pdf)
-<use statement-of-contribution_algorithm.pdf, page 1>
-Package pdftex.def Info: statement-of-contribution_algorithm.pdf , page1 used o
-n input line 674.
-(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
-[36 <./statement-of-contribution_algorithm.pdf>]
+Chapter 3.
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 678.
+(hyperref)                be the same. Added a new anchor on input line 679.
 
-[37] [38] [39]
-<figures/03-algorithm/1centroids.png, id=913, 722.7pt x 361.35pt>
+[35] [36] [37] [38]
+<figures/03-algorithm/1centroids.png, id=832, 722.7pt x 361.35pt>
 File: figures/03-algorithm/1centroids.png Graphic file (type png)
 <use figures/03-algorithm/1centroids.png>
 Package pdftex.def Info: figures/03-algorithm/1centroids.png  used on input lin
-e 774.
-(pdftex.def)             Requested size: 455.24408pt x 227.62413pt.
-
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 774--775
- [][] 
- []
-
-[40 <./figures/03-algorithm/1centroids.png>]
-<figures/03-algorithm/2grid.png, id=925, 722.7pt x 361.35pt>
+e 775.
+(pdftex.def)             Requested size: 398.33858pt x 199.16766pt.
+[39 <./figures/03-algorithm/1centroids.png>]
+<figures/03-algorithm/2grid.png, id=845, 722.7pt x 361.35pt>
 File: figures/03-algorithm/2grid.png Graphic file (type png)
 <use figures/03-algorithm/2grid.png>
-Package pdftex.def Info: figures/03-algorithm/2grid.png  used on input line 796
+Package pdftex.def Info: figures/03-algorithm/2grid.png  used on input line 797
 .
-(pdftex.def)             Requested size: 455.24408pt x 227.62413pt.
-
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 796--797
- [][] 
- []
-
-[41 <./figures/03-algorithm/2grid.png>]
-<figures/03-algorithm/3grid.png, id=937, 391.2216pt x 346.4142pt>
+(pdftex.def)             Requested size: 398.33858pt x 199.16766pt.
+[40 <./figures/03-algorithm/2grid.png>]
+<figures/03-algorithm/3grid.png, id=857, 391.2216pt x 346.4142pt>
 File: figures/03-algorithm/3grid.png Graphic file (type png)
 <use figures/03-algorithm/3grid.png>
-Package pdftex.def Info: figures/03-algorithm/3grid.png  used on input line 823
+Package pdftex.def Info: figures/03-algorithm/3grid.png  used on input line 824
 .
-(pdftex.def)             Requested size: 455.24408pt x 403.10406pt.
-
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 823--824
- [][] 
- []
-
-[42] [43 <./figures/03-algorithm/3grid.png (PNG copy)>]
-<figures/03-algorithm/4grid.png, id=953, 722.7pt x 361.35pt>
+(pdftex.def)             Requested size: 227.62204pt x 201.54938pt.
+[41 <./figures/03-algorithm/3grid.png (PNG copy)>]
+<figures/03-algorithm/4grid.png, id=867, 722.7pt x 361.35pt>
 File: figures/03-algorithm/4grid.png Graphic file (type png)
 <use figures/03-algorithm/4grid.png>
-Package pdftex.def Info: figures/03-algorithm/4grid.png  used on input line 860
+Package pdftex.def Info: figures/03-algorithm/4grid.png  used on input line 861
 .
-(pdftex.def)             Requested size: 455.24408pt x 227.62413pt.
-
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 860--861
- [][] 
- []
-
-[44]
-<figures/03-algorithm/5allocate.png, id=964, 722.7pt x 361.35pt>
+(pdftex.def)             Requested size: 398.33858pt x 199.16766pt.
+[42]
+<figures/03-algorithm/5allocate.png, id=878, 722.7pt x 361.35pt>
 File: figures/03-algorithm/5allocate.png Graphic file (type png)
 <use figures/03-algorithm/5allocate.png>
 Package pdftex.def Info: figures/03-algorithm/5allocate.png  used on input line
- 868.
-(pdftex.def)             Requested size: 455.24408pt x 227.62413pt.
-
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 868--869
- [][] 
- []
-
-[45 <./figures/03-algorithm/4grid.png> <./figures/03-algorithm/5allocate.png>]
-<figures/03-algorithm/6allocate.png, id=973, 722.7pt x 361.35pt>
+ 869.
+(pdftex.def)             Requested size: 398.33858pt x 199.16766pt.
+[43 <./figures/03-algorithm/4grid.png> <./figures/03-algorithm/5allocate.png>]
+<figures/03-algorithm/6allocate.png, id=887, 722.7pt x 361.35pt>
 File: figures/03-algorithm/6allocate.png Graphic file (type png)
 <use figures/03-algorithm/6allocate.png>
 Package pdftex.def Info: figures/03-algorithm/6allocate.png  used on input line
- 877.
-(pdftex.def)             Requested size: 455.24408pt x 227.62413pt.
-
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 877--878
- [][] 
- []
-
-<figures/03-algorithm/7SIR.png, id=975, 722.7pt x 361.35pt>
+ 878.
+(pdftex.def)             Requested size: 398.33858pt x 199.16766pt.
+<figures/03-algorithm/7SIR.png, id=889, 722.7pt x 361.35pt>
 File: figures/03-algorithm/7SIR.png Graphic file (type png)
 <use figures/03-algorithm/7SIR.png>
-Package pdftex.def Info: figures/03-algorithm/7SIR.png  used on input line 887.
+Package pdftex.def Info: figures/03-algorithm/7SIR.png  used on input line 888.
 
-(pdftex.def)             Requested size: 455.24408pt x 227.62413pt.
-
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 887--888
- [][] 
- []
-
-[46 <./figures/03-algorithm/6allocate.png>] [47 <./figures/03-algorithm/7SIR.pn
+(pdftex.def)             Requested size: 398.33858pt x 199.16766pt.
+[44 <./figures/03-algorithm/6allocate.png>] [45 <./figures/03-algorithm/7SIR.pn
 g>]
 LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10.95> not available
-(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 920.
+(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 921.
 LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 9.85492pt on input line 920.
-LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
 (Font)              scaled to size 9.85492pt on input line 921.
-[48]
-<figures/03-algorithm/aus_melanoma_p.pdf, id=1005, 715.95483pt x 596.46838pt>
+LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
+(Font)              scaled to size 9.85492pt on input line 922.
+
+Underfull \vbox (badness 5460) detected at line 956
+ []
+
+[46]
+<figures/03-algorithm/aus_melanoma_p.pdf, id=918, 715.95483pt x 596.46838pt>
 File: figures/03-algorithm/aus_melanoma_p.pdf Graphic file (type pdf)
 <use figures/03-algorithm/aus_melanoma_p.pdf>
 Package pdftex.def Info: figures/03-algorithm/aus_melanoma_p.pdf  used on input
- line 973.
-(pdftex.def)             Requested size: 455.24408pt x 379.272pt.
-
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 973--974
- [][] 
- []
-
-[49]
-<figures/03-algorithm/aus_melanoma_p_hex.pdf, id=1015, 715.95483pt x 596.46838p
-t>
+ line 974.
+(pdftex.def)             Requested size: 398.33858pt x 331.86299pt.
+[47]
+<figures/03-algorithm/aus_melanoma_p_hex.pdf, id=928, 715.95483pt x 596.46838pt
+>
 File: figures/03-algorithm/aus_melanoma_p_hex.pdf Graphic file (type pdf)
 <use figures/03-algorithm/aus_melanoma_p_hex.pdf>
 Package pdftex.def Info: figures/03-algorithm/aus_melanoma_p_hex.pdf  used on i
-nput line 991.
-(pdftex.def)             Requested size: 455.24408pt x 379.272pt.
-
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 991--992
- [][] 
- []
-
-[50 <./figures/03-algorithm/aus_melanoma_p.pdf>]
+nput line 992.
+(pdftex.def)             Requested size: 398.33858pt x 331.86299pt.
+[48 <./figures/03-algorithm/aus_melanoma_p.pdf>]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 1000.
-[51 <./figures/03-algorithm/aus_melanoma_p_hex.pdf>] [52] [53] [54
-
-]
+(Font)              scaled to size 8.09995pt on input line 1001.
+[49 <./figures/03-algorithm/aus_melanoma_p_hex.pdf>] [50]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1020--1020
+Underfull \hbox (badness 10000) in paragraph at lines 1021--1021
 |\T1/fvs/b/n/24.88 Comparing the Ef-fec-tive-ness
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 1020--1020
+Underfull \hbox (badness 1490) in paragraph at lines 1021--1021
 \T1/fvs/b/n/24.88 of the Choro-pleth Map with a
  []
 
-<statement-of-contribution_experiment.pdf, id=1071, 598.27513pt x 845.19763pt>
-File: statement-of-contribution_experiment.pdf Graphic file (type pdf)
-<use statement-of-contribution_experiment.pdf>
-Package pdftex.def Info: statement-of-contribution_experiment.pdf  used on inpu
-t line 1030.
-(pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
-File: statement-of-contribution_experiment.pdf Graphic file (type pdf)
-<use statement-of-contribution_experiment.pdf>
-Package pdftex.def Info: statement-of-contribution_experiment.pdf  used on inpu
-t line 1030.
-(pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
-<statement-of-contribution_experiment.pdf, id=1074, page=1, 598.27513pt x 845.1
-9763pt>
-File: statement-of-contribution_experiment.pdf Graphic file (type pdf)
-<use statement-of-contribution_experiment.pdf, page 1>
-Package pdftex.def Info: statement-of-contribution_experiment.pdf , page1 used 
-on input line 1030.
-(pdftex.def)             Requested size: 598.27367pt x 845.19557pt.
-File: statement-of-contribution_experiment.pdf Graphic file (type pdf)
-<use statement-of-contribution_experiment.pdf, page 1>
-Package pdftex.def Info: statement-of-contribution_experiment.pdf , page1 used 
-on input line 1030.
-(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
-[55]
-File: statement-of-contribution_experiment.pdf Graphic file (type pdf)
-<use statement-of-contribution_experiment.pdf, page 1>
-Package pdftex.def Info: statement-of-contribution_experiment.pdf , page1 used 
-on input line 1030.
-(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
-File: statement-of-contribution_experiment.pdf Graphic file (type pdf)
-<use statement-of-contribution_experiment.pdf, page 1>
-Package pdftex.def Info: statement-of-contribution_experiment.pdf , page1 used 
-on input line 1030.
-(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
-File: statement-of-contribution_experiment.pdf Graphic file (type pdf)
-<use statement-of-contribution_experiment.pdf, page 1>
-Package pdftex.def Info: statement-of-contribution_experiment.pdf , page1 used 
-on input line 1030.
-(pdftex.def)             Requested size: 478.62076pt x 676.15903pt.
-[56 <./statement-of-contribution_experiment.pdf>]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1034.
+(hyperref)                be the same. Added a new anchor on input line 1033.
 
-[57]
-<figures/04-experiment/aus_liver_m.png, id=1132, 722.7pt x 722.7pt>
+[51
+
+] [52]
+<figures/04-experiment/aus_liver_m.png, id=992, 722.7pt x 722.7pt>
 File: figures/04-experiment/aus_liver_m.png Graphic file (type png)
 <use figures/04-experiment/aus_liver_m.png>
 Package pdftex.def Info: figures/04-experiment/aus_liver_m.png  used on input l
-ine 1061.
+ine 1060.
 (pdftex.def)             Requested size: 455.24408pt x 455.24826pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 1061--1062
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 1060--1061
  [][] 
  []
 
-[58]
-<figures/04-experiment/aus_liver_m_hex.png, id=1142, 722.7pt x 722.7pt>
+[53]
+<figures/04-experiment/aus_liver_m_hex.png, id=1002, 722.7pt x 722.7pt>
 File: figures/04-experiment/aus_liver_m_hex.png Graphic file (type png)
 <use figures/04-experiment/aus_liver_m_hex.png>
 Package pdftex.def Info: figures/04-experiment/aus_liver_m_hex.png  used on inp
-ut line 1067.
+ut line 1066.
 (pdftex.def)             Requested size: 455.24408pt x 455.24826pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 1067--1068
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 1066--1067
  [][] 
  []
 
-[59 <./figures/04-experiment/aus_liver_m.png>] [60 <./figures/04-experiment/aus
-_liver_m_hex.png>] [61] [62]
-<figures/04-experiment/aus_cities_3_geo.png, id=1185, 1227.8673pt x 1004.3121pt
+[54 <./figures/04-experiment/aus_liver_m.png>] [55 <./figures/04-experiment/aus
+_liver_m_hex.png>] [56] [57]
+<figures/04-experiment/aus_cities_3_geo.png, id=1045, 1227.8673pt x 1004.3121pt
 >
 File: figures/04-experiment/aus_cities_3_geo.png Graphic file (type png)
 <use figures/04-experiment/aus_cities_3_geo.png>
 Package pdftex.def Info: figures/04-experiment/aus_cities_3_geo.png  used on in
-put line 1094.
+put line 1093.
 (pdftex.def)             Requested size: 455.24408pt x 372.3559pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 1094--1095
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 1093--1094
  [][] 
  []
 
-[63 <./figures/04-experiment/aus_cities_3_geo.png>] [64]
-<figures/04-experiment/experiment_design.pdf, id=1204, 614.295pt x 794.97pt>
+[58 <./figures/04-experiment/aus_cities_3_geo.png>] [59]
+<figures/04-experiment/experiment_design.pdf, id=1064, 614.295pt x 794.97pt>
 File: figures/04-experiment/experiment_design.pdf Graphic file (type pdf)
 <use figures/04-experiment/experiment_design.pdf>
 Package pdftex.def Info: figures/04-experiment/experiment_design.pdf  used on i
-nput line 1135.
+nput line 1134.
 (pdftex.def)             Requested size: 455.24408pt x 589.14197pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 1135--1136
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 1134--1135
  [][] 
  []
 
-[65] [66 <./figures/04-experiment/experiment_design.pdf
+[60] [61 <./figures/04-experiment/experiment_design.pdf
 
 pdfTeX warning: pdflatex.exe (file ./figures/04-experiment/experiment_design.pd
 f): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', typ
 e <array>); ignored.
->] [67] [68] [69] [70] [71] [72]
-<thesis_files/figure-latex/detect-compare-1.pdf, id=1307, 454.69875pt x 361.35p
+>] [62] [63] [64] [65] [66] [67]
+<thesis_files/figure-latex/detect-compare-1.pdf, id=1167, 454.69875pt x 361.35p
 t>
 File: thesis_files/figure-latex/detect-compare-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/detect-compare-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/detect-compare-1.pdf  used o
-n input line 1293.
+n input line 1294.
 (pdftex.def)             Requested size: 426.79135pt x 339.17833pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[73] [74 <./thesis_files/figure-latex/detect-compare-1.pdf>]
-<thesis_files/figure-latex/beeswarm-1.pdf, id=1333, 454.69875pt x 578.16pt>
+[68] [69 <./thesis_files/figure-latex/detect-compare-1.pdf>]
+<thesis_files/figure-latex/beeswarm-1.pdf, id=1193, 454.69875pt x 578.16pt>
 File: thesis_files/figure-latex/beeswarm-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/beeswarm-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/beeswarm-1.pdf  used on inpu
-t line 1355.
+t line 1356.
 (pdftex.def)             Requested size: 426.79135pt x 542.68532pt.
-[75] [76 <./thesis_files/figure-latex/beeswarm-1.pdf>]
-<thesis_files/figure-latex/certainty-1.pdf, id=1359, 454.69875pt x 361.35pt>
+[70] [71 <./thesis_files/figure-latex/beeswarm-1.pdf>]
+<thesis_files/figure-latex/certainty-1.pdf, id=1219, 454.69875pt x 361.35pt>
 File: thesis_files/figure-latex/certainty-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/certainty-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/certainty-1.pdf  used on inp
-ut line 1374.
+ut line 1375.
 (pdftex.def)             Requested size: 426.79135pt x 339.17833pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[77] [78 <./thesis_files/figure-latex/certainty-1.pdf>] [79] [80] [81] [82
-
-]
+[72] [73 <./thesis_files/figure-latex/certainty-1.pdf>] [74] [75] [76]
 Chapter 5.
-[83] [84] [85] [86]
-Underfull \hbox (badness 3199) in paragraph at lines 1498--1498
+[77
+
+] [78] [79] [80]
+Underfull \hbox (badness 3199) in paragraph at lines 1499--1499
 [][]\T1/ppl/m/n/10.95 (+20) Bowel Can-cer Aus-tralia (2016). \T1/ppl/m/it/10.95
  (+20) Bowel Can-cer Aus-tralia At-las\T1/ppl/m/n/10.95 (+20) . [][]$\T1/fvm/m/
 n/10.95 http : / / www .
  []
 
-[87
+[81
 
-] [88] [89] [90] [91] [92] [93] [94]
+] [82] [83] [84] [85] [86] [87] [88]
 Appendix A.
-<thesis_files/figure-latex/pdetection-group-1.pdf, id=1554, 454.69875pt x 274.0
+<thesis_files/figure-latex/pdetection-group-1.pdf, id=1411, 454.69875pt x 274.0
 2374pt>
 File: thesis_files/figure-latex/pdetection-group-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/pdetection-group-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/pdetection-group-1.pdf  used
- on input line 1513.
+ on input line 1514.
 (pdftex.def)             Requested size: 426.79135pt x 257.21022pt.
-[95
+[89
 
  <./thesis_files/figure-latex/pdetection-group-1.pdf>]
-<thesis_files/figure-latex/pdetect-trend-1.pdf, id=1568, 454.69875pt x 274.0237
+<thesis_files/figure-latex/pdetect-trend-1.pdf, id=1425, 454.69875pt x 274.0237
 4pt>
 File: thesis_files/figure-latex/pdetect-trend-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/pdetect-trend-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/pdetect-trend-1.pdf  used on
- input line 1525.
+ input line 1526.
 (pdftex.def)             Requested size: 426.79135pt x 257.21022pt.
-<thesis_files/figure-latex/pdetection-type-1.pdf, id=1570, 454.69875pt x 274.02
+<thesis_files/figure-latex/pdetection-type-1.pdf, id=1427, 454.69875pt x 274.02
 374pt>
 File: thesis_files/figure-latex/pdetection-type-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/pdetection-type-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/pdetection-type-1.pdf  used 
-on input line 1538.
+on input line 1539.
 (pdftex.def)             Requested size: 426.79135pt x 257.21022pt.
-[96 <./thesis_files/figure-latex/pdetect-trend-1.pdf>]
-<thesis_files/figure-latex/choices-1.pdf, id=1591, 433.62pt x 578.16pt>
+[90 <./thesis_files/figure-latex/pdetect-trend-1.pdf>]
+<thesis_files/figure-latex/choices-1.pdf, id=1448, 433.62pt x 578.16pt>
 File: thesis_files/figure-latex/choices-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/choices-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/choices-1.pdf  used on input
- line 1559.
+ line 1560.
 (pdftex.def)             Requested size: 426.79135pt x 569.08073pt.
 
-Overfull \hbox (54.42041pt too wide) in paragraph at lines 1570--1591
+Overfull \hbox (54.42041pt too wide) in paragraph at lines 1571--1592
  [][] 
  []
 
 
-Overfull \hbox (54.42041pt too wide) in paragraph at lines 1597--1618
+Overfull \hbox (54.42041pt too wide) in paragraph at lines 1598--1619
  [][] 
  []
 
 
-Overfull \hbox (54.42041pt too wide) in paragraph at lines 1624--1645
+Overfull \hbox (54.42041pt too wide) in paragraph at lines 1625--1646
  [][] 
  []
 
-[97 <./thesis_files/figure-latex/pdetection-type-1.pdf>] [98 <./thesis_files/fi
-gure-latex/choices-1.pdf>] [99]
-<lineups/cities-geo12-1.pdf, id=1618, 454.69875pt x 274.02374pt>
+[91 <./thesis_files/figure-latex/pdetection-type-1.pdf>] [92 <./thesis_files/fi
+gure-latex/choices-1.pdf>] [93]
+<lineups/cities-geo12-1.pdf, id=1475, 454.69875pt x 274.02374pt>
 File: lineups/cities-geo12-1.pdf Graphic file (type pdf)
 <use lineups/cities-geo12-1.pdf>
-Package pdftex.def Info: lineups/cities-geo12-1.pdf  used on input line 1660.
+Package pdftex.def Info: lineups/cities-geo12-1.pdf  used on input line 1661.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-<lineups/cities-hex12-1.pdf, id=1619, 454.69875pt x 274.02374pt>
+<lineups/cities-hex12-1.pdf, id=1476, 454.69875pt x 274.02374pt>
 File: lineups/cities-hex12-1.pdf Graphic file (type pdf)
 <use lineups/cities-hex12-1.pdf>
-Package pdftex.def Info: lineups/cities-hex12-1.pdf  used on input line 1666.
+Package pdftex.def Info: lineups/cities-hex12-1.pdf  used on input line 1667.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-[100 <./lineups/cities-geo12-1.pdf>]
-<lineups/cities-geo3-1.pdf, id=1633, 454.69875pt x 274.02374pt>
+[94 <./lineups/cities-geo12-1.pdf>]
+<lineups/cities-geo3-1.pdf, id=1490, 454.69875pt x 274.02374pt>
 File: lineups/cities-geo3-1.pdf Graphic file (type pdf)
 <use lineups/cities-geo3-1.pdf>
-Package pdftex.def Info: lineups/cities-geo3-1.pdf  used on input line 1675.
+Package pdftex.def Info: lineups/cities-geo3-1.pdf  used on input line 1676.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-<lineups/cities-hex3-1.pdf, id=1634, 454.69875pt x 274.02374pt>
+<lineups/cities-hex3-1.pdf, id=1491, 454.69875pt x 274.02374pt>
 File: lineups/cities-hex3-1.pdf Graphic file (type pdf)
 <use lineups/cities-hex3-1.pdf>
-Package pdftex.def Info: lineups/cities-hex3-1.pdf  used on input line 1681.
+Package pdftex.def Info: lineups/cities-hex3-1.pdf  used on input line 1682.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-[101 <./lineups/cities-hex12-1.pdf> <./lineups/cities-geo3-1.pdf>]
-<lineups/cities-geo4-1.pdf, id=1651, 454.69875pt x 274.02374pt>
+[95 <./lineups/cities-hex12-1.pdf> <./lineups/cities-geo3-1.pdf>]
+<lineups/cities-geo4-1.pdf, id=1508, 454.69875pt x 274.02374pt>
 File: lineups/cities-geo4-1.pdf Graphic file (type pdf)
 <use lineups/cities-geo4-1.pdf>
-Package pdftex.def Info: lineups/cities-geo4-1.pdf  used on input line 1690.
+Package pdftex.def Info: lineups/cities-geo4-1.pdf  used on input line 1691.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-<lineups/cities-hex4-1.pdf, id=1652, 454.69875pt x 274.02374pt>
+<lineups/cities-hex4-1.pdf, id=1509, 454.69875pt x 274.02374pt>
 File: lineups/cities-hex4-1.pdf Graphic file (type pdf)
 <use lineups/cities-hex4-1.pdf>
-Package pdftex.def Info: lineups/cities-hex4-1.pdf  used on input line 1696.
+Package pdftex.def Info: lineups/cities-hex4-1.pdf  used on input line 1697.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-[102 <./lineups/cities-hex3-1.pdf> <./lineups/cities-geo4-1.pdf>]
-<lineups/cities-geo9-1.pdf, id=1670, 454.69875pt x 274.02374pt>
+[96 <./lineups/cities-hex3-1.pdf> <./lineups/cities-geo4-1.pdf>]
+<lineups/cities-geo9-1.pdf, id=1527, 454.69875pt x 274.02374pt>
 File: lineups/cities-geo9-1.pdf Graphic file (type pdf)
 <use lineups/cities-geo9-1.pdf>
-Package pdftex.def Info: lineups/cities-geo9-1.pdf  used on input line 1705.
+Package pdftex.def Info: lineups/cities-geo9-1.pdf  used on input line 1706.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-<lineups/cities-hex9-1.pdf, id=1671, 454.69875pt x 274.02374pt>
+<lineups/cities-hex9-1.pdf, id=1528, 454.69875pt x 274.02374pt>
 File: lineups/cities-hex9-1.pdf Graphic file (type pdf)
 <use lineups/cities-hex9-1.pdf>
-Package pdftex.def Info: lineups/cities-hex9-1.pdf  used on input line 1711.
+Package pdftex.def Info: lineups/cities-hex9-1.pdf  used on input line 1712.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-[103 <./lineups/cities-hex4-1.pdf> <./lineups/cities-geo9-1.pdf>] [104 <./lineu
-ps/cities-hex9-1.pdf>]
-<lineups/three-geo12-1.pdf, id=1697, 454.69875pt x 274.02374pt>
+[97 <./lineups/cities-hex4-1.pdf> <./lineups/cities-geo9-1.pdf>] [98 <./lineups
+/cities-hex9-1.pdf>]
+<lineups/three-geo12-1.pdf, id=1554, 454.69875pt x 274.02374pt>
 File: lineups/three-geo12-1.pdf Graphic file (type pdf)
 <use lineups/three-geo12-1.pdf>
-Package pdftex.def Info: lineups/three-geo12-1.pdf  used on input line 1725.
+Package pdftex.def Info: lineups/three-geo12-1.pdf  used on input line 1726.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-<lineups/three-hex12-1.pdf, id=1698, 454.69875pt x 274.02374pt>
+<lineups/three-hex12-1.pdf, id=1555, 454.69875pt x 274.02374pt>
 File: lineups/three-hex12-1.pdf Graphic file (type pdf)
 <use lineups/three-hex12-1.pdf>
-Package pdftex.def Info: lineups/three-hex12-1.pdf  used on input line 1731.
+Package pdftex.def Info: lineups/three-hex12-1.pdf  used on input line 1732.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-<lineups/three-geo5-1.pdf, id=1699, 454.69875pt x 274.02374pt>
+<lineups/three-geo5-1.pdf, id=1556, 454.69875pt x 274.02374pt>
 File: lineups/three-geo5-1.pdf Graphic file (type pdf)
 <use lineups/three-geo5-1.pdf>
-Package pdftex.def Info: lineups/three-geo5-1.pdf  used on input line 1740.
+Package pdftex.def Info: lineups/three-geo5-1.pdf  used on input line 1741.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-[105 <./lineups/three-geo12-1.pdf> <./lineups/three-hex12-1.pdf>]
-<lineups/three-hex5-1.pdf, id=1718, 454.69875pt x 274.02374pt>
+[99 <./lineups/three-geo12-1.pdf> <./lineups/three-hex12-1.pdf>]
+<lineups/three-hex5-1.pdf, id=1575, 454.69875pt x 274.02374pt>
 File: lineups/three-hex5-1.pdf Graphic file (type pdf)
 <use lineups/three-hex5-1.pdf>
-Package pdftex.def Info: lineups/three-hex5-1.pdf  used on input line 1746.
+Package pdftex.def Info: lineups/three-hex5-1.pdf  used on input line 1747.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-<lineups/three-geo8-1.pdf, id=1719, 454.69875pt x 274.02374pt>
+<lineups/three-geo8-1.pdf, id=1576, 454.69875pt x 274.02374pt>
 File: lineups/three-geo8-1.pdf Graphic file (type pdf)
 <use lineups/three-geo8-1.pdf>
-Package pdftex.def Info: lineups/three-geo8-1.pdf  used on input line 1755.
+Package pdftex.def Info: lineups/three-geo8-1.pdf  used on input line 1756.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-[106 <./lineups/three-geo5-1.pdf> <./lineups/three-hex5-1.pdf>]
-<lineups/three-hex8-1.pdf, id=1736, 454.69875pt x 274.02374pt>
+[100 <./lineups/three-geo5-1.pdf> <./lineups/three-hex5-1.pdf>]
+<lineups/three-hex8-1.pdf, id=1593, 454.69875pt x 274.02374pt>
 File: lineups/three-hex8-1.pdf Graphic file (type pdf)
 <use lineups/three-hex8-1.pdf>
-Package pdftex.def Info: lineups/three-hex8-1.pdf  used on input line 1761.
+Package pdftex.def Info: lineups/three-hex8-1.pdf  used on input line 1762.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-<lineups/three-geo9-1.pdf, id=1737, 454.69875pt x 274.02374pt>
+<lineups/three-geo9-1.pdf, id=1594, 454.69875pt x 274.02374pt>
 File: lineups/three-geo9-1.pdf Graphic file (type pdf)
 <use lineups/three-geo9-1.pdf>
-Package pdftex.def Info: lineups/three-geo9-1.pdf  used on input line 1770.
+Package pdftex.def Info: lineups/three-geo9-1.pdf  used on input line 1771.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-[107 <./lineups/three-geo8-1.pdf> <./lineups/three-hex8-1.pdf>]
-<lineups/three-hex9-1.pdf, id=1754, 454.69875pt x 274.02374pt>
+[101 <./lineups/three-geo8-1.pdf> <./lineups/three-hex8-1.pdf>]
+<lineups/three-hex9-1.pdf, id=1611, 454.69875pt x 274.02374pt>
 File: lineups/three-hex9-1.pdf Graphic file (type pdf)
 <use lineups/three-hex9-1.pdf>
-Package pdftex.def Info: lineups/three-hex9-1.pdf  used on input line 1776.
+Package pdftex.def Info: lineups/three-hex9-1.pdf  used on input line 1777.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-<lineups/nwse-geo2-1.pdf, id=1755, 454.69875pt x 274.02374pt>
+<lineups/nwse-geo2-1.pdf, id=1612, 454.69875pt x 274.02374pt>
 File: lineups/nwse-geo2-1.pdf Graphic file (type pdf)
 <use lineups/nwse-geo2-1.pdf>
-Package pdftex.def Info: lineups/nwse-geo2-1.pdf  used on input line 1788.
+Package pdftex.def Info: lineups/nwse-geo2-1.pdf  used on input line 1789.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-[108 <./lineups/three-geo9-1.pdf> <./lineups/three-hex9-1.pdf>]
-<lineups/nwse-hex2-1.pdf, id=1773, 454.69875pt x 274.02374pt>
+[102 <./lineups/three-geo9-1.pdf> <./lineups/three-hex9-1.pdf>]
+<lineups/nwse-hex2-1.pdf, id=1630, 454.69875pt x 274.02374pt>
 File: lineups/nwse-hex2-1.pdf Graphic file (type pdf)
 <use lineups/nwse-hex2-1.pdf>
-Package pdftex.def Info: lineups/nwse-hex2-1.pdf  used on input line 1794.
+Package pdftex.def Info: lineups/nwse-hex2-1.pdf  used on input line 1795.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-<lineups/nwse-geo3-1.pdf, id=1774, 454.69875pt x 274.02374pt>
+<lineups/nwse-geo3-1.pdf, id=1631, 454.69875pt x 274.02374pt>
 File: lineups/nwse-geo3-1.pdf Graphic file (type pdf)
 <use lineups/nwse-geo3-1.pdf>
-Package pdftex.def Info: lineups/nwse-geo3-1.pdf  used on input line 1803.
+Package pdftex.def Info: lineups/nwse-geo3-1.pdf  used on input line 1804.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-[109 <./lineups/nwse-geo2-1.pdf> <./lineups/nwse-hex2-1.pdf>]
-<lineups/nwse-hex3-1.pdf, id=1793, 454.69875pt x 274.02374pt>
+[103 <./lineups/nwse-geo2-1.pdf> <./lineups/nwse-hex2-1.pdf>]
+<lineups/nwse-hex3-1.pdf, id=1650, 454.69875pt x 274.02374pt>
 File: lineups/nwse-hex3-1.pdf Graphic file (type pdf)
 <use lineups/nwse-hex3-1.pdf>
-Package pdftex.def Info: lineups/nwse-hex3-1.pdf  used on input line 1809.
+Package pdftex.def Info: lineups/nwse-hex3-1.pdf  used on input line 1810.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-<lineups/nwse-geo5-1.pdf, id=1794, 454.69875pt x 274.02374pt>
+<lineups/nwse-geo5-1.pdf, id=1651, 454.69875pt x 274.02374pt>
 File: lineups/nwse-geo5-1.pdf Graphic file (type pdf)
 <use lineups/nwse-geo5-1.pdf>
-Package pdftex.def Info: lineups/nwse-geo5-1.pdf  used on input line 1818.
+Package pdftex.def Info: lineups/nwse-geo5-1.pdf  used on input line 1819.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-[110 <./lineups/nwse-geo3-1.pdf> <./lineups/nwse-hex3-1.pdf>]
-<lineups/nwse-hex5-1.pdf, id=1811, 454.69875pt x 274.02374pt>
+[104 <./lineups/nwse-geo3-1.pdf> <./lineups/nwse-hex3-1.pdf>]
+<lineups/nwse-hex5-1.pdf, id=1668, 454.69875pt x 274.02374pt>
 File: lineups/nwse-hex5-1.pdf Graphic file (type pdf)
 <use lineups/nwse-hex5-1.pdf>
-Package pdftex.def Info: lineups/nwse-hex5-1.pdf  used on input line 1824.
+Package pdftex.def Info: lineups/nwse-hex5-1.pdf  used on input line 1825.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-<lineups/nwse-geo6-1.pdf, id=1812, 454.69875pt x 274.02374pt>
+<lineups/nwse-geo6-1.pdf, id=1669, 454.69875pt x 274.02374pt>
 File: lineups/nwse-geo6-1.pdf Graphic file (type pdf)
 <use lineups/nwse-geo6-1.pdf>
-Package pdftex.def Info: lineups/nwse-geo6-1.pdf  used on input line 1833.
+Package pdftex.def Info: lineups/nwse-geo6-1.pdf  used on input line 1834.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-[111 <./lineups/nwse-geo5-1.pdf> <./lineups/nwse-hex5-1.pdf>]
-<lineups/nwse-hex6-1.pdf, id=1829, 454.69875pt x 274.02374pt>
+[105 <./lineups/nwse-geo5-1.pdf> <./lineups/nwse-hex5-1.pdf>]
+<lineups/nwse-hex6-1.pdf, id=1686, 454.69875pt x 274.02374pt>
 File: lineups/nwse-hex6-1.pdf Graphic file (type pdf)
 <use lineups/nwse-hex6-1.pdf>
-Package pdftex.def Info: lineups/nwse-hex6-1.pdf  used on input line 1839.
+Package pdftex.def Info: lineups/nwse-hex6-1.pdf  used on input line 1840.
 (pdftex.def)             Requested size: 377.71208pt x 227.62204pt.
-<figures/fig8_instruct.png, id=1831, 747.79375pt x 642.4pt>
+<figures/fig8_instruct.png, id=1688, 747.79375pt x 642.4pt>
 File: figures/fig8_instruct.png Graphic file (type png)
 <use figures/fig8_instruct.png>
-Package pdftex.def Info: figures/fig8_instruct.png  used on input line 1852.
+Package pdftex.def Info: figures/fig8_instruct.png  used on input line 1853.
 (pdftex.def)             Requested size: 529.94456pt x 455.24408pt.
 
-Overfull \hbox (103.15321pt too wide) in paragraph at lines 1852--1853
+Overfull \hbox (103.15321pt too wide) in paragraph at lines 1853--1854
  [][] 
  []
 
-[112 <./lineups/nwse-geo6-1.pdf> <./lineups/nwse-hex6-1.pdf>]
-<figures/fig8_training1.png, id=1850, 751.30687pt x 715.67375pt>
+[106 <./lineups/nwse-geo6-1.pdf> <./lineups/nwse-hex6-1.pdf>]
+<figures/fig8_training1.png, id=1707, 751.30687pt x 715.67375pt>
 File: figures/fig8_training1.png Graphic file (type png)
 <use figures/fig8_training1.png>
-Package pdftex.def Info: figures/fig8_training1.png  used on input line 1863.
+Package pdftex.def Info: figures/fig8_training1.png  used on input line 1864.
 (pdftex.def)             Requested size: 455.24408pt x 433.65555pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 1863--1864
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 1864--1865
  [][] 
  []
 
-[113 <./figures/fig8_instruct.png>]
-<figures/fig8_training2.png, id=1859, 755.32187pt x 667.49374pt>
+[107 <./figures/fig8_instruct.png>]
+<figures/fig8_training2.png, id=1716, 755.32187pt x 667.49374pt>
 File: figures/fig8_training2.png Graphic file (type png)
 <use figures/fig8_training2.png>
-Package pdftex.def Info: figures/fig8_training2.png  used on input line 1869.
+Package pdftex.def Info: figures/fig8_training2.png  used on input line 1870.
 (pdftex.def)             Requested size: 455.24408pt x 402.31229pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 1869--1870
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 1870--1871
  [][] 
  []
 
-[114 <./figures/fig8_training1.png>] [115 <./figures/fig8_training2.png>]
-<lineups/survey-demogs-1.pdf, id=1879, 454.69875pt x 274.02374pt>
+[108 <./figures/fig8_training1.png>] [109 <./figures/fig8_training2.png>]
+<lineups/survey-demogs-1.pdf, id=1736, 454.69875pt x 274.02374pt>
 File: lineups/survey-demogs-1.pdf Graphic file (type pdf)
 <use lineups/survey-demogs-1.pdf>
-Package pdftex.def Info: lineups/survey-demogs-1.pdf  used on input line 1883.
+Package pdftex.def Info: lineups/survey-demogs-1.pdf  used on input line 1884.
 (pdftex.def)             Requested size: 455.24408pt x 274.35756pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 1883--1884
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 1884--1885
  [][] 
  []
 
-<lineups/survey-choro-1.pdf, id=1880, 454.69875pt x 274.02374pt>
+<lineups/survey-choro-1.pdf, id=1737, 454.69875pt x 274.02374pt>
 File: lineups/survey-choro-1.pdf Graphic file (type pdf)
 <use lineups/survey-choro-1.pdf>
-Package pdftex.def Info: lineups/survey-choro-1.pdf  used on input line 1889.
+Package pdftex.def Info: lineups/survey-choro-1.pdf  used on input line 1890.
 (pdftex.def)             Requested size: 455.24408pt x 274.35756pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 1889--1890
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 1890--1891
  [][] 
  []
 
-[116 <./lineups/survey-demogs-1.pdf>]
-<lineups/survey-hex-1.pdf, id=1892, 454.69875pt x 274.02374pt>
+[110 <./lineups/survey-demogs-1.pdf>]
+<lineups/survey-hex-1.pdf, id=1749, 454.69875pt x 274.02374pt>
 File: lineups/survey-hex-1.pdf Graphic file (type pdf)
 <use lineups/survey-hex-1.pdf>
-Package pdftex.def Info: lineups/survey-hex-1.pdf  used on input line 1895.
+Package pdftex.def Info: lineups/survey-hex-1.pdf  used on input line 1896.
 (pdftex.def)             Requested size: 455.24408pt x 274.35756pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 1895--1896
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 1896--1897
  [][] 
  []
 
@@ -2012,10 +1861,10 @@ Overfull \hbox (28.45273pt too wide) in paragraph at lines 1895--1896
 
 pdfTeX warning: pdflatex.exe (file ./Ethics_1.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<Ethics_1.pdf, id=1893, 597.55246pt x 845.19763pt>
+<Ethics_1.pdf, id=1750, 597.55246pt x 845.19763pt>
 File: Ethics_1.pdf Graphic file (type pdf)
 <use Ethics_1.pdf>
-Package pdftex.def Info: Ethics_1.pdf  used on input line 1902.
+Package pdftex.def Info: Ethics_1.pdf  used on input line 1903.
 (pdftex.def)             Requested size: 597.551pt x 845.19557pt.
 
 
@@ -2023,7 +1872,7 @@ pdfTeX warning: pdflatex.exe (file ./Ethics_1.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
 File: Ethics_1.pdf Graphic file (type pdf)
 <use Ethics_1.pdf>
-Package pdftex.def Info: Ethics_1.pdf  used on input line 1902.
+Package pdftex.def Info: Ethics_1.pdf  used on input line 1903.
 (pdftex.def)             Requested size: 597.551pt x 845.19557pt.
 
 
@@ -2033,88 +1882,88 @@ rsion <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./Ethics_1.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<Ethics_1.pdf, id=1896, page=1, 597.55246pt x 845.19763pt>
+<Ethics_1.pdf, id=1753, page=1, 597.55246pt x 845.19763pt>
 File: Ethics_1.pdf Graphic file (type pdf)
 <use Ethics_1.pdf, page 1>
-Package pdftex.def Info: Ethics_1.pdf , page1 used on input line 1902.
+Package pdftex.def Info: Ethics_1.pdf , page1 used on input line 1903.
 (pdftex.def)             Requested size: 597.551pt x 845.19557pt.
 File: Ethics_1.pdf Graphic file (type pdf)
 <use Ethics_1.pdf, page 1>
-Package pdftex.def Info: Ethics_1.pdf , page1 used on input line 1902.
+Package pdftex.def Info: Ethics_1.pdf , page1 used on input line 1903.
 (pdftex.def)             Requested size: 597.551pt x 845.19557pt.
-[117 <./lineups/survey-choro-1.pdf> <./lineups/survey-hex-1.pdf>] [118]
+[111 <./lineups/survey-choro-1.pdf> <./lineups/survey-hex-1.pdf>] [112]
 File: Ethics_1.pdf Graphic file (type pdf)
 <use Ethics_1.pdf, page 1>
-Package pdftex.def Info: Ethics_1.pdf , page1 used on input line 1902.
-(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
-File: Ethics_1.pdf Graphic file (type pdf)
-<use Ethics_1.pdf, page 1>
-Package pdftex.def Info: Ethics_1.pdf , page1 used on input line 1902.
+Package pdftex.def Info: Ethics_1.pdf , page1 used on input line 1903.
 (pdftex.def)             Requested size: 597.551pt x 845.19557pt.
 File: Ethics_1.pdf Graphic file (type pdf)
 <use Ethics_1.pdf, page 1>
-Package pdftex.def Info: Ethics_1.pdf , page1 used on input line 1902.
+Package pdftex.def Info: Ethics_1.pdf , page1 used on input line 1903.
 (pdftex.def)             Requested size: 597.551pt x 845.19557pt.
-[119 <./Ethics_1.pdf>]
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf, page 1>
+Package pdftex.def Info: Ethics_1.pdf , page1 used on input line 1903.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+[113 <./Ethics_1.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Ethics_1.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<Ethics_1.pdf, id=1945, page=2, 597.55246pt x 845.19763pt>
+<Ethics_1.pdf, id=1802, page=2, 597.55246pt x 845.19763pt>
 File: Ethics_1.pdf Graphic file (type pdf)
 <use Ethics_1.pdf, page 2>
-Package pdftex.def Info: Ethics_1.pdf , page2 used on input line 1902.
-(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
-File: Ethics_1.pdf Graphic file (type pdf)
-<use Ethics_1.pdf, page 2>
-Package pdftex.def Info: Ethics_1.pdf , page2 used on input line 1902.
+Package pdftex.def Info: Ethics_1.pdf , page2 used on input line 1903.
 (pdftex.def)             Requested size: 597.551pt x 845.19557pt.
 File: Ethics_1.pdf Graphic file (type pdf)
 <use Ethics_1.pdf, page 2>
-Package pdftex.def Info: Ethics_1.pdf , page2 used on input line 1902.
+Package pdftex.def Info: Ethics_1.pdf , page2 used on input line 1903.
 (pdftex.def)             Requested size: 597.551pt x 845.19557pt.
-[120 <./Ethics_1.pdf>]
+File: Ethics_1.pdf Graphic file (type pdf)
+<use Ethics_1.pdf, page 2>
+Package pdftex.def Info: Ethics_1.pdf , page2 used on input line 1903.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+[114 <./Ethics_1.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Ethics_1.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<Ethics_1.pdf, id=1953, page=3, 597.55246pt x 845.19763pt>
+<Ethics_1.pdf, id=1810, page=3, 597.55246pt x 845.19763pt>
 File: Ethics_1.pdf Graphic file (type pdf)
 <use Ethics_1.pdf, page 3>
-Package pdftex.def Info: Ethics_1.pdf , page3 used on input line 1902.
+Package pdftex.def Info: Ethics_1.pdf , page3 used on input line 1903.
 (pdftex.def)             Requested size: 597.551pt x 845.19557pt.
 File: Ethics_1.pdf Graphic file (type pdf)
 <use Ethics_1.pdf, page 3>
-Package pdftex.def Info: Ethics_1.pdf , page3 used on input line 1902.
+Package pdftex.def Info: Ethics_1.pdf , page3 used on input line 1903.
 (pdftex.def)             Requested size: 597.551pt x 845.19557pt.
 File: Ethics_1.pdf Graphic file (type pdf)
 <use Ethics_1.pdf, page 3>
-Package pdftex.def Info: Ethics_1.pdf , page3 used on input line 1902.
+Package pdftex.def Info: Ethics_1.pdf , page3 used on input line 1903.
 (pdftex.def)             Requested size: 597.551pt x 845.19557pt.
-[121 <./Ethics_1.pdf>]
+[115 <./Ethics_1.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Ethics_1.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<Ethics_1.pdf, id=1973, page=4, 597.55246pt x 845.19763pt>
+<Ethics_1.pdf, id=1830, page=4, 597.55246pt x 845.19763pt>
 File: Ethics_1.pdf Graphic file (type pdf)
 <use Ethics_1.pdf, page 4>
-Package pdftex.def Info: Ethics_1.pdf , page4 used on input line 1902.
+Package pdftex.def Info: Ethics_1.pdf , page4 used on input line 1903.
 (pdftex.def)             Requested size: 597.551pt x 845.19557pt.
 File: Ethics_1.pdf Graphic file (type pdf)
 <use Ethics_1.pdf, page 4>
-Package pdftex.def Info: Ethics_1.pdf , page4 used on input line 1902.
+Package pdftex.def Info: Ethics_1.pdf , page4 used on input line 1903.
 (pdftex.def)             Requested size: 597.551pt x 845.19557pt.
 File: Ethics_1.pdf Graphic file (type pdf)
 <use Ethics_1.pdf, page 4>
-Package pdftex.def Info: Ethics_1.pdf , page4 used on input line 1902.
+Package pdftex.def Info: Ethics_1.pdf , page4 used on input line 1903.
 (pdftex.def)             Requested size: 597.551pt x 845.19557pt.
-[122 <./Ethics_1.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1908.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1908.
+[116 <./Ethics_1.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1909.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1909.
 (thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1908.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1908.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1909.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1909.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 850836AA425014211810E95E78856973;3341.
+(rerunfilecheck)             Checksum: FF9DE384C80071FC76CE36DAB85E9F10;3350.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
@@ -2124,11 +1973,11 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 ### semi simple group (level 1) entered at line 105 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31894 strings out of 492484
- 574249 string characters out of 3130514
- 1091198 words of memory out of 3000000
- 34948 multiletter control sequences out of 15000+200000
- 632878 words of font info for 319 fonts, out of 3000000 for 9000
+ 31869 strings out of 492484
+ 572872 string characters out of 3130514
+ 1091419 words of memory out of 3000000
+ 34930 multiletter control sequences out of 15000+200000
+ 633033 words of font info for 321 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,19n,71p,1568b,18383s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Pr
@@ -2145,9 +1994,9 @@ pe1/bera/fvsb8a.pfb><C:/Users/steff/AppData/Roaming/MiKTeX/2.9/fonts/type1/bera
 /uplr8a.pfb><C:/Users/steff/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino
 /uplr8a.pfb><C:/Users/steff/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino
 /uplri8a.pfb>
-Output written on thesis.pdf (141 pages, 27501591 bytes).
+Output written on thesis.pdf (135 pages, 26425936 bytes).
 PDF statistics:
- 2135 PDF objects out of 2487 (max. 8388607)
- 532 named destinations out of 1000 (max. 500000)
- 48381 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1991 PDF objects out of 2073 (max. 8388607)
+ 528 named destinations out of 1000 (max. 500000)
+ 48321 words of extra memory for PDF output out of 51595 (max. 10000000)
 

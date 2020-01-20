@@ -11,9 +11,7 @@ Using a two factor experimental design, the experiment contrasts the performance
 The experiment also considered three types of spatial trends, one geographic trend, and two population related distributions. 
 The results showed that participants did in fact more frequently find the population related distributions when using the hexagon tile map. 
 
-This chapter has been submitted to the journal *IEEE Transactions of Visualisation and Computer Graphics*.
-
-\includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_experiment.pdf}
+This chapter will be submitted to the journal *IEEE Transactions of Visualisation and Computer Graphics*.
 
 ## Abstract {-}
 
@@ -406,7 +404,9 @@ Of the 92 participants, 67 were male, and 25 female. Most participants (56) had 
 
 ### Accuracy
 
-Fig. \ref{fig:detect-compare} displays the average detection rates for the two types of plot separately for each trend model. Each trend model was tested using four repetitions, evaluations on the same data set were seen as either choropleths or hexagon tile maps by each group as specified in Table. \ref{fig:exp-design}; the detection rates for each display are connected by a line segment. The Three Cities and All Cities trend models shown in the hexagon tile map allowed viewers to detect the data plot substantially more often than the choropleth counterparts. One replicate for the All Cities group had similar detection rates for both plot types, the rate of detection using the choropleth map was much higher than other replicates. Surprisingly, participants could also detect the gradual spatial trend in the NW-SE group from the hexagon tile map. We expected that the choropleth map would be superior for the type of spatial pattern, but the data suggests the hexagon tile map performs slightly better, or equally as well.
+Fig. \ref{fig:detect-compare} displays the average detection rates for the two types of plot separately for each trend model. Each trend model was tested using four repetitions, evaluations on the same data set were seen as either choropleths or hexagon tile maps by each group as specified in Table. \ref{fig:exp-design}; the detection rates for each display are connected by a line segment. The Three Cities and All Cities trend models shown in the hexagon tile map allowed viewers to detect the data plot substantially more often than the choropleth counterparts.
+One replicate for the All Cities group had a similar detection rate for both the choropleth and the hexagon tile map. Interestingly, in post-analysis we found that participants chose the data display in the choropleth lineup for reasons unrelated to the All Cities data structure.
+Participants detected the gradual spatial trend in the NW-SE group equally well from both map types. This was a pleasant surprise; we expected that the choropleth map would be superior for the type of spatial pattern, but the data suggests the hexagon tile map performs equally as well.
 
 ```{r detect-compare, fig.cap = "The detection rates achieved by participants are contrasted when viewing the four replicates of the three trend models. Each point shows the probability of detection for the lineup display, the facets separate the trend models hidden in the lineup. The points for the same data set shown in a choroleth or hexagon tile map display are linked to show the difference in the detection rate.", fig.height=5}
 ## Detectability rate for each lineup (image)
@@ -432,7 +432,7 @@ ggplot(d_smry, aes(x = type, y = pdetect, color = trend)) +
 ```
 
 
-Table. \ref{tab:desc-stats} shows the means and standard deviations of the detection rate for each type of plot and each trend model. This also gives the standard deviations, the smallest standard deviation for all sets of replicates was the Three Cities trend model shown in a Choropleth display. This group of displays had a very small detection rate of 0.04. The mean detection rate for the Three Cities trend model shown as choropleth map lineups was also the smallest at 0.40.
+Table. \ref{tab:desc-stats} shows the means and standard deviations of the detection rate for each type of plot and each trend model. This also gives the standard deviations, the smallest standard deviation for all sets of replicates was the Three Cities trend model shown in a choropleth display. This group of displays had a very small detection rate of 0.04. The mean detection rate for the Three Cities trend model shown as choropleth map lineups was also the smallest at 0.40.
 The North-West to South-East (NW-SE) trend model unexpectedly had a higher mean detection rate for the hexagon tile map displays, but the difference in the means of detection rate was only 0.10.
 
 
@@ -534,7 +534,7 @@ Participants often chose 4 or 5 when viewing the population related trends in th
 For each trend model, participants were more likely to doubt their choice and choose 1 or 2 in the hexagon tile map displays, even though many had made the correct choice. 
 
 
-```{r certainty, fig.cap = "The amount of times each level of certainty was chosen by participants when viewing hexagon tile map or choropleth displays. Participants were more likely to choose a high certainty when considering a Choropleth map. The mid value of 3 was the default certainty, it was chosen most for the Hexagon tile map displays.", fig.height=5}
+```{r certainty, fig.cap = "The amount of times each level of certainty was chosen by participants when viewing hexagon tile map or choropleth displays. Participants were more likely to choose a high certainty when considering a choropleth map, but more likely to be wrong for the All Cities and Three Cities patterns. Participants were less certain in their responses for the hexagon tile map lineups, perhaps reflecting the lack of familiarity.", fig.height=5}
 d <- d %>% 
   mutate(certainty = as_factor(certainty)) %>% 
   mutate(replicate_f = as_factor(replicate)) 
@@ -574,7 +574,7 @@ d %>%
   ungroup() %>% 
   knitr::kable(., format = "latex", booktabs = TRUE,
     linesep = c("", "\\addlinespace", "", "\\addlinespace",""),
-    caption = "The amount of participants that selected each reason for their choice of plot when looking at each trend model shown in Choropleth and Hexagon Tile maps. The facets show whether or not the choice was correct.") %>% 
+    caption = "The amount of participants that selected each reason for their choice of plot when looking at each trend model shown in choropleth and hexagon Tile maps. The facets show whether or not the choice was correct.") %>% 
   collapse_rows(., columns = 1) %>% 
   kable_styling(latex_options = c("hold_position"))
 ```
@@ -604,7 +604,7 @@ The high levels of the mid range value of 3 could indicate that the participant 
 
 The color scaling applied in Three cities and All cities displays resulted in the rural areas of the real data plot appearing more blue or yellow than the other plots in the lineups.
 Due to the consistent coloring of rural areas in a choropleth display, the choice "All areas have similar colors" was most common reason for a participants choice. The All Cities displays colored the inner-city areas of all capital cities more red, this was observable to participants and explains the equal choice of the city clusters or rural color consistency. 
-Choosing "Clusters of colour" was expected when participants viewed the Hexagon tile map display of the All Cities and Three Cities distributions. It was unexpected that it was also the most common reason for the NW-SE hexagon tile map displays. 
+Choosing "Clusters of colour" was expected when participants viewed the hexagon tile map display of the All Cities and Three Cities distributions. It was unexpected that it was also the most common reason for the NW-SE hexagon tile map displays. 
 Due to the spatial covariance introduced in the smoothing, groups of similarly colored hexagons were present in all of the hexagon tile map displays. All Cities and Three Cities distributions of real data trends had distinctly different patterns or red inner-city areas, while some of the plots in each lineup may have shared similar features.
 
 
@@ -619,9 +619,9 @@ The hexagon tile map display should be considered as an alternative visualizatio
 The increasing population densities of capital cities despite large land area exacerbates the difference in the smallest and largest communities.
 The population density structure of Australia can be considered similar to that of Canada, New Zealand and many other countries. Therefore, this display is not only relevant to Australia, but all nations or population distributions that experience densely populated cities separated by vast rural expanses.
 
-## Acknowledgment
+## Supplementary meaterial
 
-The appendix contains:
+The appendix \ref{appendix} contains:
 
 - Additional analysis of the experimental results
 - Survey procedure including training materials for the participants

@@ -7,15 +7,14 @@ knit: "bookdown::render_book"
 # An Algorithm For Spatial Mapping Using a Hexagon Tile Map, With Application to Australian Maps {#ch:algorithm}
 
 This chapter relates to the first research aim as stated in Section \ref{sec:aims}.
-The chapter introduces the step devised for the algorithm.
-The chapter frames the steps in light of the `sugarbag` [@sugarbag] package functions that allow users to enact the algorithm in `R` [@R]. It uses the Statistical Areas of Australia at Level 2, taking a subset and considering only those located within the island of Tasmania.
+The chapter introduces the steps of the algorithm.
+The steps follow the procedures implemented in the `sugarbag` [@sugarbag] package functions, that allow users to run the algorithm in `R` [@R]. It uses the Statistical Areas of Australia at Level 2, taking a subset and considering only those located within the island of Tasmania.
 It also provides an example of how to animate between the choropleth map display and the hexagon tile map.
 
 
-This chapter was submitted for publication to the *Journal of Statistical Software* for publication. 
+This chapter will be submitted for publication to the *Journal of Statistical Software* for publication. 
 The steps in this algorithm are implemented in the `sugarbag` [@sugarbag] package for `R` [@R].
 
-\includepdf[pages = {1-}, scale=0.8]{statement-of-contribution_algorithm.pdf}
 
 ## Abstract {-}
 
@@ -117,7 +116,7 @@ centroids <- create_centroids(shp_sf = tas_sa2, sf_id = "SA2_NAME16")
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/1centroids.png}
+\includegraphics[width=14cm]{figures/03-algorithm/1centroids.png}
 \caption{\label{fig:centroids_plot}The geographic shapes of the Statistical Areas of Tasmania at Level 2. The points show the locations of the centroids of the SA2 areas.}
 \end{figure}
 
@@ -149,7 +148,7 @@ Figure \ref{fig:grid2} shows the original grid on the left, to allow for tessell
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/2grid.png}
+\includegraphics[width=14cm]{figures/03-algorithm/2grid.png}
 \caption{\label{fig:grid2}Grid points to create a tile map.}
 \end{figure}
 
@@ -181,7 +180,7 @@ The grid points are kept only if they fall between the rolling average of the mi
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/3grid.png}
+\includegraphics[width=8cm]{figures/03-algorithm/3grid.png}
 \caption{\label{fig:filter-grid}All possible hexagon locations from the initial grid are shown with blue outlines. The blue dots show the grid points left to choose from after the buffer step. The rolling windows show the collections of rows and columns used to filter the hexagon locations.}
 \end{figure}
 
@@ -231,7 +230,7 @@ The algorithm then removes the outer corners of the square, creating a circle of
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/4grid.png}
+\includegraphics[width=14cm]{figures/03-algorithm/4grid.png}
 \caption{\label{fig:buffers}Filter for grid points within a square, then circular, distance for those closest to the centroid.}
 \end{figure}
 
@@ -245,7 +244,7 @@ The `width` parameter is used to take a slice of the remaining points. The width
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/5allocate.png}
+\includegraphics[width=14cm]{figures/03-algorithm/5allocate.png}
 \caption{\label{fig:angles}Filter for grid points within the angle from the focal point to the centroid.}
 \end{figure}
 
@@ -262,7 +261,7 @@ By default the angle filter to hexagon grid points that fall within the bounds o
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/6allocate.png}
+\includegraphics[width=14cm]{figures/03-algorithm/6allocate.png}
 \caption{\label{fig:buffs}A complete hexagon tile map of Tasmania.}
 \end{figure}
 
@@ -278,7 +277,7 @@ The small red areas visible in the choropleth map (a) along the north coast are 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/7SIR.png}
+\includegraphics[width=14cm]{figures/03-algorithm/7SIR.png}
 \caption{\label{fig:sir}The Australian Cancer Atlas data has determined the colour of each Statistical Area of Australian at Level 2. A choropleth map (a) of SIR is paired with a hexagon tile map (b) to contrast the colours that are made obvious when every SA2 is equally represented.}
 \end{figure}
 
@@ -376,7 +375,7 @@ To create this choropleth map the SA2 polygons for 2011 from the ABS. The SIRs f
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/aus_melanoma_p.pdf}
+\includegraphics[width=14cm]{figures/03-algorithm/aus_melanoma_p.pdf}
 \caption{\label{fig:melanoma-geo}A choropleth map of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated SIR of Melanoma for all persons, they range from much lower than average (blue) to much higher than average (red)}
 \end{figure}
 
@@ -393,7 +392,7 @@ To create the hexagon tile map display, the same steps are followed as outlined 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{figures/03-algorithm/aus_melanoma_p_hex.pdf}
+\includegraphics[width=14cm]{figures/03-algorithm/aus_melanoma_p_hex.pdf}
 \caption{\label{fig:melanoma-hex}A hexagon tile map of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated SIR, they range from much lower than average (blue) to much higher than average (red)}
 \end{figure}
 

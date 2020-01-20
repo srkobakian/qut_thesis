@@ -46,7 +46,7 @@ Numerous `R` [@R] packages were used to produce this thesis:
  - `lme4` [@lme4]
  - `lubridate` [@lubridate]
  - `nullabor` [@nullabor]
- magrittr
+ - `magrittr` [@magrittr]
  - `png` [@png]
  - `RColorBrewer` [@RColorBrewer] 
  - `rmarkdown` [@rmarkdown] 
@@ -54,5 +54,5 @@ Numerous `R` [@R] packages were used to produce this thesis:
  - `sf` [@sf] 
  - `spData` [@spData] 
  - `sugarbag` [@sugarbag]
- tibble
- tidyr
+ - `tibble` [@tibble]
+ - `tidyr` [@tibble]
