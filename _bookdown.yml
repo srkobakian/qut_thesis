@@ -16,9 +16,7 @@ rmd_files: ["index.Rmd",
   "03-algorithm.Rmd",
   "04-experiment.Rmd",
   "05-conclusion.Rmd",
-  "A-Study_lineups.Rmd",
-  "B-Study_procedures.Rmd",
-  "C-ethics.Rmd"] # appendices
+  "A-appendix.Rmd"] # appendices
 delete_merged_file: TRUE
 before_chapter_script: ["preload.R"]
 

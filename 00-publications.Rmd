@@ -9,7 +9,7 @@ knit: "bookdown::render_book"
 Kobakian S. and Cook, D. and Roberts, J. (2019). Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays. Manuscript submitted for publication.
 
 
-2.  The discussion of the algorithm documented in Chapter \ref{ch:algorithm} will be submitted to the *Journal of Statistical Software*.
+2.  The algorithm is documented in Chapter \ref{ch:algorithm} and will be submitted to the *Journal of Statistical Software*.
 
 Kobakian S. and Cook, D. (2020). An Algorithm For Spatial Mapping Using a Hexagon Tile Map, With Application to Australian Maps. Manuscript in preparation.
 

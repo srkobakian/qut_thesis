@@ -15,7 +15,7 @@ Dr Earl Duncan (Research Associate at ARC Centre of Excellence for Mathematical 
 Professor Kerrie Mengersen (Professor of Statistics, Science and Engineering Faculty, QUT) provided the opportunity to study at Queensland University of Technology, organising and mentoring me through this project.
 
 
-Working closely with Prof. Di Cook enabled the rapid development of my research and writing skills. 
+Working closely with Prof. Dianne Cook enabled the rapid development of my research and writing skills. 
 
 ## Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays {-}
 
@@ -30,19 +30,23 @@ We are thankful for the NUMBATs (Non-Uniform Monash Business Analytics Team) for
 
 ## R packages {-}
 
-Several `R` [@R] packages were used to produce this thesis:
+Numerous `R` [@R] packages were used to produce this thesis:
 
  - `absmapsdata` [@ABSmaps]
+ - `broom` [@broom]
  - `cartogram` [@cartogram]
  - `cowplot` [@cowplot]
+ - `dplyr` [@dplyr]
  - `eechidna` [@eechidna]
  - `ggplot2` [@ggplot2] 
  - `ggthemes` [@ggthemes]
  - `gstat` [@gstat]
- - `kableExtra` [@kableExtra].
+ - `kableExtra` [@kableExtra]
  - `knitr` [@knitr]
  - `lme4` [@lme4]
+ - `lubridate` [@lubridate]
  - `nullabor` [@nullabor]
+ magrittr
  - `png` [@png]
  - `RColorBrewer` [@RColorBrewer] 
  - `rmarkdown` [@rmarkdown] 
@@ -50,4 +54,5 @@ Several `R` [@R] packages were used to produce this thesis:
  - `sf` [@sf] 
  - `spData` [@spData] 
  - `sugarbag` [@sugarbag]
- - `tidyverse` [@tidyverse]
+ tibble
+ tidyr

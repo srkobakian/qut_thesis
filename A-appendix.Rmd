@@ -2,12 +2,13 @@
 knit: "bookdown::render_book"
 ---
 
+\printbibliography[heading=bibintoc]
+
 \appendix
 \renewcommand\thesubsection{\thesection.\Alph{subsection}}
 
 # Appendix
 
-## Experiment lineups
 
 ```{r setup-lineups, echo=FALSE, message=FALSE, warning=FALSE, comment = FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE)
@@ -125,7 +126,7 @@ plots <- d %>% group_by(group, trend, type, location) %>%
 ```
 
 
-### Overall Performance
+## Overall Performance
 
 The detection rate is considered for each lineup. The detection rates for group A were less varied than the detection rates for the lineups seen by group B. Fig. \ref{fig:pdetection-group} shows the distribution using a boxplot. This shows the median value for detection rate was extremely similar.
 
@@ -239,6 +240,8 @@ knitr::kable(choice_tabs$data[[3]], format = "latex",
   caption = "The proportion of participants who selected each of the twelve map choices in each lineup for All Cities displays.") %>%
   collapse_rows(., columns = c(1,2))
 ```
+
+## Lineups
 
 Lineups were created using the Australian Statistical Areas at Level 3.
 
