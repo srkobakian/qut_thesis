@@ -19,7 +19,7 @@ Working closely with Prof. Di Cook enabled the rapid development of my research 
 
 ## Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays {-}
 
-With my coauthors Prof. Dianne Cook and Jessie Roberts, I would like to acknowledge Dr Susanna Cramb (Strategic Research Fellow, Institute of Health Biomedical Innovation, Queensland Univeristy of Technology) and Dr Peter Baade (Senior Research Fellow, Cancer Council Queensland) for providing the opportunity and time to discuss alternative map solutions for presentation in the Australian Cancer Atlas.
+With my co-authors Prof. Dianne Cook and Jessie Roberts, I would like to acknowledge Dr Susanna Cramb (Strategic Research Fellow, Institute of Health Biomedical Innovation, Queensland University of Technology) and Dr Peter Baade (Senior Research Fellow, Cancer Council Queensland) for providing the opportunity and time to discuss alternative map solutions for presentation in the Australian Cancer Atlas.
 It was in the development of this online cancer atlas that methods for disease map displays, and visual communication strategies were explored. 
 
 ## Comparing the Effectiveness of the Choropleth Map with a Hexagon Tile Map for Communicating Cancer {-}

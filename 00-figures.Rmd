@@ -46,7 +46,7 @@ figs4 <- tibble::tibble(
     "This lineup of twelve hexagon tile map displays contains one map with a real population related structure.",
     "The experimental design used in the visual inference study.",
     "The detection rates achieved by participants are contrasted when viewing the four replicates of the three trend models",
-    "The distribution of the time taken (seconds) to submit a response for each combination of trend, whether the data plot was detected, and type of display, shown using horizontally jittered dotplots.",
+    "The distribution of the time taken (seconds) to submit a response for each combination of trend, whether the data plot was detected, and type of display, shown using horizontally jittered dot plots.",
     "The amount of times each level of certainty was chosen by participants when viewing hexagon tile map or choropleth displays."), 
   Page = c(61, 62, 65, 67, 75, 77, 79)
 )
