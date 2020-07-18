@@ -4,7 +4,8 @@ knit: "bookdown::render_book"
 
 # Acknowledgements {-}
 
-This thesis would not be possible without the opportunity provided by Queensland University of Technology, Cancer Council Queensland and the ARC Centre of Excellence for Mathematical & Statistical Frontiers.
+This thesis was made possible due to the opportunity provided by Queensland University of Technology, and the Australian Research Council Centre of Excellence for Mathematical & Statistical Frontiers.
+This research was also supported by an Australian Government Research Training Program (RTP) Scholarship, and the Cancer Council Queensland.
 
 I would like to acknowledge my supervisors for their tireless work in directing, encouraging and supporting this work.
 
@@ -16,6 +17,8 @@ Professor Kerrie Mengersen (Professor of Statistics, Science and Engineering Fac
 
 
 Working closely with Prof. Dianne Cook enabled the rapid development of my research and writing skills. 
+
+Special thanks to Professor Peter Baade and Dr Susanna Cramb.
 
 ## Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays {-}
 

@@ -128,7 +128,7 @@ plots <- d %>% group_by(group, trend, type, location) %>%
 
 ## Overall Performance
 
-The detection rate is considered for each lineup. The detection rates for group A were less varied than the detection rates for the lineups seen by group B. Fig. \ref{fig:pdetection-group} shows the distribution using a boxplot. This shows the median value for detection rate was extremely similar.
+The detection rate is considered for each lineup. The detection rates for group A were less varied than the detection rates for the lineups seen by group B. Figure \ref{fig:pdetection-group} shows the distribution using a boxplot. This shows the median value for detection rate was extremely similar.
 
 ```{r pdetection-group, fig.cap = "Boxplots of the distribution of detection rates for each line up, separated by group."}
 plots %>% ggplot(aes(x = group, y = pdetect)) + 
@@ -138,8 +138,8 @@ plots %>% ggplot(aes(x = group, y = pdetect)) +
   ylim(c(0,1))
 ```
 
-The overall detection rate is considered for each trend model in Fig. \ref{fig:pdetect-trend}.
-The detection rates for the NW-SE trend model was less varied than the detection rates for the Three Cities and All Cities trends. Fig. \ref{fig:pdetection-group} shows the distribution using a boxplot. This shows the distributions of the rates do not overlap for NW-SE and Three Cities trends, the Three cities range was larger, but the median was much higher for the NW-SE trend. The All Cities trend model distribution overlaps with the NW-SE and All Cities trends.
+The overall detection rate is considered for each trend model in Figure \ref{fig:pdetect-trend}.
+The detection rates for the NW-SE trend model was less varied than the detection rates for the Three Cities and All Cities trends. Figure \ref{fig:pdetection-group} shows the distribution using a boxplot. This shows the distributions of the rates do not overlap for NW-SE and Three Cities trends, the Three cities range was larger, but the median was much higher for the NW-SE trend. The All Cities trend model distribution overlaps with the NW-SE and All Cities trends.
 
 ```{r pdetect-trend, fig.cap = "Boxplots of the distribution of detection rates for each line up, separated by trend model."}
 plots %>% ggplot(aes(x = trend, y = pdetect, fill = trend)) + 
@@ -152,7 +152,7 @@ plots %>% ggplot(aes(x = trend, y = pdetect, fill = trend)) +
 ```
 
 
-The boxplots in Fig. \ref{fig:pdetection-type} contrast the distribution of the detection rates for eah type of display.
+The boxplots in Figure \ref{fig:pdetection-type} contrast the distribution of the detection rates for eah type of display.
 The detection rates across the lineups was less varied for the hexagon display. There was a large difference in the medians for the types of displays.
 Without considering the relationship for each lineup, the hexagon lineup display allowed the participants to achieve higher detection rates.
 
@@ -171,7 +171,7 @@ plots %>% ggplot(aes(x = type, y = pdetect, fill = type)) +
 ## Lineups
 
 The choropleth map lineups were created using the Australian Statistical Areas at Level 3. Each lineup had twelve map displays, this gave participants the choice of any plot, and the choice to not provide a response. this non-reponse is indicated by 0.
-The choices made by participants are displayed in Fig. \ref{fig:choices}. The height of each orange lollipop indiates the proportion of participants that selected the map display of real data, they represent the correct choices.
+The choices made by participants are displayed in Figure \ref{fig:choices}. The height of each orange lollipop indiates the proportion of participants that selected the map display of real data, they represent the correct choices.
 The green lollipops show the proportion of participants that selected the incorrect displays in each lineup.
 
 
@@ -180,7 +180,7 @@ The green lollipops show the proportion of participants that selected the incorr
 The proportion of choices are also presented separately for each trend model in Table. \ref{tab:choice-nwse}, Table. \ref{tab:choice-three}, and  Table. \ref{tab:choice-all}.
 The correct map display in lineups with a North West to South East trend was chosen correctly with much greater frequency. 
 In the lineups of All Cities displays, participants were misled by the choropleth display, but not the hexagon display for all except (2). 
-All of Three Cities displays, except (4), were detected in the hexagon display. All except one lineup had at least one participant select the correct map in the lineup as shown in Fig. \ref{fig:choices}.
+All of Three Cities displays, except (4), were detected in the hexagon display. All except one lineup had at least one participant select the correct map in the lineup as shown in Figure \ref{fig:choices}.
 
 
 ```{r choices, fig.cap = "Pin plots of the propotion of choices made for each lineup location. Each facet is associated with one lineup, the height of the points show the proportion of the participants that made each choice when considering each lineup. The points coloured orange show the map which contained a trend model, these are the correct choices. The numbers differentiate the replicates of each trend model and type of map display. Participants were able to select 0 to indicate they did not want to choose a map.", fig.height = 8, fig.width = 6, results = "asis"}
@@ -258,14 +258,14 @@ knitr::kable(choice_tabs$data[[3]], format = "latex",
 \caption{\label{fig:cities-geo12}A choropleth map lineup, location 12 contains a distribution that affects all capital cities.}
 \end{figure}
 
-<!-- ```{r cities-hex12, results = "asis", fig.cap = "A hxagon tile map lineup, location 12 contains a distribution that affects all capital cities."} -->
+<!-- ```{r cities-hex12, results = "asis", fig.cap = "A hexagon tile map lineup, location 12 contains a distribution that affects all capital cities."} -->
 <!-- ggdraw() + -->
 <!--   draw_plot(rasterGrob(readPNG("lineups/aus_cities_12_hex.png"))) -->
 <!-- ``` -->
 \begin{figure}[H]
 \centering
-\includegraphics[height=8cm]{lineups/cities-hex12-1.pdf}
-\caption{\label{fig:cities-hex12}A hxagon tile map lineup, location 12 contains a distribution that affects all capital cities.}
+\includegraphics[height=8cm]{lineups/cities-hex12.pdf}
+\caption{\label{fig:cities-hex12}A hexagon tile map lineup, location 12 contains a distribution that affects all capital cities.}
 \end{figure}
 
 
@@ -281,14 +281,14 @@ knitr::kable(choice_tabs$data[[3]], format = "latex",
 \caption{\label{fig:cities-geo3}A choropleth map lineup, location 3 contains a distribution that affects all capital cities.}
 \end{figure}
 
-<!-- ```{r cities-hex3, results = "asis", fig.cap = "A hxagon tile map lineup, location 3 contains a distribution that affects all capital cities."} -->
+<!-- ```{r cities-hex3, results = "asis", fig.cap = "A hexagon tile map lineup, location 3 contains a distribution that affects all capital cities."} -->
 <!-- ggdraw() + -->
 <!--   draw_plot(rasterGrob(readPNG("lineups/aus_cities_3_hex.png"))) -->
 <!-- ``` -->
 \begin{figure}[H]
 \centering
 \includegraphics[height=8cm]{lineups/cities-hex3-1.pdf}
-\caption{\label{fig:cities-hex3}A hxagon tile map lineup, location 3 contains a distribution that affects all capital cities.}
+\caption{\label{fig:cities-hex3}A hexagon tile map lineup, location 3 contains a distribution that affects all capital cities.}
 \end{figure}
 
 #### Replicate 3
@@ -303,14 +303,14 @@ knitr::kable(choice_tabs$data[[3]], format = "latex",
 \caption{\label{fig:cities-geo4}A choropleth map lineup, location 4 contains a distribution that affects all capital cities.}
 \end{figure}
 
-<!-- ```{r cities-hex4, results = "asis", fig.cap = "A hxagon tile map lineup, location 4 contains a distribution that affects all capital cities."} -->
+<!-- ```{r cities-hex4, results = "asis", fig.cap = "A hexagon tile map lineup, location 4 contains a distribution that affects all capital cities."} -->
 <!-- ggdraw() + -->
 <!--   draw_plot(rasterGrob(readPNG("lineups/aus_cities_4_hex.png"))) -->
 <!-- ``` -->
 \begin{figure}[H]
 \centering
 \includegraphics[height=8cm]{lineups/cities-hex4-1.pdf}
-\caption{\label{fig:cities-hex4}A hxagon tile map lineup, location 4 contains a distribution that affects all capital cities.}
+\caption{\label{fig:cities-hex4}A hexagon tile map lineup, location 4 contains a distribution that affects all capital cities.}
 \end{figure}
 
 #### Replicate 4
@@ -325,14 +325,14 @@ knitr::kable(choice_tabs$data[[3]], format = "latex",
 \caption{\label{fig:cities-geo9}A choropleth map lineup, location 9 contains a distribution that affects all capital cities.}
 \end{figure}
 
-<!-- ```{r cities-hex9, results = "asis", fig.cap = "A hxagon tile map lineup, location 9 contains a distribution that affects all capital cities."} -->
+<!-- ```{r cities-hex9, results = "asis", fig.cap = "A hexagon tile map lineup, location 9 contains a distribution that affects all capital cities."} -->
 <!-- ggdraw() + -->
 <!--   draw_plot(rasterGrob(readPNG("lineups/aus_cities_9_hex.png"))) -->
 <!-- ``` -->
 \begin{figure}[H]
 \centering
 \includegraphics[height=8cm]{lineups/cities-hex9-1.pdf}
-\caption{\label{fig:cities-hex9}A hxagon tile map lineup, location 9 contains a distribution that affects all capital cities.}
+\caption{\label{fig:cities-hex9}A hexagon tile map lineup, location 9 contains a distribution that affects all capital cities.}
 \end{figure}
 
 \newpage
@@ -351,14 +351,14 @@ knitr::kable(choice_tabs$data[[3]], format = "latex",
 \caption{\label{fig:three-geo12}A choropleth map lineup, location 12 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
 
-<!-- ```{r three-hex12, results = "asis", fig.cap = "A hxagon tile map lineup, location 12 contains a distribution that affects three of the Australian capital cities."} -->
+<!-- ```{r three-hex12, results = "asis", fig.cap = "A hexagon tile map lineup, location 12 contains a distribution that affects three of the Australian capital cities."} -->
 <!-- ggdraw() + -->
 <!--   draw_plot(rasterGrob(readPNG("lineups/aus_three_12_hex.png"))) -->
 <!-- ``` -->
 \begin{figure}[H]
 \centering
 \includegraphics[height=8cm]{lineups/three-hex12-1.pdf}
-\caption{\label{fig:three-hex12}A hxagon tile map lineup, location 12 contains a distribution that affects three of the Australian capital cities.}
+\caption{\label{fig:three-hex12}A hexagon tile map lineup, location 12 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
 
 #### Replicate 2
@@ -373,14 +373,14 @@ knitr::kable(choice_tabs$data[[3]], format = "latex",
 \caption{\label{fig:three-geo5}A choropleth map lineup, location 3 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
 
-<!-- ```{r three-hex5, results = "asis", fig.cap = "A hxagon tile map lineup, location 3 contains a distribution that affects three of the Australian capital cities."} -->
+<!-- ```{r three-hex5, results = "asis", fig.cap = "A hexagon tile map lineup, location 3 contains a distribution that affects three of the Australian capital cities."} -->
 <!-- ggdraw() + -->
 <!--   draw_plot(rasterGrob(readPNG("lineups/aus_three_5_hex.png"))) -->
 <!-- ``` -->
 \begin{figure}[H]
 \centering
 \includegraphics[height=8cm]{lineups/three-hex5-1.pdf}
-\caption{\label{fig:three-hex5}A hxagon tile map lineup, location 3 contains a distribution that affects three of the Australian capital cities.}
+\caption{\label{fig:three-hex5}A hexagon tile map lineup, location 3 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
 
 #### Replicate 3
@@ -395,14 +395,14 @@ knitr::kable(choice_tabs$data[[3]], format = "latex",
 \caption{\label{fig:three-geo8}A choropleth map lineup, location 4 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
 
-<!-- ```{r three-hex8, results = "asis", fig.cap = "A hxagon tile map lineup, location 4 contains a distribution that affects three of the Australian capital cities."} -->
+<!-- ```{r three-hex8, results = "asis", fig.cap = "A hexagon tile map lineup, location 4 contains a distribution that affects three of the Australian capital cities."} -->
 <!-- ggdraw() + -->
 <!--   draw_plot(rasterGrob(readPNG("lineups/aus_three_8_hex.png"))) -->
 <!-- ``` -->
 \begin{figure}[H]
 \centering
 \includegraphics[height=8cm]{lineups/three-hex8-1.pdf}
-\caption{\label{fig:three-hex8}A hxagon tile map lineup, location 4 contains a distribution that affects three of the Australian capital cities.}
+\caption{\label{fig:three-hex8}A hexagon tile map lineup, location 4 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
 
 #### Replicate 4
@@ -417,14 +417,14 @@ knitr::kable(choice_tabs$data[[3]], format = "latex",
 \caption{\label{fig:three-geo9}A choropleth map lineup, location 9 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
 
-<!-- ```{r three-hex9, results = "asis", fig.cap = "A hxagon tile map lineup, location 9 contains a distribution that affects three of the Australian capital cities."} -->
+<!-- ```{r three-hex9, results = "asis", fig.cap = "A hexagon tile map lineup, location 9 contains a distribution that affects three of the Australian capital cities."} -->
 <!-- ggdraw() + -->
 <!--   draw_plot(rasterGrob(readPNG("lineups/aus_three_9_hex.png"))) -->
 <!-- ``` -->
 \begin{figure}[H]
 \centering
 \includegraphics[height=8cm]{lineups/three-hex9-1.pdf}
-\caption{\label{fig:three-hex9}A hxagon tile map lineup, location 9 contains a distribution that affects three of the Australian capital cities.}
+\caption{\label{fig:three-hex9}A hexagon tile map lineup, location 9 contains a distribution that affects three of the Australian capital cities.}
 \end{figure}
 
 
@@ -432,91 +432,91 @@ knitr::kable(choice_tabs$data[[3]], format = "latex",
 
 #### Replicate 1
 
-<!-- ```{r nwse-geo2, results = "asis", fig.cap = "A choropleth map lineup, location 12 contains a distribution that affects all capital nwse."} -->
+<!-- ```{r nwse-geo2, results = "asis", fig.cap = "A choropleth map lineup, location 12 contains a distribution that affects all areas from North West to the South East."} -->
 <!-- ggdraw() + -->
 <!--   draw_plot(rasterGrob(readPNG("lineups/aus_nwse_2_geo.png"))) -->
 <!-- ``` -->
 \begin{figure}[H]
 \centering
 \includegraphics[height=8cm]{lineups/nwse-geo2-1.pdf}
-\caption{\label{fig:nwse-geo2}A choropleth map lineup, location 12 contains a distribution that affects all capital nwse.}
+\caption{\label{fig:nwse-geo2}A choropleth map lineup, location 12 contains a distribution that affects all areas from North West to the South East.}
 \end{figure}
 
-<!-- ```{r nwse-hex2, results = "asis", fig.cap = "A hxagon tile map lineup, location 12 contains a distribution that affects all capital nwse."} -->
+<!-- ```{r nwse-hex2, results = "asis", fig.cap = "A hexagon tile map lineup, location 12 contains a distribution that affects all areas from North West to the South East."} -->
 <!-- ggdraw() + -->
 <!--   draw_plot(rasterGrob(readPNG("lineups/aus_nwse_2_geo.png"))) -->
 <!-- ``` -->
 \begin{figure}[H]
 \centering
 \includegraphics[height=8cm]{lineups/nwse-hex2-1.pdf}
-\caption{\label{fig:nwse-hex2}A hxagon tile map lineup, location 12 contains a distribution that affects all capital nwse.}
+\caption{\label{fig:nwse-hex2}A hexagon tile map lineup, location 12 contains a distribution that affects all areas from North West to the South East.}
 \end{figure}
 
 
 #### Replicate 2
 
-<!-- ```{r nwse-geo3, results = "asis", fig.cap = "A choropleth map lineup, location 3 contains a distribution that affects all capital nwse."} -->
+<!-- ```{r nwse-geo3, results = "asis", fig.cap = "A choropleth map lineup, location 3 contains a distribution that affects all areas from North West to the South East."} -->
 <!-- ggdraw() + -->
 <!--   draw_plot(rasterGrob(readPNG("lineups/aus_nwse_3_geo.png"))) -->
 <!-- ``` -->
 \begin{figure}[H]
 \centering
 \includegraphics[height=8cm]{lineups/nwse-geo3-1.pdf}
-\caption{\label{fig:nwse-geo3}A choropleth map lineup, location 3 contains a distribution that affects all capital nwse.}
+\caption{\label{fig:nwse-geo3}A choropleth map lineup, location 3 contains a distribution that affects all areas from North West to the South East.}
 \end{figure}
 
-<!-- ```{r nwse-hex3, results = "asis", fig.cap = "A hxagon tile map lineup, location 3 contains a distribution that affects all capital nwse."} -->
+<!-- ```{r nwse-hex3, results = "asis", fig.cap = "A hexagon tile map lineup, location 3 contains a distribution that affects all areas from North West to the South East."} -->
 <!-- ggdraw() + -->
 <!--   draw_plot(rasterGrob(readPNG("lineups/aus_nwse_3_geo.png"))) -->
 <!-- ``` -->
 \begin{figure}[H]
 \centering
 \includegraphics[height=8cm]{lineups/nwse-hex3-1.pdf}
-\caption{\label{fig:nwse-hex3}A hxagon tile map lineup, location 3 contains a distribution that affects all capital nwse.}
+\caption{\label{fig:nwse-hex3}A hexagon tile map lineup, location 3 contains a distribution that affects all areas from North West to the South East.}
 \end{figure}
 
 #### Replicate 3
 
-<!-- ```{r nwse-geo5, results = "asis", fig.cap = "A choropleth map lineup, location 4 contains a distribution that affects all capital nwse."} -->
+<!-- ```{r nwse-geo5, results = "asis", fig.cap = "A choropleth map lineup, location 4 contains a distribution that affects all areas from North West to the South East."} -->
 <!-- ggdraw() + -->
 <!--   draw_plot(rasterGrob(readPNG("lineups/aus_nwse_5_geo.png"))) -->
 <!-- ``` -->
 \begin{figure}[H]
 \centering
 \includegraphics[height=8cm]{lineups/nwse-geo5-1.pdf}
-\caption{\label{fig:nwse-geo5}A choropleth map lineup, location 4 contains a distribution that affects all capital nwse.}
+\caption{\label{fig:nwse-geo5}A choropleth map lineup, location 4 contains a distribution that affects all areas from North West to the South East.}
 \end{figure}
 
-<!-- ```{r nwse-hex5, results = "asis", fig.cap = "A hxagon tile map lineup, location 4 contains a distribution that affects all capital nwse."} -->
+<!-- ```{r nwse-hex5, results = "asis", fig.cap = "A hexagon tile map lineup, location 4 contains a distribution that affects all areas from North West to the South East."} -->
 <!-- ggdraw() + -->
 <!--   draw_plot(rasterGrob(readPNG("lineups/aus_nwse_5_geo.png"))) -->
 <!-- ``` -->
 \begin{figure}[H]
 \centering
 \includegraphics[height=8cm]{lineups/nwse-hex5-1.pdf}
-\caption{\label{fig:nwse-hex5}A hxagon tile map lineup, location 4 contains a distribution that affects all capital nwse.}
+\caption{\label{fig:nwse-hex5}A hexagon tile map lineup, location 4 contains a distribution that affects all areas from North West to the South East.}
 \end{figure}
 
 #### Replicate 4
 
-<!-- ```{r nwse-geo6, results = "asis", fig.cap = "A choropleth map lineup, location 9 contains a distribution that affects all capital nwse."} -->
+<!-- ```{r nwse-geo6, results = "asis", fig.cap = "A choropleth map lineup, location 9 contains a distribution that affects all areas from North West to the South East."} -->
 <!-- ggdraw() + -->
 <!--   draw_plot(rasterGrob(readPNG("lineups/aus_nwse_6_geo.png"))) -->
 <!-- ``` -->
 \begin{figure}[H]
 \centering
 \includegraphics[height=8cm]{lineups/nwse-geo6-1.pdf}
-\caption{\label{fig:nwse-geo6}A choropleth map lineup, location 9 contains a distribution that affects all capital nwse.}
+\caption{\label{fig:nwse-geo6}A choropleth map lineup, location 9 contains a distribution that affects all areas from North West to the South East.}
 \end{figure}
 
-<!-- ```{r nwse-hex6, results = "asis", fig.cap = "A hxagon tile map lineup, location 9 contains a distribution that affects all capital nwse."} -->
+<!-- ```{r nwse-hex6, results = "asis", fig.cap = "A hexagon tile map lineup, location 9 contains a distribution that affects all areas from North West to the South East."} -->
 <!-- ggdraw() + -->
 <!--   draw_plot(rasterGrob(readPNG("lineups/aus_nwse_6_geo.png"))) -->
 <!-- ``` -->
 \begin{figure}[H]
 \centering
 \includegraphics[height=8cm]{lineups/nwse-hex6-1.pdf}
-\caption{\label{fig:nwse-hex6}A hxagon tile map lineup, location 9 contains a distribution that affects all capital nwse.}
+\caption{\label{fig:nwse-hex6}A hexagon tile map lineup, location 9 contains a distribution that affects all areas from North West to the South East.}
 \end{figure}
 
 
@@ -534,7 +534,7 @@ options("citation_format" = "pandoc")
 
 Participants were recruited via advertising on the Figure Eight crowdsource platform.
 Choosing the task from the list directed all potential participants to the page of instructions.
-This page contained written instructions and is shown in Fig. \ref{fig:instruct}. 
+This page contained written instructions and is shown in Figure \ref{fig:instruct}. 
 
 
 <!-- ```{r instruct, results = "asis", fig.cap = "The training lineups of choropleth maps."} -->
@@ -551,7 +551,7 @@ This page contained written instructions and is shown in Fig. \ref{fig:instruct}
 
 ### Training
 
-The participants were trained using three displays. There were relatively simple lineups, they are displayed in Fig. \ref{fig:training1} and Fig. \ref{fig:training2}.
+The participants were trained using three displays. There were relatively simple lineups, they are displayed in Figure \ref{fig:training1} and Figure \ref{fig:training2}.
 
 
 <!-- ```{r training1, results = "asis", fig.cap = "The training lineups of choropleth maps."} -->
@@ -583,7 +583,7 @@ The participants were trained using three displays. There were relatively simple
 The survey application was a `shinydashboard` we application, hosted on a website external to the Figure-Eight platform. The link to the survey was located at the bottom of the instructions and training page. Only participants who had read all of the instructions and seen the example image sets continued to the survey via the link.
 This page also contained a question that asked participants for a validation code. The participants unique validation code was generated upon them opening the web application. This code was released to participants when they had considered all twelve lineups and submitted their responses to the `googlesheets` data set. Their validation codes were contained in the data set and associated with each of their responses.
 
-The demographic and consent page of the `shinydashboard` web application are displayed in Fig. \ref{fig:survey-demogs}. Two example lineups are shown, one choropleth map lineup in Fig. \ref{fig:survey-choro} and one heaxgon tile map lineup in Fig. \ref{fig:survey-hex}.
+The demographic and consent page of the `shinydashboard` web application are displayed in Figure \ref{fig:survey-demogs}. Two example lineups are shown, one choropleth map lineup in Figure \ref{fig:survey-choro} and one hexagon tile map lineup in Figure \ref{fig:survey-hex}.
 
 
 <!-- ```{r survey-demogs, results = "asis", fig.cap = "The demographics questions tab of the shinydashboard survey application."} -->

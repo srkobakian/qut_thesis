@@ -51,7 +51,7 @@ A cancer atlas is a map, or collection of maps, representing cancer incidence an
 Cancer maps are effective tools for communicating incidence, survival, and mortality to a wide range of audiences, including the public and others not trained in statistical analysis. These visualizations enable non-expert audiences to interpret the outputs of sophisticated statistical analysis. Cruickshank (1947) as cited by S. D. Walter [@DMAHP], discusses using visuals as a 'formal statistical assessment of the spatial pattern'. Overwhelmingly, choropleth maps are visualisations chosen to communicate cancer statistics to members of the public and other non-expert audiences. 
 
 
-```{r choropleth-grid-create, fig.cap = " A selection of choropleth cancer maps from online atlases that are publicly available. Maps of various countries were chosen: United Kingdom, Australia, Spain, USA, Canada, and display several different colour palettes and legends. These atllases are described in Table 1.",  fig.width=12, fig.height=10, warning = FALSE, message = FALSE, dpi=300, out.width = "100%", echo = FALSE}
+```{r choropleth-grid-create, fig.cap = " A selection of choropleth cancer maps from online atlases that are publicly available. Maps of various countries were chosen: United Kingdom, Australia, Spain, USA, Canada, and display several different colour palettes and legends. These atllases are described in Table 2.1.",  fig.width=12, fig.height=10, warning = FALSE, message = FALSE, dpi=300, out.width = "100%", echo = FALSE}
 knitr::include_graphics("figures/02-literature/choropleth_grid.png")
 ```
 
@@ -235,7 +235,7 @@ Raisz [@RSCW] laid the groundwork for this approach in the mid-1930s, drawing re
 <!-- 173 words -->
 A tile map provides a tessellated display of consistent shapes.  A similar method to a rectangular cartogram, represents each geographic area using a square. The squares are tessellated to create a grid. Each area is represented by a square of the same dimensions, each tile is usually one unit of measurement, this could be geographic regions such as states or population-based that use a consistent measure of population for each tile. Regions with over four neighbors require some necessary displacement. The tile map uses color to represent a value of a statistic for each area. A similar method to a rectangular cartogram represents each geographic area using a square of the same dimensions. There are online media sources using this method, these include [@NPR], [@FiveThirtyEight], [@WSJ], [@WP]. Tile maps may be difficult to create as they are best created manually, they require additional time and care as the number of geographic areas to include increases.
 
-Cano and others [@MDAC] define the term 'mosaic cartograms' for hexagonal tile displays, where the number of tiles for each area or the color of them can communicate the statistic of regions. When using several tiles per region, map makers can adjust the complexity of the boundaries in the resulting display. They can also make a trade-off between boundary complexity and simplicity by the size of the tiles used.
+Cano and others [@MDAC] define the term 'mosaic cartograms' for hexagonal tile displays, where the number of tiles for each area or the color of them can communicate the statistic of regions. When using several tiles per region, map makers can adjust the complexity of the boundaries in the resulting display. They can also make a trade-off between boundary complexity and simplicity by the size of the tiles used. A mosaic cartogram employs tessellation to connect the hexagons, triangles or squares used to represent the geographic land mass. Tessellation closely arranges each of the shapes so that the sides of neighbouring shapes align. Tile maps do not have to tessellate completely, this flexibility is helpful if the land mass has islands.
 
 ### Geofacet
 <!-- 166 words -->
@@ -263,7 +263,7 @@ knitr::include_graphics("figures/02-literature/auscartograms.png")
 
 ### Neither choropleth maps or cartograms perform well for Australia
 
-Figure 4<!--\ref{fig:auscartograms}--> shows four main types of cartograms using melanoma incidence on Australian Statistical Areas at Level 3 [@abs2016]. The version of a contiguous cartogram (a) has expanded the highly populated areas while preserving the full shapes of rural areas. It has not fully resolved the population transformation of areas, and if it had accurately sized areas by population, the country would be unrecognizable. The shape-preserved cartogram is unreadable, and it has reduced all areas to tiny spots on the map. Zooming in on a high-resolution output shows it does preserve the shapes. The Dorling cartogram and the hexagon tile map provide reasonable displays of the spatial distribution, despite having too much white-space in the outback areas.
+Figure 2.4<!--\ref{fig:auscartograms}--> shows four main types of cartograms using melanoma incidence on Australian Statistical Areas at Level 3 [@abs2016]. The version of a contiguous cartogram (a) has expanded the highly populated areas while preserving the full shapes of rural areas. It has not fully resolved the population transformation of areas, and if it had accurately sized areas by population, the country would be unrecognizable. The shape-preserved cartogram is unreadable, and it has reduced all areas to tiny spots on the map. Zooming in on a high-resolution output shows it does preserve the shapes. The Dorling cartogram and the hexagon tile map provide reasonable displays of the spatial distribution, despite having too much white-space in the outback areas.
 
 ### Limitations of alternative displays
 
@@ -295,7 +295,7 @@ One of the concerns of adding too much information to a map is the fear of cogni
 
 Monmonier [@HTLWM] says that interactivity can be used to allow users to explore the map for more information and provides flexibility for the display. The user can toggle between different variables, map views or even multiple realizations of future scenarios [@goodchild1994introduction]. This provides additional mechanisms for the users to digest the uncertainty of the available information [@maceachren1992visualizing], [@van1994visualization]. When the needs of the audience are changeable and are also the priority, the map creator can allow interactivity for map users to explore a data set through dynamic interactions. This can allow inspection of the data from many views [@DQBCM]. User interaction with maps helps to understand and interpret the spatial distribution of disease, to validate, explain or explore the presented statistics and their relationships to each other [@TNTEA].
 
-Interactivity enables supplementary information to be incorporated into online atlases without cluttering the display. Interactive design features, found in online cancer maps, include tool tips, drop-down menus, data selection, zooming, and panning to allow users to explore the map as they want more information and allow flexibility in the display [@HTLWM]. The use of these supports can be found in various online cancer maps and are shown in Figure 5 [@roberts2019communication].
+Interactivity enables supplementary information to be incorporated into online atlases without cluttering the display. Interactive design features, found in online cancer maps, include tool tips, drop-down menus, data selection, zooming, and panning to allow users to explore the map as they want more information and allow flexibility in the display [@HTLWM]. The use of these supports can be found in various online cancer maps and are shown in Figure 2.5 [@roberts2019communication].
 
 Animation, in contrast to interactivity, usually involves pre-computing views and showing these in a sequence. Lin Pedersen [@TGA] provides an overview of animation for maps using the R package `gganimate` [@gganimate]. Animations are used to communicate a message by capturing and directing users' attention. It is most often employed to show changes over time. The controls for basic animation are usually placed outside of the plot space [@TGA], and the map image is updated/replaced as the animation progresses. 
 
@@ -311,14 +311,14 @@ knitr::include_graphics("figures/02-literature/interacting.png")
 ```
 
 
-Figure 6 <!--\ref{fig:animating}--> shows two examples of more sophisticated interactive maps. The Spanish Cancer map (left) contains a linked display between a choropleth map and time series plots of cancer change. In linked plots, changing values in one display will trigger changes of corresponding elements in another display. Here, the temporal change in the choropleth map can be played out as an animation. Mousing over the time series plots will highlight the line for a particular region. The Canadian Breast Cancer Mortality map (right) has a magnifying glass that allows the user to zoom into small areas. It is easy to control and shows precise details in small areas. 
+Figure 2.6 <!--\ref{fig:animating}--> shows two examples of more sophisticated interactive maps. The Spanish Cancer map (left) contains a linked display between a choropleth map and time series plots of cancer change. In linked plots, changing values in one display will trigger changes of corresponding elements in another display. Here, the temporal change in the choropleth map can be played out as an animation. Mousing over the time series plots will highlight the line for a particular region. The Canadian Breast Cancer Mortality map (right) has a magnifying glass that allows the user to zoom into small areas. It is easy to control and shows precise details in small areas. 
 
 
 ```{r animating, fig.cap = "Two examples of advanced interactivity (and animation) in publicly available choropleth cancer maps: a. Linked maps and time-series line plots, with temporal animation in Map of Cancer Mortality Rates in Spain, b. A highly responsive magnifying glass on a map of Breast Cancer Mortality in Canada.", results = "asis", message=FALSE, warning=FALSE, cache=FALSE, fig.width=8, fig.height=6}
 knitr::include_graphics("figures/02-literature/animating.png")
 ```
 
-## Conclusions
+## Conclusion {#conclusion-02}
 <!-- 307 words -->
 
 <!-- summary of mapping -->

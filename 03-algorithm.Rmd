@@ -160,7 +160,7 @@ To filter the grid for appropriate hexagon locations for allocation, the `create
 It finds the grid points needed to best capture the set of centroids on a hexagon tile map.
 
 The closest latitude row and longitude column are found for each centroid location. Then rows and columns of centroids are divided into 20 groups.
-The amount of rows in each latitude group and the amount of columns in each longitude group are used as the width of rolling windows. The rolling windows can be seen on the bottom and right of the grid shown in Fig. \ref{fig:filter-grid}.
+The amount of rows in each latitude group and the amount of columns in each longitude group are used as the width of rolling windows. The rolling windows can be seen on the bottom and right of the grid shown in Figure \ref{fig:filter-grid}.
 This will tailor the available grid points to those most likely to be used.
 It also helps reduce the amount of time taken, as it decreases the amount of points considered for each centroid allocation.
 
@@ -403,7 +403,7 @@ It requires connecting the polygons for each area in two displays, which can be 
 The animation^[This animation can be viewed at: https://sugarbagjss.netlify.com/] connecting these two displays will highlight the rapid growth of the inner-city areas, and will decrease the large rural areas. The hexagons that move the furthest will move rapidly in the animation.
 
 
-## Conclusion
+## Conclusion  {#conclusion-03}
 
 It is possible to use alternative maps to communicate spatial distributions.While a choropleth map display is the current practice spatial visualisation of geographical data. Current methods do not always work for Australia due to the large geographic space between the densely populated capital cities. The administrative boundaries may also distract from the statistics communicated using colour.
 
