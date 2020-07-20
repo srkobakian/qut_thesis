@@ -679,24 +679,53 @@ This algorithm creates a tessellated hexagon display to represent each of the sp
 \hypertarget{introduction-1}{%
 \section{Introduction}\label{introduction-1}}
 
-The current practice for presenting geospatial data is a choropleth map display. These maps highlight the geographic patterns in geospatially related statistics \autocite{SAMGIS}.
-The land on the map space is divided into geographic units, these boundaries are usually administrative, such as states or counties. The units are filled with colour to represent the value of the statistic \autocite{EI}.
-
-Australian residents are increasingly congregating around major cities, the vast rural areas are often sparsely populated in comparison to the urban centres.
-In Australia, government bodies such as the Australian Bureau of Statistics (ABS), and the Australian Electoral Commission (AEC) hold the responsibility for the division of the population into geographic units. If it necessary, the AEC may adjust the boundaries of the areas as the population increases. The division of the population into approximately equal population areas results in dramatically different square meterage of the geographic areas. This can give unequal attention to the statistic of each area, this can cause misrepresentation of the spatial distributions of human related statistics in geographic maps.
+It is common to present geospatial data on a choropleth map display. These maps show the landmass with administrative boundaries and can highlight the geographic patterns in geospatially related statistics \autocite{SAMGIS}.
+In many countries, residents are increasingly gathering to live around major cities.
+The division of the population into approximately equal population areas results in dramatically different square meterage of the geographic areas. The geographic units are usually administrative, such as states or counties. The units are filled with colour to represent the value of the statistic for the unit \autocite{EI}.
+This can give unequal attention to the statistical value of each area, and can cause misrepresentation of the spatial distributions of human related statistics in geographic maps.
 
 The solutions to this visualisation problem begin with the geography. Cartograms apply a transformation to the geographic boundaries based on the value of the statistic of interest. These displays result in a distortion of the map space to represent differences in the statistic across the areas \autocite{ACCAC}.
 The statistic of interest is used to determine the cartogram layout. When the
-Australian population is the statistic of interest, the result is a population cartogram. They fail to preserve a recognisable display due to the difference in size of metropolitan and rural areas \autocite{ACTUC}, \autocite{GOINO}.
+population is the statistic of interest, the result is a population cartogram. They fail to preserve a recognisable display due to the difference in size of metropolitan and rural areas \autocite{ACTUC}, \autocite{GOINO}.
 Contiguous cartograms change the shape of areas, while preserving boundary relationships of neighbours. Non-contiguous cartograms maintain the geographic shape of each geographic area, but will lose the connection to neighbours as the polygon for each geographic area shrinks or grows.
 
 Alternative maps shift the focus from land area and shape, to the value of the statistics in a group of areas.
 Alternative mapping methods allow increased understanding of the spatial distribution of a variable across the population, by fairly representing each administrative area. This acknowledges that the amount of residents can be different but recognises that each area, or person within it is equally important.
 
-tile maps, Rectangular cartograms \autocite{ORC} and Dorling cartograms \autocite{ACTUC}, all use one simple shape to represent each area. They place various importance on the preservation of spatial relationships, but all decrease the emphasis on the size of the geographic areas. These alternative map displays focus on the relationship between neighbours, attempting to preserve connections, and disregard the unique shapes of the administrative boundaries.
+Tile maps, Rectangular cartograms \autocite{ORC} and Dorling cartograms \autocite{ACTUC}, all use one simple shape to represent each area. They place various importance on the preservation of spatial relationships, but all decrease the emphasis on the size of the geographic areas. These alternative map displays focus on the relationship between neighbours, attempting to preserve connections, and disregard the unique shapes of the administrative boundaries.
 
-The \texttt{sugarbag} package provides a new algorithm to create tessellated hexagon tile maps.
-It emphasises the capital cities as population hubs, and emphasises the distances rather than size of large, rural geographic units.
+\hypertarget{sugarbag-package}{%
+\section{\texorpdfstring{\texttt{sugarbag} package}{sugarbag package}}\label{sugarbag-package}}
+
+These maps can be useful to understand a distribution across a region. However, these maps are not easily drawn, especially as the number of areas increases. This algorithm was created to automate this process, and reduce the manual load involved in creating and implementing alternative displays. This allows map makers and data communicators to allocate their time to choosing the most effective display, rather than manually creating them.
+
+The \texttt{sugarbag} package has been written for R software, it contains a set of functions that help R users to create a hexagon tile map.
+Users should provide a set of polygons that define geographic units by their administrative boundaries. The functions arrange the geographic units in order of proximity to a set of locations provided, such as the centre of capital cities.
+The centroid location of each geographic unit is used to measure the proximity.
+It emphasises the capital cities as population hubs, rather than emphasizing the size of large, rural geographic units.
+
+Figure 3. displays the Australian areas with equally sized hexagons. This display allows the small and densely populated inner city areas to be easily contrasted with their neighbouring areas.
+The choropleth map that uses the geographic shapes of areas
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{figures/03-algorithm/aus_melanoma_p.pdf}
+\caption{\label{fig:melanoma-geo}A choropleth map of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated SIR of Melanoma for all persons, they range from much lower than average (blue) to much higher than average (red)}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{figures/03-algorithm/aus_melanoma_p_hex.pdf}
+\caption{\label{fig:melanoma-hex}A hexagon tile map of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated SIR, they range from much lower than average (blue) to much higher than average (red)}
+\end{figure}
+
+The Australian Cancer Atlas \autocite{TACA} allows estimates derived from the models of SIRs and excess deaths to be downloaded.
+Figure \ref{fig:melanoma-geo} is a choropleth map that uses colour to display the estimated SIRs of melanoma cancer for all persons for each SA2. The Australian choropleth map display draws attention to the expanse of light blue areas across the rural communities in all states. The SA2s around Brisbane stand out as more orange and red.
+Comparatively, the hexagon tile map display in Figure \ref{fig:melanoma-hex} draws attention to contrast of the blue areas in Sydney and Melbourne and the capital city of Brisbane. In both Sydney and Melbourne, the hexagons that represent the SA2 areas in the inner-city areas have lower than average Incidence Rates.
+
+With careful consideration of the choropleth map, the small geographic inner city areas may have been noticed by viewers, but the hexagon tile map display emphasises them. The communities in northern Queensland and the Northern territory do not draw attention because of their size as in the choropleth, but their colour is still noticeably below average when contrasted with the hexagons further south.
+
+To create this choropleth map the SA2 polygons for 2011 from the ABS. The SIRs for each geographic unit are joined to the appropriate polygons.
 
 \hypertarget{algorithm-1}{%
 \section{Algorithm}\label{algorithm-1}}
@@ -950,44 +979,6 @@ The following code creates the hexagon tile map for all the Statistical Areas at
 \StringTok{  }\KeywordTok{scale_fill_distiller}\NormalTok{(}\StringTok{""}\NormalTok{, }\DataTypeTok{palette=}\StringTok{"PRGn"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
-
-\hypertarget{applications}{%
-\section{Applications}\label{applications}}
-
-\hypertarget{australian-cancer-atlas}{%
-\subsubsection{Australian Cancer Atlas}\label{australian-cancer-atlas}}
-
-The Australian Cancer Atlas \autocite{TACA} allows estimates derived from the models of SIRs and excess deaths to be downloaded.
-Figure \ref{fig:melanoma-geo} is a choropleth map that uses colour to display the estimated SIRs of melanoma cancer for all persons for each SA2. The Australian choropleth map display draws attention to the expanse of light blue areas across the rural communities in all states. The SA2s around Brisbane stand out as more orange and red.
-Comparatively, the hexagon tile map display in Figure \ref{fig:melanoma-hex} draws attention to contrast of the blue areas in Sydney and Melbourne and the capital city of Brisbane. In both Sydney and Melbourne, the hexagons that represent the SA2 areas in the inner-city areas have lower than average Incidence Rates.
-
-With careful consideration of the choropleth map, the small geographic inner city areas may have been noticed by viewers, but the hexagon tile map display emphasises them. The communities in northern Queensland and the Northern territory do not draw attention because of their size as in the choropleth, but their colour is still noticeably below average when contrasted with the hexagons further south.
-
-To create this choropleth map the SA2 polygons for 2011 from the ABS. The SIRs for each geographic unit are joined to the appropriate polygons.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=14cm]{figures/03-algorithm/aus_melanoma_p.pdf}
-\caption{\label{fig:melanoma-geo}A choropleth map of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated SIR of Melanoma for all persons, they range from much lower than average (blue) to much higher than average (red)}
-\end{figure}
-
-To create the hexagon tile map display, the same steps are followed as outlined above:
-
-\begin{itemize}
-\tightlist
-\item
-  Create the set of centroid points
-\item
-  Create the hexagon grid points
-\item
-  Allocate each centroid to a hexagon grid point
-\end{itemize}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=14cm]{figures/03-algorithm/aus_melanoma_p_hex.pdf}
-\caption{\label{fig:melanoma-hex}A hexagon tile map of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated SIR, they range from much lower than average (blue) to much higher than average (red)}
-\end{figure}
 
 \hypertarget{animation}{%
 \section{Animation}\label{animation}}
