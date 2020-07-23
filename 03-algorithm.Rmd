@@ -26,6 +26,7 @@ library(knitcitations)
 library(RefManageR)
 library(sf)
 library(sugarbag)
+library(kableExtra)
  
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 options("citation_format" = "pandoc")
@@ -38,7 +39,7 @@ BibOptions(check.entries = FALSE, style = "markdown")
 It is common to present geospatial data on a choropleth map display. These maps show the landmass with administrative boundaries and can highlight the geographic patterns in geospatially related statistics [@SAMGIS].
 In many countries, residents are increasingly gathering to live around major cities.
 The division of the population into approximately equal population areas results in dramatically different square meterage of the geographic areas. The geographic units are usually administrative, such as states or counties. The units are filled with colour to represent the value of the statistic for the unit [@EI].
-This can give unequal attention to the statistical value of each area, and can cause misrepresentation of the spatial distributions of human related statistics in geographic maps. 
+This can lead to unequal emphasis placed on the statistical value of each of the geographic unit, and can misrepresent the spatial distributions of human related statistics in geographic maps. 
 
 <!-- solutions -->
 The solutions to this visualisation problem begin with the geography. Cartograms apply a transformation to the geographic boundaries based on the value of the statistic of interest. These displays result in a distortion of the map space to represent differences in the statistic across the areas [@ACCAC]. 
@@ -49,10 +50,36 @@ Contiguous cartograms change the shape of areas, while preserving boundary relat
 Alternative maps shift the focus from land area and shape, to the value of the statistics in a group of areas.
 Alternative mapping methods allow increased understanding of the spatial distribution of a variable across the population, by fairly representing each administrative area. This acknowledges that the amount of residents can be different but recognises that each area, or person within it is equally important.
 
-Tile maps, Rectangular cartograms [@ORC] and Dorling cartograms [@ACTUC], all use one simple shape to represent each area. They place various importance on the preservation of spatial relationships, but all decrease the emphasis on the size of the geographic areas. These alternative map displays focus on the relationship between neighbours, attempting to preserve connections, and disregard the unique shapes of the administrative boundaries.
+## Hexagon tile map benefits
+
+There are several established alternative visualisation methods. 
+Tile maps, Rectangular cartograms [@ORC] and Dorling cartograms [@ACTUC], all use one simple shape to represent each area. They place various importance on the preservation of spatial relationships, but all minimise the emphasis on the size or shape of the geographic areas. These alternative map displays focus on the relationship between neighbours, attempting to preserve connections, and disregard the unique shapes of the administrative boundaries. Figure \ref{fig:qld_grid} shows a collection of alternative map displays, this includes a) a contiguous cartogram, b) a non-contiguous cartogram, c) a Dorling cartogram and d) a hexagon tile map. 
+Each Statistical Area at Level 2 (SA2) is intended to represent a community. These administrative areas are often used to aggregate census data and used to understand demographics of the Australian population. Unlike electorates that belong 
+
+<!-- choropleth -->
+The familiar choropleth map display is often used to allow the user to orient themselves. However, the emphasis on the land mass diminishes the features of the distribution in densely populated communities due to the small size on the display.
+The unique shapes of boundaries can be helpful for orienting users but may not contribute to their understanding of the spatial disease distribution. In figure \ref{fig:qld_grid} the choropleth map underlies the alternative maps to allow for comparisons to be made between the alternatives.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{figures/03-algorithm/qld_grid.pdf}
+\caption{\label{fig:qld_grid}A collection of alternative maps of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated SIR of Melanoma for males, ranging from much lower than average (blue) to much higher than average (red)}
+\end{figure}
+
+<!-- contiguous -->
+The impact of a disease over connected communities can be displayed by allowing the boundaries to maintain their connections. The contiguous cartogram displayed in figure \ref{fig:qld_grid}a) can draw attention to smaller units when they are rescaled according to a variable such as population. These new shapes can now be coloured to represent a second variable. This display can create unusual and unfamiliar shapes from the geographic units, especially when there are communities located geographically far from their neighbours. This especially obvious in the northern SA2 are of Queensland with an average (yellow) estimated SIR of Melanoma for males.
+
+<!-- non-contiguous -->
+The non-contiguous cartogram in figure \ref{fig:qld_grid}b) also uses the population to rescale the geographic units. Unlike the contiguous cartogram, the SA2 areas maintain their geographic shape, this means they may not retain the connection with their neighbours. The population of the SA2 areas is used to scale, the disparity between large rural areas and small urban areas means that the city of Brisbane, show in the inset map looks reasonable, but these units cannot be seen in the context of the Queensland state map.
+
+<!-- Dorling -->
+The Dorling cartogram presents each individual area scaled for the population value of each area. Figure \ref{fig:qld_grid}c) shows the Queensland SA2 areas, this map presents each community as an individual circle, located as close as possible to the geographic centroid location. This map draws attention to the collection of coastal cities in Queensland that were not apparent in figure \ref{fig:qld_grid} a) or b). 
+This map was the most influential in the design of the hexagon tile map.
 
 
-## `sugarbag` package
+The use of a hexagon provides a simple shape that shifts the focus of the visualisation to the effects of a disease on communities, rather than the land mass. Hexagons can emphasise the relationship between neighbouring communities by allowing their sides to touch. The tessellation is helpful in densely populated areas as it shows that most communities are not islands onto themselves, but are connected to those around them. The tessellation that allows boundary connections was not imposed for rural communities, where centroid of the geographic unit was located far from others.
+
+## Mapping techniques
 
 <!-- Motivate the value of the the package and algorithm -->
 These maps can be useful to understand a distribution across a region. However, these maps are not easily drawn, especially as the number of areas increases. This algorithm was created to automate this process, and reduce the manual load involved in creating and implementing alternative displays. This allows map makers and data communicators to allocate their time to choosing the most effective display, rather than manually creating them.
@@ -79,6 +106,9 @@ The choropleth map that uses the geographic shapes of areas
 <!-- ```{r melanoma-hex, fig.cap = "A hexagon tile map of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated Standardised Incidence Rate, they range from much lower than average (blue) to much higher than average (red)", results = "asis", echo = FALSE, out.width = "60%"} -->
 <!-- knitr::include_graphics("figures/03-algorithm/aus_melanoma_p_hex.png") -->
 <!-- ``` -->
+
+
+
 
 \begin{figure}[H]
 \centering
@@ -107,16 +137,53 @@ These steps can be executed by the main function, `create_hexmap`, or can be imp
  3. Allocate each centroid to an available hexagon
  4. Transform the data for plotting
 
-#### Parameters
 
-The `create_hexmap` function requires several parameters, if they are not provided, the information will be derived from the simple features (`sf`) set of shapes used. Users may choose to only use the `allocate` function when they wish to use a set of centroids, rather than [@sf] polygons.
+\begin{figure}
+\includegraphics[width=14cm]{figures/03-algorithm/sugarbag_horizontal.png}
+\caption{\label{fig:sugarbag_horizontal}The functions called within `create_hexmap` or directly by a user to create a hexagon tile map.}
+\end{figure}
 
-The following parameters must be provided to `create_hexmap}:
 
- - *shp:* an sf object containing the polygon information
- - *sf_id:* name of a column that distinguishes unique areas
- - *focal_points:* a data frame of reference locations used to allocate hexagons
- 
+#### User choices
+
+The`create_hexmap` function allows a user to begin using the algorithm with only two inputs, the shape file, and the id column. The id column should uniquely identify each geographic unit in the shape file.
+The`create_hexmap` function will derive the centroids of the geographic units, calculate a grid of possible hexagon locations, and allocate each geographic unit to a single hexagon.
+A user can then tweak the parameters of the hexagon map using the additional arguments to the `create_hexmap` function, these options may affect the speed of the creation. Optional arguments allow the user to control: 
+
+- *buffer_dist*: distance in degrees to extend beyond the geometry provided
+- *hex_size*: a float value in degrees for the diameter of the hexagons"
+- *hex_filter*: amount of hexagons around centroid to consider"
+- *neighbours*: use the shp sf set to find spatial neighbours"
+- *f_width*: the angle used to filter the grid points around a centroid
+- *focal_points*: a data frame of reference locations when allocating hexagons, capital cities of Australia - are used in the example
+- *order_sf_id*: a string name of a column to order by for allocating
+
+If a user would like to perform each of the steps of the algorithm themselves, the necessary inputs will change for each function. 
+
+
+```{r parameters, results = 'asis'}
+tribble(
+  ~parameter,        ~create_centroids, ~create_grid, ~allocate,
+   "shp",            "essential",       "",           "",
+   "sf_id",          "essential",       "",           "optional",
+   "verbose",        "optional",        "optional",   "optional",
+   "buffer_dist",    "",                "essential",  "",
+   "centroids",      "",                "essential",  "essential",
+   "hex_size",       "",                "essential",  "essential", 
+   "focal_points",   "",                "",           "optional",
+   "hex_grid",       "",                "",           "essential",
+   "hex_filter",     "",                "",           "essential",
+   "use_neighbours", "",                "",           "optional",
+   "width",          "",                "",           "essential",
+  ) %>% 
+  knitr::kable(., format = "latex", booktabs = TRUE,
+    linesep = c("", "\\addlinespace", "", "\\addlinespace",""),
+    caption = "The parameters used for sugarbag functions.") %>% 
+  kable_styling(latex_options = c("hold_position"))
+```
+
+Users may choose to only use the `allocate` function when they wish to use a set of centroids, rather than [@sf] polygons.
+
 #### Polygon set
 
 The polygon set of Statistical Areas at Level 2 (SA2) [@abs2016] of Tasmania in 2016 is provided with the `sugarbag` package as `tas_sa2`. 
@@ -352,43 +419,65 @@ library(sugarbag)
 
 #### Creating a hexagon tile map
 
-The following code creates the hexagon tile map for all the Statistical Areas at Level 2 in Tasmania.
+The following code creates the hexagon tile map for all the Statistical Areas at Level 2 in Queensland.
 
 ```{r full_hexmapcode, echo = TRUE, warning = FALSE, message = FALSE, eval=FALSE}
 ## Load data
-data(tas_sa2)
 
 ## Create centroids set
-centroids <- create_centroids(tas_sa2, "SA2_NAME16")
+centroids <- create_centroids(qld_sa2, "sa2_name_2011")
 
 ## Create hexagon grid
 grid <- create_grid(centroids = centroids,
-    hex_size = 0.2,
-    buffer_dist = 1.2)
+                    hex_size = 0.12,
+                    buffer_dist = 1.2)
 
 ## Allocate polygon centroids to hexagon grid points
 hex_allocated <- allocate(
   centroids = centroids,
   hex_grid = grid,
-  sf_id = "SA2_NAME16",
+  sf_id = "sa2_name_2011",
   ## same column used in create_centroids
-  hex_size = 0.2,
+  hex_size = 0.12,
   ## same size used in create_grid
   hex_filter = 10,
-  use_neighbours = tas_sa2,
-  focal_points = capital_cities %>% filter(points == "Hobart"),
+  use_neighbours = qld_sa2,
+  focal_points = capital_cities %>%
+    filter(points == "Brisbane"),
   width = 35,
-  verbose = FALSE)
+  verbose = FALSE
+)
 
 ## Prepare to plot
 fort_hex <- fortify_hexagon(data = hex_allocated,
-  sf_id = "SA2_NAME16", hex_size = 0.2)
+                            sf_id = "sa2_name_2011",
+                            hex_size = 0.12)
+
+fort_qld <- qld_sa2 %>%
+  fortify_sfc()
 
 ## Make a plot
 library(ggplot2)
-ggplot(fort_hex) + 
-  geom_polygon(aes(x=long, y=lat, group=hex_id, fill = lat)) +
-  scale_fill_distiller("", palette="PRGn")
+qld_hexmap <- ggplot() +
+  geom_polygon(aes(
+      x = long,
+      y = lat,
+      group = interaction(sa2_name_2011, polygon)
+    ),
+    fill = "white",
+    colour = "lightgrey",
+    data = fort_qld
+  ) +
+  geom_polygon(aes(
+    x = long,
+    y = lat,
+    group = hex_id,
+    fill = rownumber
+  ),
+  data = fort_hex) +
+  scale_fill_distiller("", palette = "PRGn") +
+  coord_equal() + theme_void()
+qld_hexmap
 ```
 
 

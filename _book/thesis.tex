@@ -284,7 +284,7 @@ Numerous \texttt{R} \autocite{R} packages were used to produce this thesis:
 
 Maps can contribute to the interpretation of spatial distributions of disease occurrence, and help to locate disease clusters. Disease data is commonly aggregated to political areas; privacy is one reason for this and another is that it is the responsibility of the political entity to respond. The typical visualisation for aggregated spatial data is a choropleth map, where areas are coloured according to a numerical value. A choropleth map is the most common display for the presentation of disease data.
 
-Choropleth maps can mislead the map reader, as the attention of the map user is distributed according to the size of the area. Australia provides an extreme example of potential bias and loss of valuable information. In Australia, the geography mismatchs the population, because the communities are densely populated in the inner city areas, especially around the capital cities, and the coastline. There are alternative visualisation methods, like cartograms, that have been developed to correctly focus on the population dense areas. These alternatives should be considered when planning the communication of geospatial statistics, as visualisations should be chosen to best represent the spatial distribution.
+Choropleth maps can mislead the map reader, as the attention of the map user is distributed according to the size of the area. Australia provides an extreme example of potential bias and loss of valuable information. In Australia, the geography mismatches the population, because the communities are densely populated in the inner city areas, especially around the capital cities, and the coastline. There are alternative visualisation methods, like cartograms, that have been developed to correctly focus on the population dense areas. These alternatives should be considered when planning the communication of geospatial statistics, as visualisations should be chosen to best represent the spatial distribution.
 
 This thesis research is motivated by the Australian Cancer Atlas, which presents the spatial patterns of cancer in Australia. The aim of this thesis is to contribute an algorithm that creates effective visualisations for the communication of geospatial population statistics.
 
@@ -682,7 +682,7 @@ This algorithm creates a tessellated hexagon display to represent each of the sp
 It is common to present geospatial data on a choropleth map display. These maps show the landmass with administrative boundaries and can highlight the geographic patterns in geospatially related statistics \autocite{SAMGIS}.
 In many countries, residents are increasingly gathering to live around major cities.
 The division of the population into approximately equal population areas results in dramatically different square meterage of the geographic areas. The geographic units are usually administrative, such as states or counties. The units are filled with colour to represent the value of the statistic for the unit \autocite{EI}.
-This can give unequal attention to the statistical value of each area, and can cause misrepresentation of the spatial distributions of human related statistics in geographic maps.
+This can lead to unequal emphasis placed on the statistical value of each of the geographic unit, and can misrepresent the spatial distributions of human related statistics in geographic maps.
 
 The solutions to this visualisation problem begin with the geography. Cartograms apply a transformation to the geographic boundaries based on the value of the statistic of interest. These displays result in a distortion of the map space to represent differences in the statistic across the areas \autocite{ACCAC}.
 The statistic of interest is used to determine the cartogram layout. When the
@@ -692,10 +692,33 @@ Contiguous cartograms change the shape of areas, while preserving boundary relat
 Alternative maps shift the focus from land area and shape, to the value of the statistics in a group of areas.
 Alternative mapping methods allow increased understanding of the spatial distribution of a variable across the population, by fairly representing each administrative area. This acknowledges that the amount of residents can be different but recognises that each area, or person within it is equally important.
 
-Tile maps, Rectangular cartograms \autocite{ORC} and Dorling cartograms \autocite{ACTUC}, all use one simple shape to represent each area. They place various importance on the preservation of spatial relationships, but all decrease the emphasis on the size of the geographic areas. These alternative map displays focus on the relationship between neighbours, attempting to preserve connections, and disregard the unique shapes of the administrative boundaries.
+\hypertarget{hexagon-tile-map-benefits}{%
+\section{Hexagon tile map benefits}\label{hexagon-tile-map-benefits}}
 
-\hypertarget{sugarbag-package}{%
-\section{\texorpdfstring{\texttt{sugarbag} package}{sugarbag package}}\label{sugarbag-package}}
+There are several established alternative visualisation methods.
+Tile maps, Rectangular cartograms \autocite{ORC} and Dorling cartograms \autocite{ACTUC}, all use one simple shape to represent each area. They place various importance on the preservation of spatial relationships, but all minimise the emphasis on the size or shape of the geographic areas. These alternative map displays focus on the relationship between neighbours, attempting to preserve connections, and disregard the unique shapes of the administrative boundaries. Figure \ref{fig:qld_grid} shows a collection of alternative map displays, this includes a) a contiguous cartogram, b) a non-contiguous cartogram, c) a Dorling cartogram and d) a hexagon tile map.
+Each Statistical Area at Level 2 (SA2) is intended to represent a community. These administrative areas are often used to aggregate census data and used to understand demographics of the Australian population. Unlike electorates that belong
+
+The familiar choropleth map display is often used to allow the user to orient themselves. However, the emphasis on the land mass diminishes the features of the distribution in densely populated communities due to the small size on the display.
+The unique shapes of boundaries can be helpful for orienting users but may not contribute to their understanding of the spatial disease distribution. In figure \ref{fig:qld_grid} the choropleth map underlies the alternative maps to allow for comparisons to be made between the alternatives.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{figures/03-algorithm/qld_grid.pdf}
+\caption{\label{fig:qld_grid}A collection of alternative maps of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated SIR of Melanoma for males, ranging from much lower than average (blue) to much higher than average (red)}
+\end{figure}
+
+The impact of a disease over connected communities can be displayed by allowing the boundaries to maintain their connections. The contiguous cartogram displayed in figure \ref{fig:qld_grid}a) can draw attention to smaller units when they are rescaled according to a variable such as population. These new shapes can now be coloured to represent a second variable. This display can create unusual and unfamiliar shapes from the geographic units, especially when there are communities located geographically far from their neighbours. This especially obvious in the northern SA2 are of Queensland with an average (yellow) estimated SIR of Melanoma for males.
+
+The non-contiguous cartogram in figure \ref{fig:qld_grid}b) also uses the population to rescale the geographic units. Unlike the contiguous cartogram, the SA2 areas maintain their geographic shape, this means they may not retain the connection with their neighbours. The population of the SA2 areas is used to scale, the disparity between large rural areas and small urban areas means that the city of Brisbane, show in the inset map looks reasonable, but these units cannot be seen in the context of the Queensland state map.
+
+The Dorling cartogram presents each individual area scaled for the population value of each area. Figure \ref{fig:qld_grid}c) shows the Queensland SA2 areas, this map presents each community as an individual circle, located as close as possible to the geographic centroid location. This map draws attention to the collection of coastal cities in Queensland that were not apparent in figure \ref{fig:qld_grid} a) or b).
+This map was the most influential in the design of the hexagon tile map.
+
+The use of a hexagon provides a simple shape that shifts the focus of the visualisation to the effects of a disease on communities, rather than the land mass. Hexagons can emphasise the relationship between neighbouring communities by allowing their sides to touch. The tessellation is helpful in densely populated areas as it shows that most communities are not islands onto themselves, but are connected to those around them. The tessellation that allows boundary connections was not imposed for rural communities, where centroid of the geographic unit was located far from others.
+
+\hypertarget{mapping-techniques}{%
+\section{Mapping techniques}\label{mapping-techniques}}
 
 These maps can be useful to understand a distribution across a region. However, these maps are not easily drawn, especially as the number of areas increases. This algorithm was created to automate this process, and reduce the manual load involved in creating and implementing alternative displays. This allows map makers and data communicators to allocate their time to choosing the most effective display, rather than manually creating them.
 
@@ -704,7 +727,7 @@ Users should provide a set of polygons that define geographic units by their adm
 The centroid location of each geographic unit is used to measure the proximity.
 It emphasises the capital cities as population hubs, rather than emphasizing the size of large, rural geographic units.
 
-Figure 3. displays the Australian areas with equally sized hexagons. This display allows the small and densely populated inner city areas to be easily contrasted with their neighbouring areas.
+Figure 3.x displays the Australian areas with equally sized hexagons. This display allows the small and densely populated inner city areas to be easily contrasted with their neighbouring areas.
 The choropleth map that uses the geographic shapes of areas
 
 \begin{figure}[H]
@@ -748,22 +771,66 @@ These steps can be executed by the main function, \texttt{create\_hexmap}, or ca
   Transform the data for plotting
 \end{enumerate}
 
-\hypertarget{parameters}{%
-\subsubsection{Parameters}\label{parameters}}
+\textbackslash begin\{figure\}
+\includegraphics[width=14cm]{figures/03-algorithm/sugarbag_horizontal.png}
+\textbackslash caption\{\label{fig:sugarbag_horizontal}The functions called within \texttt{create\_hexmap} or directly by a user to create a hexagon tile map.\}
+\textbackslash end\{figure\}
 
-The \texttt{create\_hexmap} function requires several parameters, if they are not provided, the information will be derived from the simple features (\texttt{sf}) set of shapes used. Users may choose to only use the \texttt{allocate} function when they wish to use a set of centroids, rather than \autocite{sf} polygons.
+\hypertarget{user-choices}{%
+\subsubsection{User choices}\label{user-choices}}
 
-The following parameters must be provided to `create\_hexmap\}:
+The\texttt{create\_hexmap} function allows a user to begin using the algorithm with only two inputs, the shape file, and the id column. The id column should uniquely identify each geographic unit in the shape file.
+The\texttt{create\_hexmap} function will derive the centroids of the geographic units, calculate a grid of possible hexagon locations, and allocate each geographic unit to a single hexagon.
+A user can then tweak the parameters of the hexagon map using the additional arguments to the \texttt{create\_hexmap} function, these options may affect the speed of the creation. Optional arguments allow the user to control:
 
 \begin{itemize}
 \tightlist
 \item
-  \emph{shp:} an sf object containing the polygon information
+  \emph{buffer\_dist}: distance in degrees to extend beyond the geometry provided
 \item
-  \emph{sf\_id:} name of a column that distinguishes unique areas
+  \emph{hex\_size}: a float value in degrees for the diameter of the hexagons"
 \item
-  \emph{focal\_points:} a data frame of reference locations used to allocate hexagons
+  \emph{hex\_filter}: amount of hexagons around centroid to consider"
+\item
+  \emph{neighbours}: use the shp sf set to find spatial neighbours"
+\item
+  \emph{f\_width}: the angle used to filter the grid points around a centroid
+\item
+  \emph{focal\_points}: a data frame of reference locations when allocating hexagons, capital cities of Australia - are used in the example
+\item
+  \emph{order\_sf\_id}: a string name of a column to order by for allocating
 \end{itemize}
+
+If a user would like to perform each of the steps of the algorithm themselves, the necessary inputs will change for each function.
+
+\begin{table}[!h]
+
+\caption{\label{tab:parameters}The parameters used for sugarbag functions.}
+\centering
+\begin{tabular}[t]{llll}
+\toprule
+parameter & create\_centroids & create\_grid & allocate\\
+\midrule
+shp & essential &  & \\
+sf\_id & essential &  & optional\\
+\addlinespace
+verbose & optional & optional & optional\\
+buffer\_dist &  & essential & \\
+\addlinespace
+centroids &  & essential & essential\\
+hex\_size &  & essential & essential\\
+focal\_points &  &  & optional\\
+\addlinespace
+hex\_grid &  &  & essential\\
+hex\_filter &  &  & essential\\
+\addlinespace
+use\_neighbours &  &  & optional\\
+width &  &  & essential\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Users may choose to only use the \texttt{allocate} function when they wish to use a set of centroids, rather than \autocite{sf} polygons.
 
 \hypertarget{polygon-set}{%
 \subsubsection{Polygon set}\label{polygon-set}}
@@ -939,44 +1006,66 @@ Load the library into your R session with:
 \hypertarget{creating-a-hexagon-tile-map}{%
 \subsubsection{Creating a hexagon tile map}\label{creating-a-hexagon-tile-map}}
 
-The following code creates the hexagon tile map for all the Statistical Areas at Level 2 in Tasmania.
+The following code creates the hexagon tile map for all the Statistical Areas at Level 2 in Queensland.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{## Load data}
-\KeywordTok{data}\NormalTok{(tas_sa2)}
 
 \CommentTok{## Create centroids set}
-\NormalTok{centroids <-}\StringTok{ }\KeywordTok{create_centroids}\NormalTok{(tas_sa2, }\StringTok{"SA2_NAME16"}\NormalTok{)}
+\NormalTok{centroids <-}\StringTok{ }\KeywordTok{create_centroids}\NormalTok{(qld_sa2, }\StringTok{"sa2_name_2011"}\NormalTok{)}
 
 \CommentTok{## Create hexagon grid}
 \NormalTok{grid <-}\StringTok{ }\KeywordTok{create_grid}\NormalTok{(}\DataTypeTok{centroids =}\NormalTok{ centroids,}
-    \DataTypeTok{hex_size =} \FloatTok{0.2}\NormalTok{,}
-    \DataTypeTok{buffer_dist =} \FloatTok{1.2}\NormalTok{)}
+                    \DataTypeTok{hex_size =} \FloatTok{0.12}\NormalTok{,}
+                    \DataTypeTok{buffer_dist =} \FloatTok{1.2}\NormalTok{)}
 
 \CommentTok{## Allocate polygon centroids to hexagon grid points}
 \NormalTok{hex_allocated <-}\StringTok{ }\KeywordTok{allocate}\NormalTok{(}
   \DataTypeTok{centroids =}\NormalTok{ centroids,}
   \DataTypeTok{hex_grid =}\NormalTok{ grid,}
-  \DataTypeTok{sf_id =} \StringTok{"SA2_NAME16"}\NormalTok{,}
+  \DataTypeTok{sf_id =} \StringTok{"sa2_name_2011"}\NormalTok{,}
   \CommentTok{## same column used in create_centroids}
-  \DataTypeTok{hex_size =} \FloatTok{0.2}\NormalTok{,}
+  \DataTypeTok{hex_size =} \FloatTok{0.12}\NormalTok{,}
   \CommentTok{## same size used in create_grid}
   \DataTypeTok{hex_filter =} \DecValTok{10}\NormalTok{,}
-  \DataTypeTok{use_neighbours =}\NormalTok{ tas_sa2,}
-  \DataTypeTok{focal_points =}\NormalTok{ capital_cities }\OperatorTok{%>%}\StringTok{ }\KeywordTok{filter}\NormalTok{(points }\OperatorTok{==}\StringTok{ "Hobart"}\NormalTok{),}
+  \DataTypeTok{use_neighbours =}\NormalTok{ qld_sa2,}
+  \DataTypeTok{focal_points =}\NormalTok{ capital_cities }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{filter}\NormalTok{(points }\OperatorTok{==}\StringTok{ "Brisbane"}\NormalTok{),}
   \DataTypeTok{width =} \DecValTok{35}\NormalTok{,}
-  \DataTypeTok{verbose =} \OtherTok{FALSE}\NormalTok{)}
+  \DataTypeTok{verbose =} \OtherTok{FALSE}
+\NormalTok{)}
 
 \CommentTok{## Prepare to plot}
 \NormalTok{fort_hex <-}\StringTok{ }\KeywordTok{fortify_hexagon}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ hex_allocated,}
-  \DataTypeTok{sf_id =} \StringTok{"SA2_NAME16"}\NormalTok{, }\DataTypeTok{hex_size =} \FloatTok{0.2}\NormalTok{)}
+                            \DataTypeTok{sf_id =} \StringTok{"sa2_name_2011"}\NormalTok{,}
+                            \DataTypeTok{hex_size =} \FloatTok{0.12}\NormalTok{)}
+
+\NormalTok{fort_qld <-}\StringTok{ }\NormalTok{qld_sa2 }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{fortify_sfc}\NormalTok{()}
 
 \CommentTok{## Make a plot}
 \KeywordTok{library}\NormalTok{(ggplot2)}
-\KeywordTok{ggplot}\NormalTok{(fort_hex) }\OperatorTok{+}\StringTok{ }
-\StringTok{  }\KeywordTok{geom_polygon}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\NormalTok{long, }\DataTypeTok{y=}\NormalTok{lat, }\DataTypeTok{group=}\NormalTok{hex_id, }\DataTypeTok{fill =}\NormalTok{ lat)) }\OperatorTok{+}
-\StringTok{  }\KeywordTok{scale_fill_distiller}\NormalTok{(}\StringTok{""}\NormalTok{, }\DataTypeTok{palette=}\StringTok{"PRGn"}\NormalTok{)}
+\NormalTok{qld_hexmap <-}\StringTok{ }\KeywordTok{ggplot}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_polygon}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}
+      \DataTypeTok{x =}\NormalTok{ long,}
+      \DataTypeTok{y =}\NormalTok{ lat,}
+      \DataTypeTok{group =} \KeywordTok{interaction}\NormalTok{(sa2_name_}\DecValTok{2011}\NormalTok{, polygon)}
+\NormalTok{    ),}
+    \DataTypeTok{fill =} \StringTok{"white"}\NormalTok{,}
+    \DataTypeTok{colour =} \StringTok{"lightgrey"}\NormalTok{,}
+    \DataTypeTok{data =}\NormalTok{ fort_qld}
+\NormalTok{  ) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_polygon}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}
+    \DataTypeTok{x =}\NormalTok{ long,}
+    \DataTypeTok{y =}\NormalTok{ lat,}
+    \DataTypeTok{group =}\NormalTok{ hex_id,}
+    \DataTypeTok{fill =}\NormalTok{ rownumber}
+\NormalTok{  ),}
+  \DataTypeTok{data =}\NormalTok{ fort_hex) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_fill_distiller}\NormalTok{(}\StringTok{""}\NormalTok{, }\DataTypeTok{palette =} \StringTok{"PRGn"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{coord_equal}\NormalTok{() }\OperatorTok{+}\StringTok{ }\KeywordTok{theme_void}\NormalTok{()}
+\NormalTok{qld_hexmap}
 \end{Highlighting}
 \end{Shaded}
 

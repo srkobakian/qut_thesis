@@ -582,8 +582,6 @@ d %>%
 
 ## Discussion
 
-
-
 The intention of this study was to contrast the use of the choropleth map and the hexagon tile map.
 The visual inference lineup protocol was employed to contrast the effectiveness of the displays.
 The results have shown that overall the use of the hexagon tile map display allows participants to find the data plot in the lineup more often.
