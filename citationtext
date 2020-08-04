@@ -1,0 +1,4 @@
+This thesis explores the visualisation techniques used for spatial disease data.
+
+
+This thesis presents a new algorithm for creating an alternative map display of tessellating hexagon. Alternative map displays can emphasise statistics in countries that contain densely populated cities. It is accompanied by an automated software implementation to choose one hexagon to represent each geographic unit, ensuring the statistic for each is equitably presented. The case study comparing a traditional choropleth map to the alternative haxgons map contributes to a growing field of visual inference studies. This thesis contributes to improvements in effectively communicating population related cancer distributions and the associated burden of cancer on Australian communities.

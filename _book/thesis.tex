@@ -279,8 +279,8 @@ Numerous \texttt{R} \autocite{R} packages were used to produce this thesis:
   \texttt{tidyr} \autocite{tibble}
 \end{itemize}
 
-\hypertarget{intro}{%
-\chapter{Introduction}\label{intro}}
+\hypertarget{intro1}{%
+\chapter{Introduction}\label{intro1}}
 
 Maps can contribute to the interpretation of spatial distributions of disease occurrence, and help to locate disease clusters. Disease data is commonly aggregated to political areas; privacy is one reason for this and another is that it is the responsibility of the political entity to respond. The typical visualisation for aggregated spatial data is a choropleth map, where areas are coloured according to a numerical value. A choropleth map is the most common display for the presentation of disease data.
 
@@ -348,14 +348,14 @@ This chapter was submitted for publication to the journal \emph{Annals of Cancer
 
 \newpage
 
-\hypertarget{abstract-1}{%
-\section*{Abstract}\label{abstract-1}}
+\hypertarget{abstract2}{%
+\section*{Abstract}\label{abstract2}}
 \addcontentsline{toc}{section}{Abstract}
 
 Cancer atlases communicate cancer statistics over geographic domains, typically with a choropleth map. They subdivide these domains into administrative regions such as countries, states, or suburbs. When communicating human-related statistics, the choropleth has a disadvantage in that it draws attention to sparsely populated rural areas to the neglect of small inner city areas. The smaller geographic areas are important to consider if they are densely populated. Alternative map displays, such as a cartogram or a hexagon tile map, can shift the attention of map users from the large rural areas by decreasing their size on the map display. This means alternative displays can be more effective at accurately communicating spatial patterns across spatial areas. It is recommended that alternative displays are included in cancer atlases. In addition, with the ease of today's technology, user interaction with the displays is encouraged. Users should also be able to interactively display different statistics, such as incidence rate or relative incidence, or filtered by demographic variables.
 
-\hypertarget{introduction}{%
-\section{Introduction}\label{introduction}}
+\hypertarget{intro2}{%
+\section{Introduction}\label{intro2}}
 
 Researchers, health authorities, governments, not-for-profits and the media are common communicators of cancer statistics. They often present statistics to the public as aggregated values for geopolitical areas. Presenting these statistics requires aggregating individual observations for the geographical units, especially for privacy protection, but also for political and policy purposes. Examples of typical geographical units include states, provinces, local government areas, and post/zip codes. It is easy to provide counts or incidence rates of the diagnoses of these areas. This type of data is routinely collected for public health reasons and may be made available to the general public as a service to the community.
 
@@ -516,7 +516,8 @@ Figure \ref{fig:ggcartograms} shows four different cartograms for the same data.
 \hypertarget{contiguous}{%
 \subsubsection{Contiguous}\label{contiguous}}
 
-A contiguous cartogram alters the choropleth according to a statistic and maintains connectivity of the map regions. Min Ouyang and Revesz \autocite{ACA} present three algorithms for creating value-by-area cartograms. They implement `map deformation' to account for the value assigned to each area. Other methods include Tobler's Pseudo-Cartogram Method, Dorling's Cellular Automaton Method \autocite{ACTUC}, Radial Expansion Method, Rubber Sheet Method, Line Integral Method, Constraint-Based Method \autocite{CBATCC}.
+A contiguous cartogram alters the choropleth according to a statistic and maintains connectivity of the map regions.
+Min Ouyang and Revesz \autocite{ACA} present three algorithms for creating value-by-area cartograms. They implement `map deformation' to account for the value assigned to each area. Other methods include Tobler's Pseudo-Cartogram Method, Dorling's Cellular Automaton Method \autocite{ACTUC}, Radial Expansion Method, Rubber Sheet Method, Line Integral Method, Constraint-Based Method \autocite{CBATCC}.
 
 Figure \ref{fig:ggcartograms}a shows a population contiguous cartogram of the United States. All states are visible and the shape of the United States overall is still recognizable. In contrast, Figure \ref{fig:auscartograms}a shows an Australian contiguous cartogram also based on population. The south east is enlarged, but high population areas are still small, and low population areas are still large on the map. The algorithm doesn't fully reach an optimal configuration where area matches population -- Australia is too heterogeneous for the algorithm to handle.
 
@@ -528,7 +529,7 @@ Koccmoud and House \autocite{CBATCC} present this issue as conflicting tasks or 
 
 Non-contiguous cartograms prioritize the shapes of the areas instead of connectivity. Each area stays in a similar position to its location on a choropleth map. Displaying the choropleth map base allows map users to make comparisons regarding the change in the area. The addition is the gap between areas, created as each area shrinks or grows according to the associated value of the statistic. Olson \autocite{NAC} discusses the creation of these maps and the significance of the empty areas left between the geographic boundaries and the new shape.
 
-The white space presents the meaningful empty-space property \autocite{ECGC}, \autocite{NAC} but it also distracts the reader from the data, with a low data density \autocite{TVDQI}.
+The white space presents the meaningful empty-space property \autocite{ECGC}, \autocite{NAC} but it also distracts the reader from the data, with a low data density \autocite{TVSSS}.
 
 \hypertarget{dorling}{%
 \subsubsection{Dorling}\label{dorling}}
@@ -548,7 +549,7 @@ Raisz \autocite{RSCW} laid the groundwork for this approach in the mid-1930s, dr
 
 A tile map provides a tessellated display of consistent shapes. A similar method to a rectangular cartogram, represents each geographic area using a square. The squares are tessellated to create a grid. Each area is represented by a square of the same dimensions, each tile is usually one unit of measurement, this could be geographic regions such as states or population-based that use a consistent measure of population for each tile. Regions with over four neighbors require some necessary displacement. The tile map uses color to represent a value of a statistic for each area. A similar method to a rectangular cartogram represents each geographic area using a square of the same dimensions. There are online media sources using this method, these include \autocite{NPR}, \autocite{FiveThirtyEight}, \autocite{WSJ}, \autocite{WP}. Tile maps may be difficult to create as they are best created manually, they require additional time and care as the number of geographic areas to include increases.
 
-Cano and others \autocite{MDAC} define the term `mosaic cartograms' for hexagonal tile displays, where the number of tiles for each area or the color of them can communicate the statistic of regions. When using several tiles per region, map makers can adjust the complexity of the boundaries in the resulting display. They can also make a trade-off between boundary complexity and simplicity by the size of the tiles used. A mosaic cartogram employs tessellation to connect the hexagons, triangles or squares used to represent the geographic land mass. Tessellation closely arranges each of the shapes so that the sides of neighbouring shapes align. Tile maps do not have to tessellate completely, this flexibility is helpful if the land mass has islands.
+Cano and others \autocite{MDAC} define the term `mosaic cartograms' for hexagonal tile displays, where the number of tiles for each area or the color of them can communicate the statistic of regions. When using several tiles per region, map makers can adjust the complexity of the boundaries in the resulting display. They can also make a trade-off between boundary complexity and simplicity by the size of the tiles used.
 
 \hypertarget{geofacet}{%
 \subsection{Geofacet}\label{geofacet}}
@@ -670,14 +671,14 @@ It also provides an example of how to animate between the choropleth map display
 This chapter will be submitted for publication to the \emph{Journal of Statistical Software} for publication.
 The steps in this algorithm are implemented in the \texttt{sugarbag} \autocite{sugarbag} package for \texttt{R} \autocite{R}.
 
-\hypertarget{abstract-2}{%
-\section*{Abstract}\label{abstract-2}}
+\hypertarget{abstract3}{%
+\section*{Abstract}\label{abstract3}}
 \addcontentsline{toc}{section}{Abstract}
 
 This algorithm creates a tessellated hexagon display to represent each of the spatial polygons. It allocates these hexagon in a manner that preserves the spatial relationship of the geographic units. It showcases spatial distributions, by emphasising the small geographical regions that are often difficult to locate on geographic maps. Spatial distributions have been presented on alternative representations of geography for many years. In modern times, interactivity and animation have begun to play a larger role, as alternative representations have been popularised by online news sites, and atlas websites with a focus on public consumption. Applications are increasingly widespread, especially in the areas of disease mapping, and election results.
 
-\hypertarget{introduction-1}{%
-\section{Introduction}\label{introduction-1}}
+\hypertarget{intro3}{%
+\section{Introduction}\label{intro3}}
 
 It is common to present geospatial data on a choropleth map display. These maps show the landmass with administrative boundaries and can highlight the geographic patterns in geospatially related statistics \autocite{SAMGIS}.
 In many countries, residents are increasingly gathering to live around major cities.
@@ -692,15 +693,15 @@ Contiguous cartograms change the shape of areas, while preserving boundary relat
 Alternative maps shift the focus from land area and shape, to the value of the statistics in a group of areas.
 Alternative mapping methods allow increased understanding of the spatial distribution of a variable across the population, by fairly representing each administrative area. This acknowledges that the amount of residents can be different but recognises that each area, or person within it is equally important.
 
-\hypertarget{hexagon-tile-map-benefits}{%
-\section{Hexagon tile map benefits}\label{hexagon-tile-map-benefits}}
+\hypertarget{mapping-techniques}{%
+\section{Mapping techniques}\label{mapping-techniques}}
 
 There are several established alternative visualisation methods.
-Tile maps, Rectangular cartograms \autocite{ORC} and Dorling cartograms \autocite{ACTUC}, all use one simple shape to represent each area. They place various importance on the preservation of spatial relationships, but all minimise the emphasis on the size or shape of the geographic areas. These alternative map displays focus on the relationship between neighbours, attempting to preserve connections, and disregard the unique shapes of the administrative boundaries. Figure \ref{fig:qld_grid} shows a collection of alternative map displays, this includes a) a contiguous cartogram, b) a non-contiguous cartogram, c) a Dorling cartogram and d) a hexagon tile map.
-Each Statistical Area at Level 2 (SA2) is intended to represent a community. These administrative areas are often used to aggregate census data and used to understand demographics of the Australian population. Unlike electorates that belong
+Several of these all use one simple shape to represent each area, they include tile maps, Rectangular cartograms \autocite{ORC} and Dorling cartograms \autocite{ACTUC}. They place various importance on the preservation of spatial relationships, but all minimise the emphasis on the size or shape of the geographic areas. These alternative map displays focus on the relationship between neighbours, attempting to preserve connections, and disregard the unique shapes of the administrative boundaries. Figure \ref{fig:qld_grid} shows a collection of alternative map displays, this includes a) a contiguous cartogram, b) a non-contiguous cartogram, c) a Dorling cartogram and d) a hexagon tile map.
+Each Statistical Area at Level 2 (SA2) was designed to represent a community. These administrative areas are often used to aggregate census data and used to understand demographics of the Australian population.
 
-The familiar choropleth map display is often used to allow the user to orient themselves. However, the emphasis on the land mass diminishes the features of the distribution in densely populated communities due to the small size on the display.
-The unique shapes of boundaries can be helpful for orienting users but may not contribute to their understanding of the spatial disease distribution. In figure \ref{fig:qld_grid} the choropleth map underlies the alternative maps to allow for comparisons to be made between the alternatives.
+The familiar choropleth map display is often used to allow the user to orient themselves. However, the emphasis on the land mass diminishes the features of the distribution in densely populated communities due to the small size on the display \autocite{ACTUC}.
+The unique shapes of boundaries can be helpful for orienting users but may not contribute to their understanding of the spatial disease distribution as many of the communities are not visible in a choropleth display \autocite{TVSSS}. This presents an opportunity for explicit map transformations to improve communication of distributions \autocite{CBATCC}. In figure \ref{fig:qld_grid} the choropleth map underlies the alternative maps to allow for comparisons to be made between the alternatives.
 
 \begin{figure}[H]
 \centering
@@ -708,17 +709,16 @@ The unique shapes of boundaries can be helpful for orienting users but may not c
 \caption{\label{fig:qld_grid}A collection of alternative maps of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated SIR of Melanoma for males, ranging from much lower than average (blue) to much higher than average (red)}
 \end{figure}
 
-The impact of a disease over connected communities can be displayed by allowing the boundaries to maintain their connections. The contiguous cartogram displayed in figure \ref{fig:qld_grid}a) can draw attention to smaller units when they are rescaled according to a variable such as population. These new shapes can now be coloured to represent a second variable. This display can create unusual and unfamiliar shapes from the geographic units, especially when there are communities located geographically far from their neighbours. This especially obvious in the northern SA2 are of Queensland with an average (yellow) estimated SIR of Melanoma for males.
+When communicating information that is relevant to the population, each member of the population can be given equal representation by transforming the map \autocite{TVSSS}.
+The impact of a disease over connected communities can be seen by allowing the boundaries to maintain connection in the transformed display. The contiguous cartogram displayed in figure \ref{fig:qld_grid}a) can draw attention to smaller geographic units when they are rescaled according to the population \autocite{DMAHP}. These new shapes can now be coloured to represent a second variable. This display can create twisted and unfamiliar shapes from the geographic units as the algorithms must satisfy the topology conditions, especially when there are communities located geographically far from their neighbours \autocite{TVSSS}. This shown in the northern SA2s of Queensland with an average (yellow) estimated SIR of Melanoma for males.
 
-The non-contiguous cartogram in figure \ref{fig:qld_grid}b) also uses the population to rescale the geographic units. Unlike the contiguous cartogram, the SA2 areas maintain their geographic shape, this means they may not retain the connection with their neighbours. The population of the SA2 areas is used to scale, the disparity between large rural areas and small urban areas means that the city of Brisbane, show in the inset map looks reasonable, but these units cannot be seen in the context of the Queensland state map.
+The non-contiguous cartogram in figure \ref{fig:qld_grid}b) also uses the population to rescale the geographic units. Unlike the contiguous cartogram, the SA2 areas maintain their geographic shape, this means they may not retain the connection with their neighbours. The population of the SA2 areas is used to scale the geographic units in the non-contiguous cartogram. The amount of white space can be meaningful in non-contiguous cartograms, in this example the disparity between large rural areas and small urban areas means that the city of Brisbane, shown in the inset map looks reasonable, but these units are not visible in the context of the Queensland state map. The amount of white space may prevent meaningful understanding of the distribution.
 
-The Dorling cartogram presents each individual area scaled for the population value of each area. Figure \ref{fig:qld_grid}c) shows the Queensland SA2 areas, this map presents each community as an individual circle, located as close as possible to the geographic centroid location. This map draws attention to the collection of coastal cities in Queensland that were not apparent in figure \ref{fig:qld_grid} a) or b).
-This map was the most influential in the design of the hexagon tile map.
+The Dorling cartogram presents each geographic unit, the size of the circle is scaled according to the population value of each area. Figure \ref{fig:qld_grid}c) shows the Queensland SA2 areas, this map presents each community as an individual circle located as close as possible to the geographic centroid location. This map draws attention to the collection of coastal cities in Queensland that were not apparent in figure \ref{fig:qld_grid} a) or b).
 
-The use of a hexagon provides a simple shape that shifts the focus of the visualisation to the effects of a disease on communities, rather than the land mass. Hexagons can emphasise the relationship between neighbouring communities by allowing their sides to touch. The tessellation is helpful in densely populated areas as it shows that most communities are not islands onto themselves, but are connected to those around them. The tessellation that allows boundary connections was not imposed for rural communities, where centroid of the geographic unit was located far from others.
-
-\hypertarget{mapping-techniques}{%
-\section{Mapping techniques}\label{mapping-techniques}}
+The Dorling cartogram was the most influential in the design of the hexagon tile map.
+Like Dorling's circular cartograms, the use of a hexagon provides a simple shape that shifts the focus of the visualisation to the effects of a disease on communities. It is not impeded by the irregular and unusual shapes created by a contiguous cartogram and the immense white space created on the non-contiguous cartogram.
+Hexagons can emphasise the relationship between neighbouring communities by allowing their sides to touch. The tessellation crated by adjoining hexagons for densely populated areas is helpful as it shows that most communities are not islands onto themselves, but are intrinsically connected to those around them. As seen in the Dorling cartogram in figure \ref{fig:qld_grid}c), the tessellation that allows boundary connections was not imposed for rural communities, where centroid of the geographic unit was located far from others, a feature that allows distant but dense populations of the coastal towns of Queensland to be recognised.
 
 These maps can be useful to understand a distribution across a region. However, these maps are not easily drawn, especially as the number of areas increases. This algorithm was created to automate this process, and reduce the manual load involved in creating and implementing alternative displays. This allows map makers and data communicators to allocate their time to choosing the most effective display, rather than manually creating them.
 
@@ -727,18 +727,18 @@ Users should provide a set of polygons that define geographic units by their adm
 The centroid location of each geographic unit is used to measure the proximity.
 It emphasises the capital cities as population hubs, rather than emphasizing the size of large, rural geographic units.
 
-Figure 3.x displays the Australian areas with equally sized hexagons. This display allows the small and densely populated inner city areas to be easily contrasted with their neighbouring areas.
-The choropleth map that uses the geographic shapes of areas
+The choropleth map that uses the geographic shapes of areas can be seen in figure \ref{fig:melanoma-hex}.
+Figure \ref{fig:melanoma-geo} displays the Australian areas with equally sized hexagons. This display allows the small and densely populated inner city areas to be easily contrasted with their neighbouring areas.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=14cm]{figures/03-algorithm/aus_melanoma_p.pdf}
+\includegraphics[width=14cm]{figures/03-algorithm/aus_ggchoro.pdf}
 \caption{\label{fig:melanoma-geo}A choropleth map of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated SIR of Melanoma for all persons, they range from much lower than average (blue) to much higher than average (red)}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=14cm]{figures/03-algorithm/aus_melanoma_p_hex.pdf}
+\includegraphics[width=14cm]{figures/03-algorithm/aus_gghexmap.pdf}
 \caption{\label{fig:melanoma-hex}A hexagon tile map of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated SIR, they range from much lower than average (blue) to much higher than average (red)}
 \end{figure}
 
@@ -753,7 +753,9 @@ To create this choropleth map the SA2 polygons for 2011 from the ABS. The SIRs f
 \hypertarget{algorithm-1}{%
 \section{Algorithm}\label{algorithm-1}}
 
-The algorithm presented in \texttt{sugarbag} package operates on a set of simple feature geometry objects, also known as \texttt{sf} \autocite{sf} polygons.
+The purpose of this algorithm is to create a map display that highlights the density of populations, when communicating spatial distributions. There has been an increasing need for displays that emphasise the large number of people that live in dense urban environments. The algorithm intends to maintain the spatial relationships of a group of geographic units in two ways: between each unit and the closest focal point, and between each unit and it's neighbours. The algorithm allocates geographic units to a representative hexagon in order of their proximity to the closest focal point. This means each cluster of areas is created by building outward from significant points provided by users.
+
+The algorithm is named for the \textbf{Trigona carbonaria} bee species. Native to northern and eastern Australia this stingless species builds flat layers of hexagonal brood cells, spiralling out from a central point \autocite{PH}. This hive design inspired the use of multiple focal points in the algorithm, meaning individual spirals can be built outward from various points on the geographic map base.
 
 There are four steps performed to create a tessellated hexagon tile map.
 These steps can be executed by the main function, \texttt{create\_hexmap}, or can be implemented separately for more flexibility. There are parameters used in the process that can be provided by users, if they are not, they will be automatically derived.
@@ -770,6 +772,8 @@ These steps can be executed by the main function, \texttt{create\_hexmap}, or ca
 \item
   Transform the data for plotting
 \end{enumerate}
+
+The algorithm presented in the \texttt{sugarbag} package operates on a set of simple feature geometry objects \autocite{sf}, this package allows R users to create \texttt{sf} objects by importing polygons stored in various formats.
 
 \textbackslash begin\{figure\}
 \includegraphics[width=14cm]{figures/03-algorithm/sugarbag_horizontal.png}
@@ -814,18 +818,18 @@ parameter & create\_centroids & create\_grid & allocate\\
 shp & essential &  & \\
 sf\_id & essential &  & optional\\
 \addlinespace
-verbose & optional & optional & optional\\
 buffer\_dist &  & essential & \\
-\addlinespace
 centroids &  & essential & essential\\
+\addlinespace
 hex\_size &  & essential & essential\\
 focal\_points &  &  & optional\\
-\addlinespace
 hex\_grid &  &  & essential\\
-hex\_filter &  &  & essential\\
 \addlinespace
+hex\_filter &  &  & essential\\
 use\_neighbours &  &  & optional\\
+\addlinespace
 width &  &  & essential\\
+verbose & optional & optional & optional\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1104,20 +1108,20 @@ The results showed that participants did in fact more frequently find the popula
 
 This chapter will be submitted to the journal \emph{IEEE Transactions of Visualisation and Computer Graphics}.
 
-\hypertarget{abstract-3}{%
-\section*{Abstract}\label{abstract-3}}
+\hypertarget{abstract4}{%
+\section*{Abstract}\label{abstract4}}
 \addcontentsline{toc}{section}{Abstract}
 
 The choropleth map display is commonly used for communicating spatial distributions across geographic areas. However, when choropleths are used the size of the geographic units will influence the understanding of the distribution derived by map users. The hexagon tile map is presented as an alternative display for visualizing population related distributions effectively. Visual inference is used to measure the power of the hexagon tile map design, and the choropleth is used as a comparison. The hexagon tile map display is tested using a distribution that is directly related to the geography, with values monotonically increasing from the North-West to South-East areas of Australia. This study finds in a hexagon tile map lineup the single map that contains a population related distribution is detected with greater probability than the same data displayed in a choropleth map. These findings should encourage map creators to implement alternative displays and consider a hexagon tile map when presenting spatial distributions of heterogeneous areas.
 
-\hypertarget{introduction-2}{%
-\section{Introduction}\label{introduction-2}}
+\hypertarget{intro4}{%
+\section{Introduction}\label{intro4}}
 
-This study compares the effectiveness of the spatial display, a hexagon tile map, against the standard, a choropleth map, for communicating information about disease statistics. The choropleth map is the traditional method for visualizing aggregated statistics across administrative boundaries. The hexagon tile map builds on existing displays, such as the cartogram, and tessellated hexagon displays. A hexagon tile map forgoes the familiar boundaries, in favor of representing each geographic unit as an equally sized hexagon, placed approximately in the correct spatial location. It differs in the relaxed requirement to have connected hexagons, and allows sparsely located hexagons. This type of display may be useful for other countries, and other purposes. The algorithm to construct a hexagon tile map is available in the R package sugarbag \autocite{sugarbag}.
+This study compares the effectiveness of the spatial display, a hexagon tile map, against the standard, a choropleth map, for communicating information about disease statistics. The choropleth map is the traditional method for visualizing aggregated statistics across administrative boundaries. The hexagon tile map builds on existing displays, such as the contiguous and Dorling cartogram displays. A hexagon tile map forgoes the familiar boundaries, in favor of representing each geographic unit as an equally sized hexagon, placed approximately in the correct spatial location. It differs from a contiguous cartogram in the relaxed requirement to have connected hexagons, and allows sparsely located hexagons. This type of display may be useful for other countries, and other purposes. The algorithm to construct a hexagon tile map is available in the R package sugarbag \autocite{sugarbag}.
 
-The hexagon tile map was designed for Australia, motivated by a need to display spatial statistics for the Australian Cancer Atlas. None of the existing approaches for creating cartograms or hexagon tiling perform well for the Australian landscape, which has vast open spaces and concentrations of population in small regions clustered on the coastlines.
+The hexagon tile map was designed for Australia, motivated by a need to display spatial statistics for the Australian Cancer Atlas. The division of the Australian landscape reflects the vast open geographic spaces and concentrations of population in small regions clustered on the coastlines. Several existing approaches for creating cartograms were considered, but they did not perform well for the set of over 2000 Statistical Areas (Level 2).
 
-The Australian Cancer Atlas \autocite{TACA} is an online interactive web tool created to explore the burden of cancer on Australian communities. There are many cancer types to be explored individually or aggregated. The Australian Cancer Atlas allows users to explore the patterns in the distributions of cancer statistics over the geographic space of Australia. It uses a choropleth map display and diverging color scheme to draw attention to relationships between neighboring areas. The hexagon tile map may be a useful alternative display to enhance the atlas.
+The Australian Cancer Atlas \autocite{TACA} is an online interactive web tool created to explore the burden of cancer on Australian communities. There are many cancer types to be explored individually or aggregated. The Australian Cancer Atlas allows users to explore the patterns in the distributions of cancer statistics over the geographic space of Australia. It uses a choropleth map display and diverging color scheme to draw attention to the burden of cancer on neighboring areas. The hexagon tile map could be a useful alternative display to enhance the atlas.
 
 The experiment was conducted using the lineup protocol, a visual inference procedure \autocite{GIIV}, to objectively test the effectiveness of the two displays.
 
@@ -1126,10 +1130,10 @@ The paper is organised as follows. The next section discusses the background of 
 \hypertarget{background}{%
 \section{Background}\label{background}}
 
-\hypertarget{spatial-data-displays}{%
-\subsection{Spatial data displays}\label{spatial-data-displays}}
+\hypertarget{spatial-disease-data-displays}{%
+\subsection{Spatial disease data displays}\label{spatial-disease-data-displays}}
 
-Spatial visualisations communicate the distribution of statistics over geographic landscapes. The choropleth map \autocite{EI}, \autocite{BCM} is a traditional display. It is used to present statistics that have been aggregated on geographic units. Creating a choropleth map involves drawing polygons representing the administrative boundaries, and filling with colour mapped to the value of the statistic. The choropleth map places the statistic in the context of the spatial domain, so that the reader can see whether there are spatial trends, clusters or anomalies. This is important for digesting disease patterns. If there is a trend it may imply that the disease is spreading from one location to another. If there is a cluster, or an anomaly, there may be a localized outbreak of the disease. Aggregating the statistic on administrative units, provides a level of privacy to individuals, while allowing the impact of the disease on the community to be analyzed.
+Spatial visualisations communicate the distribution of statistics over geographic landscapes. The choropleth map \autocite{EI}, \autocite{BCM} is a traditional display. Creating a choropleth map involves drawing polygons representing the administrative boundaries, and filling with colour mapped to the value of the statistic. It is used to present statistics that have been aggregated on geographic units. The choropleth map places the statistic in the context of the spatial domain, so that the reader can see whether there are spatial trends, clusters or anomalies. This is important for digesting disease patterns. If there is a trend it may imply that the disease is spreading from one location to another. If there is a cluster, or an anomaly, there may be a localized outbreak of the disease. Aggregating the statistic on administrative units, provides a level of privacy to individuals, while allowing the impact of the disease on the community to be analyzed.
 
 \begin{figure}[H]
 \centering
@@ -1143,20 +1147,20 @@ Spatial visualisations communicate the distribution of statistics over geographi
 \caption{\label{fig:liver-hex}A hexagon tile map of the smoothed average of liver cancer diagnoses for Australian males. The diverging colour scheme uses dark blue areas for much lower than average diagnoses, yellow areas with diagnoses around the Australian average, red shows diagnoses much higher than average. The hexagon tile map shows concentrations of higher than expected liver cancer rates in the cities of Melbourne and Sydney, which is not visible from the choropleth.}
 \end{figure}
 
-The choropleth map is an effective spatial display if the size of the geographic units is relatively uniform. This is not the case for most countries. Size heterogeneity in administrative units is particularly extreme in Australia: most of the landscape of Australia is sparsely settled, with the population densely clustered into the narrow coastal strips. A choropleth map focuses attention on the geography, and for heterogeneously sized areas it presents a biased view of the population related distribution of the statistic \autocite{CBATCC}. \emph{Land doesn't get cancer, people do} -- a more effective way to communicate the spatial distributions of cancer statistics is needed.
+The choropleth map is an effective spatial display if the geography is integral to the disease distribution or alternatively, if the size of the geographic units is relatively uniform. This is not the case for most countries. Size heterogeneity in administrative units is particularly extreme in Australia: most of the landscape of Australia is sparsely settled, with the population densely clustered into the narrow coastal strips. A choropleth map focuses attention on the geography, and for heterogeneously sized areas it presents a biased view of the population related distribution of the statistic \autocite{CBATCC}. \emph{Land doesn't get cancer, people do} -- a more effective way to communicate the spatial distributions of cancer statistics is needed as the choropleth display is the traditional and most common display used for communicating most spatial data.
 
-A cartogram is a general solution for better displaying a population-based statistic. It transforms the geographic map base to reflect the population in the geographic region, while preserving some aspects of the geographic location. There are several cartogram algorithms \autocite{ACTUC}, \autocite{CBATCC}; each involves shifting the boundaries of geographic units, using the value of the statistic to increase or decrease the area taken by the geographic unit on the map. The changes to the boundaries result in cartograms that accurately communicate population by map area for each of the geographic units but can result in losing the familiar geographic information. For Australia, the transformations warp the country so that it is no longer recognizable.
+A cartogram is a general solution for more effectively communicating a population-based statistic. Cartograms transform the geographic map base so that the shapes and sizes reflect the population in the geographic region, while preserving some aspects of the geographic location. There are several cartogram algorithms \autocite{ACTUC}, \autocite{CBATCC}; each involves shifting the boundaries of geographic units, using the value of the statistic to increase or decrease the area taken by the geographic unit on the map. The changes to the boundaries result in cartograms that accurately communicate population by map area for each of the geographic units but can result in losing the familiar geographic information. For Australia, the transformations warp the country so that it is no longer recognizable.
 
-Alternative algorithms make various trade offs between familiar shapes and representation of geographic units. The non-contiguous cartogram method \autocite{NAC} keeps the shapes of geographic units intact, and changes the size of the shape. This method disconnects areas creating empty space on the display losing the continuity of the spatial display of the statistic. The Dorling cartogram \autocite{ACTUC} represents each unit as a circle, sized according to the value of the statistic. The neighbour relationships are mostly maintained by how the circles touch. A similar approach was pioneered by Raisz \autocite*{RSCW}, using rectangles that tile to align borders of neighbours \autocite{CDWCS}. There have been thorough reviews of the array of methods, as suitable for cancer atlas displays \autocite{review}, \autocite{BCM}.
+The algorithms for alternative displays make various trade offs between familiar shapes and representation of geographic units. The non-contiguous cartogram method \autocite{NAC} keeps the shapes of geographic units intact, and changes the size of the shape. This method disconnects areas creating empty space on the display losing the continuity of the spatial display of the statistic. The Dorling cartogram \autocite{ACTUC} represents each unit as a circle, sized according to the value of the statistic. The neighbour relationships are mostly maintained by how the circles touch. A similar approach was pioneered by Raisz \autocite*{RSCW}, using rectangles that tile to align borders of neighbours \autocite{CDWCS}. There have been thorough reviews of the array of methods, as suitable for cancer atlas displays \autocite{review}, \autocite{BCM}.
 
-The hexagon tile map algorithm, automatically matches spatial regions to their nearest hexagon tile, from a grid of tiles. It has the effect of spreading out the inner city areas while maintaining the spatial locations or regions in remote areas. The algorithm is available in the R package, sugarbag \autocite{sugarbag}. Figure \ref{fig:liver-geo} shows the hexagon tile map, along with the choropleth map of liver cancer rates in Australia. Colour maps from substantially below average (blue) to substantially above average (red) rates. The inner city areas have expanded, making it possible to see the cancer incidence in the small, densely populated areas. Remote regions are represented by isolated hexagons, which is not ideal, but maintains the spatial location of these data values. It is of interest to know how well the spatial distribution is perceived for this display, in comparison to the choropleth.
+The hexagon tile map algorithm, automatically allocates geographic units to an appropriate hexagon tile, from a grid of tiles. It has the effect of spreading out the inner city areas while maintaining the spatial locations of regions in remote areas. The algorithm is available in the R package, sugarbag \autocite{sugarbag}. Figure \ref{fig:liver-geo} shows the hexagon tile map, along with the choropleth map of liver cancer rates in Australia. Colour maps from substantially below average (blue) to substantially above average (red) rates. The inner city areas have expanded in size, making it possible to see the cancer incidence in the small, densely populated areas. Remote regions are represented by isolated hexagons, which is not ideal for colour comparisons, but it maintains the spatial location of these data values, emphasising their distance from other geographic units. It is of interest to know how well the spatial distribution is perceived for this display, in comparison to the choropleth. The choropleth map display is the most common display chosen for spatial disease distributions and this study intends to show another viable alternative is the hexagon tile map display.
 
 \hypertarget{visual-inference}{%
 \subsection{Visual Inference}\label{visual-inference}}
 
-In order to assess the effectiveness of the hexagon tile map, the lineup protocol \autocite{GIIV},\autocite{BCHLLSW09} from visual inference procedures is employed. The approach mirrors classical statistical inference. The procedures for doing a power comparison of competing plot designed, outlined in \textcite{GTPCCD}, are followed.
+In order to assess the effectiveness of the hexagon tile map, the lineup protocol \autocite{GIIV},\autocite{BCHLLSW09} from visual inference procedures is employed. The approach mirrors classical statistical inference. The procedures for doing a power comparison of competing plot designed, outlined in \textcite{GTPCCD}, are followed. \autocite{GIIV} suggest using a choropleth map to answer the question ``Is there a spatial trend?'', this study asks whether that question is addressed more accurately using a hexagon tile map.
 
-In classical statistical inference hypothesis testing is conducted by comparing the value of a test statistic on a standard reference distribution, computed assuming the null hypothesis is true. If the value is extreme, the null hypothesis is rejected, because the test statistic value is unlikely to have been so extreme if it was true. In the lineup protocol, the plot plays the role of the test statistic, and the data plot is embedded in a field of null plots. Defining the plot using a grammar of graphics \autocite{ggplot2} makes it a functional mapping of the variables and thus, it can be considered to be a statistic. With the same data, two different plots can be considered to be competing statistics, one possibly a more powerful statistic than the other.
+In classical statistical inference, hypothesis testing is conducted by comparing the value of a test statistic on a standard reference distribution, computed assuming the null hypothesis is true. If the value is extreme, the null hypothesis is rejected, because the test statistic value is unlikely to have been so extreme if it was true. In the lineup protocol, the plot plays the role of the test statistic, and the data plot is embedded in a field of null plots. Defining the plot using a grammar of graphics \autocite{ggplot2} makes it a functional mapping of the variables and thus, it can be considered to be a statistic. With the same data, two different plots can be considered to be competing statistics, one possibly a more powerful statistic than the other.
 
 To do hypothesis testing with the lineup protocol requires human evaluation. The human judge is required to identify the most different plot among the field of plots. If this corresponds to the data plot -- the test statistic -- the null hypothesis is rejected. It means that the data plot is extreme relative to the reference distribution of null plots.
 
@@ -1492,15 +1496,12 @@ Trend & Detected & Choro. & Hex.\\
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
 
-The intention of this study was to contrast the use of the choropleth map and the hexagon tile map.
-The visual inference lineup protocol was employed to contrast the effectiveness of the displays.
-The results have shown that overall the use of the hexagon tile map display allows participants to find the data plot in the lineup more often.
+The intention of this study was to contrast the use of the choropleth map and the hexagon tile map. The visual inference lineup protocol was employed to contrast the effectiveness of the displays. The results have shown that overall the use of the hexagon tile map display allows participants to find the data plot in the lineup more often.
 Using the visual inference protocol this result can be extended to show that it is a valid alternative display to communicate spatial distributions of population related data.
 
-We expected that the choropleth map would be superior for communicating the spatial pattern of geographic distributions. The data suggest that the participants perform slightly better or equally as well for each replicate in each trend model across the two displays. Table 4.II shows that the difference in the mean detection rate for the two trend models was 0.10.
+We expected that the choropleth map would be superior for communicating the spatial pattern of geographic distributions. The data suggest that the participants perform slightly better or equally as well for each replicate in each trend model across the two displays. Table Figure \ref{fig:detect-glmer1} shows that the difference in the mean detection rate for the two trend models was 0.10.
 
-The differences seen in Figure \ref{fig:detect-compare} and Table \ref{tab:desc-stats} are reflected in the model results. Surprisingly the difference for the geographic distribution was significant at the 0.05 level.
-It also showed that the hexagon tile map display performs marginally better than the choropleth for all trend models. Unexpectedly the detection rate suffers when using a choropleth map to display population related distributions.
+The differences seen in Figure \ref{fig:detect-compare} and Table \ref{tab:desc-stats} are reflected in the model results. Surprisingly the difference for the geographic distribution was significant at the 0.05 level. It also showed that the hexagon tile map display performs marginally better than the choropleth for all trend models. Unexpectedly the detection rate suffers when using a choropleth map to display population related distributions.
 
 While the significance of the difference in detection was the key focus of this experiment, the secondary focus was the time taken by participants. it was expected that the participants may take longer to consider the hexagon tile map distribution but would be able to detect the data plot in the lineup.
 The bimodal distributions seen in Figure \ref{fig:beeswarm} showed very little difference in the mean evaluation times. As the maximum time of all of the distributions approached 60 seconds it cannot be said that the participants' took longer to evaluate the hexagon tile map displays.
@@ -1514,6 +1515,11 @@ Due to the consistent coloring of rural areas in a choropleth display, the choic
 Choosing ``Clusters of colour'' was expected when participants viewed the hexagon tile map display of the All Cities and Three Cities distributions. It was unexpected that it was also the most common reason for the NW-SE hexagon tile map displays.
 Due to the spatial covariance introduced in the smoothing, groups of similarly colored hexagons were present in all of the hexagon tile map displays. All Cities and Three Cities distributions of real data trends had distinctly different patterns or red inner-city areas, while some of the plots in each lineup may have shared similar features.
 
+The conclusions drawn in this study are limited as it did not contrast the hexagon tile map to other alternative displays.
+This initial study tested the viability of a new alternative display against the common display for cancer atlases, the choropleth map.
+This study provides an opportunity for future studies to contrast the effectiveness of this display in the context of other alternatives.
+This analysis could be extended to contrast the performance of the hexagon tile map display against the choropleth, contiguous, non-contiguous and Dorling cartograms.
+
 \hypertarget{conclusion-04}{%
 \section{Conclusion}\label{conclusion-04}}
 
@@ -1521,8 +1527,8 @@ The choropleth map display and the tessellated hexagon tile map have been contra
 
 The hexagon tile map display should be considered as an alternative visualization method when communicating distributions that relate to the population across a set of geographic units. As an additional display to the familiar choropleth map, cancer atlas products may benefit from the opportunity to allow exploration via an alternative display. The spatial distributions used to test these displays were inspired by the real spatially smoothed estimates of the cancer burden on Australian communities. However, this technique may be extended to other population related distributions, such as other diseases.
 
-The increasing population densities of capital cities despite large land area exacerbates the difference in the smallest and largest communities.
-The population density structure of Australia can be considered similar to that of Canada, New Zealand and many other countries. Therefore, this display is not only relevant to Australia, but all nations or population distributions that experience densely populated cities separated by vast rural expanses.
+The increasing population densities of capital cities exacerbates the difference in the smallest and largest communities.
+The population density structure of Australia can be considered similar to that of the United Kingdom, Canada, New Zealand and other countries. Therefore, this display is not only relevant to Australia, but all nations or population distributions that experience densely populated cities separated by vast rural expanses.
 
 \hypertarget{supplementary-meaterial}{%
 \section{Supplementary meaterial}\label{supplementary-meaterial}}

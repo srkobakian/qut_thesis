@@ -16,7 +16,7 @@ This chapter will be submitted for publication to the *Journal of Statistical So
 The steps in this algorithm are implemented in the `sugarbag` [@sugarbag] package for `R` [@R].
 
 
-## Abstract {-}
+## Abstract {-#abstract3}
 
 This algorithm creates a tessellated hexagon display to represent each of the spatial polygons. It allocates these hexagon in a manner that preserves the spatial relationship of the geographic units. It showcases spatial distributions, by emphasising the small geographical regions that are often difficult to locate on geographic maps. Spatial distributions have been presented on alternative representations of geography for many years. In modern times, interactivity and animation have begun to play a larger role, as alternative representations have been popularised by online news sites, and atlas websites with a focus on public consumption. Applications are increasingly widespread, especially in the areas of disease mapping, and election results.
 
@@ -33,7 +33,7 @@ options("citation_format" = "pandoc")
 BibOptions(check.entries = FALSE, style = "markdown")
 ```
 
-## Introduction
+## Introduction {#intro3}
 
 <!-- Motivation to map -->
 It is common to present geospatial data on a choropleth map display. These maps show the landmass with administrative boundaries and can highlight the geographic patterns in geospatially related statistics [@SAMGIS].
@@ -50,15 +50,15 @@ Contiguous cartograms change the shape of areas, while preserving boundary relat
 Alternative maps shift the focus from land area and shape, to the value of the statistics in a group of areas.
 Alternative mapping methods allow increased understanding of the spatial distribution of a variable across the population, by fairly representing each administrative area. This acknowledges that the amount of residents can be different but recognises that each area, or person within it is equally important.
 
-## Hexagon tile map benefits
+## Mapping techniques
 
 There are several established alternative visualisation methods. 
-Tile maps, Rectangular cartograms [@ORC] and Dorling cartograms [@ACTUC], all use one simple shape to represent each area. They place various importance on the preservation of spatial relationships, but all minimise the emphasis on the size or shape of the geographic areas. These alternative map displays focus on the relationship between neighbours, attempting to preserve connections, and disregard the unique shapes of the administrative boundaries. Figure \ref{fig:qld_grid} shows a collection of alternative map displays, this includes a) a contiguous cartogram, b) a non-contiguous cartogram, c) a Dorling cartogram and d) a hexagon tile map. 
-Each Statistical Area at Level 2 (SA2) is intended to represent a community. These administrative areas are often used to aggregate census data and used to understand demographics of the Australian population. Unlike electorates that belong 
+Several of these all use one simple shape to represent each area, they include tile maps, Rectangular cartograms [@ORC] and Dorling cartograms [@ACTUC]. They place various importance on the preservation of spatial relationships, but all minimise the emphasis on the size or shape of the geographic areas. These alternative map displays focus on the relationship between neighbours, attempting to preserve connections, and disregard the unique shapes of the administrative boundaries. Figure \ref{fig:qld_grid} shows a collection of alternative map displays, this includes a) a contiguous cartogram, b) a non-contiguous cartogram, c) a Dorling cartogram and d) a hexagon tile map. 
+Each Statistical Area at Level 2 (SA2) was designed to represent a community. These administrative areas are often used to aggregate census data and used to understand demographics of the Australian population. 
 
 <!-- choropleth -->
-The familiar choropleth map display is often used to allow the user to orient themselves. However, the emphasis on the land mass diminishes the features of the distribution in densely populated communities due to the small size on the display.
-The unique shapes of boundaries can be helpful for orienting users but may not contribute to their understanding of the spatial disease distribution. In figure \ref{fig:qld_grid} the choropleth map underlies the alternative maps to allow for comparisons to be made between the alternatives.
+The familiar choropleth map display is often used to allow the user to orient themselves. However, the emphasis on the land mass diminishes the features of the distribution in densely populated communities due to the small size on the display [@ACTUC].
+The unique shapes of boundaries can be helpful for orienting users but may not contribute to their understanding of the spatial disease distribution as many of the communities are not visible in a choropleth display [@TVSSS]. This presents an opportunity for explicit map transformations to improve communication of distributions [@CBATCC]. In figure \ref{fig:qld_grid} the choropleth map underlies the alternative maps to allow for comparisons to be made between the alternatives.
 
 \begin{figure}[H]
 \centering
@@ -67,19 +67,20 @@ The unique shapes of boundaries can be helpful for orienting users but may not c
 \end{figure}
 
 <!-- contiguous -->
-The impact of a disease over connected communities can be displayed by allowing the boundaries to maintain their connections. The contiguous cartogram displayed in figure \ref{fig:qld_grid}a) can draw attention to smaller units when they are rescaled according to a variable such as population. These new shapes can now be coloured to represent a second variable. This display can create unusual and unfamiliar shapes from the geographic units, especially when there are communities located geographically far from their neighbours. This especially obvious in the northern SA2 are of Queensland with an average (yellow) estimated SIR of Melanoma for males.
+When communicating information that is relevant to the population, each member of the population can be given equal representation by transforming the map [@TVSSS].
+The impact of a disease over connected communities can be seen by allowing the boundaries to maintain connection in the transformed display. The contiguous cartogram displayed in figure \ref{fig:qld_grid}a) can draw attention to smaller geographic units when they are rescaled according to the population [@DMAHP]. These new shapes can now be coloured to represent a second variable. This display can create twisted and unfamiliar shapes from the geographic units as the algorithms must satisfy the topology conditions, especially when there are communities located geographically far from their neighbours [@TVSSS]. This shown in the northern SA2s of Queensland with an average (yellow) estimated SIR of Melanoma for males.
 
 <!-- non-contiguous -->
-The non-contiguous cartogram in figure \ref{fig:qld_grid}b) also uses the population to rescale the geographic units. Unlike the contiguous cartogram, the SA2 areas maintain their geographic shape, this means they may not retain the connection with their neighbours. The population of the SA2 areas is used to scale, the disparity between large rural areas and small urban areas means that the city of Brisbane, show in the inset map looks reasonable, but these units cannot be seen in the context of the Queensland state map.
+The non-contiguous cartogram in figure \ref{fig:qld_grid}b) also uses the population to rescale the geographic units. Unlike the contiguous cartogram, the SA2 areas maintain their geographic shape, this means they may not retain the connection with their neighbours. The population of the SA2 areas is used to scale the geographic units in the non-contiguous cartogram. The amount of white space can be meaningful in non-contiguous cartograms, in this example the disparity between large rural areas and small urban areas means that the city of Brisbane, shown in the inset map looks reasonable, but these units are not visible in the context of the Queensland state map. The amount of white space may prevent meaningful understanding of the distribution. 
 
 <!-- Dorling -->
-The Dorling cartogram presents each individual area scaled for the population value of each area. Figure \ref{fig:qld_grid}c) shows the Queensland SA2 areas, this map presents each community as an individual circle, located as close as possible to the geographic centroid location. This map draws attention to the collection of coastal cities in Queensland that were not apparent in figure \ref{fig:qld_grid} a) or b). 
-This map was the most influential in the design of the hexagon tile map.
+The Dorling cartogram presents each geographic unit, the size of the circle is scaled according to the population value of each area. Figure \ref{fig:qld_grid}c) shows the Queensland SA2 areas, this map presents each community as an individual circle located as close as possible to the geographic centroid location. This map draws attention to the collection of coastal cities in Queensland that were not apparent in figure \ref{fig:qld_grid} a) or b).
 
+<!-- why hexagon tile map addresses deficiencies -->
+The Dorling cartogram was the most influential in the design of the hexagon tile map.
+Like Dorling's circular cartograms, the use of a hexagon provides a simple shape that shifts the focus of the visualisation to the effects of a disease on communities. It is not impeded by the irregular and unusual shapes created by a contiguous cartogram and the immense white space created on the non-contiguous cartogram.
+Hexagons can emphasise the relationship between neighbouring communities by allowing their sides to touch. The tessellation crated by adjoining hexagons for densely populated areas is helpful as it shows that most communities are not islands onto themselves, but are intrinsically connected to those around them. As seen in the Dorling cartogram in figure \ref{fig:qld_grid}c), the tessellation that allows boundary connections was not imposed for rural communities, where centroid of the geographic unit was located far from others, a feature that allows distant but dense populations of the coastal towns of Queensland to be recognised.
 
-The use of a hexagon provides a simple shape that shifts the focus of the visualisation to the effects of a disease on communities, rather than the land mass. Hexagons can emphasise the relationship between neighbouring communities by allowing their sides to touch. The tessellation is helpful in densely populated areas as it shows that most communities are not islands onto themselves, but are connected to those around them. The tessellation that allows boundary connections was not imposed for rural communities, where centroid of the geographic unit was located far from others.
-
-## Mapping techniques
 
 <!-- Motivate the value of the the package and algorithm -->
 These maps can be useful to understand a distribution across a region. However, these maps are not easily drawn, especially as the number of areas increases. This algorithm was created to automate this process, and reduce the manual load involved in creating and implementing alternative displays. This allows map makers and data communicators to allocate their time to choosing the most effective display, rather than manually creating them.
@@ -89,30 +90,28 @@ Users should provide a set of polygons that define geographic units by their adm
 The centroid location of each geographic unit is used to measure the proximity.
 It emphasises the capital cities as population hubs, rather than emphasizing the size of large, rural geographic units.
 
-Figure 3.x displays the Australian areas with equally sized hexagons. This display allows the small and densely populated inner city areas to be easily contrasted with their neighbouring areas.
-The choropleth map that uses the geographic shapes of areas 
+The choropleth map that uses the geographic shapes of areas can be seen in figure \ref{fig:melanoma-hex}.
+Figure \ref{fig:melanoma-geo} displays the Australian areas with equally sized hexagons. This display allows the small and densely populated inner city areas to be easily contrasted with their neighbouring areas.
 
 <!-- ```{r melanoma-geo, fig.cap = "A choropleth map of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated Standardised Incidence Rate of Melanoma for all persons, they range from much lower than average (blue) to much higher than average (red)", results = "asis", echo = FALSE, out.width = "60%"} -->
-<!-- knitr::include_graphics("figures/03-algorithm/aus_melanoma_p.png") -->
+<!-- knitr::include_graphics("figures/03-algorithm/aus_ggchoro.png") -->
 <!-- ``` -->
 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=14cm]{figures/03-algorithm/aus_melanoma_p.pdf}
+\includegraphics[width=14cm]{figures/03-algorithm/aus_ggchoro.pdf}
 \caption{\label{fig:melanoma-geo}A choropleth map of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated SIR of Melanoma for all persons, they range from much lower than average (blue) to much higher than average (red)}
 \end{figure}
 
 <!-- ```{r melanoma-hex, fig.cap = "A hexagon tile map of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated Standardised Incidence Rate, they range from much lower than average (blue) to much higher than average (red)", results = "asis", echo = FALSE, out.width = "60%"} -->
-<!-- knitr::include_graphics("figures/03-algorithm/aus_melanoma_p_hex.png") -->
+<!-- knitr::include_graphics("figures/03-algorithm/aus_gghexmap.png") -->
 <!-- ``` -->
-
-
 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=14cm]{figures/03-algorithm/aus_melanoma_p_hex.pdf}
+\includegraphics[width=14cm]{figures/03-algorithm/aus_gghexmap.pdf}
 \caption{\label{fig:melanoma-hex}A hexagon tile map of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated SIR, they range from much lower than average (blue) to much higher than average (red)}
 \end{figure}
 
@@ -127,7 +126,9 @@ To create this choropleth map the SA2 polygons for 2011 from the ABS. The SIRs f
 
 ## Algorithm
 
-The algorithm presented in `sugarbag` package operates on a set of simple feature geometry objects, also known as `sf` [@sf] polygons.
+The purpose of this algorithm is to create a map display that highlights the density of populations, when communicating spatial distributions. There has been an increasing need for displays that emphasise the large number of people that live in dense urban environments. The algorithm intends to maintain the spatial relationships of a group of geographic units in two ways: between each unit and the closest focal point, and between each unit and it's neighbours. The algorithm allocates geographic units to a representative hexagon in order of their proximity to the closest focal point. This means each cluster of areas is created by building outward from significant points provided by users.
+
+The algorithm is named for the **Trigona carbonaria** bee species. Native to northern and eastern Australia this stingless species builds flat layers of hexagonal brood cells, spiralling out from a central point [@PH]. This hive design inspired the use of multiple focal points in the algorithm, meaning individual spirals can be built outward from various points on the geographic map base.
 
 There are four steps performed to create a tessellated hexagon tile map.
 These steps can be executed by the main function, `create_hexmap`, or can be implemented separately for more flexibility. There are parameters used in the process that can be provided by users, if they are not, they will be automatically derived.
@@ -137,6 +138,7 @@ These steps can be executed by the main function, `create_hexmap`, or can be imp
  3. Allocate each centroid to an available hexagon
  4. Transform the data for plotting
 
+The algorithm presented in the `sugarbag` package operates on a set of simple feature geometry objects [@sf], this package allows R users to create `sf` objects by importing polygons stored in various formats.
 
 \begin{figure}
 \includegraphics[width=14cm]{figures/03-algorithm/sugarbag_horizontal.png}
@@ -166,7 +168,6 @@ tribble(
   ~parameter,        ~create_centroids, ~create_grid, ~allocate,
    "shp",            "essential",       "",           "",
    "sf_id",          "essential",       "",           "optional",
-   "verbose",        "optional",        "optional",   "optional",
    "buffer_dist",    "",                "essential",  "",
    "centroids",      "",                "essential",  "essential",
    "hex_size",       "",                "essential",  "essential", 
@@ -175,6 +176,7 @@ tribble(
    "hex_filter",     "",                "",           "essential",
    "use_neighbours", "",                "",           "optional",
    "width",          "",                "",           "essential",
+   "verbose",        "optional",        "optional",   "optional"
   ) %>% 
   knitr::kable(., format = "latex", booktabs = TRUE,
     linesep = c("", "\\addlinespace", "", "\\addlinespace",""),

@@ -1,0 +1,219 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Statement of Original Authorship}{v}{chapter*.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Keywords}{vii}{chapter*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Abstract}{ix}{chapter*.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Figures}{xi}{chapter*.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Tables}{xiii}{chapter*.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Publications}{xv}{chapter*.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Declaration}{1}{chapter*.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acknowledgements}{3}{chapter*.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays}{4}{section*.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Comparing the Effectiveness of the Choropleth Map with a Hexagon Tile Map for Communicating Cancer}{4}{section*.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{R packages}{4}{section*.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{7}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}The Australian Cancer Atlas}{8}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Testing graphical displays}{8}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Aims and Objectives}{8}{section.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Research Contributions}{9}{section.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Thesis Structure}{9}{section.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Cancer Applications of Choropleth Maps, and the Potential of Cartograms and Alternative Map Displays}{11}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Abstract}{12}{section*.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Introduction}{12}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Traditional approaches for cancer map displays}{13}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Cancer atlases}{14}{subsection.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}Additional considerations}{18}{subsection.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}Limitations of choropleth displays}{19}{subsection.2.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Contemporary alternatives to choropleth maps}{20}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Cartograms}{20}{subsection.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Contiguous}{23}{subsubsection*.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Non-contiguous}{24}{subsubsection*.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Dorling}{24}{subsubsection*.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}Tile Map}{25}{subsection.2.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}Geofacet}{26}{subsection.2.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.4}Multivariate displays}{26}{subsection.2.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Comparison and critique of alternative displays}{27}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Neither choropleth maps or cartograms perform well for Australia}{27}{subsection.2.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.2}Limitations of alternative displays}{28}{subsection.2.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}User interaction}{29}{section.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Conclusion}{32}{section.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}An Algorithm For Spatial Mapping Using a Hexagon Tile Map, With Application to Australian Maps}{35}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Abstract}{35}{section*.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Introduction}{36}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Mapping techniques}{37}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Algorithm}{43}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{User choices}{44}{subsubsection*.28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Polygon set}{45}{subsubsection*.30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Create the set of centroid points}{46}{subsubsection*.31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Create the hexagon grid points}{46}{subsubsection*.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Step 1: Creating a tessellated grid}{46}{subparagraph*.34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Step 2: Rolling windows}{47}{subparagraph*.36}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Step 3: Filtering the grid}{48}{subparagraph*.37}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Centroid to focal point distance}{48}{subsubsection*.39}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Allocate each centroid to a hexagon grid point}{48}{subsubsection*.40}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Step 1: Filter the grid for unassigned hexagon points}{49}{subparagraph*.41}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Step 2: Filter the grid points for those closest to the centroid}{49}{subparagraph*.42}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Neighbour relationships}{52}{subsubsection*.47}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Using sugarbag}{52}{section.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Installation}{52}{subsubsection*.48}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Creating a hexagon tile map}{53}{subsubsection*.49}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Animation}{55}{section.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Conclusion}{55}{section.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Comparing the Effectiveness of the Choropleth Map with a Hexagon Tile Map for Communicating Cancer}{57}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Abstract}{58}{section*.50}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Introduction}{58}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Background}{59}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Spatial disease data displays}{59}{subsection.4.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Visual Inference}{63}{subsection.4.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.3}Methodology}{65}{subsection.4.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.4}Experimental factors}{65}{subsection.4.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.5}Generating null data}{67}{subsection.4.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.6}Generating lineups}{68}{subsection.4.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.7}Analysis}{69}{subsection.4.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Data Cleaning}{69}{subsubsection*.55}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Descriptive statistics}{69}{subsubsection*.56}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelling}{70}{subsubsection*.57}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.8}Web application to collect responses}{70}{subsection.4.2.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.9}Participants}{71}{subsection.4.2.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.10}Demographic data collection}{72}{subsection.4.2.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Results}{72}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Participant demographics}{73}{subsection.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Accuracy}{73}{subsection.4.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.3}Speed}{75}{subsection.4.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.4}Certainty}{77}{subsection.4.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.5}Reason}{77}{subsection.4.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Discussion}{78}{section.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Conclusion}{80}{section.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Supplementary meaterial}{81}{section.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{83}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{87}{chapter*.64}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Appendix}{95}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Overall Performance}{95}{section.A.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Lineups}{97}{section.A.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2.A}All Cities}{100}{subsection.A.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Replicate 1}{100}{subsubsection*.72}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Replicate 2}{101}{subsubsection*.75}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Replicate 3}{102}{subsubsection*.78}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Replicate 4}{103}{subsubsection*.81}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2.B}Three Cities}{104}{subsection.A.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Replicate 1}{104}{subsubsection*.84}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Replicate 2}{105}{subsubsection*.87}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Replicate 3}{106}{subsubsection*.90}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Replicate 4}{107}{subsubsection*.93}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2.C}North West to South East}{108}{subsection.A.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Replicate 1}{108}{subsubsection*.96}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Replicate 2}{109}{subsubsection*.99}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Replicate 3}{110}{subsubsection*.102}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Replicate 4}{111}{subsubsection*.105}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Experiment survey procedure}{112}{section.A.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.3.A}Training}{113}{subsection.A.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.3.B}Survey application}{114}{subsection.A.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Ethics Approval}{117}{section.A.4}%
