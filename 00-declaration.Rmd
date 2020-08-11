@@ -7,7 +7,7 @@ knit: "bookdown::render_book"
 
 I hereby declare that this thesis contains no material which has been accepted for the award of any other degree or diploma at any university or equivalent institution and that, to the best of my knowledge and belief, this thesis contains no material previously published or written by another person, except where due reference is made in the text of the thesis. 
 
-This thesis includes three original papers submitted to peer reviewed journals. The core theme of the thesis is spatial visualisations. The ideas, development and writing up of all the papers in the thesis were the principal responsibility of myself, the student, working within the Faculty of Science and Engineering under the supervision of Distinguished Professor Kerrie Mengersen and Dr. Earl Duncan. It was also created under the supervision of the external supervisor Professor Dianne Cook from Monash University.
+This thesis includes three original papers to be submitted to peer reviewed journals. The core theme of the thesis is spatial visualisations. The ideas, development and writing up of all the papers in the thesis were the principal responsibility of myself, the student, working within the Faculty of Science and Engineering under the supervision of Distinguished Professor Kerrie Mengersen and Dr. Earl Duncan. It was also created under the supervision of the external supervisor Professor Dianne Cook from Monash University.
 
 
-The papers in Chapters 2, 3, and 4 have been individually formatted for journal submission however, I have renumbered the pages of the submitted papers for cohesion across this thesis.
+The papers in Chapters 2, 3, and 4 have been individually formatted for journal submission however, I have formatted the submitted papers for cohesion across this thesis.

@@ -24,7 +24,7 @@ tabs4 <- tibble::tibble(
     "The mean and standard deviation of the rate of detection for each trend model, calculated for the choropleth and hexagon tile map displays.",
     "The model output for the generalised linear mixed effect model for detection rate.",
     "The amount of participants that selected each reason for their choice of plot when looking at each trend model shown in Choropleth and Hexagon Tile maps."),
-  Page = c(67, 69, 72)
+  Page = c(76, 77, 80)
 )
 
 

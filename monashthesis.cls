@@ -188,14 +188,18 @@
     \begin{center}
         \doublespacing%
         \vspace{30mm}
-        {\Huge{\textbf{\expandafter{\@title}}}}\\
-        \vspace{15mm}
-        {\huge{A thesis submitted in fulfilment of the\\
+        {\Huge{\textbf{\expandafter{New Algorithms For Effectively}}}}\\
         \vspace{5mm}
-        requirement for the degree of\\
-        \vspace{10mm}
-        Master of Philosophy (Statistics)}}\\
-        \vspace{20mm}
+        {\Huge{\textbf{\expandafter{Visualising Australian}}}}\\
+        \vspace{5mm}
+        {\Huge{\textbf{\expandafter{Spatio-Temporal Disease Data}}}}\\
+        \vspace{15mm}
+        {\huge{A thesis submitted in fulfilment of the}}\\
+        \vspace{3mm}
+        {\huge{requirement for the degree of}}\\
+        \vspace{3mm}
+        {\huge{Master of Philosophy (Statistics)}}\\
+        \vspace{3mm}
         \large{by}\\
         \vspace{5mm}
         {\huge\@author}\\

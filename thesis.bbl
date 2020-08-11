@@ -306,6 +306,31 @@
       \verb https://CRAN.R-project.org/package=ggthemes
       \endverb
     \endentry
+    \entry{abs2016}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ef114ba452779edde2caef950f480766}{%
+           family={{Australian Bureau of Statistics}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ef114ba452779edde2caef950f480766}
+      \strng{fullhash}{ef114ba452779edde2caef950f480766}
+      \strng{bibnamehash}{ef114ba452779edde2caef950f480766}
+      \strng{authorbibnamehash}{ef114ba452779edde2caef950f480766}
+      \strng{authornamehash}{ef114ba452779edde2caef950f480766}
+      \strng{authorfullhash}{ef114ba452779edde2caef950f480766}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)
+      \endverb
+      \verb{url}
+      \verb https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)
+      \endverb
+    \endentry
     \entry{magrittr}{manual}{}
       \name{author}{2}{}{%
         {{hash=f66a817b1ae79587e48f9273bba67c6f}{%
@@ -1141,6 +1166,7 @@
       \strng{authorbibnamehash}{0c52e954d7bdb0fa0d93af1351f3785d}
       \strng{authornamehash}{0c52e954d7bdb0fa0d93af1351f3785d}
       \strng{authorfullhash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \field{extraname}{1}
       \field{sortinit}{D}
       \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
       \field{extradatescope}{labelyear}
@@ -1158,6 +1184,34 @@
       \verb{doi}
       \verb 10.1002/9780470979587.ch33
       \endverb
+    \endentry
+    \entry{TVSSS}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0c52e954d7bdb0fa0d93af1351f3785d}{%
+           family={Dorling},
+           familyi={D\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {John Wiley}%
+        {Sons Ltd}%
+      }
+      \strng{namehash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \strng{fullhash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \strng{bibnamehash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \strng{authorbibnamehash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \strng{authornamehash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \strng{authorfullhash}{0c52e954d7bdb0fa0d93af1351f3785d}
+      \field{extraname}{2}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The Visualisation of Spatial Social Structure}}
+      \field{year}{2012}
     \endentry
     \entry{ACCAC}{article}{}
       \name{author}{3}{}{%
@@ -3082,35 +3136,6 @@
       \verb https://alsino.io/static/papers/BeyondChoropleths_AlsinoSkowronnek.pdf
       \endverb
     \endentry
-    \entry{abs2016}{online}{}
-      \name{author}{1}{}{%
-        {{hash=2316adb6f494021c8f252c92fb598cb6}{%
-           family={Statistics},
-           familyi={S\bibinitperiod},
-           given={Australian\bibnamedelima Bureau},
-           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
-           prefix={of},
-           prefixi={o\bibinitperiod}}}%
-      }
-      \strng{namehash}{2316adb6f494021c8f252c92fb598cb6}
-      \strng{fullhash}{2316adb6f494021c8f252c92fb598cb6}
-      \strng{bibnamehash}{2316adb6f494021c8f252c92fb598cb6}
-      \strng{authorbibnamehash}{2316adb6f494021c8f252c92fb598cb6}
-      \strng{authornamehash}{2316adb6f494021c8f252c92fb598cb6}
-      \strng{authorfullhash}{2316adb6f494021c8f252c92fb598cb6}
-      \field{sortinit}{S}
-      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{year}{2018}
-      \verb{urlraw}
-      \verb https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)
-      \endverb
-      \verb{url}
-      \verb https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)
-      \endverb
-    \endentry
     \entry{TFYCC}{article}{}
       \name{author}{1}{}{%
         {{hash=5c70a49c5e68c63482945017e7da9265}{%
@@ -3154,34 +3179,6 @@
       \endverb
       \keyw{Anamorphoses; Cartograms; Map Distortion; Map Projections; Quasiconformal}
     \endentry
-    \entry{TVDQI}{book}{}
-      \name{author}{1}{}{%
-        {{hash=41187f886abb9d98f33e5b3f52276d12}{%
-           family={Tufte},
-           familyi={T\bibinitperiod},
-           given={Edward\bibnamedelima R},
-           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Graphics press Cheshire, CT}%
-      }
-      \strng{namehash}{41187f886abb9d98f33e5b3f52276d12}
-      \strng{fullhash}{41187f886abb9d98f33e5b3f52276d12}
-      \strng{bibnamehash}{41187f886abb9d98f33e5b3f52276d12}
-      \strng{authorbibnamehash}{41187f886abb9d98f33e5b3f52276d12}
-      \strng{authornamehash}{41187f886abb9d98f33e5b3f52276d12}
-      \strng{authorfullhash}{41187f886abb9d98f33e5b3f52276d12}
-      \field{extraname}{1}
-      \field{sortinit}{T}
-      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{The visual display of quantitative information}
-      \field{volume}{2}
-      \field{year}{2001}
-    \endentry
     \entry{EI}{book}{}
       \name{author}{1}{}{%
         {{hash=41187f886abb9d98f33e5b3f52276d12}{%
@@ -3199,7 +3196,6 @@
       \strng{authorbibnamehash}{41187f886abb9d98f33e5b3f52276d12}
       \strng{authornamehash}{41187f886abb9d98f33e5b3f52276d12}
       \strng{authorfullhash}{41187f886abb9d98f33e5b3f52276d12}
-      \field{extraname}{2}
       \field{sortinit}{T}
       \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
       \field{extradatescope}{labelyear}
@@ -3344,6 +3340,49 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1016/B978-0-08-042415-6.50023-5
+      \endverb
+    \endentry
+    \entry{PH}{book}{}
+      \name{author}{3}{}{%
+        {{hash=61fdc40426fb060036929eff7bfffba4}{%
+           family={Vit},
+           familyi={V\bibinitperiod},
+           given={Patricia},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2f1e9c7390fc84303b18c9cb3aa4cec2}{%
+           family={Pedro},
+           familyi={P\bibinitperiod},
+           given={Silvia\bibnamedelimb R.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=77da5359a4123993f2887a202a97cb51}{%
+           family={Roubik},
+           familyi={R\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag New York}%
+      }
+      \strng{namehash}{d46ca76aeedeff3f261a348d3fef54e3}
+      \strng{fullhash}{d46ca76aeedeff3f261a348d3fef54e3}
+      \strng{bibnamehash}{d46ca76aeedeff3f261a348d3fef54e3}
+      \strng{authorbibnamehash}{d46ca76aeedeff3f261a348d3fef54e3}
+      \strng{authornamehash}{d46ca76aeedeff3f261a348d3fef54e3}
+      \strng{authorfullhash}{d46ca76aeedeff3f261a348d3fef54e3}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-4614-4960-7}
+      \field{title}{{Pot-Honey: A legacy of stingless bees}}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/978-1-4614-4960-7
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/978-1-4614-4960-7
       \endverb
     \endentry
     \entry{MMST}{article}{}

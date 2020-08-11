@@ -22,18 +22,21 @@ figs2 <- tibble::tibble(
 # figures in the algorithm chapter
 figs3 <- tibble::tibble(
   #Chapter = c(rep("3", 7)),
-  Figure = c(paste0("3.",seq(1:9))),
+  Figure = c(paste0("3.",seq(1:12))),
   Caption = c(
-    "The geographic shapes of the Statistical Areas of Tasmania at Level 2.",
-    "Grid points to create a tilegram.",
-    "All possible hexagon locations from the initial grid are shown with blue outlines.",
-    "Filter for grid points within a square, then circular, distance for those closest to the centroid.",
-    "Filter for grid points within the angle from the focal point to the centroid.",
-    "A complete hexagon tile map of Tasmania",
-    "The Australian Cancer Atlas data has determined the colour of each Statistical Area of Australian at Level 2",
-    "A choropleth map of the Statistical Areas of Australia at Level 2.",
+    "A choropleth map of the Statistical Areas of Australia at Level 2",
+    "A collection of alternative maps of the Statistical Areas of Australia at Level 2", 
+    "A flow diagram detailing the necessary steps to create a hexagon tile map.",
+    "A hexagon tile map of the Statistical Areas of Australia at Level 2",
+    "The geographic shapes of the Statistical Areas of Queensland at Level 2.",
+    "Grid points to create a hexagon tile map.",
+    "The remaining hexagon locations from all the possible points in the initial grid after the buffer is applied.",
+    "The remaining available hexagon locations after filtering for the grid points within a square distance, then circular around the centroid.",
+    "The remaining available hexagon locations after filtering for grid points within the angle from the focal point to the centroid.",
+    "A complete hexagon tile map of Queensland.",
+    "The Australian Cancer Atlas data displayed on a choropleth and hexagon tile map.",
     "A hexagon tile map of the Statistical Areas of Australia at Level 2."), 
-  Page = c(39, 40, 41, 43, 43, 44, 45, 48, 49)
+  Page = c(37, 39, 41, 46, 47, 48, 49, 51, 52, 53, 54, 55)
 )
 
 
@@ -48,7 +51,7 @@ figs4 <- tibble::tibble(
     "The detection rates achieved by participants are contrasted when viewing the four replicates of the three trend models",
     "The distribution of the time taken (seconds) to submit a response for each combination of trend, whether the data plot was detected, and type of display, shown using horizontally jittered dot plots.",
     "The amount of times each level of certainty was chosen by participants when viewing hexagon tile map or choropleth displays."), 
-  Page = c(54, 55, 58, 60, 68, 70, 72)
+  Page = c(62, 63, 66, 60, 76, 78, 80)
 )
 ```
 

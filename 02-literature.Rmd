@@ -307,7 +307,7 @@ https://atlas.cancer.org.au/app/tour/lungcancer) that change the display to draw
 This implementation of animation gives users tools to plan their exploration.
 
 
-```{r interacting, fig.cap = " Interactive controls of displays in publicly available choropleth cancer maps: (i) GUI controls for statistic, sex, age groups, continents, and cancer types for Globocan 2018 [@Globocan], (ii) Menus for variable selection and zooming on Bowel Cancer Australia Atlas, (iii) Menus for choosing variables and countries in The Cancer Atlas, (iv) Tabs for different indicators and cancer types in Global Cancer Map, (v) Menus and toggles for variable and subset selection in United States Cancer Statistics: Data Visualizations.", results = "asis", message=FALSE, warning=FALSE, cache=FALSE, fig.width=8, fig.height=6, echo = FALSE}
+```{r interacting, fig.cap = " Interactive controls of displays in publicly available choropleth cancer maps: (i) GUI controls for statistic, sex, age groups, continents, and cancer types for Globocan 2018, (ii) Menus for variable selection and zooming on Bowel Cancer Australia Atlas, (iii) Menus for choosing variables and countries in The Cancer Atlas, (iv) Tabs for different indicators and cancer types in Global Cancer Map, (v) Menus and toggles for variable and subset selection in United States Cancer Statistics: Data Visualizations.", results = "asis", message=FALSE, warning=FALSE, cache=FALSE, fig.width=8, fig.height=6, echo = FALSE}
 knitr::include_graphics("figures/02-literature/interacting.png")
 ```
 

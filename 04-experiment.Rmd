@@ -586,7 +586,7 @@ d %>%
 The intention of this study was to contrast the use of the choropleth map and the hexagon tile map. The visual inference lineup protocol was employed to contrast the effectiveness of the displays. The results have shown that overall the use of the hexagon tile map display allows participants to find the data plot in the lineup more often.
 Using the visual inference protocol this result can be extended to show that it is a valid alternative display to communicate spatial distributions of population related data.
 
-We expected that the choropleth map would be superior for communicating the spatial pattern of geographic distributions. The data suggest that the participants perform slightly better or equally as well for each replicate in each trend model across the two displays. Table Figure \ref{fig:detect-glmer1} shows that the difference in the mean detection rate for the two trend models was 0.10.
+We expected that the choropleth map would be superior for communicating the spatial pattern of geographic distributions. The data suggest that the participants perform slightly better or equally as well for each replicate in each trend model across the two displays. Table \ref{tab:detect-glmer1} shows that the difference in the mean detection rate for the two trend models was 0.10.
 
 The differences seen in Figure \ref{fig:detect-compare} and Table \ref{tab:desc-stats} are reflected in the model results. Surprisingly the difference for the geographic distribution was significant at the 0.05 level. It also showed that the hexagon tile map display performs marginally better than the choropleth for all trend models. Unexpectedly the detection rate suffers when using a choropleth map to display population related distributions.
 
