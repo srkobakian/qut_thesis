@@ -670,7 +670,7 @@ This algorithm creates a tessellated hexagon display to represent a set of the s
 \section{Introduction}\label{intro3}}
 
 Many cancer atlases present geospatial cancer data on a choropleth map display.
-The Australian Cancer Atlas \autocite{ACA} is a recent addition to the many cancer atlas maps worldwide. The ground-breaking atlas for Australia presents a central map that shows the landmass overlaid with administrative boundaries. This choropleth display can highlight the geographic patterns in geospatially related cancer statistics \autocite{SAMGIS}.
+The Australian Cancer Atlas \autocite{TACA} is a recent addition to the many cancer atlas maps worldwide. The ground-breaking atlas for Australia presents a central map that shows the landmass overlaid with administrative boundaries. This choropleth display can highlight the geographic patterns in geospatially related cancer statistics \autocite{SAMGIS}.
 
 In many countries, residents are increasingly gathering to live in and around major cities.
 The division of the population into approximately equal population areas results in dramatically different square meterage of the geographic units. The geographic units are usually administrative, such as states or electorates. The units are filled with colour to represent the value of the statistic for each unit \autocite{EI}.
@@ -716,7 +716,7 @@ The Dorling cartogram presents each geographic unit as a circle, the size of the
 \hypertarget{algorithm-1}{%
 \section{Algorithm}\label{algorithm-1}}
 
-The purpose of this algorithm is to create a map display that highlights the spatial distributions for populations. There has been an increasing need for displays that emphasise the large number of people that live in dense urban environments. The algorithm intends to maintain the spatial relationships of a group of geographic units in two ways: between each unit and it's neighbours; and between each unit and the closest focal point. The algorithm allocates geographic units to a representative hexagon, in order of their proximity to the closest focal point.
+The purpose of this algorithm is to create a map display that highlights the spatial distributions for populations. There has been an increasing need for displays that emphasise the large number of people that live in dense urban environments. The algorithm intends to maintain the spatial relationships of a group of geographic units in two ways: between each unit and its neighbours; and between each unit and the closest focal point. The algorithm allocates geographic units to a representative hexagon, in order of their proximity to the closest focal point.
 
 The algorithm is named for the \emph{Trigona carbonaria} bee species. Native to northern and eastern Australia this stingless species builds flat layers of hexagonal brood cells, spiralling out from a central point \autocite{PH}. This hive design inspired the use of multiple focal points in the algorithm, individual spirals are constructed outward from various points on the geographic map base.
 
@@ -966,7 +966,7 @@ By default the angle filter to hexagon grid points that fall within the bounds o
 \end{figure}
 
 A complete hexagon tile map of Queensland is created by applying the algorithm steps to each centroid.
-The hexagon tile map visualisation is used below to visualise the Australian Cancer Atlas data. Two views of the same data are produced by filling according to the Lung Cancer Standardised Incidence Rates (SIRs) downloaded from the Australian Cancer Atlas site. This small example in Figure \ref{fig:sir} shows the group of blue areas in the Brisbane CBD more prominently in the hexagon tile map (b).
+The hexagon tile map visualisation is used below to visualise the Australian Cancer Atlas data \autocite{TACA}. Two views of the same data are produced by filling according to the Lung Cancer Standardised Incidence Rates (SIRs) downloaded from the Australian Cancer Atlas site. This small example in Figure \ref{fig:sir} shows the group of blue areas in the Brisbane CBD more prominently in the hexagon tile map (b).
 The small red areas visible in the choropleth map (a) along the north coast are much larger in the hexagon tile maps. The hexagon tile map shows less yellow, this no longer overwhelms the map space with the information regarding the rural areas.
 
 \begin{figure}[H]

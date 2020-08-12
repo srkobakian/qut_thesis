@@ -312,6 +312,9 @@
            family={{Australian Bureau of Statistics}},
            familyi={A\bibinitperiod}}}%
       }
+      \list{publisher}{1}{%
+        {data cube: ESRI Shapefile, cat. no. 1270.0.55.001}%
+      }
       \strng{namehash}{ef114ba452779edde2caef950f480766}
       \strng{fullhash}{ef114ba452779edde2caef950f480766}
       \strng{bibnamehash}{ef114ba452779edde2caef950f480766}
@@ -323,12 +326,14 @@
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
-      \field{year}{2018}
+      \field{labeltitlesource}{title}
+      \field{title}{Statistical Area Level 2 (SA2) ASGS Ed 2016 Digital Boundaries in ESRI Shapefile Format}
+      \field{year}{2016}
       \verb{urlraw}
-      \verb https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)
+      \verb https://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1270.0.55.001July%202016
       \endverb
       \verb{url}
-      \verb https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)
+      \verb https://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1270.0.55.001July%202016
       \endverb
     \endentry
     \entry{magrittr}{manual}{}

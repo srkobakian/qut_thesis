@@ -1,20 +1,20 @@
-[0] Config.pm:304> INFO - This is Biber 2.14
-[0] Config.pm:307> INFO - Logfile is 'thesis.blg'
-[290] biber-MSWIN32:322> INFO - === 
-[424] Biber.pm:415> INFO - Reading 'thesis.bcf'
-[1038] Biber.pm:943> INFO - Found 96 citekeys in bib section 0
-[1120] Biber.pm:4256> INFO - Processing section 0
-[1121] Utils.pm:75> INFO - Globbing data source 'thesis.bib'
-[1165] Utils.pm:91> INFO - Globbed data source 'thesis.bib' to thesis.bib
-[1258] Biber.pm:4455> INFO - Looking for bibtex format file 'thesis.bib' for section 0
-[1301] bibtex.pm:1653> INFO - LaTeX decoding ...
-[2081] bibtex.pm:1471> INFO - Found BibTeX data source 'thesis.bib'
-[2114] Utils.pm:304> WARN - Duplicate entry key: 'sugarbag' in file 'thesis.bib', skipping ...
-[3395] Utils.pm:304> WARN - month field 'September' in entry 'ACA' is not an integer - this will probably not sort properly.
-[4117] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[4117] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[4117] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[4117] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[4661] bbl.pm:652> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[4798] bbl.pm:755> INFO - Output to thesis.bbl
-[4806] Biber.pm:128> INFO - WARNINGS: 2
+[1] Config.pm:304> INFO - This is Biber 2.14
+[2] Config.pm:307> INFO - Logfile is 'thesis.blg'
+[486] biber-MSWIN32:322> INFO - === 
+[708] Biber.pm:415> INFO - Reading 'thesis.bcf'
+[1636] Biber.pm:943> INFO - Found 96 citekeys in bib section 0
+[1729] Biber.pm:4256> INFO - Processing section 0
+[1732] Utils.pm:75> INFO - Globbing data source 'thesis.bib'
+[1841] Utils.pm:91> INFO - Globbed data source 'thesis.bib' to thesis.bib
+[1930] Biber.pm:4455> INFO - Looking for bibtex format file 'thesis.bib' for section 0
+[1972] bibtex.pm:1653> INFO - LaTeX decoding ...
+[2857] bibtex.pm:1471> INFO - Found BibTeX data source 'thesis.bib'
+[2939] Utils.pm:304> WARN - Duplicate entry key: 'sugarbag' in file 'thesis.bib', skipping ...
+[7063] Utils.pm:304> WARN - month field 'September' in entry 'ACA' is not an integer - this will probably not sort properly.
+[9297] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[9297] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[9297] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[9298] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[10302] bbl.pm:652> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[10493] bbl.pm:755> INFO - Output to thesis.bbl
+[10511] Biber.pm:128> INFO - WARNINGS: 2
