@@ -10,7 +10,7 @@ The work contained in this thesis has not been previously submitted to meet requ
 
 \includegraphics[width=5cm]{figures/srksig}
     
-\textbf{Date:}
+\textbf{Date: 14 / 08 / 2020}
 
 \textcopyright { } by \authorname\ (\number\the\year), all rights reserved.
 

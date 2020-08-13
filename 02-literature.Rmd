@@ -15,12 +15,12 @@ This literature review chapter provides an overview of the key areas of interest
 This chapter was submitted for publication to the journal *Annals of Cancer Epidemiology* for publication. This was intended for an audience of cancer atlas creators to be inspired by current atlases, and to encourage the pursuit of alternative displays.
 
 
-\newpage
 
 ## Abstract {-#abstract2}
 
 Cancer atlases communicate cancer statistics over geographic domains, typically with a choropleth map. They subdivide these domains into administrative regions such as countries, states, or suburbs. When communicating human-related statistics, the choropleth has a disadvantage in that it draws attention to sparsely populated rural areas to the neglect of small inner city areas. The smaller geographic areas are important to consider if they are densely populated. Alternative map displays, such as a cartogram or a hexagon tile map, can shift the attention of map users from the large rural areas by decreasing their size on the map display. This means alternative displays can be more effective at accurately communicating spatial patterns across spatial areas. It is recommended that alternative displays are included in cancer atlases. In addition, with the ease of today’s technology, user interaction with the displays is encouraged. Users should also be able to interactively display different statistics, such as incidence rate or relative incidence, or filtered by demographic variables.
 
+\newpage
 ## Introduction  {#intro2}
 <!-- 436 words -->
 <!-- What data are we working with, why, what are the purposes -->
@@ -236,7 +236,7 @@ Raisz [@RSCW] laid the groundwork for this approach in the mid-1930s, drawing re
 <!-- 173 words -->
 A tile map provides a tessellated display of consistent shapes. A similar method to a rectangular cartogram, represents each geographic area using a square. The squares are tessellated to create a grid. Each area is represented by a square of the same dimensions, each tile is usually one unit of measurement, this could be geographic regions such as states or population-based that use a consistent measure of population for each tile. Regions with over four neighbors require some necessary displacement. The tile map uses color to represent a value of a statistic for each area. A similar method to a rectangular cartogram represents each geographic area using a square of the same dimensions. There are online media sources using this method, these include [@NPR], [@FiveThirtyEight], [@WSJ], [@WP]. Tile maps may be difficult to create as they are best created manually, they require additional time and care as the number of geographic areas to include increases.
 
-Cano and others [@MDAC] define the term 'mosaic cartograms' for hexagonal tile displays, where the number of tiles for each area or the color of them can communicate the statistic of regions. When using several tiles per region, map makers can adjust the complexity of the boundaries in the resulting display. They can also make a trade-off between boundary complexity and simplicity by the size of the tiles used.  
+Cano and others [@MDAC] define the term 'mosaic cartograms' for hexagonal tile displays, where the number of tiles for each area or the color of them can communicate the statistic of regions. When using several tiles per region, map makers can adjust the complexity of the boundaries in the resulting display. They can also make a trade-off between boundary complexity and simplicity by the size of the tiles used. A mosaic cartogram employs tessellation to connect the hexagons, triangles or squares used to represent the geographic land mass. Tessellation closely arranges each of the shapes so that the sides of neighbouring shapes align. Tile maps do not have to tessellate completely, this flexibility is helpful if the land mass has islands.
 
 ### Geofacet
 <!-- 166 words -->

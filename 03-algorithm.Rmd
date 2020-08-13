@@ -32,6 +32,7 @@ options("citation_format" = "pandoc")
 BibOptions(check.entries = FALSE, style = "markdown")
 ```
 
+\newpage
 ## Introduction {#intro3}
 
 <!-- Motivation to map -->
@@ -39,11 +40,14 @@ Many cancer atlases present geospatial cancer data on a choropleth map display.
 The Australian Cancer Atlas [@TACA] is a recent addition to the many cancer atlas maps worldwide. The ground-breaking atlas for Australia presents a central map that shows the landmass overlaid with administrative boundaries. This choropleth display can highlight the geographic patterns in geospatially related cancer statistics [@SAMGIS].
 
 <!-- Issues with choropleth map displays... -->
-In many countries, residents are increasingly gathering to live in and around major cities.
-The division of the population into approximately equal population areas results in dramatically different square meterage of the geographic units. The geographic units are usually administrative, such as states or electorates. The units are filled with colour to represent the value of the statistic for each unit [@EI].
-This can lead to unequal emphasis on the statistical value of each of the geographic units. This allows choropleth map displays to misrepresent the spatial distributions of human related statistics.
+In many countries, residents are increasingly gathering to live in urban areas around major cities [@ACTUC].
+The creation of approximately equal population areas results in dramatically different square meterage of the geographic units. The geographic units are usually administrative, such as states or electorates. The units are filled with colour to represent the value of the statistic for each unit [@EI].
+This can lead to unequal emphasis on the statistical value of each of the geographic units. This allows choropleth map displays to misrepresent the spatial distributions of human related statistics due to area-size bias [@BCM].
 Figure \ref{fig:melanoma-geo} is a choropleth map that uses colour to display the estimated Standardised Incidence Ratios (SIRs) of melanoma cancer for males for each Statistical Area at Level 2 (SA2). The Australian choropleth map display draws attention to the expanse of light blue areas across the rural communities in all states. The SA2s around Brisbane stand out as more orange and red. To create this choropleth map the SA2 polygons for 2011 from the Australian Bureau of Statistics. 
 
+<!-- solutions -->
+The solutions to this visualisation problem begin with the geography. 
+Alternative maps shift the focus from land area and shape, to the value of the statistics in a group of areas [@ACCAC]. Different styles of cartograms apply transformations to the geographic areas, to highlight the values of the value of the statistic of interest. These displays result in a distortion of the map space to represent differences in the statistic across the areas [@ACCAC] as the statistic of interest is used to determine the cartogram layout. 
 
 \begin{figure}[H]
 \centering
@@ -51,11 +55,8 @@ Figure \ref{fig:melanoma-geo} is a choropleth map that uses colour to display th
 \caption{\label{fig:melanoma-geo}A choropleth map of the Statistical Areas of Australia at Level 2. The colours communicate the value of the estimated SIR of Melanoma for males, they range from much lower than average (blue) to much higher than average (red)}
 \end{figure}
 
-<!-- solutions -->
-The solutions to this visualisation problem begin with the geography. Cartograms apply a transformation to the geographic boundaries based on the value of the statistic of interest. These displays result in a distortion of the map space to represent differences in the statistic across the areas [@ACCAC] as the statistic of interest is used to determine the cartogram layout. 
 
-Alternative maps shift the focus from land area and shape, to the value of the statistics in a group of areas.
-Alternative mapping methods allow increased understanding of the spatial distribution of a variable across the population, by fairly representing each administrative area. This acknowledges that the amount of residents can be different but recognises that each area, or person within it is equally important.
+Alternative mapping methods allow increased understanding of the spatial distribution of a variable across the population, by fairly representing the population in each administrative area [@TAAM]. This acknowledges that the number of residents can be different but recognises that each area, or person within it is equally important.
 
 
 This paper contains a discussion of Existing Mapping Practices in Section 2. This is followed by details of the Algorithm in Section 3. Section 4 describes the implementation of the algorithm in the `sugarbag` package. Section 5 outlines the use and benefits of animation.
@@ -78,24 +79,24 @@ The unique shapes of boundaries can be helpful for orienting users but may not c
 
 <!-- contiguous -->
 When communicating information that is relevant to the population, each member of the population can be given equal representation by transforming the map [@TVSSS].
-The impact of a disease over connected communities can be seen by allowing the boundaries to maintain connection in the transformed display. The contiguous cartogram displayed in figure \ref{fig:qld_grid}b) can draw attention to smaller geographic units when they are rescaled according to the population [@DMAHP]. These new shapes can now be coloured to represent a second variable. This display can create twisted and unfamiliar shapes from the geographic units as the algorithms must satisfy the topology conditions, especially when there are communities located geographically far from their neighbours [@TVSSS]. This shown in the northern SA2s of Queensland with an average (yellow) estimated SIR of Melanoma for males.
+The impact of a disease over connected communities can be seen by allowing the boundaries to maintain connection in the transformed display. The contiguous cartogram displayed in figure \ref{fig:qld_grid}b) draws attention to smaller geographic units when they are rescaled according to the population [@DMAHP]. These new shapes can now be coloured to represent a second variable. This display can create twisted and unfamiliar shapes from the geographic units as the algorithms must satisfy the topology conditions, especially when there are communities located geographically far from their neighbours [@TVSSS]. This shown in the northern SA2s of Queensland with an average (yellow) estimated SIR of Melanoma for males.
 
 <!-- non-contiguous -->
-The non-contiguous cartogram in figure \ref{fig:qld_grid}c) also uses the population to rescale the geographic units. Unlike the contiguous cartogram, the SA2 areas maintain their geographic shape, but they may not retain the connection with their neighbours. The population of the SA2 areas is used to scale the geographic units in the non-contiguous cartogram. The amount of white space can be meaningful in non-contiguous cartograms, in this example the disparity between large rural areas and small urban areas means that the city of Brisbane, shown in the inset map looks reasonable, but these units are not visible in the context of the Queensland state map. The amount of white space may prevent meaningful understanding of the distribution. 
+The non-contiguous cartogram in figure \ref{fig:qld_grid}c) also uses the population to rescale the geographic units. Unlike the contiguous cartogram, the SA2 areas maintain their geographic shape, but they may not retain the connection with their neighbours. The population of the SA2 areas is used to scale the geographic units in the non-contiguous cartogram [@NAC]. The amount of white space can be meaningful in non-contiguous cartograms [@ECGC], in this example the disparity between large rural areas and small urban areas means that the city of Brisbane, shown in the inset map looks reasonable, but these units are not visible in the context of the Queensland state map. Depending on the difference between the population and geographic land size, the amount of white space can also prevent meaningful understanding of the distribution [@TVSSS]. 
 
 <!-- Dorling -->
-The Dorling cartogram presents each geographic unit as a circle, the size of the circle is scaled according to the population value of each area. Figure \ref{fig:qld_grid}d) shows the Queensland SA2 areas as an individual circle located as close as possible to the geographic centroid location. This map draws attention to the collection of coastal cities in Queensland that were not apparent in figure \ref{fig:qld_grid} a), b) or c).
+The Dorling cartogram presents each geographic unit as a circle, the size of the circle is scaled according to the population value of each area [@ACTUC]. Figure \ref{fig:qld_grid}d) shows the Queensland SA2 areas as an individual circle located as close as possible to the geographic centroid location. This map draws attention to the collection of coastal cities in Queensland that were not apparent in figure \ref{fig:qld_grid} a), b) or c).
 
 <!-- When the population is the statistic of interest, the result is a population cartogram. They fail to preserve a recognisable display due to the difference in size of metropolitan and rural areas [@ACTUC], [@GOINO]. -->
 <!-- Contiguous cartograms alter the shape of areas, while preserving boundary relationships of neighbours. Non-contiguous cartograms maintain the geographic shape of each geographic area, but will lose the connection to neighbours as the polygon for each geographic area shrinks or grows. -->
 
 ## Algorithm
 
-The purpose of this algorithm is to create a map display that highlights the spatial distributions for populations. There has been an increasing need for displays that emphasise the large number of people that live in dense urban environments. The algorithm intends to maintain the spatial relationships of a group of geographic units in two ways: between each unit and its neighbours; and between each unit and the closest focal point. The algorithm allocates geographic units to a representative hexagon, in order of their proximity to the closest focal point. 
+The purpose of this algorithm is to create a map display that highlights the spatial distributions for populations. There has been an increasing need for displays that recognise the large number of people that live in dense urban environments. The algorithm intends to maintain the spatial relationships of a group of geographic units in two ways: between each unit and its neighbours; and between each unit and the closest focal point. The algorithm allocates geographic units to a representative hexagon, in order of their proximity to the closest focal point. 
 
 The algorithm is named for the *Trigona carbonaria* bee species. Native to northern and eastern Australia this stingless species builds flat layers of hexagonal brood cells, spiralling out from a central point [@PH]. This hive design inspired the use of multiple focal points in the algorithm, individual spirals are constructed outward from various points on the geographic map base.
 
-There are three key steps performed to create a tessellated hexagon tile map. First create the set of centroids from the polygons to allocate, then create the grid of hexagons locations to use. Each centroid can then be allocated to an available hexagon location, before transforming the point locations to hexagons for plotting.
+There are three key steps performed to create a tessellated hexagon tile map. First create the set of centroids from the polygons to allocate, then create the grid of hexagons locations. Each centroid can then be allocated to an available hexagon location. To make tessellated plots the points can be converted to hexagon shapes, with the hexagon size equal to the size used in the grid.
 
 \begin{figure}
 \includegraphics[width=14cm]{figures/03-algorithm/sugarbag_flow.pdf}
@@ -107,13 +108,17 @@ There are three key steps performed to create a tessellated hexagon tile map. Fi
 
 <!-- The`create_hexmap` function will -->
 <!-- Derive the centroids of the geographic units to calculate a grid of possible hexagon locations, and allocate each geographic unit to a single hexagon. -->
-Only two inputs are necessary to begin using the algorithm, the shape file, and the id column. The id column should uniquely identify each geographic unit in the shape file.
+Only two inputs are necessary to begin using the algorithm, the shape file, and the id variable. The id column should uniquely identify each geographic unit in the shape file.
 
-The centroids can be derived from the shape file. The locations of the centroids are used to determine a hexagon size. An appropriate grid is constructed, in which each grid point is located a hexagon size distance from the next closest point in all six directions. 
+The centroids can be derived from the shape file. The amount of centroids is used to determine a hexagon size. 
+The derived centroids are a necessary input for an appropriate grid to be constructed, in which each grid point is located a hexagon size distance from the next closest point in all six directions. 
 The grid will initially cover the entire map space, encompassing all the centroid locations and will extend in all directions to the extent of the buffer distance. This buffer distance can be helpful to account for densely populated coastal areas, allowing the use of the sea for hexagon locations. The hexagon size will likely need adjustments depending on the density of the population.
 
-A user can specify the variable that should be used to determine the order for the allocation. Alternatively, a set of reference locations can be provided as focal points, such as capital cities of states or countries. Using focal points, the algorithm will create the order of allocation in order of the closest centroid locations to the focal points.
-When allocating representative hexagons, the width can be used to determine the flexibility of positioning using their relationship with the nearest reference location. A larger width parameter will increase the amount of available hexagon locations nearer to the centroid of the geographic location. A smaller width will maintain the orientation from the focal point to the centroid when selecting the hexagon location, however this could mean it is placed further from the centre of the cluster.
+The centroids derived from the shape file are necessary inputs when creating a grid. The creation of the grid and filtering out the points unlikely to be used in the hexagon map results in the hexagon tile map grid. At this point, the centroid set and the grid become the necessary inputs to the allocation process.
+
+A set of reference locations can be provided as focal points, such as capital cities of states or countries. Using focal points, the algorithm will create the order of allocation in order of the closest centroid locations to the focal points.
+Alternatively, a user can specify the variable that should be used to determine the order for the allocation. 
+When allocating representative hexagons, the width parameter can be used to determine the flexibility of positioning using the relationship with the nearest reference location. A larger width parameter will increase the amount of available hexagon locations nearer to the centroid of the geographic location. A smaller width will maintain the orientation from the focal point to the centroid when selecting the hexagon location, however this could mean it is placed further from the centre of the cluster.
 
 
 ## Implementation
@@ -431,8 +436,9 @@ During the allocation of each centroid, the list of neighbours is consulted. If 
 
 ## Hexagon tile map of Australia
 
-XXX
-What we learn from hexagon tile map of all of Australia
+This algorithm has been applied to the complete set of all Australian Statistical Areas at Level 2. This display highlights the density of Australian capital cities, as it draws attention to the many communities in Sydney, Melbourne and Brisbane. This display also highlights the disparity in the burden of Melanoma cancer for males in the communities of these three cities. There are several collections of red hexagons in Brisbane that draw attention and they represent the communities with much higher rates of diagnosis than the Australian average. The communities south of Brisbane show a gradient of colour as the values progress from higher than average, to much lower than average for the communities closer to the Sydney CBD. This pattern progresses into the communities with lower than average rates in Melbourne and Tasmania.
+
+Compared to the choropleth map display, the low rates in the rural Australian communities are no longer dominating the display. The much higher than average rates in Sydney draw more attention in the hexagon tile map display unlike the red and orange areas in the city of Brisbane that draw attention in both displays.
 
 
 \begin{figure}[H]
@@ -445,7 +451,7 @@ What we learn from hexagon tile map of all of Australia
 
 The `gganimate` [@gganimate] package can be used to make an animation.
 It requires connecting the polygons for each area in two displays, which can be done using the `sf_id` variable, such as the SA2 name.
-The animation^[This animation can be viewed at: https://sugarbagjss.netlify.com/] connecting these two displays will highlight the rapid growth of the inner-city areas, and will decrease the large rural areas. The hexagons that move the furthest will move rapidly in the animation.
+The animation^[This animation can be viewed at: https://sugarbagjss.netlify.com/] connecting these two displays will highlight the rapid growth of the inner-city areas that emphasises the density of the communities. The hexagons that move the furthest will move rapidly in the animation. The rapid decreases of the large rural areas also show how much greater the landmass of Statistical Areas can be. 
 
 
 ## Conclusion  {#conclusion-03}
