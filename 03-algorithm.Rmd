@@ -43,7 +43,7 @@ The Australian Cancer Atlas [@TACA] is a recent addition to the many cancer atla
 In many countries, residents are increasingly gathering to live in urban areas around major cities [@ACTUC].
 The creation of approximately equal population areas results in dramatically different square meterage of the geographic units. The geographic units are usually administrative, such as states or electorates. The units are filled with colour to represent the value of the statistic for each unit [@EI].
 This can lead to unequal emphasis on the statistical value of each of the geographic units. This allows choropleth map displays to misrepresent the spatial distributions of human related statistics due to area-size bias [@BCM].
-Figure \ref{fig:melanoma-geo} is a choropleth map that uses colour to display the estimated Standardised Incidence Ratios (SIRs) of melanoma cancer for males for each Statistical Area at Level 2 (SA2). The Australian choropleth map display draws attention to the expanse of light blue areas across the rural communities in all states. The SA2s around Brisbane stand out as more orange and red. To create this choropleth map the SA2 polygons for 2011 from the Australian Bureau of Statistics. 
+Figure \ref{fig:melanoma-geo} is a choropleth map that uses colour to display the estimated Standardised Incidence Ratios (SIRs) of melanoma cancer for males for each of the Statistical Areas at Level 2 (SA2) used by the Australian Bureau of Statistics [-@abs2011]. The Australian choropleth map display draws attention to the expanse of light blue areas across the rural communities in all states. The SA2s around Brisbane stand out as more orange and red. To create this choropleth map the SA2 polygons for 2011 from the Australian Bureau of Statistics. 
 
 <!-- solutions -->
 The solutions to this visualisation problem begin with the geography. 
@@ -65,7 +65,7 @@ This paper contains a discussion of Existing Mapping Practices in Section 2. Thi
 
 There are several established alternative visualisation methods. 
 Tile maps, Rectangular cartograms [@ORC] and Dorling cartograms [@ACTUC] all use one simple shape to represent each geographic unit. They all minimise the emphasis on the size or shape of the geographic areas. These alternative map displays focus on the relationship between neighbours, attempting to preserve connections, and disregard the unique shapes of the administrative boundaries. Figure \ref{fig:qld_grid} shows a collection of alternative map displays, this includes a) a contiguous cartogram, b) a non-contiguous cartogram, c) a Dorling cartogram and d) a hexagon tile map. 
-Each Statistical Area at Level 2 (SA2) [@abs2016] was designed to represent a community. These administrative areas are often used to aggregate census data and used to understand demographics of the Australian population. 
+Each Statistical Area at Level 2 (SA2) [@abs2011] was designed to represent a community. These administrative areas are often used to aggregate census data and used to understand demographics of the Australian population. 
 
 <!-- choropleth -->
 The familiar choropleth map display is often used to allow the user to orient themselves. However, the emphasis on the land mass diminishes the features of the distribution in densely populated communities due to the small size on the display [@ACTUC].
@@ -224,7 +224,6 @@ qld_hexmap
 ```
 
 
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=14cm]{figures/03-algorithm/aus_gghexmap.pdf}
@@ -233,7 +232,7 @@ qld_hexmap
 
 #### Polygon set
 
-The polygon set of Statistical Areas at Level 2 (SA2) [@abs2016] of Queensland in 2016 is provided with the `sugarbag` package as `tas_sa2`. 
+The polygon set of Statistical Areas at Level 2 (SA2) [@abs2011] of Queensland in 2011 is provided with the `sugarbag` package as `tas_sa2`. 
 A single column of the data set is used to identify the unique areas. 
 In this case, the unique SA2 names for each SA2 have been used.
 
