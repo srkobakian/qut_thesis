@@ -34,184 +34,184 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Abstract}{12}{section*.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Introduction}{12}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Introduction}{13}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Traditional approaches for cancer map displays}{13}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Traditional approaches for cancer map displays}{14}{section.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Cancer atlases}{14}{subsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Additional considerations}{18}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.2}Additional considerations}{19}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Limitations of choropleth displays}{19}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.3}Limitations of choropleth displays}{20}{subsection.2.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Contemporary alternatives to choropleth maps}{20}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Contemporary alternatives to choropleth maps}{21}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Cartograms}{20}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Cartograms}{21}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Contiguous}{23}{subsubsection*.16}%
+\contentsline {subsubsection}{Contiguous}{24}{subsubsection*.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Non-contiguous}{24}{subsubsection*.17}%
+\contentsline {subsubsection}{Non-contiguous}{25}{subsubsection*.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Dorling}{24}{subsubsection*.18}%
+\contentsline {subsubsection}{Dorling}{25}{subsubsection*.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Tile Map}{25}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Tile Map}{26}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Geofacet}{26}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.3}Geofacet}{27}{subsection.2.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.4}Multivariate displays}{26}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.4}Multivariate displays}{27}{subsection.2.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Comparison and critique of alternative displays}{27}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Comparison and critique of alternative displays}{29}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Neither choropleth maps or cartograms perform well for Australia}{27}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.1}Neither choropleth maps or cartograms perform well for Australia}{29}{subsection.2.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Limitations of alternative displays}{28}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.2}Limitations of alternative displays}{30}{subsection.2.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}User interaction}{29}{section.2.5}%
+\contentsline {section}{\numberline {2.5}User interaction}{31}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Conclusion}{32}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Conclusion}{35}{section.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}An Algorithm For Spatial Mapping Using a Hexagon Tile Map, With Application to Australian Maps}{35}{chapter.3}%
+\contentsline {chapter}{\numberline {3}An Algorithm For Spatial Mapping Using a Hexagon Tile Map, With Application to Australian Maps}{37}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abstract}{35}{section*.24}%
+\contentsline {section}{Abstract}{37}{section*.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduction}{36}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Introduction}{39}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Existing Mapping Practices}{38}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Existing Mapping Practices}{41}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Algorithm}{40}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Algorithm}{43}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{User choices}{42}{subsubsection*.28}%
+\contentsline {subsubsection}{User choices}{45}{subsubsection*.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Implementation}{42}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Implementation}{45}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Installation}{43}{subsubsection*.29}%
+\contentsline {subsubsection}{Installation}{46}{subsubsection*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Creating a hexagon tile map}{43}{subsubsection*.30}%
+\contentsline {subsubsection}{Creating a hexagon tile map}{46}{subsubsection*.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Polygon set}{46}{subsubsection*.32}%
+\contentsline {subsubsection}{Polygon set}{49}{subsubsection*.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Step 1: Derive the set of centroid points}{47}{subsubsection*.33}%
+\contentsline {subsubsection}{Step 1: Derive the set of centroid points}{50}{subsubsection*.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Step 2: Create the hexagon grid points}{47}{subsubsection*.35}%
+\contentsline {subsubsection}{Step 2: Create the hexagon grid points}{50}{subsubsection*.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Creating a tessellated grid}{47}{paragraph*.36}%
+\contentsline {paragraph}{Creating a tessellated grid}{50}{paragraph*.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Rolling windows}{48}{paragraph*.38}%
+\contentsline {paragraph}{Rolling windows}{51}{paragraph*.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Filtering the grid}{49}{paragraph*.39}%
+\contentsline {paragraph}{Filtering the grid}{52}{paragraph*.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Centroid to focal point distance}{49}{paragraph*.41}%
+\contentsline {paragraph}{Centroid to focal point distance}{52}{paragraph*.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Step 3: Allocate each centroid to a hexagon grid point}{50}{subsubsection*.42}%
+\contentsline {subsubsection}{Step 3: Allocate each centroid to a hexagon grid point}{53}{subsubsection*.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Filter the grid for unassigned hexagon points}{50}{paragraph*.43}%
+\contentsline {paragraph}{Filter the grid for unassigned hexagon points}{53}{paragraph*.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Filter the grid points for those closest to the centroid}{50}{paragraph*.44}%
+\contentsline {paragraph}{Filter the grid points for those closest to the centroid}{53}{paragraph*.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Neighbour relationships}{54}{subsubsection*.49}%
+\contentsline {subsubsection}{Neighbour relationships}{57}{subsubsection*.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Hexagon tile map of Australia}{54}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Hexagon tile map of Australia}{58}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Animation}{55}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Animation}{59}{section.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Conclusion}{55}{section.3.7}%
+\contentsline {section}{\numberline {3.7}Conclusion}{60}{section.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Comparing the Effectiveness of the Choropleth Map with a Hexagon Tile Map for Communicating Cancer}{59}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Comparing the Effectiveness of the Choropleth Map with a Hexagon Tile Map for Communicating Cancer}{63}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abstract}{60}{section*.51}%
+\contentsline {section}{Abstract}{64}{section*.51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Introduction}{60}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Introduction}{65}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Background}{61}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Background}{66}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Spatial disease data displays}{61}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}Spatial disease data displays}{66}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Visual Inference}{65}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}Visual Inference}{70}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Methodology}{67}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.3}Methodology}{72}{subsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}Experimental factors}{67}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.4}Experimental factors}{72}{subsection.4.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.5}Generating null data}{69}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.5}Generating null data}{73}{subsection.4.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.6}Generating lineups}{70}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.6}Generating lineups}{74}{subsection.4.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.7}Analysis}{71}{subsection.4.2.7}%
+\contentsline {subsection}{\numberline {4.2.7}Analysis}{76}{subsection.4.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Data Cleaning}{71}{subsubsection*.56}%
+\contentsline {subsubsection}{Data Cleaning}{76}{subsubsection*.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Descriptive statistics}{71}{subsubsection*.57}%
+\contentsline {subsubsection}{Descriptive statistics}{76}{subsubsection*.57}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Modelling}{72}{subsubsection*.58}%
+\contentsline {subsubsection}{Modelling}{76}{subsubsection*.58}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.8}Web application to collect responses}{72}{subsection.4.2.8}%
+\contentsline {subsection}{\numberline {4.2.8}Web application to collect responses}{77}{subsection.4.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.9}Participants}{73}{subsection.4.2.9}%
+\contentsline {subsection}{\numberline {4.2.9}Participants}{78}{subsection.4.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.10}Demographic data collection}{74}{subsection.4.2.10}%
+\contentsline {subsection}{\numberline {4.2.10}Demographic data collection}{79}{subsection.4.2.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Results}{74}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Results}{79}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Participant demographics}{75}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.1}Participant demographics}{80}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Accuracy}{75}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.2}Accuracy}{80}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Speed}{77}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.3}Speed}{82}{subsection.4.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}Certainty}{79}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.4}Certainty}{84}{subsection.4.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.5}Reason}{79}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.5}Reason}{84}{subsection.4.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Discussion}{80}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Discussion}{85}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Conclusion}{82}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Conclusion}{87}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Supplementary meaterial}{83}{section.4.6}%
+\contentsline {section}{\numberline {4.6}Supplementary meaterial}{88}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{85}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Discussion and Conclusion}{89}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{89}{chapter*.65}%
+\contentsline {chapter}{Bibliography}{93}{chapter*.65}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix}{97}{appendix.A}%
+\contentsline {chapter}{\numberline {A}Appendix}{103}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Overall Performance}{97}{section.A.1}%
+\contentsline {section}{\numberline {A.1}Overall Performance}{103}{section.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Lineups}{99}{section.A.2}%
+\contentsline {section}{\numberline {A.2}Lineups}{105}{section.A.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.A}All Cities}{102}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.A}All Cities}{108}{subsection.A.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Replicate 1}{102}{subsubsection*.73}%
+\contentsline {subsubsection}{Replicate 1}{108}{subsubsection*.73}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Replicate 2}{103}{subsubsection*.76}%
+\contentsline {subsubsection}{Replicate 2}{109}{subsubsection*.76}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Replicate 3}{104}{subsubsection*.79}%
+\contentsline {subsubsection}{Replicate 3}{110}{subsubsection*.79}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Replicate 4}{105}{subsubsection*.82}%
+\contentsline {subsubsection}{Replicate 4}{111}{subsubsection*.82}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.B}Three Cities}{106}{subsection.A.2.2}%
+\contentsline {subsection}{\numberline {A.2.B}Three Cities}{112}{subsection.A.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Replicate 1}{106}{subsubsection*.85}%
+\contentsline {subsubsection}{Replicate 1}{112}{subsubsection*.85}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Replicate 2}{107}{subsubsection*.88}%
+\contentsline {subsubsection}{Replicate 2}{113}{subsubsection*.88}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Replicate 3}{108}{subsubsection*.91}%
+\contentsline {subsubsection}{Replicate 3}{114}{subsubsection*.91}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Replicate 4}{109}{subsubsection*.94}%
+\contentsline {subsubsection}{Replicate 4}{115}{subsubsection*.94}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.C}North West to South East}{110}{subsection.A.2.3}%
+\contentsline {subsection}{\numberline {A.2.C}North West to South East}{116}{subsection.A.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Replicate 1}{110}{subsubsection*.97}%
+\contentsline {subsubsection}{Replicate 1}{116}{subsubsection*.97}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Replicate 2}{111}{subsubsection*.100}%
+\contentsline {subsubsection}{Replicate 2}{117}{subsubsection*.100}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Replicate 3}{112}{subsubsection*.103}%
+\contentsline {subsubsection}{Replicate 3}{118}{subsubsection*.103}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Replicate 4}{113}{subsubsection*.106}%
+\contentsline {subsubsection}{Replicate 4}{119}{subsubsection*.106}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Experiment survey procedure}{114}{section.A.3}%
+\contentsline {section}{\numberline {A.3}Experiment survey procedure}{120}{section.A.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3.A}Training}{115}{subsection.A.3.1}%
+\contentsline {subsection}{\numberline {A.3.A}Training}{121}{subsection.A.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3.B}Survey application}{116}{subsection.A.3.2}%
+\contentsline {subsection}{\numberline {A.3.B}Survey application}{122}{subsection.A.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Ethics Approval}{119}{section.A.4}%
+\contentsline {section}{\numberline {A.4}Ethics Approval}{125}{section.A.4}%
